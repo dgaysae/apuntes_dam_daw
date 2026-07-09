@@ -3,6 +3,11 @@
 ---
 
 
+```table-of-contents
+```
+
+---
+
 ## Sobre el ciclo de DAM
 
 Las tecnologías de la información y la comunicación se han impuesto como el mayor avance desde la revolución industrial. Y gracias a los dispositivos móviles, la disponibilidad para acceder a la información es prácticamente del 100% hoy en día (la mayor en la historia de la humanidad).
@@ -12,6 +17,10 @@ Además, proporciona una plataforma de trabajo cooperativo e interacción social
 La relevancia de esta [disrupción](https://dle.rae.es/disrupci%C3%B3n) tecnológica en la sociedad se aprecia, sobre todo, en la economía y el comportamiento social. Las empresas con más capital en el mercado son las tecnológicas (Microsoft, Apple, Amazon, Facebook, etc.) o las financieras, que apoyan sus activos y estrategias en la tecnología para ofrecer a los clientes el control de sus productos de forma telemática.
 
 Por eso es importante establecer una base de programación mediante la formación y desarrollo del **[pensamiento computacional](https://es.wikipedia.org/wiki/Pensamiento_computacional)** del alumnado ya que fomenta la creatividad, el razonamiento lógico y la resolución de problemas. Así se crean unos cimientos tecnológicos sólidos que facilitan la incorporación al mundo laboral y mejoran su capacidad de aprendizaje autónomo.
+
+Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la [[Normativa\|normativa vigente]] y enfocándose en las finalidades establecidas.
+
+
 
 ## Aclaraciones
 
