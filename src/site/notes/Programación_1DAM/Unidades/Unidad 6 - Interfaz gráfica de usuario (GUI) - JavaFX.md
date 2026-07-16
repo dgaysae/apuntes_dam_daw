@@ -3,6 +3,20 @@
 ---
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png\|150](/img/user/attach/by-nc-sa.png)
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
+
+</div></div>
+
+
 ```table-of-contents
 ```
 
@@ -14,10 +28,12 @@ En el ecosistema de Java existen varias tecnologías para crear interfaces gráf
 
 Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder a eventos del usuario (como clics o pulsaciones de teclas) y separar la lógica de tu programa de su presentación visual usando **JavaFX**. Este cambio no solo mejora la apariencia de tus aplicaciones, sino también la forma de diseñarlas.
 
-| File                                                                                                                     | Descripción                                                            |
-| ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| [[Programación_1DAM/Unidad 06 JavaFX/1. AWT, Swing y JavaFX. ¿Qué es mejor?\|1. AWT, Swing y JavaFX. ¿Qué es mejor?]] | Comparativa entre las distintas librerías de interfaz gráfica en Java. |
-| [[Programación_1DAM/Unidad 06 JavaFX/2. JavaFX\|2. JavaFX]]                                                           | Comparativa entre las distintas librerías de interfaz gráfica en Java. |
+| File                                                                                                                                                                           | Descripción                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Programación_1DAM/Unidad 06 JavaFX/1. AWT, Swing y JavaFX. ¿Qué es mejor?\|1. AWT, Swing y JavaFX. ¿Qué es mejor?]]                                                       | Comparativa entre las distintas librerías de interfaz gráfica en Java.                                                                                                |
+| [[Programación_1DAM/Unidad 06 JavaFX/2. JavaFX\|2. JavaFX]]                                                                                                                 | Comparativa entre las distintas librerías de interfaz gráfica en Java.                                                                                                |
+| [[Programación_1DAM/Unidad 06 JavaFX/Apéndice - recursos del proyecto\|Apéndice - recursos del proyecto]]                                                                   | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
+| [[Programación_1DAM/Unidad 06 JavaFX/Apéndice - Principios de diseño de interfaces gráficas de usuario\|Apéndice - Principios de diseño de interfaces gráficas de usuario]] | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
 
 { .block-language-dataview}
 ---

@@ -4,8 +4,10 @@
 
 
 > [!info]
-> El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/) <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-> Se han realizado modificaciones sobre dicho material.
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png\|150](/img/user/attach/by-nc-sa.png)
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
 
 Este material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.
 

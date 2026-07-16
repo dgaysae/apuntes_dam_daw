@@ -3,6 +3,20 @@
 ---
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png\|150](/img/user/attach/by-nc-sa.png)
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
+
+</div></div>
+
+
 Si has llegado hasta aquí, ¡enhorabuena! Por si aún no lo habíamos dicho, **aprender a programar es difícil** y requiere **constancia** y **compromiso**. Si estás aquí es porque estás demostrando ambas. Y te felicito por ello.
 
 Ya hemos plantado los cimientos: sabemos construir pequeños programas con un par de clases funcionando en modo amo-esclavo (o cliente-servidor) y sabemos escribir el código de los métodos de esas clases para que hagan lo que necesitamos utilizando las viejas herramientas de la programación estructurada (recuerda que la programación orientada a objetos es una evolución de la programación estructurada clásica).

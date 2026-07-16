@@ -3,6 +3,20 @@
 ---
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png\|150](/img/user/attach/by-nc-sa.png)
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
+
+</div></div>
+
+
 ```table-of-contents
 ```
 
@@ -14,18 +28,19 @@ En el ecosistema de Java existen varias tecnologías para crear interfaces gráf
 
 Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder a eventos del usuario (como clics o pulsaciones de teclas) y separar la lógica de tu programa de su presentación visual usando **Java Swing**. Este cambio no solo mejora la apariencia de tus aplicaciones, sino también la forma de diseñarlas.
 
-| File                                                                                                                                                                        | Descripción                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Programación_1DAM/Unidad 06 Swing/1. AWT, Swing y JavaFX. ¿Qué es mejor?\|1. AWT, Swing y JavaFX. ¿Qué es mejor?]]                                                     | Comparativa entre las distintas librerías de interfaz gráfica en Java.                                                                                                |
-| [[Programación_1DAM/Unidad 06 Swing/2. Componentes de swing\|2. Componentes de swing]]                                                                                   | Estructura de clases de Swing.                                                                                                                                        |
-| [[Programación_1DAM/Unidad 06 Swing/3. Contenedores de Swing\|3. Contenedores de Swing]]                                                                                 | Los contenedores son los elementos que sirven para mostrar otros componentes. En ellos se incluirán botones, etiquetas, etc.                                          |
-| [[Programación_1DAM/Unidad 06 Swing/4. LayoutManager - Cómo distribuir los componentes en la ventana\|4. LayoutManager - Cómo distribuir los componentes en la ventana]] | Los LayoutManager indican al contendor cómo debe distribuir los componentes que se le añaden.                                                                         |
-| [[Programación_1DAM/Unidad 06 Swing/5. Otros componentes de Swing\|5. Otros componentes de Swing]]                                                                       | Botones, etiquetas, radio buttons, etc.                                                                                                                               |
-| [[Programación_1DAM/Unidad 06 Swing/6. Eventos\|6. Eventos]]                                                                                                             | Podemos capturar lo que sucede en nuestras ventanas (se pulsa un botón, se escribe un texto, etc.) e indicarle a nuestra aplicación que haga algo.                    |
-| [[Programación_1DAM/Unidad 06 Swing/7. Patrón MVC (Modelo-Vista-Controlador)\|7. Patrón MVC (Modelo-Vista-Controlador)]]                                                 | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
-| [[Programación_1DAM/Unidad 06 Swing/Apéndice - recursos del proyecto\|Apéndice - recursos del proyecto]]                                                                 | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
-| [[Programación_1DAM/Unidad 06 Swing/8. Ejemplo práctico\|8. Ejemplo práctico]]                                                                                           | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
-| [[Programación_1DAM/Unidad 06 Swing/Referencias\|Referencias]]                                                                                                           | Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad                      |
+| File                                                                                                                                                                          | Descripción                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Programación_1DAM/Unidad 06 Swing/1. AWT, Swing y JavaFX. ¿Qué es mejor?\|1. AWT, Swing y JavaFX. ¿Qué es mejor?]]                                                       | Comparativa entre las distintas librerías de interfaz gráfica en Java.                                                                                                |
+| [[Programación_1DAM/Unidad 06 Swing/2. Componentes de swing\|2. Componentes de swing]]                                                                                     | Estructura de clases de Swing.                                                                                                                                        |
+| [[Programación_1DAM/Unidad 06 Swing/3. Contenedores de Swing\|3. Contenedores de Swing]]                                                                                   | Los contenedores son los elementos que sirven para mostrar otros componentes. En ellos se incluirán botones, etiquetas, etc.                                          |
+| [[Programación_1DAM/Unidad 06 Swing/4. LayoutManager - Cómo distribuir los componentes en la ventana\|4. LayoutManager - Cómo distribuir los componentes en la ventana]]   | Los LayoutManager indican al contendor cómo debe distribuir los componentes que se le añaden.                                                                         |
+| [[Programación_1DAM/Unidad 06 Swing/5. Otros componentes de Swing\|5. Otros componentes de Swing]]                                                                         | Botones, etiquetas, radio buttons, etc.                                                                                                                               |
+| [[Programación_1DAM/Unidad 06 Swing/6. Eventos\|6. Eventos]]                                                                                                               | Podemos capturar lo que sucede en nuestras ventanas (se pulsa un botón, se escribe un texto, etc.) e indicarle a nuestra aplicación que haga algo.                    |
+| [[Programación_1DAM/Unidad 06 Swing/7. Patrón MVC (Modelo-Vista-Controlador)\|7. Patrón MVC (Modelo-Vista-Controlador)]]                                                   | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
+| [[Programación_1DAM/Unidad 06 Swing/8. Ejemplo práctico\|8. Ejemplo práctico]]                                                                                             | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
+| [[Programación_1DAM/Unidad 06 Swing/Apéndice - recursos del proyecto\|Apéndice - recursos del proyecto]]                                                                   | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
+| [[Programación_1DAM/Unidad 06 Swing/Referencias\|Referencias]]                                                                                                             | Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad                      |
+| [[Programación_1DAM/Unidad 06 Swing/Apéndice - Principios de diseño de interfaces gráficas de usuario\|Apéndice - Principios de diseño de interfaces gráficas de usuario]] | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
 
 { .block-language-dataview}
 

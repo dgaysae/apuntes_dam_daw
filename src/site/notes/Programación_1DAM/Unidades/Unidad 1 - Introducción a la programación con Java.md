@@ -3,6 +3,21 @@
 ---
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png\|150](/img/user/attach/by-nc-sa.png)
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
+
+</div></div>
+
+
+
 | File                                                                                                                    | Descripción                                                                                                                                                                                                                                                                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [[Programación_1DAM/Unidad 01/1. Introducción\|1. Introducción]]                                                     | Conceptos básicos como qué es un programa, un algoritmo, cómo se representa la información en un ordenador y los distintos distemas de numeración que se usan para ello.                                                                                                                                                                         |
