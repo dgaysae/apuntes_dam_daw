@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/programacion-1-dam/unidades/unidad-2-estructuras-de-control-calidad-del-software/","tags":["poo","java/estructuras_de_control"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libro Programación (1º DAM, 1º DAW)]]","descripcion":"Existen 3 estructuras de control heredadas de la programación estructurada: secuencial, iterativa y selectiva (condicional). Con ellas se puede realizar cualquier programa. También veremos distintas formas de probar nuestro código (alguna de ellas automática).","orden":2,"tags":["poo","java/estructuras_de_control"]}}
+{"dg-publish":true,"permalink":"/programacion-1-dam/unidades/unidad-2-estructuras-de-control-calidad-del-software/","tags":["poo","java/estructuras_de_control"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libro Programación (1º DAM, 1º DAW)]]","descripcion":"Existen 3 estructuras de control heredadas de la programación estructurada: secuencial, iterativa y selectiva (condicional). Con ellas se puede realizar cualquier programa. También veremos distintas formas de probar nuestro código (alguna de ellas automática).","orden":2,"tags":["poo","java/estructuras_de_control"],"estado":"revisar"}}
 ---
 
 
