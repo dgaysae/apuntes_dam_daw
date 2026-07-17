@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/programacion-1-dam/unidades/unidad-6-interfaz-grafica-de-usuario-gui-java-fx/","tags":["java/swing"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libro Programación (1º DAM, 1º DAW)]]","descripcion":"La mayoría de los usuarios necesitan una interfaz que les permita realizar tareas de forma visualmente fácil e intuitiva. Aquí entran en juego las GUI.","orden":7,"tags":["java/swing"]}}
+{"dg-publish":true,"permalink":"/programacion-1-dam/unidades/unidad-6-interfaz-grafica-de-usuario-gui-java-fx/","tags":["java/swing"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libro Programación (1º DAM, 1º DAW)]]","descripcion":"La mayoría de los usuarios necesitan una interfaz que les permita realizar tareas de forma visualmente fácil e intuitiva. Aquí entran en juego las GUI.","orden":7,"tags":["java/swing"],"estado":"revisar"}}
 ---
 
 
