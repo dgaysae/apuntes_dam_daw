@@ -71,6 +71,7 @@ Si te fijas en el algoritmo podrás comprobar que cumple todas las característi
 | [[1DAM_ED/Unidad 01/3. Algoritmos\|3. Algoritmos]]                                 | ...                                                                                                                                                                      |
 | [[1DAM_ED/Unidad 01/4. Lenguajes de programación\|4. Lenguajes de programación]]   | ...                                                                                                                                                                      |
 | [[1DAM_ED/Unidad 01/5. Paradigmas y lenguajes\|5. Paradigmas y lenguajes]]         | ...                                                                                                                                                                      |
+| [[1DAM_ED/Unidad 01/Referencias documentales\|Referencias documentales]]           | ...                                                                                                                                                                      |
 
 { .block-language-dataview}
 
