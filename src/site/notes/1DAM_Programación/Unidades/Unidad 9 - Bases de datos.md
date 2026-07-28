@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-9-bases-de-datos/","tags":["java/jdbc"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes Programación (1º DAM, 1º DAW)]]","descripcion":"Veremos cómo conectar nuestra aplicación a distintas bases de datos, como las relacionales.","orden":10,"tags":["java/jdbc"],"estado":"revisar"}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-9-bases-de-datos/","tags":["java/jdbc"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Programación (1º DAM, 1º DAW)]]","descripcion":"Veremos cómo conectar nuestra aplicación a distintas bases de datos, como las relacionales.","orden":10,"tags":["java/jdbc"],"estado":"revisar"}}
 ---
 
 
@@ -48,4 +48,4 @@ Este capítulo te permitirá construir aplicaciones más completas, capaces de a
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" data-href="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" href="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 8 - Flujos y ficheros</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Apuntes Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Apuntes Programación (1º DAM, 1º DAW).md" href="Apuntes/Apuntes Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Apuntes Programación (1º DAM, 1º DAW)</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" data-href="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" href="1DAM_Programación/Unidades/Unidad 8 - Flujos y ficheros.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 8 - Flujos y ficheros</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a></span></p>

@@ -5,8 +5,8 @@
 
 Este material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.
 
-| File                                                                                        | Descripción                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Apuntes/Apuntes Programación (1º DAM, 1º DAW)\|Apuntes Programación (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
+| File                                                                        | Descripción                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Apuntes/Programación (1º DAM, 1º DAW)\|Programación (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
 
 { .block-language-dataview}
