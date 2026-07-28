@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java."}}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.","estado":"revisar"}}
 ---
 
 
@@ -8,7 +8,7 @@
 
 ---
 
-## Sobre el ciclo de DAM
+## Sobre los **ciclos** de DAM / DAW
 
 Las tecnologías de la información y la comunicación se han impuesto como el mayor avance desde la revolución industrial. Y gracias a los dispositivos móviles, la disponibilidad para acceder a la información es prácticamente del 100% hoy en día (la mayor en la historia de la humanidad).
 
@@ -18,7 +18,7 @@ La relevancia de esta [disrupción](https://dle.rae.es/disrupci%C3%B3n) tecnoló
 
 Por eso es importante establecer una base de programación mediante la formación y desarrollo del **[pensamiento computacional](https://es.wikipedia.org/wiki/Pensamiento_computacional)** del alumnado ya que fomenta la creatividad, el razonamiento lógico y la resolución de problemas. Así se crean unos cimientos tecnológicos sólidos que facilitan la incorporación al mundo laboral y mejoran su capacidad de aprendizaje autónomo.
 
-Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la [[Normativa\|normativa vigente]] y enfocándose en las finalidades establecidas.
+Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la **[[Normativa\|normativa vigente]]** y enfocándose en las **[[Finalidades\|finalidades]]** establecidas para la FP a las que contribuye cada material.
 
 
 
@@ -26,20 +26,18 @@ Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la [[Normat
 
 Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que contempla los dos años de formación profesional. Eso no es correcto.
 
-> [!info] Módulo 
-> Un módulo hace referencia a una **_asignatura_** en FP.
+> [!info] Módulo de FP 
+> Un **módulo** hace referencia a una **_asignatura_** en FP.
 
-> [!info] Ciclo 
-> Se refiere al periodo de dos años de estudio en cualquiera de las familias de FP. Existen los <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr> y los <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como son los de **DAM**, **DAW** o **ASIR**, cuya consecución otorga el título de **_Técnico Superior_**.
+> [!info] Ciclo de FP
+> Se refiere al periodo de **dos años de estudio** en cualquiera de las familias de FP que otorgan el título de técnico. Existen los <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr> y los <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como son los de **DAM**, **DAW** o **ASIR**, cuya consecución otorga el título de **_Técnico Superior_**.
 
 ## Material
 
 En este sitio ponemos a la disposición de quien lo necesite el material que usamos en clase para los siguientes módulos:
 
-| File                                                                                   | Módulo                                    | Cursos                                                                      | Descripción                                                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Libros/Libro Programación (1º DAM, 1º DAW)\|Libro Programación (1º DAM, 1º DAW)]] | [[Módulos/Programación\|Programación]] | <ul><li>[[Cursos/1º DAM.md\\|1º DAM]]</li><li>[[1º DAW\\|1º DAW]]</li></ul> | Material de referencia para el móduloe de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
-| [[Libros/Libro PMDM (2º DAM)\|Libro PMDM (2º DAM)]]                                 | [[Módulos/PMDM\|PMDM]]                 | <ul><li>[[Cursos/2º DAM.md\\|2º DAM]]</li></ul>                             | Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.                                                                                                                                     |
+| File | Módulo | Cursos | Descripción |
+| ---- | ------ | ------ | ----------- |
 
 { .block-language-dataview}
 
