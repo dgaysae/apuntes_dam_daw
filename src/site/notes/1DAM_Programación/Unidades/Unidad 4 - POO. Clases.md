@@ -10,7 +10,7 @@
 
 > [!info]
 > &copy; Departamento de Informática del IES Celia Viñas
-> ![by-nc-sa.png\|150](/img/user/1DAM_Programaci%C3%B3n/attach/by-nc-sa.png)
+> ![by-nc-sa.png\|150](/img/user/adjuntos/by-nc-sa.png)
 > El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
 > Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
 

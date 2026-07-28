@@ -3,8 +3,13 @@
 ---
 
 
-| File | Descripción |
-| ---- | ----------- |
+| File                                                                                  | Descripción                                                                                                                                                              |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [[1DAM_ED/Unidad 01/1. Software y programas\|1. Software y programas]]             | Conceptos básicos como qué es un programa, un algoritmo, cómo se representa la información en un ordenador y los distintos distemas de numeración que se usan para ello. |
+| [[1DAM_ED/Unidad 01/2. Relación hardware-software\|2. Relación hardware-software]] | ...                                                                                                                                                                      |
+| [[1DAM_ED/Unidad 01/3. Algoritmos\|3. Algoritmos]]                                 | ...                                                                                                                                                                      |
+| [[1DAM_ED/Unidad 01/4. Lenguajes de programación\|4. Lenguajes de programación]]   | ...                                                                                                                                                                      |
+| [[1DAM_ED/Unidad 01/5. Paradigmas y lenguajes\|5. Paradigmas y lenguajes]]         | ...                                                                                                                                                                      |
 
 { .block-language-dataview}
 
