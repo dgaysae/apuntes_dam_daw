@@ -32,6 +32,12 @@ En este tema, nuestro interés se centra en conocer los entornos de desarrollo, 
 | [[1DAM_ED/Unidad 03/3. Configuración y personalización de entornos de desarrollo\|3. Configuración y personalización de entornos de desarrollo]]                       | ...         |
 | [[1DAM_ED/Unidad 03/4. Módulos, plugins y extensiones\|4. Módulos, plugins y extensiones]]                                                                             | ...         |
 | [[1DAM_ED/Unidad 03/5. Herramientas de construcción (Build Tools) y gestión de dependencias\|5. Herramientas de construcción (Build Tools) y gestión de dependencias]] | ...         |
+| [[1DAM_ED/Unidad 03/6. Depuración estándar en el IDE\|6. Depuración estándar en el IDE]]                                                                               | ...         |
+| [[1DAM_ED/Unidad 03/7. Refactorización\|7. Refactorización]]                                                                                                           | ...         |
+| [[1DAM_ED/Unidad 03/8. Depuración avanzada (debugging)\|8. Depuración avanzada (debugging)]]                                                                           | ...         |
+| [[1DAM_ED/Unidad 03/9. Otras herramientas\|9. Otras herramientas]]                                                                                                     | ...         |
+| [[1DAM_ED/Unidad 03/10. Referencias\|10. Referencias]]                                                                                                                 | ...         |
+| [[1DAM_ED/Unidad 03/11. Anexos\|11. Anexos]]                                                                                                                           | ...         |
 
 { .block-language-dataview}
 
