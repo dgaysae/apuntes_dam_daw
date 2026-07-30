@@ -3,6 +3,11 @@
 ---
 
 
+```table-of-contents
+```
+
+---
+
 * Tanenbaum, A. S. (2009). ***Sistemas Operativos Modernos*** (3ª ed.). Prentice Hall.
 
 * Vozmediano, A. (2017). ***Java para Novatos: Cómo Aprender Programación Orientada a Objetos con Java Sin Desesperarse en el Intento***. CreateSpace Independent Publishing Platform.

@@ -3,10 +3,35 @@
 ---
 
 
+Hasta ahora los entornos de desarrollo se centraban en gran medida en la contexto más inmediato para el desarrollador: el **<abbr title="Integrated Development Environment">IDE</abbr>**. Este software se compone de un conjunto de herramientas qule hace más productivo y fiable el proceso escribir código. En general, todos incluyen:
 
+* Editor de código de programación.
 
-| File | Descripción |
-| ---- | ----------- |
+* Compilador.
+
+* Intérprete.
+
+* Depurador.
+
+* Editor de interfaces gráficos.
+
+En la actualidad, el IDE no es más que una pieza más de una biosfera mucho más amplia, aunque muchas pueden encajarse en dicho IDE. Hablamos de gestores de control de versiones de código, testing, despliegue, etc.
+
+Veamos de qué va todo esto.
+
+Los primeros entornos de desarrollo integrados nacieron a principios de los años 70, y se popularizaron en la década de los 90. Tienen el objetivo de ganar fiabilidad y tiempo en los proyectos de software. Proporcionan al programador una serie de componentes con la misma interfaz gráfica, con la consiguiente comodidad, aumento de eficiencia y reducción de tiempo de codificación.
+
+Normalmente, un IDE está dedicado a un determinado lenguaje de programación. No obstante, las últimas versiones de los IDE tienden a ser compatibles con varios lenguajes (por ejemplo: Eclipse, NetBeans, Microsoft Visual Studio, etc.) mediante la instalación de plugins adicionales.
+
+En este tema, nuestro interés se centra en conocer los entornos de desarrollo, los tipos, en función de su licencia y del lenguaje de programación hacia el cual están enfocados.
+
+| File                                                                                                                                                                      | Descripción |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [[1DAM_ED/Unidad 03/1. El IDE\|1. El IDE]]                                                                                                                             | ...         |
+| [[1DAM_ED/Unidad 03/2. Estructura de un IDE\|2. Estructura de un IDE]]                                                                                                 | ...         |
+| [[1DAM_ED/Unidad 03/3. Configuración y personalización de entornos de desarrollo\|3. Configuración y personalización de entornos de desarrollo]]                       | ...         |
+| [[1DAM_ED/Unidad 03/4. Módulos, plugins y extensiones\|4. Módulos, plugins y extensiones]]                                                                             | ...         |
+| [[1DAM_ED/Unidad 03/5. Herramientas de construcción (Build Tools) y gestión de dependencias\|5. Herramientas de construcción (Build Tools) y gestión de dependencias]] | ...         |
 
 { .block-language-dataview}
 
