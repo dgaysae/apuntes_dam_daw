@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidad-05/referencias/","dg-note-properties":{"unidad":"[[Unidad 5 - Repositorios, documentación y refactorización]]","descripcion":"...","orden":2}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidad-05/referencias/","dg-note-properties":{"unidad":"[[Unidad 5 - Repositorios, documentación y refactorización]]","descripcion":"...","orden":5}}
 ---
 
 
@@ -73,4 +73,4 @@
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidad 05/1. Control de versiones - repositorios.md" data-href="1DAM_ED/Unidad 05/1. Control de versiones - repositorios.md" href="1DAM_ED/Unidad 05/1. Control de versiones - repositorios.md" class="internal-link" target="_blank" rel="noopener nofollow">1. Control de versiones - repositorios</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" data-href="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" href="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 5 - Repositorios, documentación y refactorización</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidad 05/3. Refactorización.md" data-href="1DAM_ED/Unidad 05/3. Refactorización.md" href="1DAM_ED/Unidad 05/3. Refactorización.md" class="internal-link" target="_blank" rel="noopener nofollow">3. Refactorización</a> ➡️</span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidad 05/4. Documentación.md" data-href="1DAM_ED/Unidad 05/4. Documentación.md" href="1DAM_ED/Unidad 05/4. Documentación.md" class="internal-link" target="_blank" rel="noopener nofollow">4. Documentación</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" data-href="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" href="1DAM_ED/Unidades/Unidad 5 - Repositorios, documentación y refactorización.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 5 - Repositorios, documentación y refactorización</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidad 05/Anexos.md" data-href="1DAM_ED/Unidad 05/Anexos.md" href="1DAM_ED/Unidad 05/Anexos.md" class="internal-link" target="_blank" rel="noopener nofollow">Anexos</a> ➡️</span></p>
