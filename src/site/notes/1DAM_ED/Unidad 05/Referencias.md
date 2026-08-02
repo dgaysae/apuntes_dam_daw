@@ -9,7 +9,6 @@
 
 ---
 
-
 ## Control de versiones
 
 * Soare, S., & Soare, S. (2025, 26 noviembre). **¿Por qué deberías usar un sistema de control de versiones si eres desarrollador?** Opentix: Consultora Informática Partner Platinum de Sage. [https://www.opentix.es/sistema-de-control-de-versiones/](https://www.opentix.es/sistema-de-control-de-versiones/)
