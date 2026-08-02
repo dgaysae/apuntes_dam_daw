@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/apuntes/programacion-1-dam-1-daw/","tags":["java"],"dg-note-properties":{"modulo":"[[Módulos/Programación|Programación]]","tipo":"[[Libros de texto]]","cursos":["[[1º DAM]]","[[1º DAW]]"],"descripcion":"Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.","orden":1,"tags":["java"]}}
+{"dg-publish":true,"permalink":"/apuntes/programacion-1-dam-1-daw/","tags":["java"],"dg-note-properties":{"modulo":"[[Módulos/Programación|Módulo Programación]]","tipo":"[[Libros de texto]]","cursos":["[[1º DAM]]","[[1º DAW]]"],"descripcion":"Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.","orden":1,"tags":["java"]}}
 ---
 
 
