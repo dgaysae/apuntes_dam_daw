@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-8-flujos-y-ficheros/","tags":["java/io"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Programación (1º DAM, 1º DAW)]]","descripcion":"Nuestro programa se aloja en la RAM mientras se ejecuta. Pero necesita obtener datos de fuentes externas a dicha memoria: un fichero, una base de datos, una conexión a Internet... Los flujos (streams) permiten abrir un canal que comunica nuestro programa ejecutándose en la RAM con esas fuentes.","orden":9,"tags":["java/io"],"estado":"revisar"}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-8-flujos-y-ficheros/","tags":["java/io"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes/Programación (1º DAM, 1º DAW)]]","descripcion":"Nuestro programa se aloja en la RAM mientras se ejecuta. Pero necesita obtener datos de fuentes externas a dicha memoria: un fichero, una base de datos, una conexión a Internet... Los flujos (streams) permiten abrir un canal que comunica nuestro programa ejecutándose en la RAM con esas fuentes.","orden":9,"tags":["java/io"],"estado":"revisar"}}
 ---
 
 

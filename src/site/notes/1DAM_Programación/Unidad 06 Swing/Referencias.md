@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-swing/referencias/","dg-note-properties":{"unidad":"[[Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":9}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-swing/referencias/","dg-note-properties":{"unidad":"[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":9}}
 ---
 
 

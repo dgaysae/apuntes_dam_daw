@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/modulos/programacion/","dg-note-properties":{"cursos":["[[1º DAM]]","[[1º DAW]]"],"codigo":"0485","duracion":256,"creditos_ects":14,"descripcion":"Este material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java."}}
+{"dg-publish":true,"permalink":"/modulos/programacion/","dg-note-properties":{"cursos":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"codigo":"0485","duracion":256,"creditos_ects":14,"descripcion":"Este material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java."}}
 ---
 
 Índice:

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidad-01/referencias-documentales/","dg-note-properties":{"unidad":"[[Unidad 1 - Lenguajes y algoritmos]]","descripcion":"...","orden":6}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidad-01/referencias-documentales/","dg-note-properties":{"unidad":"[[1DAM_ED/Unidades/Unidad 1 - Lenguajes y algoritmos]]","descripcion":"...","orden":6}}
 ---
 
 

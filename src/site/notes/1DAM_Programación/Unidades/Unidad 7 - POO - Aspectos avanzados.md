@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-7-poo-aspectos-avanzados/","tags":["java/io"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Programación (1º DAM, 1º DAW)]]","descripcion":"Vamos a dar un paso más en conceptos más avanzados de la POO.","orden":8,"tags":["java/io"],"estado":"revisar"}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-7-poo-aspectos-avanzados/","tags":["java/io"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes/Programación (1º DAM, 1º DAW)]]","descripcion":"Vamos a dar un paso más en conceptos más avanzados de la POO.","orden":8,"tags":["java/io"],"estado":"revisar"}}
 ---
 
 

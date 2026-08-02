@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-5-estructuras-de-almacenamiento/","tags":["java/estructuras_de_datos"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Programación (1º DAM, 1º DAW)]]","descripcion":"Hasta ahora hemos tratado cada dato de forma atómica: una variable que contiene un dato primitivo o apunta a un objeto en memoria. En esta unidad veremos cómo usar distintas estructuras para almacenar y organizar un conjunto de esos datos en un solo sitio.","orden":5,"tags":["java/estructuras_de_datos"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-5-estructuras-de-almacenamiento/","tags":["java/estructuras_de_datos"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes/Programación (1º DAM, 1º DAW)]]","descripcion":"Hasta ahora hemos tratado cada dato de forma atómica: una variable que contiene un dato primitivo o apunta a un objeto en memoria. En esta unidad veremos cómo usar distintas estructuras para almacenar y organizar un conjunto de esos datos en un solo sitio.","orden":5,"tags":["java/estructuras_de_datos"]}}
 ---
 
 

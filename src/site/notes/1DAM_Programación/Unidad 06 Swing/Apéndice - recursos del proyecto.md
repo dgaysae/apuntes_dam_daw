@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-swing/apendice-recursos-del-proyecto/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto.","orden":9,"tags":["java/swing","proyecto"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-swing/apendice-recursos-del-proyecto/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto.","orden":9,"tags":["java/swing","proyecto"]}}
 ---
 
 

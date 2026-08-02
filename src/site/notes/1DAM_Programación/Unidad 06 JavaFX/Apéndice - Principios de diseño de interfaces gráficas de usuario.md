@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","tags":["java/swing"],"dg-note-properties":{"unidad":["[[Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"Pongamos en práctica lo visto hasta ahora","orden":4,"tags":["java/swing"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","tags":["java/swing"],"dg-note-properties":{"unidad":["[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"Pongamos en práctica lo visto hasta ahora","orden":4,"tags":["java/swing"]}}
 ---
 
 

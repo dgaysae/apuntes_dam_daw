@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/modulos/modulo-0487-entornos-de-desarrollo/","dg-note-properties":{"cursos":["[[1º DAM]]","[[1º DAW]]"],"codigo":"0487","descripcion":"Aprenderemos los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software."}}
+{"dg-publish":true,"permalink":"/modulos/modulo-0487-entornos-de-desarrollo/","dg-note-properties":{"cursos":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"codigo":"0487","descripcion":"Aprenderemos los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software."}}
 ---
 
 

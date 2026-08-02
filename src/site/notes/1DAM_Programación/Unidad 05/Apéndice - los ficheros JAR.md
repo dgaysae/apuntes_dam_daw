@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-05/apendice-los-ficheros-jar/","tags":["java/jar"],"dg-note-properties":{"unidad":"[[Unidad 5 - Estructuras de almacenamiento]]","descripcion":"Un proyecto Java necesita muchos ficheros y configuraciones para funcionar. ¿Cómo nos llevamos todo eso de un equipo a otro? Con ficheros JAR.","orden":11,"tags":["java/jar"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-05/apendice-los-ficheros-jar/","tags":["java/jar"],"dg-note-properties":{"unidad":"[[1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento]]","descripcion":"Un proyecto Java necesita muchos ficheros y configuraciones para funcionar. ¿Cómo nos llevamos todo eso de un equipo a otro? Con ficheros JAR.","orden":11,"tags":["java/jar"]}}
 ---
 
 

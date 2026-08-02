@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-3-entornos-de-desarrollo/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulo 0487 - Entornos de desarrollo]]","libro":"[[Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":5,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-3-entornos-de-desarrollo/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/Módulo 0487 - Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":5,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
 ---
 
 

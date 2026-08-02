@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/finalidades-fp/programacion/","dg-note-properties":{"base":"[[Finalidades]]","descripcion":"Los objetos y competencias que este módulo ayuda a alcanzar. También se muestran los contenidos básicos, resultados de aprendizaje (y sus criterios de evaluación) y las orientaciones pedagógicas para este módulo.","modulo":"[[Módulos/Programación|Módulo Programación]]","curso":["[[1º DAM]]","[[1º DAW]]"],"estado":"revisar"}}
+{"dg-publish":true,"permalink":"/finalidades-fp/programacion/","dg-note-properties":{"base":"[[Finalidades]]","descripcion":"Los objetos y competencias que este módulo ayuda a alcanzar. También se muestran los contenidos básicos, resultados de aprendizaje (y sus criterios de evaluación) y las orientaciones pedagógicas para este módulo.","modulo":"[[Módulos/Programación|Módulo Programación]]","curso":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"estado":"revisar"}}
 ---
 
 

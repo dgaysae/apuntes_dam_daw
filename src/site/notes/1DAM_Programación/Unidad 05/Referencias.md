@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-05/referencias/","dg-note-properties":{"unidad":"[[Unidad 5 - Estructuras de almacenamiento]]","descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":12}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-05/referencias/","dg-note-properties":{"unidad":"[[1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento]]","descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":12}}
 ---
 
 

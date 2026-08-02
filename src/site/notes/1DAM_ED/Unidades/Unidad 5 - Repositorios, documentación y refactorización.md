@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulo 0487 - Entornos de desarrollo]]","libro":"[[Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":5,"tags":["junit"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulos/Módulo 0487 - Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":5,"tags":["junit"]}}
 ---
 
 

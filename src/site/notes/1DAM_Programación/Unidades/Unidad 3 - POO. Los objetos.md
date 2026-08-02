@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-3-poo-los-objetos/","tags":["poo","java"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":3,"tags":["poo","java"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-3-poo-los-objetos/","tags":["poo","java"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes/Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":3,"tags":["poo","java"]}}
 ---
 
 
