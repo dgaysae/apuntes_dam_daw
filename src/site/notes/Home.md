@@ -24,6 +24,28 @@ Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la **[[Norm
 
 ## Aclaraciones
 
+### Sobre este sitio
+
+La única intención de este sitio es proporcionar material de apoyo para distintos módulos de FP de Informática. Está destinado **tanto a profesores como a estudiantes**.
+
+Mucho de este material se ha redactado desde cero, pero también se han reorganizado, adaptado y ampliado materiales obtenidos de distintos profesores en distintos centros educativos.
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!warning] Advertencia
+> Este material se ha desarrollado a partir del aportado por distintos docentes en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
+> 
+> Si alguien detecta algún material (dibujo, texto, cita, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
+
+</div></div>
+
+
+
+### Sobre algunos términos
+
 Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que contempla los dos años de formación profesional. Eso no es correcto.
 
 > [!info] Módulo de FP 

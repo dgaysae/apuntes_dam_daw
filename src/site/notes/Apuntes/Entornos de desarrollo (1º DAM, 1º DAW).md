@@ -2,9 +2,19 @@
 {"dg-publish":true,"permalink":"/apuntes/entornos-de-desarrollo-1-dam-1-daw/","tags":["java","java/entornos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","tipo":"[[Libros de texto]]","cursos":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"descripcion":"Material de referencia para el módulo de Entornos de desarrollo. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.","orden":1,"tags":["java","java/entornos"]}}
 ---
 
-> [!wawrning] Advertencia
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!warning] Advertencia
 > Este material se ha desarrollado a partir del aportado por distintos docentes en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
-> Si alguien ve parte de su trabajo en este material, por favor, que [**contacte con nosotros**](https://forms.gle/tLt1FxSNP527KxEp8) lo antes posible para citarle o, si así lo prefiere, eliminar el fragmento de su obra que indique.
+> 
+> Si alguien detecta algún material (dibujo, texto, cita, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
+
+</div></div>
+
 
 Material de referencia para el módulo de Entornos de desarrollo. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.
 

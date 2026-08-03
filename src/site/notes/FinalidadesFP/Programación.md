@@ -176,7 +176,7 @@ Para la consecución de los objetivos indicados, debe llevarse a cabo un trabajo
 
 ### Resultados de aprendizaje y criterios de evaluación
 
-Los **Resultados de aprendizaje** (RA) pueden interpretarse como los objetivos a alcanzar para adquirir las [competencias](#competencias_prog) indicadas anteriormente. Para evaluar la consecución de cada uno de ellos se seguirán los correspondientes criterios de evaluación.
+Los **Resultados de aprendizaje** (RA) pueden interpretarse como los objetivos a alcanzar para adquirir las [[FinalidadesFP/Programación#Competencias profesionales, personales y sociales\|competencias]] indicadas anteriormente. Para evaluar la consecución de cada uno de ellos se seguirán los correspondientes criterios de evaluación.
 
 1. **Reconoce la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.**  
   
