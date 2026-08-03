@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/modulos/programacion/","dg-note-properties":{"cursos":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"codigo":"0485","duracion":256,"creditos_ects":14,"descripcion":"Este módulo se centra en el aprendizaje de los fundamentos de la programación y ahondando en la programación orientada a objetos, usando el lenguaje de programación Java. Se ven conceptos básicos sobre informática (codificación de información, sistemas de medida de lso datos, etc.)."}}
+{"dg-publish":true,"permalink":"/modulos/entornos-de-desarrollo/","dg-note-properties":{"cursos":["[[Ciclos/CursosDAM/1º DAM]]","[[Ciclos/CursosDAW/1º DAW]]"],"codigo":"0487","duracion":96,"creditos_ects":6,"descripcion":"Enfocado en los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software: conocimiento de IDE, refactorización de código, control de versiones (Git), documentación, etc."}}
 ---
 
 Índice:
@@ -12,11 +12,12 @@
 
 | | |
 | ---: | :--- |
-|Módulo profesional:|**Programación** |
-|Código: | **0485** |
-|Duración: | **256** |
-|Equivalencia en créditos ECTS: | **14** |
+|Módulo profesional:|**Entornos de desarrollo** |
+|Código: | **0487** |
+|Duración: | **96** |
+|Equivalencia en créditos ECTS: | **6** |
 |Cursos en los que se imparte: | **[[Ciclos/CursosDAM/1º DAM\|1º DAM]],[[Ciclos/CursosDAW/1º DAW\|1º DAW]]** |
+
 
 ---
 
@@ -33,7 +34,23 @@ En la siguiente tabla se pueden ver los CE con los que se evalúa cada bloque de
 
 |Resultado de aprendizaje (RA)|Criterios de evaluación (CE)|Contenidos básicos relacionados|
 |---|---|---|
-|**RA1.** Reconoce la **estructura de un programa** informático, identificando y relacionando los elementos propios del lenguaje utilizado.|a) Identificación de bloques estructurales.<br>b) Creación de proyectos.<br>c) Uso de entornos IDE.<br>d) Identificación de tipos de variables.<br>e) Creación y uso de variables.<br>f) Uso de constantes y literales.<br>g) Clasificación y uso de operadores.<br>h) Conversiones de tipo.<br>i) Introducción de comentarios.|**Identificación de los elementos de un programa informático:**<br>- Estructura y bloques fundamentales.<br>- Variables, constantes y literales.<br>- Tipos de datos (primitivos y otros).<br>- Operadores y expresiones.<br>- Conversiones de tipo.<br>- Comentarios.<br>- Manejo de IDE (Netbeans).|
+|**RA1.** Reconoce los elementos y herramientas que intervienen en el desarrollo de un programa informático, analizando sus características y las fases en las que actúan hasta llegar a su puesta en funcionamiento.
+
+|a) Se ha reconocido la relación de los programas con los componentes del sistema informático: memoria, procesador, periféricos, entre otros.<br>
+
+b) Se han identificado las fases de desarrollo de una aplicación informática.
+
+c) Se han diferenciado los conceptos de código fuente, objeto y ejecutable.
+
+d) Se han reconocido las características de la generación de código intermedio para su ejecución en máquinas virtuales.
+
+e) Se han clasificado los lenguajes de programación, identificando sus características.
+
+f) Se ha evaluado la funcionalidad ofrecida por las herramientas utilizadas en el desarrollo de software.
+
+g) Se han identificado las características y escenarios de uso de las metodologías ágiles de desarrollo de software.
+
+|**Identificación de los elementos de un programa informático:**<br>- Estructura y bloques fundamentales.<br>- Variables, constantes y literales.<br>- Tipos de datos (primitivos y otros).<br>- Operadores y expresiones.<br>- Conversiones de tipo.<br>- Comentarios.<br>- Manejo de IDE (Netbeans).|
 |**RA2.** Escribe y prueba **programas sencillos**, reconociendo y aplicando los fundamentos de la **POO**.|a) Identificación de fundamentos POO.<br>b) Escritura de programas simples.<br>c) Instanciación de objetos de clases predefinidas.<br>d) Uso de métodos y propiedades.<br>e) Llamadas a métodos estáticos.<br>f) Uso de parámetros en métodos.<br>g) Incorporación de librerías de objetos.<br>h) Utilización de constructores.<br>i) Uso del IDE para compilar programas simples.|**Utilización de objetos:**<br>- Características e instanciación de objetos.<br>- Utilización de métodos y parámetros.<br>- Propiedades de los objetos.<br>- Métodos estáticos.<br>- Constructores y herencia básica.<br>- Destrucción de objetos y liberación de memoria.|
 |**RA3.** Escribe y depura código, analizando y utilizando las **estructuras de control** del lenguaje.|a) Uso de estructuras de selección.<br>b) Uso de estructuras de repetición.<br>c) Reconocimiento de sentencias de salto.<br>d) Control de excepciones.<br>e) Creación de programas ejecutables.<br>f) Prueba y depuración de programas.<br>g) Comentado y documentación del código.<br>h) Creación de excepciones.<br>i) Uso de aserciones para errores.|**Uso de estructuras de control:**<br>- Estructuras de selección, repetición y salto.<br>- Control de excepciones y aserciones.<br>- Prueba, depuración y documentación de la aplicación.|
 |**RA4.** Desarrolla **programas organizados en clases** aplicando los principios de la programación orientada a objetos.|a) Sintaxis, estructura y componentes de una clase.<br>b) Definición de clases.<br>c) Definición de propiedades y métodos.<br>d) Creación de constructores.<br>e) Instanciación y uso de objetos de clases propias.<br>f) Control de visibilidad de miembros.<br>g) Definición y uso de clases heredadas.<br>h) Creación de métodos estáticos.<br>i) Creación de librerías de clases.|**Desarrollo de clases:**<br>- Concepto, estructura y miembros de una clase.<br>- Visibilidad y encapsulamiento.<br>- Propiedades, métodos y constructores.<br>- Utilización de clases y objetos heredados.|
@@ -43,16 +60,16 @@ En la siguiente tabla se pueden ver los CE con los que se evalúa cada bloque de
 |**RA8.** Utiliza **bases de datos orientadas a objetos**, aplicando técnicas para la persistencia de información.|a) Características de las BDOO.<br>b) Aplicación en lenguajes orientados a objetos.<br>c) Instalación de gestores de BDOO.<br>d) Métodos de gestión de información almacenada.<br>e) Creación de estructuras para almacenamiento de objetos.<br>f) Programación de almacenamiento de objetos.<br>g) Recuperación, actualización y borrado de objetos.<br>h) Gestión de datos estructurados y compuestos.|**Mantenimiento de la persistencia de los objetos:**<br>- Características e instalación de gestores BDOO.<br>- Creación de bases de datos y estructuras de objetos.<br>- Mecanismos de consulta (lenguajes, sintaxis, operadores).<br>- Recuperación, modificación y borrado de información.|
 |**RA9.** Gestiona información almacenada en **bases de datos relacionales** manteniendo integridad y consistencia.|a) Métodos de acceso a sistemas gestores (SGBD).<br>b) Programación de conexiones.<br>c) Escritura de código para almacenamiento.<br>d) Recuperación y visualización de información.<br>e) Borrados y modificaciones.<br>f) Aplicaciones para mostrar información de BD.<br>g) Aplicaciones para la gestión de información relacional.|**Gestión de bases de datos relacionales:**<br>- Acceso a bases de datos y estándares.<br>- Establecimiento de conexiones.<br>- Operaciones CRUD (almacenamiento, recuperación, actualización y eliminación).|
 
-Este desglose permite observar la progresión a lo largo del módulo, desde los elementos sintácticos básicos (RA1) hasta la gestión avanzada de la persistencia en bases de datos (RA8 y RA9), pasando por el núcleo de la programación orientada a objetos (RA2, RA4 y RA7).
+
 
 ---
 
 # Material de apoyo
 
-Este módulo se centra en el aprendizaje de los fundamentos de la programación y ahondando en la programación orientada a objetos, usando el lenguaje de programación Java. Se ven conceptos básicos sobre informática (codificación de información, sistemas de medida de lso datos, etc.).
+Enfocado en los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software: conocimiento de IDE, refactorización de código, control de versiones (Git), documentación, etc.
 
-| File                                                                        | Descripción                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Apuntes/Programación (1º DAM, 1º DAW)\|Programación (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
+| File                                                                                            | Descripción                                                                                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)\|Entornos de desarrollo (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Entornos de desarrollo. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
 
 { .block-language-dataview}
