@@ -3,13 +3,13 @@
 ---
 
 
-* Aula en la nube. (2023q, septiembre 7). _Introducción a JAVA FX ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HOr5djeytsA
-* Aula en la nube. (2023r, septiembre 9). _JAVA FX: **HolaMundo** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=oxqKvOvTn6c
-* Aula en la nube. (2023s, septiembre 10). _JAVA FX: **Clase Node** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3pRevR7Pml4
-* Aula en la nube. (2023t, septiembre 11). _JAVA FX: **Layouts** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZqFSvySxVBM
-* Aula en la nube. (2023u, septiembre 12). _JAVA FX: **Bindings y propiedades** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ESLDAQ-CC4M
-* Aula en la nube. (2023v, septiembre 15). _JAVA FX: **Eventos** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dUbNtI4bQZo
-* Aula en la nube. (2023w, septiembre 18). _JAVA FX: **Uso de CSS** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8Rv4SHZ-9xM
+* 🎦 Aula en la nube. (2023q, septiembre 7). _Introducción a JAVA FX ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HOr5djeytsA
+* 🎦 Aula en la nube. (2023r, septiembre 9). _JAVA FX: **HolaMundo** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=oxqKvOvTn6c
+* 🎦 Aula en la nube. (2023s, septiembre 10). _JAVA FX: **Clase Node** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3pRevR7Pml4
+* 🎦 Aula en la nube. (2023t, septiembre 11). _JAVA FX: **Layouts** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZqFSvySxVBM
+* 🎦 Aula en la nube. (2023u, septiembre 12). _JAVA FX: **Bindings y propiedades** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ESLDAQ-CC4M
+* 🎦 Aula en la nube. (2023v, septiembre 15). _JAVA FX: **Eventos** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dUbNtI4bQZo
+* 🎦 Aula en la nube. (2023w, septiembre 18). _JAVA FX: **Uso de CSS** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8Rv4SHZ-9xM
 
 ---
 
