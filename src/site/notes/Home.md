@@ -8,7 +8,7 @@
 
 ---
 
-## Sobre los **ciclos** de DAM / DAW
+## Sobre los ciclos de DAM / DAW
 
 Las tecnologías de la información y la comunicación se han impuesto como el mayor avance desde la revolución industrial. Y gracias a los dispositivos móviles, la disponibilidad para acceder a la información es prácticamente del 100% hoy en día (la mayor en la historia de la humanidad).
 

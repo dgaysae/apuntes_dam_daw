@@ -45,6 +45,39 @@ En la siguiente tabla se pueden ver los CE con los que se evalúa cada bloque de
 
 Este desglose permite observar la progresión a lo largo del módulo, desde los elementos sintácticos básicos (RA1) hasta la gestión avanzada de la persistencia en bases de datos (RA8 y RA9), pasando por el núcleo de la programación orientada a objetos (RA2, RA4 y RA7).
 
+
+---
+
+# Orientaciones pedagógicas
+
+Este módulo profesional contiene parte de la formación necesaria para desempeñar la función de programación de aplicaciones de propósito general en lenguajes orientados a objetos.
+
+La función de programación de aplicaciones de propósito general en lenguajes orientados a objetos incluye aspectos como:
+
+- El desarrollo de programas organizados en clases aplicando los principios de la programación orientada a objetos.
+
+- La utilización de interfaces para la interacción de la aplicación con el usuario.
+
+- La identificación, análisis e integración de librerías para incorporar funcionalidades específicas a los programas desarrollados.
+
+- El almacenamiento y recuperación de información en sistemas gestores de bases de datos.
+
+Las actividades profesionales asociadas a esta función se aplican en el **desarrollo y la adaptación de programas** informáticos de propósito general en lenguajes orientados a objetos.
+
+La formación del módulo **contribuye a alcanzar los objetivos generales f), g), j) y q) del ciclo** formativo y las **competencias profesionales, personales y sociales e), f), y j) del título**.
+
+Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten alcanzar los objetivos del módulo versarán sobre:
+
+- La interpretación y aplicación de los principios de la programación orientada a objetos.
+
+- La evaluación, selección y utilización de herramientas y lenguajes de programación orientados a objetos.
+
+- La utilización de las características específicas de lenguajes y entornos de programación en el desarrollo de aplicaciones informáticas.
+
+- La identificación de las funcionalidades aportadas por los sistemas gestores de bases de datos y su incorporación a las aplicaciones desarrolladas.
+
+- La prueba, depuración y documentación de las aplicaciones desarrolladas.
+
 ---
 
 # Material de apoyo
