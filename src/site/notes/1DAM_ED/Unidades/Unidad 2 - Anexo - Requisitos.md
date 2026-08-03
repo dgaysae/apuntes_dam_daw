@@ -13,9 +13,11 @@ Ya sabemos qué son los requisitos, para qué sirven y en qué parte del ciclo d
 * Los **no funcionales**.
 
 
-| File                                                                                                                   | Descripción |
-| ---------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [[1DAM_ED/Unidad 02 - Requisitos/Requisitos funcionales y no funcionales\|Requisitos funcionales y no funcionales]] | ...         |
+| File                                                                                             | Descripción |
+| ------------------------------------------------------------------------------------------------ | ----------- |
+| [[1DAM_ED/Unidad 02 - Requisitos/1. Requisitos funcionales\|1. Requisitos funcionales]]       | ...         |
+| [[1DAM_ED/Unidad 02 - Requisitos/2. Requisitos no funcionales\|2. Requisitos no funcionales]] | ...         |
+| [[1DAM_ED/Unidad 02 - Requisitos/Referencias\|Referencias]]                                   | ...         |
 
 { .block-language-dataview}
 

@@ -10,7 +10,7 @@ views:
     name: Tabla
     filters:
       and:
-        - file.folder == "Programación_1DAM/Referencias/Unidad 6"
+        - file.folder == "1DAM_Programación/Referencias/Unidad 6"
         - unidad == link("Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing")
     groupBy:
       property: file.tags

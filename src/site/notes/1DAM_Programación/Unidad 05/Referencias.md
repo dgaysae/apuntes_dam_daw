@@ -10,14 +10,14 @@ views:
     name: Tabla
     filters:
       and:
-        - file.folder == "Programación_1DAM/Referencias/Unidad 5"
-        - unidad == link("Unidad 5 - Estructuras de almacenamiento")
+        - file.folder == "1DAM_Programación/Referencias/Unidad 5"
     groupBy:
-      property: file.tags
+      property: tags
       direction: ASC
     order:
       - file.name
       - autor
+    sort: []
 
 ```
 
