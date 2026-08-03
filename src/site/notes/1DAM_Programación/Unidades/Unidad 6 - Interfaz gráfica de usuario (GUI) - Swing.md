@@ -41,6 +41,7 @@ Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder
 | [[1DAM_Programación/Unidad 06 Swing/Apéndice - recursos del proyecto\|Apéndice - recursos del proyecto]]                                                                   | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
 | [[1DAM_Programación/Unidad 06 Swing/Referencias\|Referencias]]                                                                                                             | Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad                      |
 | [[1DAM_Programación/Unidad 06 Swing/Apéndice - Principios de diseño de interfaces gráficas de usuario\|Apéndice - Principios de diseño de interfaces gráficas de usuario]] | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
+| [[1DAM_Programación/Unidad 06 Swing/Referencias internas\|Referencias internas]]                                                                                           | Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad                      |
 
 { .block-language-dataview}
 

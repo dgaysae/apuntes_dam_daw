@@ -3,27 +3,14 @@
 ---
 
 
-
-```base
-views:
-  - type: cards
-    name: Tabla
-    filters:
-      and:
-        - file.folder == "1DAM_Programación/Referencias/Unidad 6"
-        - unidad == link("Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing")
-    groupBy:
-      property: file.tags
-      direction: ASC
-    order:
-      - file.name
-      - autor
-
+```table-of-contents
 ```
+
+---
 
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" data-href="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" href="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" class="internal-link" target="_blank" rel="noopener nofollow">Apéndice - recursos del proyecto</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" data-href="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" href="1DAM_Programación/Unidad 06 Apéndice - Recursos proyecto/Apéndice - recursos del proyecto.md" class="internal-link" target="_blank" rel="noopener nofollow">Apéndice - recursos del proyecto</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidad 06 Swing/Referencias internas.md" data-href="1DAM_Programación/Unidad 06 Swing/Referencias internas.md" href="1DAM_Programación/Unidad 06 Swing/Referencias internas.md" class="internal-link" target="_blank" rel="noopener nofollow">Referencias internas</a> ➡️</span></p>
 
 
