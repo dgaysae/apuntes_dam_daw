@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-java-fx/referencias/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"referencias documentales de apoyo al material dado.","orden":4,"tags":["java/swing","proyecto"]}}
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidad-06-java-fx/referencias/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing]]","[[1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX]]"],"descripcion":"referencias documentales de apoyo al material dado.","orden":13,"tags":["java/swing","proyecto"]}}
 ---
 
 
