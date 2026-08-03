@@ -34,6 +34,7 @@ Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder
 | [[1DAM_Programación/Unidad 06 JavaFX/2. JavaFX\|2. JavaFX]]                                                                                                                 | Comparativa entre las distintas librerías de interfaz gráfica en Java.                                                                                                |
 | [[1DAM_Programación/Unidad 06 JavaFX/Apéndice - recursos del proyecto\|Apéndice - recursos del proyecto]]                                                                   | En lugar de incluir todo el código (componentes y eventos) en un fichero, podemos separarlos en distintos objetos de forma que cada uno se ocupa de algo en concreto. |
 | [[1DAM_Programación/Unidad 06 JavaFX/Apéndice - Principios de diseño de interfaces gráficas de usuario\|Apéndice - Principios de diseño de interfaces gráficas de usuario]] | Pongamos en práctica lo visto hasta ahora                                                                                                                             |
+| [[1DAM_Programación/Unidad 06 JavaFX/Referencias\|Referencias]]                                                                                                             | referencias documentales de apoyo al material dado.                                                                                                                   |
 
 { .block-language-dataview}
 ---
