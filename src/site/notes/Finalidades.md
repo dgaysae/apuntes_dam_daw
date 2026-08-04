@@ -17,3 +17,5 @@ A continuación se puede consultar en qué ayuda cada módulo a alcanzar cada un
 | [[FinalidadesFP/Programación\|Programación]] | [[Módulos/Programación\|Módulo Programación]] | <ul><li>[[Ciclos/CursosDAM/1º DAM.md\\|1º DAM]]</li><li>[[Ciclos/CursosDAW/1º DAW.md\\|1º DAW]]</li></ul> | Los objetos y competencias que este módulo ayuda a alcanzar. También se muestran los contenidos básicos, resultados de aprendizaje (y sus criterios de evaluación) y las orientaciones pedagógicas para este módulo. |
 
 { .block-language-dataview}
+
+[[Home\|Volver al inicio 🏡]]
