@@ -14,7 +14,7 @@
 | ---: | :--- |
 |Módulo profesional:|**Entornos de desarrollo** |
 |Código: | **0487** |
-|Duración: | **96** |
+|Duración: | **96** horas |
 |Equivalencia en créditos ECTS: | **6** |
 |Cursos en los que se imparte: | **[[Ciclos/CursosDAM/1º DAM\|1º DAM]],[[Ciclos/CursosDAW/1º DAW\|1º DAW]]** |
 

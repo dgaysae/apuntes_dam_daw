@@ -14,7 +14,7 @@
 | ---: | :--- |
 |Módulo profesional:|**Programación** |
 |Código: | **0485** |
-|Duración: | **256** |
+|Duración: | **256** horas |
 |Equivalencia en créditos ECTS: | **14** |
 |Cursos en los que se imparte: | **[[Ciclos/CursosDAM/1º DAM\|1º DAM]],[[Ciclos/CursosDAW/1º DAW\|1º DAW]]** |
 
