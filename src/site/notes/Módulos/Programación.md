@@ -153,6 +153,8 @@ Este módulo se centra en el aprendizaje de los fundamentos de la programación 
 
 ## Normativa
 
+- - BOE-A-2023-13221 **_Real Decreto 405/2023, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y Técnico Superior en Desarrollo de Aplicaciones Web, de la familia profesional Informática y Comunicaciones, y se fijan sus enseñanzas mínimas._** (2023, 29 mayo). https://www.boe.es/eli/es/rd/2023/05/29/405
+
 - Consejería de Desarrollo Educativo y Formación Profesional - **_Técnico Superior en Desarrollo de Aplicaciones Multiplataforma_** (s. f.). https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/por-titulacion/fp-grado-superior/detalle-titulo?idTitulo=51
 
 - Consejería de Desarrollo Educativo y Formación Profesional - **_Orden de 16 de junio de 2011_** (s. f.). https://www.juntadeandalucia.es/boja/2011/142/20
