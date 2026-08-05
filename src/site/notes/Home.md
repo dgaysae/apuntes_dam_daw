@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de los ciclos registrados en nuestra web.","estado":"revisar"}}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de las enseñanzas registradas en nuestra web.","estado":"revisar"}}
 ---
 
 
@@ -8,15 +8,15 @@
 
 ---
 
-## Sobre esta web
+# Sobre esta web
 
-¡Hola! 👋 Soy Diego G. S., profesor de secundaria en el sistema educativo público. Actualmente imparto clases en el [**IES Celia Viñas**](https://iescelia.org/) en Almería (Andalucía - España).
+¡Hola! 👋 Soy Diego G. S., profesor de secundaria en el sistema educativo público andaluz. Actualmente imparto clases en el [**IES Celia Viñas**](https://iescelia.org/) en Almería (Andalucía - España).
 
-Tras varios años de trabajo, y aprendiendo mucho de otros compañeros, he ido desarrollando materiales propios (algunos modificados o replanteados a partir del de otros compañeros). Como profesor de enseñanza pública, creo que es nuestro deber **poner al alcance de nuestro alumnado toda la ayuda posible** para que puedan cursar sus estudios. Por supuesto, esto se hace extensible a otros compañeros, sobre todo a quienes comienzan y se enfrentan desde un principio a un aula, sin material, sin experiencia y sin salvavidas al que agarrarse.
+Tras varios años de trabajo, y aprendiendo mucho de otros compañeros, he ido desarrollando materiales propios (muchos modificados o replanteados a partir del de otros compañeros). Como profesor de enseñanza pública, creo que es nuestro deber **poner al alcance de nuestro alumnado toda la ayuda posible** para que puedan cursar sus estudios. Por supuesto, esto se hace **extensible a otros profesores**, sobre todo a quienes comienzan y se enfrentan desde un principio a un aula, sin material, sin experiencia y sin salvavidas al que agarrarse.
 
-Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de los ciclos registrados en nuestra web.
+Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de las enseñanzas registradas en nuestra web.
 
-### Herramientas
+## Herramientas
 
 Para redactar el contenido y los materiales de esta web he usado [**Obsidian**](https://obsidian.md/) como gestor de notas y para convertirlo en web he usado el complemento **Digital Garden** que mediante el framework [**Eleventi (11ty)**](https://www.11ty.dev/) transforma las notas en webs estáticas. El despliegue en la web es a través de [**Vercel**](https://vercel.com/).
 
@@ -28,7 +28,7 @@ También se incrustan vídeos de Youtube y materiales de terceros, todos ellos c
 
 
 
-## Aclaraciones
+# Aclaraciones
 
 La única intención de este sitio es proporcionar material de apoyo para distintos módulos de FP de Informática. Está destinado **tanto a profesores como a estudiantes**.
 
@@ -45,7 +45,7 @@ La única intención de este sitio es proporcionar material de apoyo para distin
 </div></div>
 
 
-## Ciclos
+# Ciclos
 
 Hemos recogido 
 
@@ -57,7 +57,7 @@ Hemos recogido
 { .block-language-dataview}
 
 
-## Material
+# Material
 
 En este sitio ponemos a la disposición de quien lo necesite el material que usamos en clase para los siguientes módulos:
 
@@ -69,7 +69,7 @@ En este sitio ponemos a la disposición de quien lo necesite el material que usa
 
 { .block-language-dataview}
 
-## Contacto
+# Contacto
 
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
