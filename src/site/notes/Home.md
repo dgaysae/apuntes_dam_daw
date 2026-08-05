@@ -20,7 +20,7 @@ Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y 
 
 Para redactar el contenido y los materiales de esta web he usado [**Obsidian**](https://obsidian.md/) como gestor de notas y para convertirlo en web he usado el complemento **Digital Garden** que mediante el framework [**Eleventi (11ty)**](https://www.11ty.dev/) transforma las notas en webs estáticas. El despliegue en la web es a través de [**Vercel**](https://vercel.com/).
 
-Dentro de cada página hay imágenes que he creado con [**Google Drawing**](https://docs.google.com/drawings/) o presentaciones con [**Google Presentation**](https://docs.google.com/presentation/).
+Dentro de cada página hay imágenes que he creado con [**Google Drawing**](https://docs.google.com/drawings/) y presentaciones con [**Google Presentation**](https://docs.google.com/presentation/).
 
 También se incrustan vídeos de Youtube y materiales de terceros, todos ellos citados con el formato APA.
 
@@ -43,7 +43,7 @@ La única intención de este sitio es proporcionar material de apoyo para distin
 
 # Ciclos
 
-A continuación se enumeran 
+A continuación se enumeran los ciclos en los que se han hecho aportaciones, tanto para <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como para <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr>.
 
 | File                   | Ciclo             | Descripción                                                                                                                     |
 | ---------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
