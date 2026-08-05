@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-2-ingenieria-del-software/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":2,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-2-ingenieria-del-software/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"El desarrollo de software como proceso de ingeniería. Veremos el ciclo de vida de un proyecto y en qué consiste cada una de sus fases. También se verán temas como las nuevas metodologías ágiles aplicadas al desarrollo de sw.","orden":2,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
 ---
 
 

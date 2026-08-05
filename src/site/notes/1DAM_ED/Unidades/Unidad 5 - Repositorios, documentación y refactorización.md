@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"...","orden":5,"tags":["junit"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"¿Qué otras herramientas orbitan alrededor del desarrollo de software? Además del IDE existen otras herramientas que nos ayudan a gestionar los cambios a lo largo de desarrollo (control de versiones), replantear nuestro código (refactorización) y documentarlo.","orden":7,"tags":["junit"]}}
 ---
 
 
@@ -33,4 +33,4 @@ Los contenidos de esta unidad son el puente entre "saber programar" y "**saber t
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidades/Unidad 2 - Anexo - Diagramas DFD.md" data-href="1DAM_ED/Unidades/Unidad 2 - Anexo - Diagramas DFD.md" href="1DAM_ED/Unidades/Unidad 2 - Anexo - Diagramas DFD.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 2 - Anexo - Diagramas DFD</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" data-href="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" href="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Entornos de desarrollo (1º DAM, 1º DAW)</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_ED/Unidades/Unidad 4 - Pruebas, optimización y documentación.md" data-href="1DAM_ED/Unidades/Unidad 4 - Pruebas, optimización y documentación.md" href="1DAM_ED/Unidades/Unidad 4 - Pruebas, optimización y documentación.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 4 - Pruebas, optimización y documentación</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" data-href="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" href="Apuntes/Entornos de desarrollo (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Entornos de desarrollo (1º DAM, 1º DAW)</a></span></p>
