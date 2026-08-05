@@ -39,10 +39,8 @@ Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que cont
 
 La normativa educativa vigente que regula las enseñanzas para estos ciclos es la **[Orden de 16 de junio de 2011](https://www.juntadeandalucia.es/boja/2011/142/20)**, por la que se desarrolla el currículo correspondiente al título de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma en la **Comunidad Autónoma Andaluza**.
 
-Esta Orden atiende a lo que se establece a nivel nacional en el **[Real Decreto 405/2023, de 29 de mayo](https://www.boe.es/eli/es/rd/2023/05/29/405)**, por el que se actualizan los títulos de la formación profesional del sistema educativo para:
+Esta Orden atiende a lo que se establece a nivel nacional en el **[Real Decreto 450/2010, de 16 de abril](https://www.boe.es/eli/es/rd/2010/04/16/450)**, por el que se establece el título de **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma** y se fijan sus enseñanzas mínimas y modificado por el **[Real Decreto 405/2023, de 29 de mayo](https://www.boe.es/eli/es/rd/2023/05/29/405)**, por el que **se actualizan los títulos** de la formación profesional del sistema educativo de **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma** y **Técnico Superior en Desarrollo de Aplicaciones Web**.
 
-* El **[Real Decreto 450/2010, de 16 de abril](https://www.boe.es/eli/es/rd/2010/04/16/450)**, por el que se establece el título de **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma** y se fijan sus enseñanzas mínimas.
-* El **[Real Decreto 686/2010, de 20 de mayo](https://www.boe.es/eli/es/rd/2010/05/20/686)**, por el que se establece el título de **Técnico Superior en Desarrollo de Aplicaciones Web** y se fijan sus enseñanzas mínimas.
 
 </div></div>
 
