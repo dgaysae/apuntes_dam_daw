@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende material sirve de ayuda, apoyo y referencia al alumnado del primer curso de los CFGS de DAM y DAW. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.","estado":"revisar"}}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"descripcion":"Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de los ciclos registrados en nuestra web.","estado":"revisar"}}
 ---
 
 
@@ -8,27 +8,29 @@
 
 ---
 
-## Sobre los ciclos de DAM / DAW
+## Sobre esta web
 
-Las tecnologías de la información y la comunicación se han impuesto como el mayor avance desde la revolución industrial. Y gracias a los dispositivos móviles, la disponibilidad para acceder a la información es prácticamente del 100% hoy en día (la mayor en la historia de la humanidad).
+¡Hola! 👋 Soy Diego G. S., profesor de secundaria en el sistema educativo público. Actualmente imparto clases en el [**IES Celia Viñas**](https://iescelia.org/) en Almería (Andalucía - España).
 
-Además, proporciona una plataforma de trabajo cooperativo e interacción social que ha traspasado las fronteras geográficas. Gracias a Internet se dispone de ingentes cantidades de información a través de medios muy variados (correo, chat, podcast, videoconferencias, redes sociales, etc.) abriendo un amplio abanico de posibilidades para el aprendizaje, el trabajo, la cultura, la investigación e incluso la influencia social y política. Todo ello se debe a la deslocalización, que permite a las personas la conexión desde cualquier parte y en cualquier momento.
+Tras varios años de trabajo, y aprendiendo mucho de otros compañeros, he ido desarrollando materiales propios (algunos modificados o replanteados a partir del de otros compañeros). Como profesor de enseñanza pública, creo que es nuestro deber **poner al alcance de nuestro alumnado toda la ayuda posible** para que puedan cursar sus estudios. Por supuesto, esto se hace extensible a otros compañeros, sobre todo a quienes comienzan y se enfrentan desde un principio a un aula, sin material, sin experiencia y sin salvavidas al que agarrarse.
 
-La relevancia de esta [disrupción](https://dle.rae.es/disrupci%C3%B3n) tecnológica en la sociedad se aprecia, sobre todo, en la economía y el comportamiento social. Las empresas con más capital en el mercado son las tecnológicas (Microsoft, Apple, Amazon, Facebook, etc.) o las financieras, que apoyan sus activos y estrategias en la tecnología para ofrecer a los clientes el control de sus productos de forma telemática.
+Este sitio pretende ofrecer información y material que sirva de ayuda, apoyo y referencia tanto a estudiantes como a profesores de los ciclos registrados en nuestra web.
 
-Por eso es importante establecer una base de programación mediante la formación y desarrollo del **[pensamiento computacional](https://es.wikipedia.org/wiki/Pensamiento_computacional)** del alumnado ya que fomenta la creatividad, el razonamiento lógico y la resolución de problemas. Así se crean unos cimientos tecnológicos sólidos que facilitan la incorporación al mundo laboral y mejoran su capacidad de aprendizaje autónomo.
+### Herramientas
 
-Por supuesto, estos contenidos se hace de acuerdo a lo estipulado en la **[[Normativa\|normativa vigente]]** y enfocándose en las **[[Finalidades\|finalidades]]** establecidas para la FP a las que contribuye cada material.
+Para redactar el contenido y los materiales de esta web he usado [**Obsidian**](https://obsidian.md/) como gestor de notas y para convertirlo en web he usado el complemento **Digital Garden** que mediante el framework [**Eleventi (11ty)**](https://www.11ty.dev/) transforma las notas en webs estáticas. El despliegue en la web es a través de [**Vercel**](https://vercel.com/).
+
+Dentro de cada página hay imágenes que he creado con [**Google Drawing**](https://docs.google.com/drawings/), presentaciones con [**Google Presentation**](https://docs.google.com/presentation/).
+
+También se incrustan vídeos de Youtube y materiales de terceros, todos ellos citados con el formato APA.
+
+
 
 
 
 ## Aclaraciones
 
-### Sobre este sitio
-
 La única intención de este sitio es proporcionar material de apoyo para distintos módulos de FP de Informática. Está destinado **tanto a profesores como a estudiantes**.
-
-Mucho de este material se ha redactado desde cero, pero también se han reorganizado, adaptado y ampliado materiales obtenidos de distintos profesores en distintos centros educativos.
 
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -36,23 +38,24 @@ Mucho de este material se ha redactado desde cero, pero también se han reorgani
 
 
 > [!warning] Advertencia
-> Este material se ha desarrollado a partir del aportado por distintos docentes en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
+> Mucho de este material se ha redactado desde cero, pero también se ha reorganizado, actalizado, adaptado y ampliado material obtenido a lo largo de los años de distintos profesores en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
 > 
-> Si alguien detecta algún material (dibujo, texto, cita, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
+> Si alguien detecta algún material (dibujo, texto, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
 
 </div></div>
 
 
+## Ciclos
 
-### Sobre algunos términos
+Hemos recogido 
 
-Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que contempla los dos años de formación profesional. Eso no es correcto.
+| File                   | Ciclo             | Descripción                                                                                                                     |
+| ---------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [[Ciclos/DAM\|DAM]] | [[CFGS\|CFGS]] | Este ciclo de grado superior está enfocado al desarrollo de software en distintas plataformas (escritorio, móvil o incluso web) |
+| [[Ciclos/DAW\|DAW]] | [[CFGS\|CFGS]] | Este ciclo de grado superior está enfocado al desarrollo de software en distintas plataformas (escritorio, móvil o incluso web) |
 
-> [!info] Módulo de FP 
-> Un **módulo** hace referencia a una **_asignatura_** en FP.
+{ .block-language-dataview}
 
-> [!info] Ciclo de FP
-> Se refiere al periodo de **dos años de estudio** en cualquiera de las familias de FP que otorgan el título de técnico. Existen los <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr> y los <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como son los de **DAM**, **DAW** o **ASIR**, cuya consecución otorga el título de **_Técnico Superior_**.
 
 ## Material
 
@@ -65,5 +68,18 @@ En este sitio ponemos a la disposición de quien lo necesite el material que usa
 | [[Apuntes/PMDM (2º DAM)\|PMDM (2º DAM)]]                                                     | [[Módulos/PMDM\|PMDM]]                                     | <ul><li>[[Ciclos/CursosDAM/2º DAM.md\\|2º DAM]]</li></ul>                                                 | Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.                                                                                                                                              |
 
 { .block-language-dataview}
+
+## Contacto
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info] Info
+> Si quieres contactar con nosotros para corregir o aportar contenido, por favor, hazlo a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
+
+</div></div>
+
 
 [[Home\|Volver al inicio 🏡]]

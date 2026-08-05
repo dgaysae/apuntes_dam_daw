@@ -9,9 +9,9 @@
 
 
 > [!warning] Advertencia
-> Este material se ha desarrollado a partir del aportado por distintos docentes en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
+> Mucho de este material se ha redactado desde cero, pero también se ha reorganizado, actalizado, adaptado y ampliado material obtenido a lo largo de los años de distintos profesores en distintos centros educativos. **Es posible que haya imágenes, citas o fragmentos que pertenezcan a la obra de alguien**. Si no se les ha citado es simplemente por desconocimiento.
 > 
-> Si alguien detecta algún material (dibujo, texto, cita, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
+> Si alguien detecta algún material (dibujo, texto, etc.) que **no esté citado adecuadamente** o que **sea propiedad intelectual de alguien** y **no esté permitida su reproducción o distribución**, por favor, hacédnoslo saber a través de [**este formulario**](https://forms.gle/wN9v8Lns8asQkavs6).
 
 </div></div>
 
