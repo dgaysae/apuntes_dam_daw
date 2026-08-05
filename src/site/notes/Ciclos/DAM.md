@@ -18,7 +18,7 @@ La relevancia de esta disrupción tecnológica en la sociedad se aprecia, sobre 
 
 Por eso es importante establecer una base de programación mediante la formación y desarrollo del **[pensamiento computacional](https://es.wikipedia.org/wiki/Pensamiento_computacional)** del alumnado ya que fomenta la creatividad, el razonamiento lógico y la resolución de problemas. Así se crean unos cimientos tecnológicos sólidos que facilitan la incorporación al mundo laboral y mejoran su capacidad de aprendizaje autónomo.
 
-Por supuesto, estos contenidos se hacen de acuerdo a lo estipulado en la **[[Ciclos/DAM#Normativa vigente\|normativa vigente]]** y enfocándose en las **[[Finalidades\|finalidades]]** establecidas para la FP a las que contribuye cada material.
+Por supuesto, estos contenidos se hacen de acuerdo a lo estipulado en la **[[Ciclos/DAM#Normativa vigente\|normativa vigente]]** y enfocándose en las **finalidades** establecidas para la FP a las que contribuye cada material.
 
 ### Aclaraciones
 
