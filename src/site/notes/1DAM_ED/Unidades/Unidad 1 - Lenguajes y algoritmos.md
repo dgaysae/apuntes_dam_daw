@@ -57,6 +57,19 @@ Veamos un ejemplo de algoritmo implementado en lenguaje natural:
 
 Si te fijas en el algoritmo podrás comprobar que cumple todas las características de un algoritmo.
 
+## Material de refuerzo
+
+### Introducción a la programación y los algoritmos
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dfEEG4A_Hoo?si=HptKZ8WN9ajx1hm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+> Aula en la nube. (2022, 19 septiembre). _Introducción a la programación y los algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
+
+### Representación de algoritmos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b003s0CJ2KU?si=sm5Ha2cf_stxJRU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
+
 ---
 
 <p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" data-href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a la programación con Java</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidad 01/2. Codificación de la información.md" data-href="1DAM_Programación/Unidad 01/2. Codificación de la información.md" href="1DAM_Programación/Unidad 01/2. Codificación de la información.md" class="internal-link" target="_blank" rel="noopener nofollow">2. Codificación de la información</a> ➡️</span></p>

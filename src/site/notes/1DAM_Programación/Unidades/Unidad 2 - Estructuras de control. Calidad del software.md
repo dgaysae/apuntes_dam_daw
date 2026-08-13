@@ -27,6 +27,7 @@
 | [[1DAM_Programación/Unidad 02/6. Reglas de estilo\|6. Reglas de estilo]]                                     | Para facilitar la vida a nuestro yo futuro o a otras personas que puedan ver nuestro código, lo mejor es usar unas reglas a la hora de escribir código para que sea más fácil de entender y mantener. |
 | [[1DAM_Programación/Unidad 02/7. Control de excepciones\|7. Control de excepciones]]                         | Veamos cómo controlar errores que harían que nuestro programa se rompiese y finalizase su ejecución.                                                                                                  |
 | [[1DAM_Programación/Unidad 02/8. Pruebas\|8. Pruebas]]                                                       | No es recomendable que quien escribe un código, luego lo pruebe para ver si funciona correctamente. Veamos algunas pautas para ello.                                                                  |
+| [[1DAM_Programación/Unidad 02/Referencias\|Referencias]]                                                     | No es recomendable que quien escribe un código, luego lo pruebe para ver si funciona correctamente. Veamos algunas pautas para ello.                                                                  |
 
 { .block-language-dataview}
 
