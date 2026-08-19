@@ -148,7 +148,7 @@ Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten a
 
 ---
 
-# Material de apoyo
+# 📚 Material de apoyo
 
 Enfocado en los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software: conocimiento de IDE, refactorización de código, control de versiones (Git), documentación, etc.
 
