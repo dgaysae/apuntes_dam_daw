@@ -139,7 +139,7 @@ Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten a
 
 ---
 
-# Material de apoyo
+# Material de apoyo 📚
 
 Este módulo se centra en el aprendizaje de los fundamentos de la programación y ahondando en la programación orientada a objetos, usando el lenguaje de programación Java. Se ven conceptos básicos sobre informática (codificación de información, sistemas de medida de lso datos, etc.).
 
