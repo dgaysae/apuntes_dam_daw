@@ -12,12 +12,14 @@ Los contenidos de esta unidad son el puente entre "saber programar" y "**saber t
 
   Esto tiene que acabar... y para ello nos centraremos en:
 
+* Usar un **gestor de control de versiones (Git)**.  
+  De esta forma podremos tener un historial de la evolución de nuestro código, con hitos (commits) marcados a los que podremos regresar y ver qué código había en cada momento, retroceder los cambios a un estado anterior del proyecto o mezclar el código actual con cambios que haya hecho otro miembro del equipo.  
+
 * **Limpiar el código**.  
   Para evitar la deuda técnica, aprenderemos a aplicar la refactorización para que el código sea más fácil de mantener.
 
-* **Documentación útil**.  
+* Generar **documentación útil**.  
   Generar documentación automática para que otros, o nosotros mismos en el futuro, entiendan qué hace el código.
-
 
 | File                                                                                                    | Descripción |
 | ------------------------------------------------------------------------------------------------------- | ----------- |
