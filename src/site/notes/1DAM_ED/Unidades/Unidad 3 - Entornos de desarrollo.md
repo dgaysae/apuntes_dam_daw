@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-3-entornos-de-desarrollo/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Los IDE con la herramienta directa entre el desarrollador y el software. Veremos sus características, configuraciones y funcionalidades.","orden":5,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-3-entornos-de-desarrollo/","tags":["java/ide"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Los IDE con la herramienta directa entre el desarrollador y el software. Veremos sus características, configuraciones y funcionalidades.","orden":5,"tags":["java/ide"]}}
 ---
 
 

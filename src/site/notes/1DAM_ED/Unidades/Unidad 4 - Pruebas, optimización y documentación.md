@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-4-pruebas-optimizacion-y-documentacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Veremos qué son las pruebas de software, cuántos tipos hay y cómo implementar nuestros propios tests unitarios para automatizarlas.","orden":6,"tags":["junit"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-4-pruebas-optimizacion-y-documentacion/","tags":["java/ide","java/tests","java/junit","java/javadoc"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Veremos qué son las pruebas de software, cuántos tipos hay y cómo implementar nuestros propios tests unitarios para automatizarlas.","orden":6,"tags":["java/ide","java/tests","java/junit","java/javadoc"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["junit"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"¿Qué otras herramientas orbitan alrededor del desarrollo de software? Además del IDE existen otras herramientas que nos ayudan a gestionar los cambios a lo largo de desarrollo (control de versiones), replantear nuestro código (refactorización) y documentarlo.","orden":7,"tags":["junit"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-5-repositorios-documentacion-y-refactorizacion/","tags":["git","git/repo_remoto","java/refactoring","java/javadoc"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"¿Qué otras herramientas orbitan alrededor del desarrollo de software? Además del IDE existen otras herramientas que nos ayudan a gestionar los cambios a lo largo de desarrollo (control de versiones), replantear nuestro código (refactorización) y documentarlo.","orden":7,"tags":["git","git/repo_remoto","java/refactoring","java/javadoc"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-2-anexo-requisitos/","tags":["java/conceptos_básicos","conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Tipos de requisitos: funcionales y no funcionales.","orden":3,"tags":["java/conceptos_básicos","conceptos_básicos"]}}
+{"dg-publish":true,"permalink":"/1-dam-ed/unidades/unidad-2-anexo-requisitos/","tags":["ingeniería_sw/requisitos"],"dg-note-properties":{"modulo":"[[Módulos/Entornos de desarrollo]]","libro":"[[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)]]","descripcion":"Tipos de requisitos: funcionales y no funcionales.","orden":3,"tags":["ingeniería_sw/requisitos"]}}
 ---
 
 
