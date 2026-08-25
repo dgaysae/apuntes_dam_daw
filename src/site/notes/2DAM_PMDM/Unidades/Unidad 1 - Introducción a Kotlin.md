@@ -10,7 +10,7 @@
 
 > [!info]
 > **PMDP - Apuntes**  © 2024 by Diego G. S. is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
-> ![by-nc-sa.png\|150](/img/user/adjuntos/by-nc-sa.png)
+> ![by-nc-sa.png|150](https://upload.wikimedia.org/wikipedia/commons/4/4b/CC_BY-NC-SA.svg)
 > 
 > El contenido original ha sido redactado por estudiantes del curso de 2º DAM de [**IES Celia Viñas**](https://iescelia.org/) (curso 2024-25):
 > * [Develatter - Alejandro López Martínez](https://www.linkedin.com/in/develatter/) | [Github](https://github.com/develatter/) | [Instagram](https://www.instagram.com/develatter/)
