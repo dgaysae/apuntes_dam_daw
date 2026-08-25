@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/apuntes/pmdm-2-dam/","tags":["java"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","tipo":"[[Libros de texto]]","cursos":["[[Ciclos/CursosDAM/2º DAM]]"],"descripcion":"Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.","orden":1,"tags":["java"]}}
+{"dg-publish":true,"permalink":"/apuntes/pmdm-2-dam/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","tipo":"[[Libros de texto]]","cursos":["[[Ciclos/CursosDAM/2º DAM]]"],"descripcion":"Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.","orden":1,"tags":["kotlin"]}}
 ---
 
 
