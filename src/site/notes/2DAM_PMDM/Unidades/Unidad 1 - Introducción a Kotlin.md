@@ -1,90 +1,32 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-1-introduccion-a-kotlin/","tags":["programación/conceptos_básicos"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Iniciación al desarrollo ","orden":1,"tags":["programación/conceptos_básicos"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-1-introduccion-a-kotlin/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android.","orden":1,"tags":["kotlin"]}}
 ---
 
 
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-01/1-introduccion/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 
 
+> [!info]
+> **PMDP - Apuntes**  © 2024 by Diego G. S. is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+> ![by-nc-sa.png\|150](/img/user/adjuntos/by-nc-sa.png)
+> 
+> El contenido original ha sido redactado por estudiantes del curso de 2º DAM de [**IES Celia Viñas**](https://iescelia.org/) (curso 2024-25):
+> * [Develatter - Alejandro López Martínez](https://www.linkedin.com/in/develatter/) | [Github](https://github.com/develatter/) | [Instagram](https://www.instagram.com/develatter/)
+> * Juan González Cobo
+> * [Juan Diego Rondón Bedoya](https://www.linkedin.com/in/juandiegorondon/)
+> 
+>  y por el profesor &copy; **Diego Gay Sáez** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su **libre distribución**, **comunicación pública** y **adaptación sin fines lucrativos**, siempre que se cite la autoría y se indique si se han realizado cambios.
+>  **No se permite el uso comercial**.
 
-
-Los ordenadores se han hecho para realizar tareas siguiendo un conjunto de instrucciones finitas. Esto es, un **programa**. Por su naturaleza (electrónica) manejan sólo dos posibles valores:
-- **0** cuando no hay señal eléctrica.
-- **1** en caso contrario.
-
-Esta unidad de información, que puede tomar dos posibles valores, se conoce como **bit** (_**bi**nary digi**t**_). El ordenador realiza operaciones manejando bits. Esto lo hace sincronizando sus operaciones y los componentes que las realizan mediante un reloj interno que les envía pulsos. Por eso se dice que el ordenador es una **máquina síncrona**.
-
-El ordenador realiza estas tareas cargándolas en la **memoria principal** a la que accede directamente la CPU, tomando las instrucciones a ejecutar y los datos con los que operar.
-
-## 1.1. Programa
-
-Estas tareas están definidas en los distintos **programas**. Un programa es un conjunto de instrucciones ordenadas y comprensibles para un ordenador y de datos que pueden usar esas instrucciones, de manera que cuando se ejecutan en el ordenador se obtiene un resultado.
-
-Cada programa tiene como finalidad resolver un problema realizando alguna tarea concreta:
-
-- Calcular las nóminas de una empresa.
-- Navegar por Internet ([Brave](https://brave.com/es/), [Chrome](https://www.google.com/intl/es_es/chrome/), [Firefox](https://www.firefox.com/es-ES/), [Edge](https://www.microsoft.com/es-es/edge/), etc.).
-- Enviar correos (Thunderbird, Outlook, etc.).
-
- En general, para que un programa realice su función, debe **comunicarse** de alguna manera **con el exterior** para recibir datos y devolver reusltados.
-
-Esos datos pueden ser de distinta naturaleza, pero en todos los casos **deben convertirse en datos binarios** para que el ordenador pueda manejarlos.
-
-## 1.2. Algoritmo
-
-Un algoritmo es un **conjunto ordenado y finito de operaciones** que permiten hallar la solución a un problema. La implementación de algoritmos genera programas que puede ejecutar el ordenador y pueden procesar datos para devolver la solución:
-
-![ud01_prog_01_algoritmo.png\|500](/img/user/adjuntos/1DAM_Programacion/Unidad_01/ud01_prog_01_algoritmo.png)
-
-### 1.2.1. Carecterísticas
-
-Un algoritmo **no debe ser ambiguo** en sus resultados, ya que será la base del algoritmo posterior. Para que un algoritmo produzca un resultado en un **tiempo finito**, debe tener las siguientes características:
-
-- **Preciso**: establece el orden en que se realizan los pasos de la operación.
-- **Definido**: si se sigue dos o más veces (con los mismos datos), se obtiene siempre el mismo resultado.
-- **Finito**: hay un número determinado y finito de pasos.
-- **Independiente** del lenguaje de programación en el que se codificará posteriormente.
-
-Veamos un ejemplo de algoritmo implementado en lenguaje natural:
-
-- Inicio.
-- Pedir un número N que represente la edad de una persona.
-- Si N es **mayor o igual a 18**, la persona **ES MAYOR DE EDAD**.
-- Si N es **menor que 18**, la persona **ES MENOR DE EDAD**.
-- Fin del programa.
-
-Si te fijas en el algoritmo podrás comprobar que cumple todas las características de un algoritmo.
-
-## Material de refuerzo
-
-### Introducción a la programación y los algoritmos
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dfEEG4A_Hoo?si=HptKZ8WN9ajx1hm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-
-> Aula en la nube. (2022, 19 septiembre). _Introducción a la programación y los algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
-
-### Representación de algoritmos
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b003s0CJ2KU?si=sm5Ha2cf_stxJRU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
-
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" data-href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a la programación con Java</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Ejercicios_y_examenes/Unidad 01/2. La clase Math.md" data-href="1DAM_Programación/Ejercicios_y_examenes/Unidad 01/2. La clase Math.md" href="1DAM_Programación/Ejercicios_y_examenes/Unidad 01/2. La clase Math.md" class="internal-link" target="_blank" rel="noopener nofollow">2. La clase Math</a> ➡️</span></p>
 
 </div></div>
 
 
-| File                                                                                  | Descripción                                                                                                                                                              |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [[1DAM_ED/Unidad 01/1. Software y programas\|1. Software y programas]]             | Conceptos básicos como qué es un programa, un algoritmo, cómo se representa la información en un ordenador y los distintos distemas de numeración que se usan para ello. |
-| [[1DAM_ED/Unidad 01/2. Relación hardware-software\|2. Relación hardware-software]] | ...                                                                                                                                                                      |
-| [[1DAM_ED/Unidad 01/3. Algoritmos\|3. Algoritmos]]                                 | ...                                                                                                                                                                      |
-| [[1DAM_ED/Unidad 01/4. Lenguajes de programación\|4. Lenguajes de programación]]   | ...                                                                                                                                                                      |
-| [[1DAM_ED/Unidad 01/5. Paradigmas y lenguajes\|5. Paradigmas y lenguajes]]         | ...                                                                                                                                                                      |
-| [[1DAM_ED/Unidad 01/Referencias documentales\|Referencias documentales]]           | ...                                                                                                                                                                      |
+| File                                                                  | Descripción                                                                         |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [[2DAM_PMDM/Unidad 01/1. Conceptos básicos\|1. Conceptos básicos]] | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java). |
 
 { .block-language-dataview}
 

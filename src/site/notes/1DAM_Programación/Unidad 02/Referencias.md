@@ -3,6 +3,11 @@
 ---
 
 
+```table-of-contents
+```
+
+---
+
 # Material de refuerzo
 
 ## Representación de algoritmos
