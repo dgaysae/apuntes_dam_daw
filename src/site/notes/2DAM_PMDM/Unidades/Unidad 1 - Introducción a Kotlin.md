@@ -24,9 +24,12 @@
 </div></div>
 
 
-| File                                                                  | Descripción                                                                         |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [[2DAM_PMDM/Unidad 01/1. Conceptos básicos\|1. Conceptos básicos]] | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java). |
+| File                                                                            | Descripción                                                                         |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [[2DAM_PMDM/Unidad 01/1. Variables y constantes\|1. Variables y constantes]] | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java). |
+| [[2DAM_PMDM/Unidad 01/2. Inferencia de tipos\|2. Inferencia de tipos]]       | Kotlin puede adivinar el tipo de dato de una variable sin necesidad de indicarselo. |
+| [[2DAM_PMDM/Unidad 01/3. Tipos de datos\|3. Tipos de datos]]                 | Tipos de datos en Kotlin.                                                           |
+| [[2DAM_PMDM/Unidad 01/n. Rangos\|n. Rangos]]                                 | Tipos de datos en Kotlin.                                                           |
 
 { .block-language-dataview}
 
