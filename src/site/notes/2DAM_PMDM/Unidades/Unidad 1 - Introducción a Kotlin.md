@@ -24,12 +24,16 @@
 </div></div>
 
 
-| File                                                                            | Descripción                                                                         |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [[2DAM_PMDM/Unidad 01/1. Variables y constantes\|1. Variables y constantes]] | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java). |
-| [[2DAM_PMDM/Unidad 01/2. Inferencia de tipos\|2. Inferencia de tipos]]       | Kotlin puede adivinar el tipo de dato de una variable sin necesidad de indicarselo. |
-| [[2DAM_PMDM/Unidad 01/3. Tipos de datos\|3. Tipos de datos]]                 | Tipos de datos en Kotlin.                                                           |
-| [[2DAM_PMDM/Unidad 01/n. Rangos\|n. Rangos]]                                 | Tipos de datos en Kotlin.                                                           |
+| File                                                                                                                    | Descripción                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [[2DAM_PMDM/Unidad 01/1. Variables y constantes\|1. Variables y constantes]]                                         | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java).           |
+| [[2DAM_PMDM/Unidad 01/2. Inferencia de tipos\|2. Inferencia de tipos]]                                               | Kotlin puede adivinar el tipo de dato de una variable sin necesidad de indicarselo.           |
+| [[2DAM_PMDM/Unidad 01/3. Tipos de datos\|3. Tipos de datos]]                                                         | Tipos de datos en Kotlin.                                                                     |
+| [[2DAM_PMDM/Unidad 01/n. Rangos\|n. Rangos]]                                                                         | Tipos de datos en Kotlin.                                                                     |
+| [[2DAM_PMDM/Unidad 01/4. static en Kotlin\|4. static en Kotlin]]                                                     | Kotlin expresa elementos estáticos de forma distinta a Java.                                  |
+| [[2DAM_PMDM/Unidad 01/5. Constantes de tiempo de compilación\|5. Constantes de tiempo de compilación]]               | Kotlin tiene dos tipos de constantes.                                                         |
+| [[2DAM_PMDM/Unidad 01/6. Comparadores estructurales y referenciales\|6. Comparadores estructurales y referenciales]] | Kotlin puede comparar variables desde dos perspectivas.                                       |
+| [[2DAM_PMDM/Unidad 01/7. Collections\|7. Collections]]                                                               | Las colecciones de Kotlin no resultarán extrañas, ya que el concepto es el mismo que en Java. |
 
 { .block-language-dataview}
 
