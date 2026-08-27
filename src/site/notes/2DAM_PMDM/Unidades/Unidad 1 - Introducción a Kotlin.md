@@ -24,6 +24,10 @@
 </div></div>
 
 
+> [!warning] Aviso importante 
+> Para estudiar esta unidad sobre Kotlin, es conveniente tener nociones de programación.
+> Si no tienes conocimientos en programación, te recomendamos que empieces [[Apuntes/Programación (1º DAM, 1º DAW)\|aprendiendo Java]].
+
 | File                                                                                                                    | Descripción                                                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[2DAM_PMDM/Unidad 01/1. Variables y constantes\|1. Variables y constantes]]                                         | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java).                                                          |
@@ -37,6 +41,7 @@
 | [[2DAM_PMDM/Unidad 01/8. lateinit\|8. lateinit]]                                                                     | Si queremos evitar nulos pero de partida no tenemos un valor que asignar a una variable, podemos decirque que se va a inicializar más tarde. |
 | [[2DAM_PMDM/Unidad 01/9. Rangos\|9. Rangos]]                                                                         | Ante listas intuitivas de datos, podemos usar los rangos.                                                                                    |
 | [[2DAM_PMDM/Unidad 01/10. Control de flujo\|10. Control de flujo]]                                                   | Bucles y sentencias condicionales en Kotlin.                                                                                                 |
+| [[2DAM_PMDM/Unidad 01/11. Funciones\|11. Funciones]]                                                                 | Oirás mucho la expresión de que en Kotlin las funciones son ciudadanos de primera clase. Aquí veremos el porqué.                             |
 
 { .block-language-dataview}
 
