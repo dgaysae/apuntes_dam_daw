@@ -32,10 +32,10 @@
 | [[2DAM_PMDM/Unidad 01/n. Rangos\|n. Rangos]]                                                                         | Tipos de datos en Kotlin.                                                                     |
 | [[2DAM_PMDM/Unidad 01/n. Lambdas\|n. Lambdas]]                                                                       | Tipos de datos en Kotlin.                                                                     |
 | [[2DAM_PMDM/Unidad 01/4. static en Kotlin\|4. static en Kotlin]]                                                     | Kotlin expresa elementos estáticos de forma distinta a Java.                                  |
-| [[2DAM_PMDM/Unidad 01/5. Constantes de tiempo de compilación\|5. Constantes de tiempo de compilación]]               | Kotlin tiene dos tipos de constantes.                                                         |
-| [[2DAM_PMDM/Unidad 01/6. Comparadores estructurales y referenciales\|6. Comparadores estructurales y referenciales]] | Kotlin puede comparar variables desde dos perspectivas.                                       |
-| [[2DAM_PMDM/Unidad 01/7. Collections\|7. Collections]]                                                               | Las colecciones de Kotlin no resultarán extrañas, ya que el concepto es el mismo que en Java. |
-| [[2DAM_PMDM/Unidad 01/8. Null Safety\|8. Null Safety]]                                                               | Cómo se tratan los nulos en Kotlin.                                                           |
+| [[2DAM_PMDM/Unidad 01/5. Comparadores estructurales y referenciales\|5. Comparadores estructurales y referenciales]] | Kotlin puede comparar variables desde dos perspectivas.                                       |
+| [[2DAM_PMDM/Unidad 01/6. Collections\|6. Collections]]                                                               | Las colecciones de Kotlin no resultarán extrañas, ya que el concepto es el mismo que en Java. |
+| [[2DAM_PMDM/Unidad 01/7. Null Safety\|7. Null Safety]]                                                               | Cómo se tratan los nulos en Kotlin.                                                           |
+| [[2DAM_PMDM/Unidad 01/8. lateinit\|8. lateinit]]                                                                     | Cómo se tratan los nulos en Kotlin.                                                           |
 
 { .block-language-dataview}
 
