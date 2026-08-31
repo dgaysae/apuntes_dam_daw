@@ -8,6 +8,7 @@ Material de referencia para el módulo de Programación Multimedia y Dispositivo
 | File                                                                                         | Descripción                                                                             |
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin\|Unidad 1 - Introducción a Kotlin]] | Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android. |
+| [[2DAM_PMDM/Unidades/Unidad 2 - Objetos en Kotlin\|Unidad 2 - Objetos en Kotlin]]         | Veamos cómo se declaran las clases y se usan los objetos en Kotlin.                     |
 
 { .block-language-dataview}
 

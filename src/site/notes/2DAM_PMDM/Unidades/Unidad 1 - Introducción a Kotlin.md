@@ -24,9 +24,17 @@
 </div></div>
 
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
 > [!warning] Aviso importante 
 > Para estudiar esta unidad sobre Kotlin, es conveniente tener nociones de programación.
 > Si no tienes conocimientos en programación, te recomendamos que empieces [[Apuntes/Programación (1º DAM, 1º DAW)\|aprendiendo Java]].
+
+</div></div>
+
 
 | File                                                                                                                    | Descripción                                                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,4 +55,4 @@
 
 ---
 
-<p><span>🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a></span></p>
+<p><span>🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 2 - Objetos en Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 2 - Objetos en Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 2 - Objetos en Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 2 - Objetos en Kotlin</a> ➡️</span></p>
