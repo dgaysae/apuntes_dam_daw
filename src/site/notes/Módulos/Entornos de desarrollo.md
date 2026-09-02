@@ -8,7 +8,7 @@
 
 ---
 
-# Datos del módulo 
+## Datos del módulo 
 
 | | |
 | ---: | :--- |
@@ -21,7 +21,7 @@
 
 ---
 
-# Finalidades a las que contribuye este módulo
+## Finalidades a las que contribuye este módulo
 
 El **[artículo 2](https://www.boe.es/eli/es/rd/2023/07/18/659/con#a2)** del **[Real Decreto 659/2023, de 18 de julio](https://www.boe.es/eli/es/rd/2023/07/18/659/con)** establece las **Finalidades del Sistema de Formación Profesional** y el módulo de **Entornos de desarrollo** contribuye a alcanzar las siguientes:
 
@@ -29,15 +29,15 @@ El **[artículo 2](https://www.boe.es/eli/es/rd/2023/07/18/659/con#a2)** del **[
 
 **e)** La reconversión profesional y la reconducción del itinerario profesional a un sector de actividad distinto de aquellas personas trabajadoras que necesiten o deseen dirigirse hacia otro sector profesional.
 
-# Perfil Profesional del Título de Técnico Superior de DAM
+## Perfil Profesional del Título de Técnico Superior de DAM
 
 El perfil profesional del título de este ciclo lo determinan su [[Módulos/Entornos de desarrollo#Competencia general\|competencia general]], sus [[Módulos/Entornos de desarrollo#Competencias profesionales, personales y sociales\|competencias profesionales, personales y sociales]], y por la relación de cualificaciones y, en su caso, unidades de competencia del Catálogo Nacional de Cualificaciones Profesionales incluidas en el título.
 
-## Competencia general
+### Competencia general
 
 Consiste en **_desarrollar, implantar, documentar y mantener aplicaciones informáticas multiplataforma, utilizando tecnologías y entornos de desarrollo específicos, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de «usabilidad» y calidad exigidas en los estándares establecidos_**.
 
-## Competencias profesionales, personales y sociales
+### Competencias profesionales, personales y sociales
 
 El módulo de **Entornos de desarrollo** contribuye a desarrollar las siguientes competencias:
 
@@ -55,7 +55,7 @@ El módulo de **Entornos de desarrollo** contribuye a desarrollar las siguientes
 
 **n)** Desarrollar aplicaciones multiproceso y multihilo empleando librerías y técnicas de programación específicas.
 
-# Objetivos del ciclo
+## Objetivos del ciclo
 
 En general, un proyecto que persiga unos fines concretos debe plantear a priori una serie de objetivos que permitan definir los elementos necesarios para su consecución.
 
@@ -77,7 +77,7 @@ La **[Orden de 16 de junio de 2011](https://www.juntadeandalucia.es/boja/2011/14
 
 **o)** Reconocer la estructura de los sistemas ERP-CRM, identificando la utilidad de cada uno de sus módulos, para participar en su implantación.
 
-# Líneas de actuación
+## Líneas de actuación
 
 Para la consecución de los objetivos indicados, debe llevarse a cabo un trabajo en el aula enfocado a:
 
@@ -89,7 +89,7 @@ Para la consecución de los objetivos indicados, debe llevarse a cabo un trabajo
 - La elaboración de documentación interna de la aplicación.
 - La utilización de sistemas de control de versiones.
 
-# Contenidos y resultados de aprendizaje
+## Contenidos y resultados de aprendizaje
 
 Mediante el estudio y el trabajo sobre los **contenidos básicos** de la norma se pretende alcanzar los <abbr title="Resultados de aprendizaje">RA</abbr> establecidos. Estos RA son, en definitiva, los objetivos específicos de este módulo que ayudan a la consecución de parte de los objetivos generales del ciclo y, en última instancia, de la Formación Profesional.
 
@@ -112,7 +112,7 @@ En la siguiente tabla se pueden ver los CE con los que se evalúa cada bloque de
 
 ---
 
-# Orientaciones pedagógicas
+## Orientaciones pedagógicas
 
 Este módulo profesional contiene parte de la formación necesaria para desempeñar la función de desarrollador de aplicaciones.
 
@@ -148,7 +148,7 @@ Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten a
 
 ---
 
-# 📚 Material de apoyo
+## 📚 Material de apoyo
 
 Enfocado en los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software: conocimiento de IDE, refactorización de código, control de versiones (Git), documentación, etc.
 
@@ -158,9 +158,9 @@ Enfocado en los conceptos clave de la programación y las herramientas que ayuda
 
 { .block-language-dataview}
 
-# Fuentes
+## Fuentes
 
-## Normativa
+### Normativa
 
 - BOE-A-2023-13221 **_Real Decreto 405/2023, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y Técnico Superior en Desarrollo de Aplicaciones Web, de la familia profesional Informática y Comunicaciones, y se fijan sus enseñanzas mínimas._** (2023, 29 mayo). https://www.boe.es/eli/es/rd/2023/05/29/405
 
