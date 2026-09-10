@@ -18,6 +18,39 @@
 </div></div>
 
 
+
+```table-of-contents
+```
+
+---
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Desarrollo de clases:**  
+- **Concepto de clase y objeto.**  
+- **Estructura y miembros de una clase. Diagramas de clase.**  
+- **Creación de atributos.**  
+- **Creación de métodos.**  
+- **Creación de constructores.**  
+- **Utilización de clases y objetos.**  
+- **Concepto de herencia. Tipos. Utilización de clases heredadas.**  
+- **Librerías de clases. Creación. Inclusión y uso de la interface.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 26,83% | RA 4. Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos. | 16/11/2026 | 11/12/2026 | a) Se ha reconocido la sintaxis, estructura y componentes típicos de una clase. | 10,00% | 11,00% |
+|  |  |  |  | b) Se han definido clases. | 10,00% |  |
+|  |  |  |  | c) Se han definido propiedades y métodos. | 10,00% |  |
+|  |  |  |  | d) Se han creado constructores. | 10,00% |  |
+|  |  |  |  | e) Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente. | 10,00% |  |
+|  |  |  |  | f) Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros. | 12,50% |  |
+|  |  |  |  | g) Se han definido y utilizado clases heredadas. | 12,50% |  |
+|  |  |  |  | h) Se han creado y utilizado métodos estáticos. | 12,50% |  |
+|  |  |  |  | i) Se han creado y utilizado conjuntos y librerías de clases. | 12,50% |  |
+
+---
+
 Si has llegado hasta aquí, ¡enhorabuena! Por si aún no lo habíamos dicho, **aprender a programar es difícil** y requiere **constancia** y **compromiso**. Si estás aquí es porque estás demostrando ambas. Y te felicito por ello.
 
 Ya hemos plantado los cimientos: sabemos construir pequeños programas con un par de clases funcionando en modo amo-esclavo (o cliente-servidor) y sabemos escribir el código de los métodos de esas clases para que hagan lo que necesitamos utilizando las viejas herramientas de la programación estructurada (recuerda que la programación orientada a objetos es una evolución de la programación estructurada clásica).
@@ -38,7 +71,8 @@ Luego hablaremos de los **interfaces** y los **wrappers**, así como de las clas
 
 Esta unidad va a contener muchos más conceptos, pero los veremos con ejemplos prácticos para afianzarlos. Como dice Alfredo Moreno Vozmediano: "*Estás a punto de adentrarte en algunos de los vericuetos más arcanos del paradigma de orientación a objetos. Abróchate el cinturón, que partimos.*". 
 
-[^1]: Buzzell, E. (Director). (1940). **_Los Hermanos Marx en el Oeste_** \[Película\]. Metro-Goldwyn Mayer.
+---
+## Índice de contenidos
 
 | File                                                                                                                        | Descripción                                                                                                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,6 +92,8 @@ Esta unidad va a contener muchos más conceptos, pero los veremos con ejemplos p
 | [[1DAM_Programación/Unidad 04/14. Clases anidadas\|14. Clases anidadas]]                                                 | Dentro de una clase podemos declarar atributos y métodos, pero ¿podemos declarar otras clases? Spoiler: si.                                                                                                                                                                                                         |
 
 { .block-language-dataview}
+
+[^1]: Buzzell, E. (Director). (1940). **_Los Hermanos Marx en el Oeste_** \[Película\]. Metro-Goldwyn Mayer.
 
 ---
 

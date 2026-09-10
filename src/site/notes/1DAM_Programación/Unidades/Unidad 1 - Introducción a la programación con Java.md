@@ -19,6 +19,39 @@
 
 
 
+```table-of-contents
+```
+
+---
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Identificación de los elementos de un programa informático:**
+- **Estructura y bloques fundamentales.**
+- **Variables.**
+- **Tipos de datos.**
+- **Literales.**
+- **Constantes.**
+- **Operadores y expresiones.**
+- **Conversiones de tipo.**
+- **Comentarios.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 24,39% | RA 1. Reconoce la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado. | 15/09/2026 | 25/09/2026 | a) Se han identificado los bloques que componen la estructura de un programa informático. | 10,00% | 10,00% |
+|  |  |  |  | b) Se han creado proyectos de desarrollo de aplicaciones. | 5,00% |  |
+|  |  |  |  | c) Se han utilizado entornos integrados de desarrollo. | 5,00% |  |
+|  |  |  |  | d) Se han identificado los distintos tipos de variables y la utilidad específica de cada uno. | 15,00% |  |
+|  |  |  |  | e) Se ha modificado el código de un programa para crear y utilizar variables. | 15,00% |  |
+|  |  |  |  | f) Se han creado y utilizado constantes y literales. | 15,00% |  |
+|  |  |  |  | g) Se han clasificado, reconocido y utilizado en expresiones los operadores del lenguaje. | 15,00% |  |
+|  |  |  |  | h) Se ha comprobado el funcionamiento de las conversiones de tipos explícitas e implícitas. | 15,00% |  |
+|  |  |  |  | i) Se han introducido comentarios en el código. | 5,00% |  |
+
+---
+## Índice de contenidos
+
 | File                                                                                                                      | Descripción                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [[1DAM_Programación/Unidad 01/1. Introducción\|1. Introducción]]                                                       | Conceptos básicos como qué es un programa, un algoritmo, cómo se representa la información en un ordenador y los distintos distemas de numeración que se usan para ello.                                                                                                                                                                         |

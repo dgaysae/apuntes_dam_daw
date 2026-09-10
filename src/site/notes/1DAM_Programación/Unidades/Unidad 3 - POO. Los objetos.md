@@ -18,6 +18,42 @@
 </div></div>
 
 
+
+```table-of-contents
+```
+
+---
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Utilización de objetos:**  
+- **Características de los objetos.**  
+- **Instanciación de objetos.**  
+- **Utilización de métodos.**  
+- **Utilización de propiedades.**  
+- **Utilización de métodos estáticos.**  
+- **Librerías de objetos. Inclusión y uso.**  
+- **Constructores.**  
+- **Destrucción de objetos y liberación de memoria.**  
+- **Entornos de desarrollo para programación orientada a objetos.**  
+- **Entornos específicos.**  
+- **Plugins de integración en entornos genéricos.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 24,39% | RA 2. Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos. | 26/10/2026 | 13/11/2026 | a) Se han identificado los fundamentos de la programación orientada a objetos. | 12,00% | 10,00% |
+|  |  |  |  | b) Se han escrito programas simples. | 13,00% |  |
+|  |  |  |  | c) Se han instanciado objetos a partir de clases predefinidas. | 13,00% |  |
+|  |  |  |  | d) Se han utilizado métodos y propiedades de los objetos. | 13,00% |  |
+|  |  |  |  | e) Se han escrito llamadas a métodos estáticos. | 13,00% |  |
+|  |  |  |  | f) Se han utilizado parámetros en la llamada a métodos. | 13,00% |  |
+|  |  |  |  | g) Se han incorporado y utilizado librerías de objetos. | 5,00% |  |
+|  |  |  |  | h) Se han utilizado constructores. | 13,00% |  |
+|  |  |  |  | i) Se ha utilizado el entorno integrado de desarrollo en la creación y compilación de programas simples. | 5,00% |  |
+
+---
+
 Las variables que hemos usado hasta ahora nos permitían guardar datos primitivos. Así, en cada variable se puede almacenar un número, un texto, un carácter, un valor lógico, etc.
 
 Es decir, **una variable, un valor**.
@@ -39,6 +75,9 @@ Esto se conoce como encapsulamiento y es una de las características más básic
 En esta unidad vamos a empezar a ver cómo funciona.
 
 Estás a punto de empezar en el mundo de la POO ¡Vamos a ello!
+
+---
+## Índice de contenidos
 
 | File                                                                                                                                                        | Descripción                                                                                                                                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

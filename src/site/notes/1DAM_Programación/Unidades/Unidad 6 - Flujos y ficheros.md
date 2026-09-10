@@ -1,0 +1,87 @@
+---
+{"dg-publish":true,"permalink":"/1-dam-programacion/unidades/unidad-6-flujos-y-ficheros/","tags":["java/io"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Apuntes/Programación (1º DAM, 1º DAW)]]","descripcion":"Nuestro programa se aloja en la RAM mientras se ejecuta. Pero necesita obtener datos de fuentes externas a dicha memoria: un fichero, una base de datos, una conexión a Internet... Los flujos (streams) permiten abrir un canal que comunica nuestro programa ejecutándose en la RAM con esas fuentes.","orden":8,"tags":["java/io"],"estado":"revisar"}}
+---
+
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> &copy; Departamento de Informática del IES Celia Viñas
+> ![by-nc-sa.png|150](https://upload.wikimedia.org/wikipedia/commons/4/4b/CC_BY-NC-SA.svg)
+> 
+> El contenido original ha sido escrito por &copy; **[Alfredo Moreno Vozmediano](https://www.instagram.com/amvozmediano/)** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su libre distribución, comunicación pública y adaptación sin fines lucrativos, siempre que se cite la autoría y se indique si se han realizado cambios. No se permite el uso comercial.
+> Este material toma como base la obra del compañero Alfredo y, con su permiso, se han ido realizando cambios.
+
+</div></div>
+
+
+```table-of-contents
+```
+
+---
+
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Lectura y escritura de información:**  
+- **Tipos de flujos. Flujos de bytes y de caracteres.**  
+- **Clases relativas a flujos.**  
+- **Utilización de flujos.**  
+- **Entrada desde teclado.**  
+- **Salida a pantalla.**  
+- **Ficheros de datos. Registros.**  
+- **Apertura y cierre de ficheros. Modos de acceso.**  
+- **Escritura y lectura de información en ficheros.**  
+- **Utilización de los sistemas de ficheros.**  
+- **Creación y eliminación de ficheros y directorios.**  
+- **Interfaces.**  
+- **Concepto de evento.**  
+- **Creación de controladores de eventos.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 50,00% | RA 5. Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases. | 1/2/2027 | 26/2/2027 | a) Se ha utilizado la consola para realizar operaciones de entrada y salida de información. | 5,00% | 12,00% |
+|  |  |  |  | b) Se han aplicado formatos en la visualización de la información. | 5,00% |  |
+|  |  |  |  | c) Se han reconocido las posibilidades de entrada / salida del lenguaje y las librerías asociadas. | 5,00% |  |
+|  |  |  |  | d) Se han utilizado ficheros para almacenar y recuperar información. | 10,00% |  |
+|  |  |  |  | e) Se han creado programas que utilicen diversos métodos de acceso al contenido de los ficheros. | 10,00% |  |
+|  |  |  |  | f) Se han utilizado las herramientas del entorno de desarrollo para crear interfaces gráficos de usuario simples. | 10,00% |  |
+|  |  |  |  | g) Se han programado controladores de eventos. | 10,00% |  |
+|  |  |  |  | h) Se han escrito programas que utilicen interfaces gráficos para la entrada y salida de información. | 45,00% |  |
+
+---
+
+> [!note]  
+> Nuestro programa se aloja en la RAM mientras se ejecuta. Pero necesita obtener datos de fuentes externas a dicha memoria: un fichero, una base de datos, una conexión a Internet... Los flujos (streams) permiten abrir un canal que comunica nuestro programa ejecutándose en la RAM con esas fuentes.
+
+Normalmente, las operaciones de entrada y salida de datos de nuestros programas se hacen a través del teclado o ratón (dispositivos típicos de entrada) y la pantalla (dispositivo típico de salida). Pero los programas pueden enviar y recibir datos desde otros dispositivos, como la memoria secundaria; es decir, pueden **enviar datos hacia un archivo o recibirlos de él**.
+
+Además, todos los datos que hemos manejado, ya sea mediante tipos de datos simples o estructuras complejas, han estado alojados en la **memoria principal** del ordenador, de manera que al apagar éste, o antes, al terminar el programa, toda esa información se perdía. Como es natural, también es posible almacenar datos en **memoria secundaria**, es decir, en dispositivos tales como discos duros, discos flexibles, discos ópticos, memorias USB, etc. Estas memorias se caracterizan por ser **más** **lentas** que la memoria principal del ordenador, pero también disponen de **más espacio** de almacenamiento, y **no son volátiles**, es decir, no pierden su contenido al desconectar el ordenador.
+
+Para **almacenar datos en estas memorias secundarias** tenemos dos opciones: o usar un sistema gestor de bases de datos (algo que trabajamos en otro capítulo de este curso) o una estructura de ficheros.
+
+Los **archivos** o **ficheros** (en inglés, files) no son más que agrupaciones de datos en memoria secundaria. En este tema vamos a aprender a manipular archivos desde Java tanto con el enfoque clásico (**java.io**) como con el enfoque moderno (**NIO2**). Empezaremos con los conceptos básicos sobre archivos y progresaremos hacia el uso de ficheros secuenciales y de acceso aleatorio con java.io (librería clásica de Java) y con NIO2 (la librería actual de Java). Terminaremos el tema con una colección de buenas prácticas recomendables para trabajar con ficheros desde Java.
+
+¡Al ataque!
+
+---
+## Índice de contenidos
+
+| File                                                                                                                                                                      | Descripción                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[1DAM_Programación/Unidad 08/1. Conceptos básicos sobre ficheros\|1. Conceptos básicos sobre ficheros]]                                                               | ¿Qué es un fichero? ¿Como almacena y organiza la información?                                                                                                 |
+| [[1DAM_Programación/Unidad 08/2. La API clásica de Java - java.io\|2. La API clásica de Java - java.io]]                                                               | Qué mecanismos incorpora Java para enviar/recibir datos hacia/desde ficheros y en qué formas (como caracteres, datos primitivos o incluso objetos completos). |
+| [[1DAM_Programación/Unidad 08/3. Procesamiento de ficheros secuenciales en Java\|3. Procesamiento de ficheros secuenciales en Java]]                                   | Operaciones básicas que se pueden hacer sobre ficheros.                                                                                                       |
+| [[1DAM_Programación/Unidad 08/4. Procesamiento de ficheros de acceso directo o aleatorio en Java\|4. Procesamiento de ficheros de acceso directo o aleatorio en Java]] | Operaciones sobre ficheros de acceso directo.                                                                                                                 |
+| [[1DAM_Programación/Unidad 08/5. Los ficheros en Java moderno - NIO2\|5. Los ficheros en Java moderno - NIO2]]                                                         | NIO2, o cómo abrir un solo canal o stream bidireccional hacia ficheros.                                                                                       |
+| [[1DAM_Programación/Unidad 08/6. Buenas prácticas\|6. Buenas prácticas]]                                                                                               | Para mitigar los posibles problemas del tratamiento de ficheros, veamos algunas buenas prácticas.                                                             |
+
+{ .block-language-dataview}
+
+---
+
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráficos (GUI) - JavaFX</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 7 - POO - Aspectos avanzados.md" data-href="1DAM_Programación/Unidades/Unidad 7 - POO - Aspectos avanzados.md" href="1DAM_Programación/Unidades/Unidad 7 - POO - Aspectos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 7 - POO - Aspectos avanzados</a> ➡️</span></p>

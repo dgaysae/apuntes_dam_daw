@@ -23,11 +23,46 @@
 
 ---
 
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Lectura y escritura de información:**  
+- **Tipos de flujos. Flujos de bytes y de caracteres.**  
+- **Clases relativas a flujos.**  
+- **Utilización de flujos.**  
+- **Entrada desde teclado.**  
+- **Salida a pantalla.**  
+- **Ficheros de datos. Registros.**  
+- **Apertura y cierre de ficheros. Modos de acceso.**  
+- **Escritura y lectura de información en ficheros.**  
+- **Utilización de los sistemas de ficheros.**  
+- **Creación y eliminación de ficheros y directorios.**  
+- **Interfaces.**  
+- **Concepto de evento.**  
+- **Creación de controladores de eventos.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 50,00% | RA 5. Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases. | 1/2/2027 | 26/2/2027 | a) Se ha utilizado la consola para realizar operaciones de entrada y salida de información. | 5,00% | 12,00% |
+|  |  |  |  | b) Se han aplicado formatos en la visualización de la información. | 5,00% |  |
+|  |  |  |  | c) Se han reconocido las posibilidades de entrada / salida del lenguaje y las librerías asociadas. | 5,00% |  |
+|  |  |  |  | d) Se han utilizado ficheros para almacenar y recuperar información. | 10,00% |  |
+|  |  |  |  | e) Se han creado programas que utilicen diversos métodos de acceso al contenido de los ficheros. | 10,00% |  |
+|  |  |  |  | f) Se han utilizado las herramientas del entorno de desarrollo para crear interfaces gráficos de usuario simples. | 10,00% |  |
+|  |  |  |  | g) Se han programado controladores de eventos. | 10,00% |  |
+|  |  |  |  | h) Se han escrito programas que utilicen interfaces gráficos para la entrada y salida de información. | 45,00% |  |
+
+---
+
 De momento, solo has programado **aplicaciones en «modo texto»**, donde la interacción con el usuario se limita a la consola: leer datos y mostrar resultados línea a línea. Este enfoque es perfecto para aprender lógica y estructuras básicas, pero **el software que usamos a diario va mucho más allá**. En este capítulo darás el salto a la **programación gráfica**, donde tus programas podrán tener **ventanas, botones, menús e interfaces mucho más intuitivas**.
 
 En el ecosistema de Java existen varias tecnologías para crear interfaces gráficas: **<abbr title="Abstract Window Toolkit">AWT</abbr>, Swing y JavaFX**. **AWT** fue la primera aproximación, con componentes básicos dependientes del sistema operativo. **Swing** supuso un gran avance al ofrecer componentes más ricos y portables. **JavaFX**, más moderno, incorpora estilos visuales, animaciones y una arquitectura más flexible para aplicaciones actuales.
 
 Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder a eventos del usuario (como clics o pulsaciones de teclas) y separar la lógica de tu programa de su presentación visual usando **Java Swing**. Este cambio no solo mejora la apariencia de tus aplicaciones, sino también la forma de diseñarlas.
+
+---
+## Índice de contenidos
 
 | File                                                                                                                                                                          | Descripción                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,4 +83,4 @@ Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" data-href="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" href="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 5 - Estructuras de almacenamiento</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráfica de usuario (GUI) - JavaFX</a> ➡️</span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" data-href="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" href="1DAM_Programación/Unidades/Unidad 5 - Estructuras de almacenamiento.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 5 - Estructuras de almacenamiento</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráficos (GUI) - JavaFX.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráficos (GUI) - JavaFX</a> ➡️</span></p>

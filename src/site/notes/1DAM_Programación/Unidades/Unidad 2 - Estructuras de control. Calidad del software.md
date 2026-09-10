@@ -18,6 +18,41 @@
 </div></div>
 
 
+
+```table-of-contents
+```
+
+---
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+Bloque de contenidos básicos: **Uso de estructuras de control:**  
+- **Estructuras de selección.**  
+- **Estructuras de repetición.**  
+- **Estructuras de salto.**  
+- **Control de excepciones.**  
+- **Depuración de programas.**  
+- **El depurador como herramienta de control de errores.**  
+- **Documentación de programas.**  
+- **Documentación interna, comentarios.**  
+- **Documentación externa, diagramas de clases, requisitos, guías, etc.**
+
+| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
+| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
+| 24,39% | RA 3. Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje. | 28/09/2026 | 23/10/2026 | a) Se ha escrito y probado código que haga uso de estructuras de selección. | 10,00% | 10,00% |
+|  |  |  |  | b) Se han utilizado estructuras de repetición. | 10,00% |  |
+|  |  |  |  | c) Se han reconocido las posibilidades de las sentencias de salto. | 10,00% |  |
+|  |  |  |  | d) Se ha escrito código utilizando control de excepciones. | 15,00% |  |
+|  |  |  |  | e) Se han creado programas ejecutables utilizando diferentes estructuras de control. | 15,00% |  |
+|  |  |  |  | f) Se han probado y depurado los programas. | 5,00% |  |
+|  |  |  |  | g) Se ha comentado y documentado el código. | 10,00% |  |
+|  |  |  |  | h) Se han creado excepciones. | 15,00% |  |
+|  |  |  |  | i) Se han utilizado aserciones para la detección y corrección de errores durante la fase de desarrollo. | 10,00% |  |
+
+---
+## Índice de contenidos
+
 | File                                                                                                            | Descripción                                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[1DAM_Programación/Unidad 02/1. La programación estructurada\|1. La programación estructurada]]             | Con solo 3 estructuras de control se puede implementar cualquier programa (hasta ahora se ha hecho así). Esas 3 estructuras se establecieron con el paradigma de programación estructurada.           |
