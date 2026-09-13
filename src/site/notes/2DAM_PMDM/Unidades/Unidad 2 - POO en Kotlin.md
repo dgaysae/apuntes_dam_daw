@@ -41,6 +41,8 @@
 | [[2DAM_PMDM/Unidad 02/1. Clases y objetos\|1. Clases y objetos]] | Cómo declarar clases e instanciar objetos en Kotlin. |
 | [[2DAM_PMDM/Unidad 02/2. Herencia\|2. Herencia]]                 | Herencia en Kotlin.                                  |
 | [[2DAM_PMDM/Unidad 02/3. Interfaces\|3. Interfaces]]             | Interfaces en Kotlin.                                |
+| [[2DAM_PMDM/Unidad 02/4. Data classes\|4. Data classes]]         | Data classes en Kotlin.                              |
+| [[2DAM_PMDM/Unidad 02/5. Enumerados\|5. Enumerados]]             | Enums en Kotlin.                                     |
 
 { .block-language-dataview}
 
