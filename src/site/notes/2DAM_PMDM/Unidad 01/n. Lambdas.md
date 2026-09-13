@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-01/n-lambdas/","tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"],"dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin]]","descripcion":"Tipos de datos en Kotlin.","orden":3,"tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-01/n-lambdas/","tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"],"dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin]]","descripcion":"Tipos de datos en Kotlin.","orden":13,"tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"]}}
 ---
 
 
@@ -30,7 +30,7 @@
 
 ## Rehaciendo ejemplos anteriores
 
-Retomando el [[2DAM_PMDM/Unidad 01/6. Collections#List inmutables\|ejemplo]] que usamos para explicar la función `emptyList()`, podemos rehacerlo con expresiones lambda de la forma siguiente:
+Retomando el [[2DAM_PMDM/Unidad 01/7. Collections#List inmutables\|ejemplo]] que usamos para explicar la función `emptyList()`, podemos rehacerlo con expresiones lambda de la forma siguiente:
 
 > [!abstract]- Código 
 > ```kotlin
@@ -60,4 +60,4 @@ Retomando el [[2DAM_PMDM/Unidad 01/6. Collections#List inmutables\|ejemplo]] que
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" data-href="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" href="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" class="internal-link" target="_blank" rel="noopener nofollow">2. Inferencia de tipos</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a Kotlin</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidad 01/4. static en Kotlin.md" data-href="2DAM_PMDM/Unidad 01/4. static en Kotlin.md" href="2DAM_PMDM/Unidad 01/4. static en Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">4. static en Kotlin</a> ➡️</span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidad 01/12. Funciones.md" data-href="2DAM_PMDM/Unidad 01/12. Funciones.md" href="2DAM_PMDM/Unidad 01/12. Funciones.md" class="internal-link" target="_blank" rel="noopener nofollow">12. Funciones</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a Kotlin</a></span></p>
