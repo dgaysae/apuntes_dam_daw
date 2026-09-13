@@ -30,7 +30,7 @@
 
 ## Rehaciendo ejemplos anteriores
 
-Retomando el [[6. Collections#List inmutables|ejemplo]] que usamos para explicar la función `emptyList()`, podemos rehacerlo con expresiones lambda de la forma siguiente:
+Retomando el [[2DAM_PMDM/Unidad 01/6. Collections#List inmutables\|ejemplo]] que usamos para explicar la función `emptyList()`, podemos rehacerlo con expresiones lambda de la forma siguiente:
 
 > [!abstract]- Código 
 > ```kotlin

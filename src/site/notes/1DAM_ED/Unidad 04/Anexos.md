@@ -10,7 +10,7 @@
 
 ## Anexo i. Algoritmo adivinador de número
 
-Código Java del algoritmo de [[4. Pruebas de caja blanca - análisis estructural#4.4. Caminos imposibles|camino imposible]]:
+Código Java del algoritmo de [[1DAM_ED/Unidad 04/4. Pruebas de caja blanca - análisis estructural#4.4. Caminos imposibles\|camino imposible]]:
 
 ```java
 public static void main(String[] args) {
