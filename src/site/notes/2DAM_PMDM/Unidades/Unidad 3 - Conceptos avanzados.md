@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-2-poo-en-kotlin/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos cómo se declaran las clases y se usan los objetos en Kotlin.","orden":2,"tags":["kotlin"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-3-conceptos-avanzados/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos Kotlin en mayor profundidad.","orden":3,"tags":["kotlin"]}}
 ---
 
 
@@ -48,4 +48,4 @@
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a Kotlin</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" data-href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - Conceptos avanzados</a> ➡️</span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 2 - POO en Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 2 - POO en Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 2 - POO en Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 2 - POO en Kotlin</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a></span></p>

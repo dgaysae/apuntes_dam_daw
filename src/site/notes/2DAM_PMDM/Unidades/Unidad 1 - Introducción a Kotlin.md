@@ -50,7 +50,6 @@
 | [[2DAM_PMDM/Unidad 01/10. Rangos\|10. Rangos]]                                                                       | Ante listas intuitivas de datos, podemos usar los rangos.                                                                                    |
 | [[2DAM_PMDM/Unidad 01/11. Control de flujo\|11. Control de flujo]]                                                   | Bucles y sentencias condicionales en Kotlin.                                                                                                 |
 | [[2DAM_PMDM/Unidad 01/12. Funciones\|12. Funciones]]                                                                 | Oirás mucho la expresión de que en Kotlin las funciones son ciudadanos de primera clase. Aquí veremos el porqué.                             |
-| [[2DAM_PMDM/Unidad 01/n. Lambdas\|n. Lambdas]]                                                                       | Tipos de datos en Kotlin.                                                                                                                    |
 
 { .block-language-dataview}
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-01/n-lambdas/","tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"],"dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin]]","descripcion":"Tipos de datos en Kotlin.","orden":13,"tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-03/n-lambdas/","tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"],"dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin]]","descripcion":"Tipos de datos en Kotlin.","orden":13,"tags":["kotlin/variables","kotlin/constantes","kotlin/inferencia","kotlin/tipos_de_datos"]}}
 ---
 
 
