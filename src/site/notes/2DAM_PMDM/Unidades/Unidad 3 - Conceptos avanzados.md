@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-3-conceptos-avanzados/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos Kotlin en mayor profundidad.","orden":3,"tags":["kotlin"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-3-conceptos-avanzados/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.","orden":3,"tags":["kotlin"]}}
 ---
 
 
@@ -36,13 +36,14 @@
 </div></div>
 
 
-| File                                                                | Descripción                                          |
-| ------------------------------------------------------------------- | ---------------------------------------------------- |
-| [[2DAM_PMDM/Unidad 02/1. Clases y objetos\|1. Clases y objetos]] | Cómo declarar clases e instanciar objetos en Kotlin. |
-| [[2DAM_PMDM/Unidad 02/2. Herencia\|2. Herencia]]                 | Herencia en Kotlin.                                  |
-| [[2DAM_PMDM/Unidad 02/3. Interfaces\|3. Interfaces]]             | Interfaces en Kotlin.                                |
-| [[2DAM_PMDM/Unidad 02/4. Data classes\|4. Data classes]]         | Data classes en Kotlin.                              |
-| [[2DAM_PMDM/Unidad 02/5. Enumerados\|5. Enumerados]]             | Enums en Kotlin.                                     |
+| File                                                                                      | Descripción                                                                    |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [[2DAM_PMDM/Unidad 03/1. Funciones de extensión\|1. Funciones de extensión]]           | Cómo extender la funcionalidad de clases existentes, incluso de la propia API. |
+| [[2DAM_PMDM/Unidad 03/2. Funciones de orden superior\|2. Funciones de orden superior]] | Funciones especiales en Kotlin.                                                |
+| [[2DAM_PMDM/Unidad 03/3. Funciones como parámetros\|3. Funciones como parámetros]]     | Funciones pasadas como parámetros a otras funciones.                           |
+| [[2DAM_PMDM/Unidad 03/4. Funciones como resultado\|4. Funciones como resultado]]       | Funciones que devuelven otras funciones como resultado.                        |
+| [[2DAM_PMDM/Unidad 03/5. Lambdas\|5. Lambdas]]                                         | Tipos de datos en Kotlin.                                                      |
+| [[2DAM_PMDM/Unidad 03/6. Typealias\|6. Typealias]]                                     | Typealias en Kotlin.                                                           |
 
 { .block-language-dataview}
 
