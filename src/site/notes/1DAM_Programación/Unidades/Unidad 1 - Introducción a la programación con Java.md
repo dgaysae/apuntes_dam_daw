@@ -69,6 +69,12 @@ Bloque de contenidos básicos: **Identificación de los elementos de un programa
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[1DAM_Programación/Unidad 01-Introducción a la programación con Java\|Unidad 01-Introducción a la programación con Java]]
+
 ---
 
 <p><span>🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" data-href="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" href="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 2 - Estructuras de control. Calidad del software</a> ➡️</span></p>
