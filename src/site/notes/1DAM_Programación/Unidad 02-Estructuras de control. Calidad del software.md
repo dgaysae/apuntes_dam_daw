@@ -58,6 +58,9 @@ i) Se han utilizado aserciones para la detección y corrección de errores duran
 </div></div>
 
 
+---
+
+
 # 1. La programación estructurada
 
 

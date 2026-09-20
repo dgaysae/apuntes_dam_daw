@@ -50,6 +50,8 @@ i) Se han introducido comentarios en el código.
 </div></div>
 
 
+---
+
 # 1. Introducción
 
 Los ordenadores se han hecho para realizar tareas siguiendo un conjunto de instrucciones finitas. Esto es, un **programa**. Por su naturaleza (electrónica) manejan sólo dos posibles valores:
