@@ -102,7 +102,7 @@ La estructura secuencial, por lo tanto, es la más simple de las tres estructura
 
 > Estructura secuencial. Las instrucciones se ejecutan en un orden y una no comienza hasta que la anterior haya terminado.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSWD6B5TX_rV2VFfSLDy1GabxTpElz9lbKycflgrfTtPJ-Vt6Xr3UiMFLfxnZ6E70GuQzSTl7UhaVgL/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSWD6B5TX_rV2VFfSLDy1GabxTpElz9lbKycflgrfTtPJ-Vt6Xr3UiMFLfxnZ6E70GuQzSTl7UhaVgL/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 > [!example] Ejemplo
 > Vamos a escribir un algoritmo completamente secuencial que calcule la suma de dos números, a y b.
@@ -131,21 +131,6 @@ Lo que hace este algoritmo es:
 
 
 # 3. Estructura selectiva (condicional)
-
----
-dg-publish: true
-unidad: "[[1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software\|Unidad 2 - Estructuras de control. Calidad del software]]"
-descripcion: La estructura de control selectiva, que en adelante conoceremos como CONDICIONAL, permite decidir si un conjunto de instrucciones se ejecutan o no.
-orden: 3
-tags:
-  - estructuras_de_control/condicional
-  - java/estructuras_de_control/condicional
----
-
-```table-of-contents
-```
-
----
 
 Los algoritmos que usan únicamente estructuras secuenciales están muy limitados y no tienen ninguna utilidad real. Esa utilidad aparece cuando existe la posibilidad de **ejecutar una de entre varias** secuencias de instrucciones dependiendo de alguna condición asociada a los datos del programa. 
 
