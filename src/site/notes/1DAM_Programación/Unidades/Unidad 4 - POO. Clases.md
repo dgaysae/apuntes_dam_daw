@@ -27,27 +27,32 @@
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Desarrollo de clases:**  
-- **Concepto de clase y objeto.**  
-- **Estructura y miembros de una clase. Diagramas de clase.**  
-- **Creación de atributos.**  
-- **Creación de métodos.**  
-- **Creación de constructores.**  
-- **Utilización de clases y objetos.**  
-- **Concepto de herencia. Tipos. Utilización de clases heredadas.**  
-- **Librerías de clases. Creación. Inclusión y uso de la interface.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 26,83% | RA 4. Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos. | 16/11/2026 | 11/12/2026 | a) Se ha reconocido la sintaxis, estructura y componentes típicos de una clase. | 10,00% | 11,00% |
-|  |  |  |  | b) Se han definido clases. | 10,00% |  |
-|  |  |  |  | c) Se han definido propiedades y métodos. | 10,00% |  |
-|  |  |  |  | d) Se han creado constructores. | 10,00% |  |
-|  |  |  |  | e) Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente. | 10,00% |  |
-|  |  |  |  | f) Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros. | 12,50% |  |
-|  |  |  |  | g) Se han definido y utilizado clases heredadas. | 12,50% |  |
-|  |  |  |  | h) Se han creado y utilizado métodos estáticos. | 12,50% |  |
-|  |  |  |  | i) Se han creado y utilizado conjuntos y librerías de clases. | 12,50% |  |
+Desarrollo de clases:  
+- Concepto de clase y objeto.  
+- Estructura y miembros de una clase. Diagramas de clase.  
+- Creación de atributos.  
+- Creación de métodos.  
+- Creación de constructores.  
+- Utilización de clases y objetos.  
+- Concepto de herencia. Tipos. Utilización de clases heredadas.  
+- Librerías de clases. Creación. Inclusión y uso de la interface.
+
+### RA asociado y criterios de evaluación
+
+**RA 4. Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.**
+
+Criterios de evaluación para el RA:
+a) Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.
+b) Se han definido clases.
+c) Se han definido propiedades y métodos.
+d) Se han creado constructores.
+e) Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.
+f) Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.
+g) Se han definido y utilizado clases heredadas.
+h) Se han creado y utilizado métodos estáticos.
+i) Se han creado y utilizado conjuntos y librerías de clases.
 
 ---
 

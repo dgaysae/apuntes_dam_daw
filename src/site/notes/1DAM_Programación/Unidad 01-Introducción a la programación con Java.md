@@ -8,6 +8,48 @@
 
 ---
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidades/unidad-1-introduccion-a-la-programacion-con-java/#datos-de-la-unidad" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+### Contenidos básicos
+
+Identificación de los elementos de un programa informático:
+- Estructura y bloques fundamentales.
+- Variables.
+- Tipos de datos.
+- Literales.
+- Constantes.
+- Operadores y expresiones.
+- Conversiones de tipo.
+- Comentarios.
+
+### RA asociado y criterios de evaluación
+
+**RA 1. Reconoce la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.**
+
+Criterios de evaluación para el RA:
+a) Se han identificado los bloques que componen la estructura de un programa informático.
+b) Se han creado proyectos de desarrollo de aplicaciones.
+c) Se han utilizado entornos integrados de desarrollo.
+d) Se han identificado los distintos tipos de variables y la utilidad específica de cada uno.
+e) Se ha modificado el código de un programa para crear y utilizar variables.
+f) Se han creado y utilizado constantes y literales.
+g) Se han clasificado, reconocido y utilizado en expresiones los operadores del lenguaje.
+h) Se ha comprobado el funcionamiento de las conversiones de tipos explícitas e implícitas.
+i) Se han introducido comentarios en el código.
+
+---
+
+
+</div></div>
+
+
 # 1. Introducción
 
 Los ordenadores se han hecho para realizar tareas siguiendo un conjunto de instrucciones finitas. Esto es, un **programa**. Por su naturaleza (electrónica) manejan sólo dos posibles valores:

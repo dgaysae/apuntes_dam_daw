@@ -27,30 +27,35 @@
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Aplicación de las estructuras de almacenamiento:**  
-- **Estructuras. Definición y uso.**  
-- **Concepto de Array. Tipos. Creación de arrays. Recorrido y búsquedas en un array.**  
-- **Arrays multidimensionales.**  
-- **Cadenas de caracteres. Uso de las cadenas. Recorrido y manipulación.**  
-- **Uso de expresiones regulares en cadenas de texto.**  
-- **Concepto de Lista. Tipos. Operaciones.**  
-- **Aplicación del estándar XML.**  
-- **Concepto de XML Estructura de un documento XML.**  
-- **Especificación de documentos. DTD y XSD.**  
-- **Clases para la creación y manipulación de documentos XML.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 50,00% | RA 6. Escribe programas que manipulen información seleccionando y utilizando tipos avanzados de datos. | 14/12/2026 | 29/1/2027 | a) Se han escrito programas que utilicen matrices (arrays). | 10,00% | 12,00% |
-|  |  |  |  | b) Se han reconocido las librerías de clases relacionadas con tipos de datos avanzados. | 10,00% |  |
-|  |  |  |  | c) Se han utilizado listas para almacenar y procesar información. | 10,00% |  |
-|  |  |  |  | d) Se han utilizado iteradores para recorrer los elementos de las listas. | 10,00% |  |
-|  |  |  |  | e) Se han reconocido las características y ventajas de cada una de las colecciones de datos disponibles. | 10,00% |  |
-|  |  |  |  | f) Se han creado clases y métodos genéricos. | 10,00% |  |
-|  |  |  |  | g) Se han utilizado expresiones regulares en la búsqueda de patrones en cadenas de texto. | 10,00% |  |
-|  |  |  |  | h) Se han identificado las clases relacionadas con el tratamiento de documentos escritos en diferentes lenguajes de intercambio de datos. | 10,00% |  |
-|  |  |  |  | i) Se han realizado programas que realicen manipulaciones sobre documentos escritos en diferentes lenguajes de intercambio de datos. | 10,00% |  |
-|  |  |  |  | j) Se han utilizado operaciones agregadas para el manejo de información almacenada en colecciones. | 10,00% |  |
+Aplicación de las estructuras de almacenamiento:  
+- Estructuras. Definición y uso.  
+- Concepto de Array. Tipos. Creación de arrays. Recorrido y búsquedas en un array.  
+- Arrays multidimensionales.  
+- Cadenas de caracteres. Uso de las cadenas. Recorrido y manipulación.  
+- Uso de expresiones regulares en cadenas de texto.  
+- Concepto de Lista. Tipos. Operaciones.  
+- Aplicación del estándar XML.  
+- Concepto de XML Estructura de un documento XML.  
+- Especificación de documentos. DTD y XSD.  
+- Clases para la creación y manipulación de documentos XML.
+
+### RA asociado y criterios de evaluación
+
+**RA 6. Escribe programas que manipulen información seleccionando y utilizando tipos avanzados de datos.**
+
+Criterios de evaluación para el RA:
+a) Se han escrito programas que utilicen matrices (arrays).
+b) Se han reconocido las librerías de clases relacionadas con tipos de datos avanzados.
+c) Se han utilizado listas para almacenar y procesar información.
+d) Se han utilizado iteradores para recorrer los elementos de las listas.
+e) Se han reconocido las características y ventajas de cada una de las colecciones de datos disponibles.
+f) Se han creado clases y métodos genéricos.
+g) Se han utilizado expresiones regulares en la búsqueda de patrones en cadenas de texto.
+h) Se han identificado las clases relacionadas con el tratamiento de documentos escritos en diferentes lenguajes de intercambio de datos.
+i) Se han realizado programas que realicen manipulaciones sobre documentos escritos en diferentes lenguajes de intercambio de datos.
+j) Se han utilizado operaciones agregadas para el manejo de información almacenada en colecciones.
 
 ---
 

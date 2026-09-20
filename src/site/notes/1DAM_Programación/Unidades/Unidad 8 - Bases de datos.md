@@ -26,22 +26,27 @@
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Gestión de bases de datos relacionales:**  
-- **Conexión con bases de datos relacionales. Características, tipos y métodos de acceso.**  
-- **Establecimiento de conexiones. Componentes de acceso a datos.**  
-- **Recuperación de información. Selección de registros. Uso de parámetros.**  
-- **Manipulación de la información. Altas, bajas y modificaciones.**  
-- **Ejecución de consultas sobre la base de datos.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 42,86% | RA 9. Gestiona información almacenada en bases de datos manteniendo la integridad y consistencia de los datos. | 30/3/2027 | 16/4/2027 | a) Se han identificado las características y métodos de acceso a sistemas gestores de bases de datos. | 5,00% | 15,00% |
-|  |  |  |  | b) Se han programado conexiones con bases de datos. | 5,00% |  |
-|  |  |  |  | c) Se ha escrito código para almacenar información en bases de datos. | 5,00% |  |
-|  |  |  |  | d) Se han creado programas para recuperar y mostrar información almacenada en bases de datos. | 5,00% |  |
-|  |  |  |  | e) Se han efectuado borrados y modificaciones sobre la información almacenada. | 5,00% |  |
-|  |  |  |  | f) Se han creado aplicaciones que muestren la información almacenada en bases de datos. | 5,00% |  |
-|  |  |  |  | g) Se han creado aplicaciones para gestionar la información presente en bases de datos. | 70,00% |  |
+Gestión de bases de datos relacionales:  
+- Conexión con bases de datos relacionales. Características, tipos y métodos de acceso.  
+- Establecimiento de conexiones. Componentes de acceso a datos.  
+- Recuperación de información. Selección de registros. Uso de parámetros.  
+- Manipulación de la información. Altas, bajas y modificaciones.  
+- Ejecución de consultas sobre la base de datos.
+
+### RA asociado y criterios de evaluación
+
+**RA 9. Gestiona información almacenada en bases de datos manteniendo la integridad y consistencia de los datos.**
+
+Criterios de evaluación para el RA:
+a) Se han identificado las características y métodos de acceso a sistemas gestores de bases de datos.
+b) Se han programado conexiones con bases de datos.
+c) Se ha escrito código para almacenar información en bases de datos.
+d) Se han creado programas para recuperar y mostrar información almacenada en bases de datos.
+e) Se han efectuado borrados y modificaciones sobre la información almacenada.
+f) Se han creado aplicaciones que muestren la información almacenada en bases de datos.
+g) Se han creado aplicaciones para gestionar la información presente en bases de datos.
 
 ---
 

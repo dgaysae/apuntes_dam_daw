@@ -23,34 +23,40 @@
 ```
 
 ---
+
 ## Datos de la unidad
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Utilización de objetos:**  
-- **Características de los objetos.**  
-- **Instanciación de objetos.**  
-- **Utilización de métodos.**  
-- **Utilización de propiedades.**  
-- **Utilización de métodos estáticos.**  
-- **Librerías de objetos. Inclusión y uso.**  
-- **Constructores.**  
-- **Destrucción de objetos y liberación de memoria.**  
-- **Entornos de desarrollo para programación orientada a objetos.**  
-- **Entornos específicos.**  
-- **Plugins de integración en entornos genéricos.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 24,39% | RA 2. Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos. | 26/10/2026 | 13/11/2026 | a) Se han identificado los fundamentos de la programación orientada a objetos. | 12,00% | 10,00% |
-|  |  |  |  | b) Se han escrito programas simples. | 13,00% |  |
-|  |  |  |  | c) Se han instanciado objetos a partir de clases predefinidas. | 13,00% |  |
-|  |  |  |  | d) Se han utilizado métodos y propiedades de los objetos. | 13,00% |  |
-|  |  |  |  | e) Se han escrito llamadas a métodos estáticos. | 13,00% |  |
-|  |  |  |  | f) Se han utilizado parámetros en la llamada a métodos. | 13,00% |  |
-|  |  |  |  | g) Se han incorporado y utilizado librerías de objetos. | 5,00% |  |
-|  |  |  |  | h) Se han utilizado constructores. | 13,00% |  |
-|  |  |  |  | i) Se ha utilizado el entorno integrado de desarrollo en la creación y compilación de programas simples. | 5,00% |  |
+Utilización de objetos:  
+- Características de los objetos.  
+- Instanciación de objetos.  
+- Utilización de métodos.  
+- Utilización de propiedades.  
+- Utilización de métodos estáticos.  
+- Librerías de objetos. Inclusión y uso.  
+- Constructores.  
+- Destrucción de objetos y liberación de memoria.  
+- Entornos de desarrollo para programación orientada a objetos.  
+- Entornos específicos.  
+- Plugins de integración en entornos genéricos.
+
+### RA asociado y criterios de evaluación
+
+**RA 2. Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.**
+
+Criterios de evaluación para el RA:
+a) Se han identificado los fundamentos de la programación orientada a objetos.
+b) Se han escrito programas simples.
+c) Se han instanciado objetos a partir de clases predefinidas
+d) Se han utilizado métodos y propiedades de los objetos
+e) Se han escrito llamadas a métodos estáticos 
+f) Se han utilizado parámetros en la llamada a métodos 
+g) Se han incorporado y utilizado librerías de objetos 
+h) Se han utilizado constructores 
+i) Se ha utilizado el entorno integrado de desarrollo en la creación y compilación de programas simples 
 
 ---
 

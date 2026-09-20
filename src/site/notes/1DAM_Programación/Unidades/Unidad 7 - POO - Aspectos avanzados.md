@@ -26,26 +26,31 @@
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Utilización avanzada de clases:**  
-- **Composición de clases.**  
-- **Herencia.**  
-- **Superclases y subclases.**  
-- **Clases y métodos abstractos y finales.**  
-- **Sobreescritura de métodos.**  
-- **Constructores y herencia.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 42,86% | RA 7. Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación. | 2/3/2027 | 19/3/2027 | a) Se han identificado los conceptos de herencia, superclase y subclase. | 10,00% | 15,00% |
-|  |  |  |  | b) Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos. | 10,00% |  |
-|  |  |  |  | c) Se ha reconocido la incidencia de los constructores en la herencia. | 10,00% |  |
-|  |  |  |  | d) Se han creado clases heredadas que sobrescriban la implementación de métodos de la superclase. | 10,00% |  |
-|  |  |  |  | e) Se han diseñado y aplicado jerarquías de clases. | 10,00% |  |
-|  |  |  |  | f) Se han probado y depurado las jerarquías de clases. | 10,00% |  |
-|  |  |  |  | g) Se han realizado programas que implementen y utilicen jerarquías de clases. | 10,00% |  |
-|  |  |  |  | h) Se ha comentado y documentado el código. | 10,00% |  |
-|  |  |  |  | i) Se han identificado y evaluado los escenarios de uso de interfaces. | 10,00% |  |
-|  |  |  |  | j) Se han identificado y evaluado los escenarios de utilización de la herencia y la composición. | 10,00% |  |
+Utilización avanzada de clases:  
+- Composición de clases.  
+- Herencia.  
+- Superclases y subclases.  
+- Clases y métodos abstractos y finales.  
+- Sobreescritura de métodos.  
+- Constructores y herencia.
+
+### RA asociado y criterios de evaluación
+
+**RA 7. Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.**
+
+Criterios de evaluación para el RA:
+a) Se han identificado los conceptos de herencia, superclase y subclase.
+b) Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos.
+c) Se ha reconocido la incidencia de los constructores en la herencia.
+d) Se han creado clases heredadas que sobrescriban la implementación de métodos de la superclase.
+e) Se han diseñado y aplicado jerarquías de clases.
+f) Se han probado y depurado las jerarquías de clases.
+g) Se han realizado programas que implementen y utilicen jerarquías de clases.
+h) Se ha comentado y documentado el código.
+i) Se han identificado y evaluado los escenarios de uso de interfaces.
+j) Se han identificado y evaluado los escenarios de utilización de la herencia y la composición.
 
 ---
 ## Índice de contenidos

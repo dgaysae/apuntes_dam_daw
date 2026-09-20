@@ -27,31 +27,36 @@
 
 La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
 
-Bloque de contenidos básicos: **Lectura y escritura de información:**  
-- **Tipos de flujos. Flujos de bytes y de caracteres.**  
-- **Clases relativas a flujos.**  
-- **Utilización de flujos.**  
-- **Entrada desde teclado.**  
-- **Salida a pantalla.**  
-- **Ficheros de datos. Registros.**  
-- **Apertura y cierre de ficheros. Modos de acceso.**  
-- **Escritura y lectura de información en ficheros.**  
-- **Utilización de los sistemas de ficheros.**  
-- **Creación y eliminación de ficheros y directorios.**  
-- **Interfaces.**  
-- **Concepto de evento.**  
-- **Creación de controladores de eventos.**
+### Contenidos básicos
 
-| Peso RA en trim. | RA asociado | Periodo |  | Criterios de evaluación | Peso CE en la RA | Peso RA en módulo |
-| :---: | :---- | :---: | :---: | :---- | :---: | :---: |
-| 50,00% | RA 5. Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases. | 1/2/2027 | 26/2/2027 | a) Se ha utilizado la consola para realizar operaciones de entrada y salida de información. | 5,00% | 12,00% |
-|  |  |  |  | b) Se han aplicado formatos en la visualización de la información. | 5,00% |  |
-|  |  |  |  | c) Se han reconocido las posibilidades de entrada / salida del lenguaje y las librerías asociadas. | 5,00% |  |
-|  |  |  |  | d) Se han utilizado ficheros para almacenar y recuperar información. | 10,00% |  |
-|  |  |  |  | e) Se han creado programas que utilicen diversos métodos de acceso al contenido de los ficheros. | 10,00% |  |
-|  |  |  |  | f) Se han utilizado las herramientas del entorno de desarrollo para crear interfaces gráficos de usuario simples. | 10,00% |  |
-|  |  |  |  | g) Se han programado controladores de eventos. | 10,00% |  |
-|  |  |  |  | h) Se han escrito programas que utilicen interfaces gráficos para la entrada y salida de información. | 45,00% |  |
+Lectura y escritura de información:  
+- Tipos de flujos. Flujos de bytes y de caracteres.  
+- Clases relativas a flujos.  
+- Utilización de flujos.  
+- Entrada desde teclado.  
+- Salida a pantalla.  
+- Ficheros de datos. Registros.  
+- Apertura y cierre de ficheros. Modos de acceso.  
+- Escritura y lectura de información en ficheros.  
+- Utilización de los sistemas de ficheros.  
+- Creación y eliminación de ficheros y directorios.  
+- Interfaces.  
+- Concepto de evento.  
+- Creación de controladores de eventos.
+
+### RA asociado y criterios de evaluación
+
+**RA 5. Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases.**
+
+Criterios de evaluación para el RA:
+a) Se ha utilizado la consola para realizar operaciones de entrada y salida de información.
+b) Se han aplicado formatos en la visualización de la información.
+c) Se han reconocido las posibilidades de entrada / salida del lenguaje y las librerías asociadas.
+d) Se han utilizado ficheros para almacenar y recuperar información.
+e) Se han creado programas que utilicen diversos métodos de acceso al contenido de los ficheros.
+f) Se han utilizado las herramientas del entorno de desarrollo para crear interfaces gráficos de usuario simples.
+g) Se han programado controladores de eventos.
+h) Se han escrito programas que utilicen interfaces gráficos para la entrada y salida de información.
 
 ---
 
