@@ -50,6 +50,7 @@ Bloque de contenidos básicos: **Identificación de los elementos de un programa
 |  |  |  |  | i) Se han introducido comentarios en el código. | 5,00% |  |
 
 ---
+
 ## Índice de contenidos
 
 | File                                                                                                                      | Descripción                                                                                                                                                                                                                                                                                                                                      |

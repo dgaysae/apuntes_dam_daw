@@ -33,7 +33,7 @@ Cada programa tiene como finalidad resolver un problema realizando alguna tarea 
 - Navegar por Internet ([Brave](https://brave.com/es/), [Chrome](https://www.google.com/intl/es_es/chrome/), [Firefox](https://www.firefox.com/es-ES/), [Edge](https://www.microsoft.com/es-es/edge/), etc.).
 - Enviar correos (Thunderbird, Outlook, etc.).
 
- En general, para que un programa realice su función, debe **comunicarse** de alguna manera **con el exterior** para recibir datos y devolver reusltados.
+ En general, para que un programa realice su función, debe **comunicarse** de alguna manera **con el exterior** para recibir datos y devolver resultados.
 
 Esos datos pueden ser de distinta naturaleza, pero en todos los casos **deben convertirse en datos binarios** para que el ordenador pueda manejarlos.
 
