@@ -556,33 +556,87 @@ Hola
 > 
 > En cualquier caso, **te animo a que te pases por la documentación de la API de la clase [`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)** y juegues con algunos de los métodos que allí se explican. Te va a resultar de gran interés.
 
----
+## 3.2. La clase `Math`
 
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" data-href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - POO. Los objetos</a></span></p>
+Como ya indicamos [[1DAM_Programación/Unidad 01/9. Tipos de datos simples#9.3.5. ¿Y las operaciones más complejas?\|unidad 1]], Java incorpora en sus librerías clases que implementan mecanismos de cálculos complejos.
 
+A diferencia de la clase `String`, no podemos crear objetos a partir de la clase `Math`. El motivo lo veremos más adelante.
 
+Entonces, ¿cómo puedo utilizar sus funcionalidades. Simplemente indicando que "de la clase `Math`, quiero usar el método que sea con estos parámetros".
 
+Dicho de otra forma:
 
-
-## 4. Declaración de clases e instanciación de objetos en Java
-
----
-dg-publish: true
-unidad: "[[1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos\|Unidad 3 - POO. Los objetos]]"
-descripcion: Veremos cómo declaramos una clase, con sus atributos y métodos, y luego instanciamos un objeto de dicha clase.
-orden: 4
-tags:
-  - java
-  - poo/clase
-  - poo/objeto
-  - poo/métodos
-  - poo/atributos
----
-
-```table-of-contents
+```java
+int numeroNegativo = -20;
+int numeroPositivo = Math.abs(numeroNegativo) // 20
 ```
 
+En este ejemplo, indico que "de la clase `Math`, quiero usar el método `abs` (valor absoluto) para el número guardado en `numeroNegativo`". Este método me devolverá el valor positivo del valor introducido.
+
+Estas son algunos de los métodos que nos pueden resultar muy útiles hasta que veamos en profundidad la biblioteca de clases:
+
+| Método | Descripción | Tipo de dato | Tipo de resultado |
+| --- | --- | :---: | :---: |
+| `Math.abs(x)` | valor absoluto de x | Real o Entero | Real o Entero |
+| `Math.sin(x)` | seno de x (en radianes) | Real | Real |
+| `Math.cos(x)` | coseno de x (en radianes) | Real | Real |
+| `Math.log(x)` | logaritmo neperiano de x | Real | Real |
+| `Math.log10(x)` | logaritmo decimal de x | Real | Real |
+| `Math.round(x)` | redondea el número x al valor entero más próximo | Real | Entero |
+| `Math.random()` | genera un número al azar entre 0 y 1 | -- | Real |
+
+Y aquí tienes algunos ejemplos de aplicación de estas funciones sobre datos reales:
+
+| Operación | Resultado |
+| --- | :---: |
+| `Math.abs(-5)` | 5 |
+| `Math.abs(6)` | 6 |
+| `Math.round(5.7)` | 6 |
+| `Math.round(5.2)` | 5 |
+| `Math.pow(2, 8)` | 64 |
+| `Math.sqrt(64)` | 8 |
+
+> [!example] Material de apoyo 
+> 
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-01/referencias/#java-clase-math" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+### JAVA: Clase Math
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4znSjME7tNU?si=caSIprEHAnD1mnms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Aula en la nube. (2022x, octubre 19). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU
+
+
+</div></div>
+
+
+> [!example] Material de apoyo 
+> 
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-01/referencias/#java-funciones-matematicas" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+### JAVA: Funciones matemáticas
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jKs6kq6z1sI?si=neWhcLRZUrSt7gR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Aula en la nube. (2022y, octubre 19). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI
+
+
 ---
+
+<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" data-href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a la programación con Java</a></span></p>
+
+
+</div></div>
+
+
+
+
+# 4. Declaración de clases e instanciación de objetos en Java
+
 
 Para crear un objeto y empezar a usarlo, es necesario que antes exista una clase (el molde, o la línea de producción de la factoría, en las metáforas que antes proponíamos). Dicho de otra forma, un objeto es una variable que almacena varios datos (y métodos) cuyo tipo de dato es la clase desde la que se instancia.
 
@@ -807,7 +861,7 @@ class Persona {
 
 
 
-## 5. Más sobre métodos
+# 5. Más sobre métodos
 
 ---
 dg-publish: true

@@ -2001,23 +2001,13 @@ Aquí tenemos algunos ejemplos de operaciones conjuntas y su resultado según el
 
 Además de todas estas operaciones aritméticas, lógicas y relacionales, los lenguajes de programación disponen de mecanismos para realizar operaciones más complejas con los datos, como, por ejemplo, calcular raíces cuadradas, logaritmos, senos, cosenos, redondeo de números reales, etc.
 
-Todas estas operaciones (y muchas más) se realizan a través de objetos predefinidos de la biblioteca de clases de Java. Cuando llegue el momento, ya veremos en detalle qué clases forman esa biblioteca y cómo se usan, y aprenderemos a hacer las nuestras. Por ahora nos basta saber que algunas de ellas sirven para hacer cálculos más complejos que una simple suma o una división.
+Todas estas operaciones (y muchas más) se realizan a través de objetos predefinidos de la biblioteca de clases de Java. Una de ellas es la clase `Math`, que integra un conjunto de datos y funciones matemáticas que realizan operaciones completas y ofrecen datos estandarizados (como el valor de la constante **Pi**).
 
-La ejecución de estos métodos predefinidos requieren el uso de una clase de la biblioteca estándar (por ejemplo, `Math`). Al método se le pasarán los parámetros necesarios para que haga sus cálculos, y nos devolverá el resultado.
+Cuando llegue el momento, ya veremos con más detalle esta y otras clases de esa biblioteca y cómo se usan. Incluso aprenderemos a hacer las nuestras. Por ahora nos basta saber que algunas de ellas sirven para hacer cálculos más complejos que una simple suma o una división.
 
-Estas son algunos de los métodos que nos pueden resultar muy útiles hasta que veamos en profundidad la biblioteca de clases:
+La ejecución de los métodos de la clase `Math` requiere que se le pasen los parámetros necesarios para que haga sus cálculos, y nos devuelva el resultado.
 
-| Método | Descripción | Tipo de dato | Tipo de resultado |
-| --- | --- | :---: | :---: |
-| `Math.abs(x)` | valor absoluto de x | Real o Entero | Real o Entero |
-| `Math.sin(x)` | seno de x (en radianes) | Real | Real |
-| `Math.cos(x)` | coseno de x (en radianes) | Real | Real |
-| `Math.log(x)` | logaritmo neperiano de x | Real | Real |
-| `Math.log10(x)` | logaritmo decimal de x | Real | Real |
-| `Math.round(x)` | redondea el número x al valor entero más próximo | Real | Entero |
-| `Math.random()` | genera un número al azar entre 0 y 1 | -- | Real |
-
-Y aquí tienes algunos ejemplos de aplicación de estas funciones sobre datos reales:
+Algunos de esos métodos son:
 
 | Operación | Resultado |
 | --- | :---: |
@@ -2028,42 +2018,8 @@ Y aquí tienes algunos ejemplos de aplicación de estas funciones sobre datos re
 | `Math.pow(2, 8)` | 64 |
 | `Math.sqrt(64)` | 8 |
 
-> [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-01/referencias/#java-clase-math" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-### JAVA: Clase Math
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4znSjME7tNU?si=caSIprEHAnD1mnms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022x, octubre 19). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU
-
-
-</div></div>
-
-
-> [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-01/referencias/#java-funciones-matematicas" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-### JAVA: Funciones matemáticas
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jKs6kq6z1sI?si=neWhcLRZUrSt7gR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022y, octubre 19). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI
-
-
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" data-href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" href="1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a la programación con Java</a></span></p>
-
-
-</div></div>
-
+> [!info]  
+> Esta clase se citará más adelante, en [[1DAM_Programación/Unidad 03/3. Ejemplos de la API - Math y String#3.2. La clase `Math`\|unidades posteriores]].
 
 ## 9.4. Constantes y variables
 
