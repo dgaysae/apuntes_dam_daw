@@ -98,6 +98,12 @@ Esta unidad va a contener muchos más conceptos, pero los veremos con ejemplos p
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[1DAM_Programación/Unidad 04-POO. Clases\|Unidad 04-POO. Clases]]
+
 [^1]: Buzzell, E. (Director). (1940). **_Los Hermanos Marx en el Oeste_** \[Película\]. Metro-Goldwyn Mayer.
 
 ---

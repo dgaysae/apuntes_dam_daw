@@ -853,32 +853,9 @@ class Persona {
 }
 ```
 
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" data-href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - POO. Los objetos</a></span></p>
-
-
-
-
 
 # 5. Más sobre métodos
 
----
-dg-publish: true
-unidad: "[[1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos\|Unidad 3 - POO. Los objetos]]"
-descripcion: Explicación más detallada de cómo declarar y usar métodos.
-orden: 5
-tags:
-  - java
-  - poo/clase
-  - poo/objeto
-  - poo/métodos
----
-
-```table-of-contents
-```
-
----
 
 ## 5.1 Paso de parámetros
 
@@ -1080,29 +1057,9 @@ class Persona {
 }
 ```
 
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" data-href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - POO. Los objetos</a></span></p>
 
 
-
-
-
-## 6. Paquetes
-
----
-dg-publish: true
-unidad: "[[1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos\|Unidad 3 - POO. Los objetos]]"
-descripcion: Nuestros programas pueden llegar a contener muchas clases. Para organizarlas podemos usar los paquetes.
-orden: 6
-tags:
-  - java/paquetes
----
-
-```table-of-contents
-```
-
----
+# 6. Paquetes
 
 Un paquete o ***package*** es un conjunto de clases relacionadas entre sí empaquetadas en un archivo. En el JDK existen multitud de paquetes estándar que usarás continuamente, y, además, puedes encontrar paquetes de terceros para hacer todo tipo de cosas. Y tú mismo aprenderás a hacer tus propios paquetes. 
 
@@ -1145,33 +1102,8 @@ $ javac -cp /ruta/a/mis/clases nombre.java
 
 ![ud02_02_jerarquia_clases_java.png\|Jerarquía de clases en Java](/img/user/adjuntos/1DAM_Programacion/Unidad_02/ud02_02_jerarquia_clases_java.png)
 
----
 
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" data-href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - POO. Los objetos</a></span></p>
-
-
-
-
-
-## Referencias
-
----
-dg-publish: true
-
-unidad: "[[1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos\|Unidad 3 - POO. Los objetos]]"
-
-descripcion: Para permitir que un usuario pueda comunicarse con nuestro programa podemos usar la entrada por teclado, con la que el usuario nos envía datos, y la salida por pantalla con la que el programa le dice los resultados.
-
-orden: 8
-
----
-
-```table-of-contents
-```
-
----
-
-# Material de apoyo
+# Referencias - Material de apoyo
 
 ## String
 
@@ -1190,9 +1122,3 @@ orden: 8
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FNjyxclZmDQ?si=OuzAQSKikSf4bztH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022p, octubre 13). _JAVA: Ejercicio String y funciones ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=FNjyxclZmDQ
-
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" data-href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" href="1DAM_Programación/Unidades/Unidad 3 - POO. Los objetos.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - POO. Los objetos</a></span></p>
-
-

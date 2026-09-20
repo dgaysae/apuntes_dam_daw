@@ -97,6 +97,12 @@ Estás a punto de empezar en el mundo de la POO ¡Vamos a ello!
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[1DAM_Programación/Unidad 03-POO. Los objetos\|Unidad 03-POO. Los objetos]]
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" data-href="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" href="1DAM_Programación/Unidades/Unidad 2 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 2 - Estructuras de control. Calidad del software</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" data-href="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" href="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 4 - POO. Clases</a> ➡️</span></p>
