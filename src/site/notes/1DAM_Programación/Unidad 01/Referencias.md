@@ -73,7 +73,7 @@
 
 > Aula en la nube. (2022f, octubre 2). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI
 
-### JAVA: Preparando el entorno
+### JAVA: Preparando el entorno - Aula en la nube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_2j8aYnmYk?si=kmckEj_stMpRjGxt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -85,25 +85,31 @@
 
 > Aula en la nube. (2022h, octubre 4). _Hola Mundo en JAVA  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
 
-### JAVA: Salida por pantalla
+### JAVA: Salida por pantalla - Aula en la nube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QRDePHN91UY?si=O5MoeG3IYPiAHUD7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022i, octubre 5). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY
 
-### JAVA: Entrada de datos
+### JAVA: Entrada de datos - Aula en la nube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HSq3rRfBmDg?si=5j9kxGN4_4Zf5R_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022aa, octubre 20). _JAVA: Entrada de datos - Clase Scanner  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg
 
-### JAVA: Tipos de variables
+### JAVA: Tipos de variables - Aula en la nube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dy1qD-jwcIs?si=w_wCaXdJWge4VAhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022j, octubre 6). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs
 
-### JAVA: Declarar variables numéricas
+### Variables y Tipos - Aula Informática
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PpkIVxLtZdg?si=UWJ-cRNFFk7T9fnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Aula Informática. (2022d, marzo 28). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg
+
+### JAVA: Declarar variables numéricas - Aula en la nube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9OpBxj5kYss?si=4sDCRgWZUFh2WwIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

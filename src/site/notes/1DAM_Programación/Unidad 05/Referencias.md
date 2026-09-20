@@ -54,53 +54,59 @@
 
 > makigas. (2023, 13 julio). ***Fundamentos de Java: funciones variádicas*** [Vídeo]. YouTube. https://www.youtube.com/watch?v=DnJYwavcRAY
 
-## Set
+## Estructuras de datos
 
-### Aula en la nube - JAVA: Set y HashSet
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ifwAPFxpu0?si=JQMn10va6WcDRD4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Torti Code. (2026, 17 abril). ***Las 8 Estructuras de Datos que TODO Programador Usa (Pero Nadie Explica Bien)*** [Vídeo]. YouTube. https://www.youtube.com/watch?v=9ifwAPFxpu0
+
+### Set
+
+#### Aula en la nube - JAVA: Set y HashSet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yzs5MGu_lJY?si=h8bMvY3V0yEL-HDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023d, marzo 25). ***JAVA: Set y HashSet*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=Yzs5MGu_lJY
 
-### Aula en la nube - JAVA: HashSet + equals + hashCode
+#### Aula en la nube - JAVA: HashSet + equals + hashCode
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Vq04jsVaRo?si=ilIq4wDGTe4ufXBp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023e, marzo 26). ***JAVA: HashSet + equals + hashCode*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=8Vq04jsVaRo
 
-### Aula en la nube - JAVA: TreeSet
+#### Aula en la nube - JAVA: TreeSet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tfeQrUH7L4k?si=tY-MzazaayMEHKRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023f, marzo 27). ***JAVA: TreeSet*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=tfeQrUH7L4k
 
-### Aula en la nube - JAVA: TreeSet avanzado
+#### Aula en la nube - JAVA: TreeSet avanzado
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UPYECuGiePc?si=f3mr_qVOiLs3dxVf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023g, marzo 28). ***JAVA: TreeSet avanzado*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=UPYECuGiePc
 
-## Map
+### Map
 
-### Aula en la nube - JAVA: Interface Map
+#### Aula en la nube - JAVA: Interface Map
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PQcBEX5M23c?si=GM0QvK6IsPMkvUCZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023h, marzo 30). ***JAVA: Interface Map*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=PQcBEX5M23c
 
-### Aula en la nube - JAVA: HashMap
+#### Aula en la nube - JAVA: HashMap
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eplBXJarh1A?si=THyeEFiQEZyxWp61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023i, abril 2). ***JAVA: HashMap*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=eplBXJarh1A
 
-### Aula en la nube - JAVA: TreeMap
+#### Aula en la nube - JAVA: TreeMap
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/unbN9nF-ifE?si=wZPeDjCx8r17qOLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2023j, abril 4). ***JAVA: TreeMap*** ☕ DAM - DAW [Vídeo]. YouTube. https://www.youtube.com/watch?v=unbN9nF-ifE
 
-### Aula en la nube - JAVA: TreeMap anidado
+#### Aula en la nube - JAVA: TreeMap anidado
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H3_Wuis_Ipg?si=3kfw37HWFgekB7CS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
