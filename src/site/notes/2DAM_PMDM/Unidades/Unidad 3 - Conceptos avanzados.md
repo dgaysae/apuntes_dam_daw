@@ -44,8 +44,14 @@
 | [[2DAM_PMDM/Unidad 03/4. Funciones como resultado\|4. Funciones como resultado]]       | Funciones que devuelven otras funciones como resultado.                        |
 | [[2DAM_PMDM/Unidad 03/5. Lambdas\|5. Lambdas]]                                         | Tipos de datos en Kotlin.                                                      |
 | [[2DAM_PMDM/Unidad 03/6. Typealias\|6. Typealias]]                                     | Typealias en Kotlin.                                                           |
+| [[2DAM_PMDM/Unidad 03/7. Fechas\|7. Fechas]]                                           | Fechas en Kotlin.                                                              |
 
 { .block-language-dataview}
+
+## Ejercicios resueltos
+
+Puedes consultar los ejercicios resueltos por el alumnado en este [[2DAM_PMDM/Ejercicios - Introducción a Kotlin\|enlace]].
+
 
 ---
 

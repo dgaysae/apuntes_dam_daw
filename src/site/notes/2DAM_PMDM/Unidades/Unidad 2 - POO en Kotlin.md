@@ -46,6 +46,11 @@
 
 { .block-language-dataview}
 
+## Ejercicios resueltos
+
+Puedes consultar los ejercicios resueltos por el alumnado en este [[2DAM_PMDM/Ejercicios - Introducción a Kotlin\|enlace]].
+
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a Kotlin</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" data-href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - Conceptos avanzados</a> ➡️</span></p>
