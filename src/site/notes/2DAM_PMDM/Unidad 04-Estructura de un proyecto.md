@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-04/2-estructura-de-directorios/","dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 4 - Estructura de un proyecto Android]]","descripcion":"Estructura de un proyecto Android.","orden":2}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidad-04-estructura-de-un-proyecto/","dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]"}}
 ---
 
 
@@ -7,6 +7,70 @@
 ```
 
 ---
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info] Para que practiques desde el principio... 
+> Puedes ejecutar el código Kotlin que se muestran a continuación pulsando el botoncito de "Play" en la parte superior derecha de cada código.
+> 
+> También puedes editar y cambiar el código para hacer pruebas sin irte de aquí.
+> 
+> En cualquier caso, puedes ir al **[Playground de Kotlin](https://play.kotlinlang.org/)**, el editor de código de Kotlin en la web que te permitirá probar cada uno de los códigos que encontrarás en estas notas.
+
+</div></div>
+
+
+# 1. Creación de nuevo proyecto
+
+**Actualizado: Abril 2020 (Gómez, S., 2011)**
+
+El ritmo de actualizaciones de [**Android Studio**](https://developer.android.com/studio?hl=es-419) es bastante alto, por lo que algunos detalles de este artículo pueden no ajustarse exactamente a la última versión de la aplicación. Este artículo se encuentra actualizado para la versión de **Android Studio 3.6** 
+
+Seguimos con el Curso de Programación Android. Para empezar a comprender cómo se construye una aplicación Android vamos a crear un nuevo proyecto en Android Studio y echaremos un vistazo a la estructura general del proyecto creado por defecto.
+
+Para crear un nuevo proyecto ejecutaremos Android Studio y desde la pantalla de bienvenida pulsaremos la opción «Start a new Android Studio project» para iniciar el asistente de creación de un nuevo proyecto. 
+
+![ud04_pmdm_01.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_01.png)
+
+Si ya habíamos abierto anteriormente Android Studio es posible que se abra directamente la aplicación principal en vez de la pantalla de bienvenida. En ese caso accederemos al menú «File / New project…» para crear el nuevo proyecto. 
+
+El asistente de creación del proyecto nos guiará por las distintas opciones de creación y configuración de un nuevo proyecto Android. 
+
+En la primera pantalla del asistente elegiremos el tipo de *actividad* principal de la aplicación. Entenderemos por ahora que una *actividad* es una “ventana” o “pantalla” de la aplicación. Para empezar seleccionaremos *Empty Activity*, que es el tipo más sencillo.
+
+![ud04_pmdm_02.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_02.png)
+
+En la siguiente pantalla indicaremos, por este orden, el nombre de la aplicación, el paquete java para nuestras clases, y la ruta donde crear el proyecto. Para el segundo de los datos suele utilizarse un valor del tipo *domino.invertido.proyecto*. En mi caso utilizaré por tanto «net.sgoliver.android.holausuario». En tu caso puedes utilizar cualquier otro valor. Adicionalmente tendremos que indicar el lenguaje que utilizaremos para desarrollar (a partir de ahora utilizaré siempre Kotlin) y la API mínima (es decir, la versión mínima de Android) que soportará la aplicación. Como ya indiqué en el capítulo sobre la instalación del entorno de desarrollo, en este curso nos centraremos en Android 8.0 como versión mínima (API 26). Por último, el check de «Use legacy android.support libraries» lo dejaremos deshabilitado.
+
+![ud04_pmdm_03.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_03.png)
+
+La versión mínima que seleccionemos en la pantalla anterior implica que nuestra aplicación se pueda ejecutar en más o menos dispositivos. De esta forma, cuanto menor sea ésta, a más dispositivos podrá llegar nuestra aplicación, pero más complicado será conseguir que se ejecute correctamente en todas las versiones de Android. Para hacernos una idea del número de dispositivos que cubrimos con cada versión podemos pulsar sobre el enlace «Help me choose», que mostrará el porcentaje de dispositivos que ejecutan actualmente cada versión de Android. Por ejemplo, en el momento de escribir este artículo, si seleccionamos como API mínima la 26 conseguimos cubrir un 60,8% de los dispositivos actuales. Como información adicional, si pulsamos sobre cada versión de Android en esta pantalla podremos ver una lista de las novedades introducidas por dicha versión.
+
+![ud04_pmdm_04.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_04.png)
+
+Una vez configurado todo pulsamos el botón *Finish* y Android Studio creará por nosotros toda la estructura del proyecto y los elementos indispensables que debe contener. Si todo va bien aparecerá la pantalla principal de Android Studio con el nuevo proyecto creado. 
+
+![ud04_pmdm_05.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_05.png)
+
+En la parte izquierda, podemos observar todos los elementos creados inicialmente para el nuevo proyecto Android, sin embargo por defecto los vemos de una forma un tanto peculiar que inicialmente puede llevarnos a confusión. Para entender mejor la estructura del proyecto vamos a cambiar momentáneamente la forma en la que Android Studio nos la muestra. Para ello, pulsaremos sobre la lista desplegable situada en la parte superior izquierda, y cambiaremos la vista de proyecto al modo «Project» (en cualquier momento podremos volver al modo «Android» inicial).
+
+![ud04_pmdm_06.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_06.png)
+
+Con esto, la estructura del proyecto cambia un poco de aspecto y pasa a ser como se observa en la siguiente imagen:
+
+En los siguientes apartados describiremos los elementos principales de esta estructura. 
+
+Lo primero que debemos distinguir son los conceptos de *proyecto* y *módulo*. La entidad *proyecto* es única, y engloba a todos los demás elementos. Dentro de un proyecto podemos incluir varios *módulos*, que pueden representar aplicaciones distintas, versiones diferentes de una misma aplicación, o distintos componentes de un sistema (aplicación móvil, aplicación servidor, librerías, …). En la mayoría de los casos, trabajaremos con un proyecto que contendrá un sólo módulo correspondiente a nuestra aplicación principal. Por ejemplo en este caso que estamos creando tenemos el proyecto «android-hola-usuario» que contiene un solo módulo «app» que contendrá todo el software de la aplicación de ejemplo. 
+
+![ud04_pmdm_07.png](/img/user/adjuntos/2DAM_PMDM/Unidad_04/ud04_pmdm_07.png)
+
+En el siguiente apartado veremos la estructura básica de directorios de un proyecto Android.
+
+
+# 2. Estructura de directorios
 
 La estructura de directorios que encontramos al crear un nuevo proyecto en Android Studio es la siguiente:
 
@@ -225,7 +289,7 @@ Y con esto todos los elementos principales de un proyecto Android. No pierdas de
 
 Recordad que tenéis a vuestra disposición el índice completo de contenidos del Curso de Programación Android desde donde podéis acceder de forma totalmente gratuita a cualquier otro tema que os interese.
 
-## Referencias
+# Referencias
 
 * MoureDev by Brais Moure. (2020, 17 enero). ***ANDROID STUDIO: COMO Crear una APP (para Principiantes)*** 📲 \[Tutorial\] \[Vídeo\]. YouTube. [https://www.youtube.com/watch?v=BQaxPwZWboA](https://www.youtube.com/watch?v=BQaxPwZWboA)
 
@@ -235,4 +299,4 @@ Recordad que tenéis a vuestra disposición el índice completo de contenidos de
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidad 04/1. Creación de nuevo proyecto.md" data-href="2DAM_PMDM/Unidad 04/1. Creación de nuevo proyecto.md" href="2DAM_PMDM/Unidad 04/1. Creación de nuevo proyecto.md" class="internal-link" target="_blank" rel="noopener nofollow">1. Creación de nuevo proyecto</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 4 - Estructura de un proyecto Android.md" data-href="2DAM_PMDM/Unidades/Unidad 4 - Estructura de un proyecto Android.md" href="2DAM_PMDM/Unidades/Unidad 4 - Estructura de un proyecto Android.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 4 - Estructura de un proyecto Android</a></span></p>
+<p><span>🏠 <strong>Unidad:</strong> undefined</span></p>

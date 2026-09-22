@@ -23,7 +23,6 @@
 </div></div>
 
 
-
 # 1. Funciones de extensión
 
 Las funciones de extensión en Kotlin permiten **agregar nuevas funcionalidades a clases existentes** sin modificar su código fuente.

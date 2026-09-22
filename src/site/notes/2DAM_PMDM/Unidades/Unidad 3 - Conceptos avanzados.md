@@ -48,9 +48,16 @@
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[2DAM_PMDM/Unidad 03-Conceptos avanzados\|Unidad 03-Conceptos avanzados]]
+
 ## Ejercicios resueltos
 
 Puedes consultar los ejercicios resueltos por el alumnado en este [[2DAM_PMDM/Ejercicios - Introducción a Kotlin\|enlace]].
+
 
 
 ---

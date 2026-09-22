@@ -15,6 +15,11 @@
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[2DAM_PMDM/Unidad 04-Estructura de un proyecto\|Unidad 04-Estructura de un proyecto]]
 
 ---
 

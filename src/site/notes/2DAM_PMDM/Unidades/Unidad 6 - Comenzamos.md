@@ -3,14 +3,22 @@
 ---
 
 
+¡Empecemos a programas aplicaciones!
 
-
-| File                                                                                                                          | Descripción                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [[2DAM_PMDM/Unidad 06/1. Layouts, Palette Texts y componentes de texto\|1. Layouts, Palette Texts y componentes de texto]] | Layouts, Palette Texts y componentes de texto en Android Studio. |
+| File                                                              | Descripción                                         |
+| ----------------------------------------------------------------- | --------------------------------------------------- |
+| [[2DAM_PMDM/Unidad 06/1. Layouts\|1. Layouts]]                 | Layouts en Android Studio.                          |
+| [[2DAM_PMDM/Unidad 06/2. Palette Texts\|2. Palette Texts]]     | Paleta de textos en Android Studio.                 |
+| [[2DAM_PMDM/Unidad 06/3. Palette Buttons\|3. Palette Buttons]] | Paleta de botones en Android Studio.                |
+| [[2DAM_PMDM/Unidad 06/30. Referencias\|30. Referencias]]       | Referencias bibliográficas usadas para esta unidad. |
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[2DAM_PMDM/Unidad 06-Comenzamos\|Unidad 06-Comenzamos]]
 
 ---
 
