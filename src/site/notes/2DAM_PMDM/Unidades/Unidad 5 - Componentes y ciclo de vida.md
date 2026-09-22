@@ -95,6 +95,8 @@ En Android, una **`View`** (Vista) es la clase sobre la que se crean el resto de
 Todo lo que el usuario ve y toca en la aplicación (botones, textos, imágenes, campos de formulario) es una `View`.
 
 ![different-views-in-one-image.webp](/img/user/adjuntos/2DAM_PMDM/Unidad_05/different-views-in-one-image.webp)
+> Mewada, P. (2023, 5 octubre). *View and ViewGroup in Android* - Scaler Topics. Scaler Topics. https://www.scaler.com/topics/view-in-android/
+
 
 Para entenderlas mejor, el ecosistema de Android las divide en dos grupos:
 
@@ -114,12 +116,18 @@ Son las vistas individuales con funciones específicas. Por ejemplo:
 
 #### Contenedores - `ViewGroup`
 
-Un `ViewGroup` es, en esencia, un contenedor (layout) que nos permite agrupar varios views en él. Es un tipo especial de `View` que no dibuja nada por sí mismo. Su única función es **contener otras vistas y organizar su posición** en la pantalla (arriba, abajo, en lista, en cuadrícula).
+Un `ViewGroup` es, en esencia, un contenedor (layout) que nos permite agrupar varios views en él. Es un tipo especial de `View` que no dibuja nada por sí mismo. Su única función es **contener otras vistas y organizar su posición** en la pantalla (arriba, abajo, en lista, en cuadrícula). De `ViewGroup` cuelgan clases como  `LinearLayout`, `ConstraintLayout` o `RecyclerView` (que estudiaremos más adelante). 
 
-- Ejemplos habituales son `LinearLayout`, `ConstraintLayout` o `RecyclerView`.
+Fíjate en el siguiente pantallazo, donde cada cuadro es un `ViewGroup` que contiene un texto (`TextView`) y una imagen (`ImageView`).:
 
+![viewgroup-app_amazon.jpeg](/img/user/adjuntos/2DAM_PMDM/Unidad_05/viewgroup-app_amazon.jpeg)
 
-> Mewada, P. (2023, 5 octubre). *View and ViewGroup in Android* - Scaler Topics. Scaler Topics. https://www.scaler.com/topics/view-in-android/
+> Fuente: Acosta, L. (2022, 19 septiembre). *Cómo descargar, crear una cuenta y comprar desde la aplicación de Amazon Compras en México*. Xataka México. https://www.xataka.com.mx/telecomunicaciones/como-descargar-crear-cuenta-comprar-aplicacion-amazon-compras-mexico
+
+## Referencias
+
+* Aspectos fundamentales de la app. (s. f.). Android Developers. https://developer.android.com/guide/components/fundamentals?hl=es#Components
+
 
 [^1]:  Aspectos fundamentales de la app. (s. f.). Android Developers.  
     [https://developer.android.com/guide/components/fundamentals?hl=es\#Components](https://developer.android.com/guide/components/fundamentals?hl=es#Components)
@@ -142,9 +150,7 @@ Un `ViewGroup` es, en esencia, un contenedor (layout) que nos permite agrupar va
 [^7]:  Introducción a las actividades. (s. f.). Android Developers.  
     [https://developer.android.com/guide/components/activities/intro-activities?hl=es](https://developer.android.com/guide/components/activities/intro-activities?hl=es)
 
-[^8]:  Mewada, P. (2023, 5 octubre). View and ViewGroup in Android \- Scaler Topics. Scaler Topics. [https://www.scaler.com/topics/view-in-android/](https://www.scaler.com/topics/view-in-android/)
 
-[^9]:  Benznest. (2016, 13 agosto). Android Code : Custom Viewgroup บน Android เบื้องต้น \- benzneststudios. benzneststudios \- Blog. [https://benzneststudios.com/blog/android/custom-view-group-android-overview/](https://benzneststudios.com/blog/android/custom-view-group-android-overview/)
 
 
 ---
