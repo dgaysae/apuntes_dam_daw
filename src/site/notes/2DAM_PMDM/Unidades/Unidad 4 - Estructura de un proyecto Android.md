@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-4-estructura-de-un-proyecto-android/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.","orden":4,"tags":["kotlin"]}}
+{"dg-publish":true,"permalink":"/2-dam-pmdm/unidades/unidad-4-estructura-de-un-proyecto-android/","tags":["android"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Apuntes/PMDM (2º DAM)]]","descripcion":"Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.","orden":4,"tags":["android"]}}
 ---
 
 
