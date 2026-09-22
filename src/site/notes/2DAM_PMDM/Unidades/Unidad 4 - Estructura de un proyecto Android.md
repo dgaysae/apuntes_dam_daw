@@ -4,7 +4,7 @@
 
 
 > [!info]
-> Este texto ha sido extraído casi en su totalidad de:
+> El texto de esta unidad ha sido extraído casi en su totalidad de:
 > 
 >  **Sgoliver, & Sgoliver. (2014b, diciembre 28). Estructura de un proyecto Android (Android Studio). [sgoliver.net](https://www.sgoliver.net/). [https://www.sgoliver.net/blog/estructura-de-un-proyecto-android-android-studio/](https://www.sgoliver.net/blog/estructura-de-un-proyecto-android-android-studio/)**
 
@@ -18,4 +18,4 @@
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" data-href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - Conceptos avanzados</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" data-href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" href="2DAM_PMDM/Unidades/Unidad 3 - Conceptos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 3 - Conceptos avanzados</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/PMDM (2º DAM).md" data-href="Apuntes/PMDM (2º DAM).md" href="Apuntes/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 5 - Componentes y ciclo de vida.md" data-href="2DAM_PMDM/Unidades/Unidad 5 - Componentes y ciclo de vida.md" href="2DAM_PMDM/Unidades/Unidad 5 - Componentes y ciclo de vida.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 5 - Componentes y ciclo de vida</a> ➡️</span></p>
