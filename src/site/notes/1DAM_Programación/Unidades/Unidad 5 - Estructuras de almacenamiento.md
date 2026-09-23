@@ -89,6 +89,12 @@ En el mundo real creamos una variable que contenga un banco de datos, un conjunt
 
 { .block-language-dataview}
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[1DAM_Programación/Unidad 05-Estructuras de almacenamiento\|Unidad 05-Estructuras de almacenamiento]]
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" data-href="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" href="1DAM_Programación/Unidades/Unidad 4 - POO. Clases.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 4 - POO. Clases</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Apuntes/Programación (1º DAM, 1º DAW).md" data-href="Apuntes/Programación (1º DAM, 1º DAW).md" href="Apuntes/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" data-href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" href="1DAM_Programación/Unidades/Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 6 - Interfaz gráfica de usuario (GUI) - Swing</a> ➡️</span></p>

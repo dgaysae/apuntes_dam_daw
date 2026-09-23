@@ -10,10 +10,12 @@
 
 # Material de refuerzo
 
-## Pseudocódigo
-
 > [!info]  
-> Todos estos vídeos se han extraído de la playlist [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
+> Todos estos vídeos se han extraído de las playlists:
+> * [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
+> * [**Programación Java**](https://youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO&si=Inift60wj4sFnEuQ) de [**Aula informática**](https://www.youtube.com/@aulainformatica2118)
+
+## Pseudocódigo
 
 ### Introducción a la programación y los algoritmos
 

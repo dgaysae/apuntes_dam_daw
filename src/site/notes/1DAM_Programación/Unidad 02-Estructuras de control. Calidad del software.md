@@ -504,21 +504,7 @@ En el siguiente caso ocurre lo mismo para los días del fin de semana (`case 6, 
 En cualquier otro caso, indicará que el día no es correcto.
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-02/referencias/#condiciones-en-pseudocodigo-si-if" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-## Condiciones en pseudocódigo SI - IF
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tldDbZ9MSoA?si=nZt5E9WmpR6-7kcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (3 de octubre de 2021). _1.7 Condiciones en pseudocódigo SI - IF_ [Vídeo]. YouTube. https://youtu.be/tldDbZ9MSoA?si=NYICjUm8hSUW0Vcx
-
-
-</div></div>
-
-
+> * [[1DAM_Programación/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|1DAM_Programación/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF]]
 
 [^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
 
@@ -588,20 +574,7 @@ La condición de salida del bucle hace que éste se repita mientras **`cont`** v
 Lo más problemático a la hora de diseñar un bucle es, por lo tanto, **pensar bien su condición de salida**, porque si la condición de salida nunca se hiciera falsa, caeríamos en un bucle infinito. Por lo tanto, **la variable implicada en la condición de salida debe sufrir alguna modificación en el interior del bucle**; si no, la condición siempre sería verdadera. En nuestro ejemplo, la variable **`cont`** se modifica en el interior del bucle: por eso llega un momento, después de 100 repeticiones, en el que la condición se hace falsa y el bucle termina. 
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-02/referencias/#tipos-de-bucles-en-pseudocodigo-mientras-while" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-## Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gWYWRs9d_ZI?si=5FlWF54S-e3EyKAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (3 de octubre de 2021). _1.8 Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)_ [Vídeo]. YouTube. https://youtu.be/gWYWRs9d_ZI?si=0LrZKFKynyP-o0Er
-
-
-</div></div>
-
+> * [[1DAM_Programación/Unidad 02/Referencias#Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)\|1DAM_Programación/Unidad 02/Referencias#Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)]]
 
 ## 4.2 Bucle "Hacer... mientras" (DO-WHILE)
 
@@ -639,20 +612,7 @@ Diseñar un algoritmo que escriba todos los números enteros entre 1 y 100, pero
 Observa que el algoritmo es básicamente el mismo que en el ejemplo anterior, pero hemos cambiado el lugar de la condición de salida. 
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-02/referencias/#bucle-do-while-pseudocodigo" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-## Bucle DO - WHILE pseudocódigo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bRwz1J9hxEg?si=gUE4vKu5mN1TfpT3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (3 de octubre de 2021). _1.10 Bucle DO - WHILE pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/bRwz1J9hxEg?si=2GHjLB4XMAt-tXc4
-
-
-</div></div>
-
+> * [[1DAM_Programación/Unidad 02/Referencias#Bucle DO - WHILE pseudocódigo\|1DAM_Programación/Unidad 02/Referencias#Bucle DO - WHILE pseudocódigo]]
 
 ## 4.3 Bucle "para" (FOR)
 
@@ -700,20 +660,7 @@ Diseñar un algoritmo que escriba todos los números enteros **impares** entre 1
 Este ejemplo, similar al anterior, sirve para ilustrar la gran flexibilidad del bucle "para" cuando se conocen bien los límites iniciales y finales del bucle. La variable **`cont`** se incrementará en 2 unidades en cada repetición del bucle, por lo que tomará los valores 1, 3, 5, 7, y así sucesivamente hasta 99.
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-02/referencias/#bucle-para-pseudocodigo-for" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-## Bucle PARA pseudocódigo (FOR)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ijz6rAu5Trw?si=vafgXbnJYXDkcVDj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (3 de octubre de 2021). _1.11 Bucle PARA pseudocódigo (FOR)_ [Vídeo]. YouTube. https://youtu.be/ijz6rAu5Trw?si=4D86M9L6lcAvYOOf
-
-
-</div></div>
-
+> * [[1DAM_Programación/Unidad 02/Referencias#Bucle PARA pseudocódigo (FOR)\|1DAM_Programación/Unidad 02/Referencias#Bucle PARA pseudocódigo (FOR)]]
 
 ## 4.4 Contadores, acumuladores, conmutadores
 
@@ -987,23 +934,7 @@ Esto es un aviso para navegantes. Todos los programadores han experimentado la f
 Por esta razón, y ya desde el principio, debemos acostumbrarnos a **respetar ciertas reglas básicas de estilo**. Cierto que cada programador puede luego desarrollar su estilo propio, y en las organizaciones (empresas) dedicadas al desarrollo de software tienen sus propias "normas de la casa" que hay que respetar cuando uno trabaja para ellos, pero todo esto siempre debe de estar dentro de un marco aceptado por la mayoría. 
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/1-dam-programacion/unidad-02/referencias/#java-recomendaciones-al-declarar-variables" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-## JAVA: Recomendaciones al declarar variables
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5EaHrvmoLEk?si=GNYKJ8_sK-Yow8k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022r, octubre 14). _JAVA: Recomendaciones al declarar variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=5EaHrvmoLEk
-
-
-
-
-
-</div></div>
-
+> * [[1DAM_Programación/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables\|1DAM_Programación/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables]]
 
 
 
@@ -2206,43 +2137,29 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 ## Condiciones en pseudocódigo SI - IF
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tldDbZ9MSoA?si=nZt5E9WmpR6-7kcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (3 de octubre de 2021). _1.7 Condiciones en pseudocódigo SI - IF_ [Vídeo]. YouTube. https://youtu.be/tldDbZ9MSoA?si=NYICjUm8hSUW0Vcx
 
 ## Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gWYWRs9d_ZI?si=5FlWF54S-e3EyKAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (3 de octubre de 2021). _1.8 Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)_ [Vídeo]. YouTube. https://youtu.be/gWYWRs9d_ZI?si=0LrZKFKynyP-o0Er
 
 ## Bucle DO - WHILE pseudocódigo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bRwz1J9hxEg?si=gUE4vKu5mN1TfpT3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (3 de octubre de 2021). _1.10 Bucle DO - WHILE pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/bRwz1J9hxEg?si=2GHjLB4XMAt-tXc4
 
 ## Bucle PARA pseudocódigo (FOR)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ijz6rAu5Trw?si=vafgXbnJYXDkcVDj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (3 de octubre de 2021). _1.11 Bucle PARA pseudocódigo (FOR)_ [Vídeo]. YouTube. https://youtu.be/ijz6rAu5Trw?si=4D86M9L6lcAvYOOf
 
 ## Seguimiento de algoritmos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rH60985e4PM?si=yXtdK50FcA6885L3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (3 de octubre de 2021). _1.13 Seguimiento de algoritmos_ [Vídeo]. YouTube. https://youtu.be/rH60985e4PM?si=cfBrCKsSnKGRZv2w
 
 ## Seguimiento de algoritmos con bucles aninados pseudocódigo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V-WDyYJqPnY?si=xXJeX6aZJhlI4rdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (3 de octubre de 2021). _1.14 Seguimiento de algoritmos con bucles aninados pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/V-WDyYJqPnY?si=Yh2SnDCsBCHbJ1Wo
 
 ## JAVA: Recomendaciones al declarar variables
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5EaHrvmoLEk?si=GNYKJ8_sK-Yow8k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022r, octubre 14). _JAVA: Recomendaciones al declarar variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=5EaHrvmoLEk
 
@@ -2253,19 +2170,13 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 ## Ejercicio bucle MIENTRAS pseudocódigo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P73Sa4dzvoc?si=liQ-6pP2HBwESUue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (24 de septiembre de 2022). _1.9 Ejercicio bucle MIENTRAS pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=P73Sa4dzvoc
 
 ## Ejercicio resueltos pseudocódigo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3FIomL6wFFM?si=gJgqlkyVrKwBtx_n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (26 de septiembre de 2022). _1.12 Ejercicios resueltos pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3FIomL6wFFM
 
 ## PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZzFF_aXLO5g?si=B1ZWhiatiMJY0B_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (3 de octubre de 2021). _1.15 PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZzFF_aXLO5g
 
