@@ -1109,8 +1109,6 @@ $ javac -cp /ruta/a/mis/clases nombre.java
 
 ### JAVA: Clase String
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/443VORsWj2M?si=-hC-p4Nx0uUDkGcS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (2022o, octubre 12). _JAVA: Clase String ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=443VORsWj2M
 
 # Ejercicios
@@ -1118,7 +1116,5 @@ $ javac -cp /ruta/a/mis/clases nombre.java
 ## String
 
 ### JAVA: Ejercicio String y funciones
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FNjyxclZmDQ?si=OuzAQSKikSf4bztH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Aula en la nube. (2022p, octubre 13). _JAVA: Ejercicio String y funciones ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=FNjyxclZmDQ

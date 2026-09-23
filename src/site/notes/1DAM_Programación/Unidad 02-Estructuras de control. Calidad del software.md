@@ -2130,8 +2130,6 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 ## Representación de algoritmos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b003s0CJ2KU?si=84d5FJf_tg_MMS2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
 
 
