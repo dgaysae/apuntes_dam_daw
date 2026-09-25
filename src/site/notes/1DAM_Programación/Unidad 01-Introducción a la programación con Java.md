@@ -1469,7 +1469,7 @@ Algunos de esos métodos son:
 | `Math.abs(6)` | 6 |
 | `Math.round(5.7)` | 6 |
 | `Math.round(5.2)` | 5 |
-| `Math.pow(2, 8)` | 64 |
+| `Math.pow(2, 6)` | 64 |
 | `Math.sqrt(64)` | 8 |
 
 > [!info]  
@@ -1576,7 +1576,7 @@ En cambio, **las constantes son valores que nunca cambian**. Sólo se les puede 
 En Java, una constante se distingue con el modificador **`final`** colocado antes de la declaración, y la asignación debe hacerse en ese mismo momento. Por ejemplo:
 
 ```java
-final PI = 3.141592;
+final double PI = 3.141592;
 ```
 
 ### 9.4.3. El modificador `static`
@@ -1585,7 +1585,7 @@ En la declaración de una variable o una constante aparece a menudo la palabra `
 
 ```java
 static int x; 
-final static PI = 3.141592;
+final static double PI = 3.141592;
 ```
 
 El modificador `static` significa que esa variable o constante **sólo se creará una vez en toda la ejecución del programa**, aunque aparezcan declaradas varias veces. También es aplicable, como veremos, a métodos, y resulta muy conveniente en una enorme diversidad de situaciones. 
