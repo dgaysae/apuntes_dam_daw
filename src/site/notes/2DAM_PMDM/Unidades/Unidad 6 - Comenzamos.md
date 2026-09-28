@@ -5,14 +5,16 @@
 
 ¡Empecemos a programas aplicaciones!
 
-| File                                                              | Descripción                                         |
-| ----------------------------------------------------------------- | --------------------------------------------------- |
-| [[2DAM_PMDM/Unidad 06/1. Layouts\|1. Layouts]]                 | Layouts en Android Studio.                          |
-| [[2DAM_PMDM/Unidad 06/2. Palette Texts\|2. Palette Texts]]     | Paleta de textos en Android Studio.                 |
-| [[2DAM_PMDM/Unidad 06/3. Palette Buttons\|3. Palette Buttons]] | Paleta de botones en Android Studio.                |
-| [[2DAM_PMDM/Unidad 06/4. Palette Widgets\|4. Palette Widgets]] | Widgets en Android Studio.                          |
-| [[2DAM_PMDM/Unidad 06/5. Intent\|5. Intent]]                   | Intents en Android Studio.                          |
-| [[2DAM_PMDM/Unidad 06/30. Referencias\|30. Referencias]]       | Referencias bibliográficas usadas para esta unidad. |
+| File                                                                    | Descripción                                                                                   |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [[2DAM_PMDM/Unidad 06/1. Layouts\|1. Layouts]]                       | Layouts en Android Studio.                                                                    |
+| [[2DAM_PMDM/Unidad 06/2. Palette Texts\|2. Palette Texts]]           | Paleta de textos en Android Studio.                                                           |
+| [[2DAM_PMDM/Unidad 06/3. Palette Buttons\|3. Palette Buttons]]       | Paleta de botones en Android Studio.                                                          |
+| [[2DAM_PMDM/Unidad 06/4. Palette Widgets\|4. Palette Widgets]]       | Widgets en Android Studio.                                                                    |
+| [[2DAM_PMDM/Unidad 06/5. Intent\|5. Intent]]                         | Intents, o cómo comunicar distintas activities en Android Studio.                             |
+| [[2DAM_PMDM/Unidad 06/6. Shared Preferences\|6. Shared Preferences]] | Shared Preferences en Android Studio.                                                         |
+| [[2DAM_PMDM/Unidad 06/7. RecyclerView\|7. RecyclerView]]             | Las listas de datos, con sus imágenes y textos, se hacen mediante los items del RecyclerView. |
+| [[2DAM_PMDM/Unidad 06/30. Referencias\|30. Referencias]]             | Referencias bibliográficas usadas para esta unidad.                                           |
 
 { .block-language-dataview}
 
