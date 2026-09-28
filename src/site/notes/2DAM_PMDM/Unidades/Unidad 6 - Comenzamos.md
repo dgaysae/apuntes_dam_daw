@@ -11,6 +11,7 @@
 | [[2DAM_PMDM/Unidad 06/2. Palette Texts\|2. Palette Texts]]     | Paleta de textos en Android Studio.                 |
 | [[2DAM_PMDM/Unidad 06/3. Palette Buttons\|3. Palette Buttons]] | Paleta de botones en Android Studio.                |
 | [[2DAM_PMDM/Unidad 06/4. Palette Widgets\|4. Palette Widgets]] | Widgets en Android Studio.                          |
+| [[2DAM_PMDM/Unidad 06/5. Intent\|5. Intent]]                   | Intents en Android Studio.                          |
 | [[2DAM_PMDM/Unidad 06/30. Referencias\|30. Referencias]]       | Referencias bibliográficas usadas para esta unidad. |
 
 { .block-language-dataview}
