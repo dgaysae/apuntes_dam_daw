@@ -3,6 +3,10 @@
 ---
 
 
+```table-of-contents
+```
+
+---
 Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.
 
 ## Unidades
@@ -23,4 +27,9 @@ Material de referencia para el módulo de Programación Multimedia y Dispositivo
 
 ## Material de apoyo
 
-* Aula Informática. [@aulainformatica2118](https://www.youtube.com/@aulainformatica2118). (s/f). ***Programación java***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO&si=PeeYSIC0s9EQEWI0
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f-a). ***[2022] Curso ANDROID Studio en KOTLIN desde CERO - Aprender a desarrollar aplicaciones móviles***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_OcBYDpvHrcSFVoggLi3cm_&si=C6zXHLod2dU5q4eQ
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f). ***[2022] Curso de PROGRAMACION ANDROID desde CERO - GRATIS en KOTLIN***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_M8nfPA9DPiAy7NsoZQpVAf&si=fJMqgEdA7crNGRs4
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f-c). ***Diseño de Layouts - Curso Kotlin en Android***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_Mh8Nz3ihjGLLTwAdNfaLSD&si=9KrYU1dNai-KahIs
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f-c). ***[2022] Tutorial RECYCLERVIEW en ANDROID con KOTLIN***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_OmayyHRawwWkX3ZkrYlsTa&si=f4G-GByk8D9Bw9Ib
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f-a). ***[2021] Retrofit 2 en Kotlin - Curso Android desde cero en Español***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_OBCJTwz-IRRC3G6lWAHNIG&si=JmLCVTGuH7p7ond1
+* AristiDevs, P. by [@AristiDevs](https://www.youtube.com/@AristiDevs). (s/f-b). ***[2022] arquitecturas android (MVVM, MVP, MVC..) - tutoriales android studio***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PL8ie04dqq7_MvhtWlcIFS9L3_4EWatd-V&si=bK4qQHBXXyRt7LPf

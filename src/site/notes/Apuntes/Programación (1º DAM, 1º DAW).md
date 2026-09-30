@@ -18,6 +18,11 @@
 </div></div>
 
 
+```table-of-contents
+```
+
+---
+
 Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.
 
 ## Unidades
