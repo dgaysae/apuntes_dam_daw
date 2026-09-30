@@ -78,7 +78,7 @@ i) Se han introducido comentarios en el código.
 
 En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-[[1DAM_Programación/Unidad 01-Introducción a la programación con Java_\|Unidad 01-Introducción a la programación con Java_]]
+[[1DAM_Programación/Unidad 01-Introducción a la programación con Java\|Unidad 01-Introducción a la programación con Java]]
 
 ---
 
