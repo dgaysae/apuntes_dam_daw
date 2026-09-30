@@ -20,6 +20,8 @@
 
 Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java.
 
+## Unidades
+
 | File                                                                                                                                               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[1DAM_Programación/Unidades/Unidad 1 - Introducción a la programación con Java\|Unidad 1 - Introducción a la programación con Java]]           | Conceptos básicos sobre lo que es un programa y un algoritmo. Cómo se representa la información en un ordenador y cómo el código fuente de un programa se transforma en un objeto ejecutable mediante la compilación. También se explican conceptos básicos de ingeniería de software, tipos de lenguajes de programación, paradigmas y se entra tímidamente en el código Java mediante las variables y constantes. |
@@ -36,4 +38,7 @@ Material de referencia para el módulo de Programación. Es una introducción a 
 
 { .block-language-dataview}
 
+## Material de apoyo
 
+* Aula Informática. [@aulainformatica2118](https://www.youtube.com/@aulainformatica2118). (s/f). ***Programación java***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO&si=PeeYSIC0s9EQEWI0
+* Aula en la nube. [@aulaenlanube](https://www.youtube.com/@aulaenlanube). (s/f). **🏆 *MEGA Curso JAVA desde 0 [ DAM - DAW ]***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu&si=JQXJU9rlXz9-m4VV

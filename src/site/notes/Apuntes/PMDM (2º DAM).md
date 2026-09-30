@@ -5,6 +5,8 @@
 
 Material de referencia para el módulo de Programación Multimedia y Dispositivos Móviles.
 
+## Unidades
+
 | File                                                                                                                 | Descripción                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | [[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin\|Unidad 1 - Introducción a Kotlin]]                         | Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android.            |
@@ -19,3 +21,6 @@ Material de referencia para el módulo de Programación Multimedia y Dispositivo
 { .block-language-dataview}
 
 
+## Material de apoyo
+
+* Aula Informática. [@aulainformatica2118](https://www.youtube.com/@aulainformatica2118). (s/f). ***Programación java***. Youtube. Recuperado el 30 de septiembre de 2026, de https://youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO&si=PeeYSIC0s9EQEWI0
