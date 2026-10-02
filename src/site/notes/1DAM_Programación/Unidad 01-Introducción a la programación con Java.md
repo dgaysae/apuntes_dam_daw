@@ -106,7 +106,6 @@ Si te fijas en el algoritmo podrás comprobar que cumple todas las característi
 > [[1DAM_Programación/Unidad 01/Referencias#Representación de algoritmos\|1DAM_Programación/Unidad 01/Referencias#Representación de algoritmos]]
 
 
-
 # 2. Codificación de la información
 
 Como se indicaba al principio de este tema, el ordenador sólo maneja datos en **binario**.
@@ -274,7 +273,6 @@ Donde:
 > [!example] Actividad propuesta 🏗️
 > ¿Cuál es el mensaje oculto en este código binario?
 > `01001101 01101111 01101100 01100001 00100001`
-
 
 
 # 3. Resolución de problemas
@@ -494,7 +492,6 @@ No te preocupes. Aunque nos vamos a centrar en POO vamos a sentar las bases para
 [^4]: Bustos, J. L. (2022, August 18). **_Paradigmas de programación: Guía completa 2025_**. KeepCoding Bootcamps. <https://keepcoding.io/blog/paradigmas-de-programacion/>
 
 
-
 # 5. Los lenguajes de programación
 
 Podemos definir un lenguaje de programación como **un conjunto de símbolos que se combinan de acuerdo con una sintaxis bien definida para posibilitar la transmisión de instrucciones a la CPU**[^1].
@@ -657,6 +654,7 @@ Veamos ambos tipos de máquinas:
 
   Otra máquina virtual con la misma filosofía y muy extendida es la del entorno .Net de Microsoft.
 
+
 [^1]: QUERO, E., Fundamentos de programación, Ed. Paraninfo, 2003
 
 
@@ -764,6 +762,7 @@ Algunos IDEs son monstruos *devorarrecursos* que disponen de herramientas adicio
 - Entre los IDEs *ligeros*:
   - [BlueJ](https://www.bluej.org/)
   - [Geany](https://www.geany.org/)
+
 
 
 # 7. Qué es Java
@@ -994,7 +993,6 @@ Algunas opciones del comando java son:
 > [[1DAM_Programación/Unidad 01/Referencias#JAVA Entrada de datos - Aula en la nube\|1DAM_Programación/Unidad 01/Referencias#JAVA Entrada de datos - Aula en la nube]]
 
 
-
 # 9. Tipos de datos simples
 
 Como vimos al definir qué es un programa de ordenador, tan importantes son las instrucciones de que consta un programa como los datos que maneja.
@@ -1166,6 +1164,45 @@ En general, en estos casos se puede hablar de dos tipos de conversión de datos:
 > [!warning] Cuidado
 > Cuando hagas un _casting_ procura que el tipo de dato al que vas a pasar un dato no sea de menor tamaño que del tipo de dato original, como en el ejemplo anterior.
 
+Vamos a ve el porqué. Dale una vuelta a este código e intenta buscar un patrón de comportamiento para que `numByte` ofrezca ese resultado:
+
+```java
+public class Main {
+	public static void main(String[] args) {
+	    int numInt = 130;
+	    byte numByte = (byte)numInt;
+	    
+		System.out.println("numInt = " + numInt);   // numInt = 130
+		System.out.println("numByte = " + numByte); // numByte = -126
+	}
+}
+```
+
+Recordemos que el tipo `byte` tiene el rango de datos que va desde -128 hasta 127.
+Hacer casting es forzar a que un tipo de dato concreto quepa en otra más pequeño. En este caso, quiero meter el dato de tipo `int`:
+
+```
+00000000000000000000000010000010 (32 bits)
+```
+
+en este espacio:
+
+```
+1_0000010 (8 bits)
+```
+Donde el bit de la izquierda (el más significativo) se usa para el signo y los 7 restantes para el valor entero. Como vemos, el `1` más significativo se queda fuera de los 7 bits que pueden representar el valor entero y, por tanto, un `byte` no puede nunca representar el valor 130, ya que con 7 bits se pueden representar un máximo de 128 valores distintos.
+
+Entonces, ¿por qué se muestra un -126 cuando se hace el casting de `int` a `byte`? Mira el rango de `byte` como un **conjunto cíclico**. Si llegas al último valor posible (127), el siguiente valor comenzaría por el principio del conjunto (-128) y seguiría a partir de él. Así, para representar el :
+
+```
+byte        -128, -127, -126, ..., 0, 1, 2, ..., 125, 126, 127
+int          128,  129,  130                        , 126, 127
+              ^                                             |
+              |_____________________________________________|
+```
+
+Como en el conjunto de datos de `byte` no puede seguir contando después del 127 hacia el 128, da la vuelta y comienza desde el principio del rango. Por eso, el 130 de tipo `int` aparece como -126 en `byte`.
+
 ## 9.3. Operaciones con datos
 
 Como dijimos más atrás, los tipos de datos se caracterizan por la clase de objeto que representan y por las operaciones que se pueden hacer con ellos. Los datos que participan en una operación se llaman **operandos**, y el símbolo de la operación se denomina **operador**. Por ejemplo, en la operación entera 5 + 3, los datos 5 y 3 son los operandos y `+` es el operador.
@@ -1191,8 +1228,6 @@ Seguramente la operación **módulo (`%`)** es la única que no te suena de nada
 
 Es decir, si divides un número entero entre otro (por ejemplo, 5 entre 2), el cociente será otro número entero (2), y el resto será 1. Pues bien, el operador / te proporciona el cociente, y el operador `%` te proporciona el resto. Es un operador muy útil en una gran diversidad de circunstancias, como verás pronto.
 
-El **tipo del resultado** de cada operación dependerá del tipo de los operandos. Por ejemplo, si sumamos dos números enteros, el resultado será otro número entero. En cambio, si sumamos dos números reales, el resultado será un número real. La suma de un número entero con otro real no está permitida en muchos lenguajes, entre ellos Java, así que intentaremos evitarla.
-
 Aquí tenemos algunos ejemplos de operaciones aritméticas con números enteros y reales:
 
 | Operandos | Operador | Operación | Resultado |
@@ -1202,12 +1237,89 @@ Aquí tenemos algunos ejemplos de operaciones aritméticas con números enteros 
 | 35 y 9 (enteros) | * | 35 * 9 | 315 (entero) |
 | 35 y 9 (enteros) | / | 35 / 9 | 3 (entero) |
 | 35 y 9 (enteros) | % | 35 % 9 | 8 (entero) |
-| 8,5 y 6,75 (reales) | + | 8,5 + 6,75 | 15,25 (real) |
-| 8,5 y 6,75 (reales) | - | 8,5 - 6,75 | 1,75 (real) |
-| 8,5 y 6,75 (reales) | * | 8,5 * 6,75 | 57,375 (real) |
-| 8,5 y 6,75 (reales) | / | 8,5 / 6,75 | 1,259 (real) |
+| 8.5 y 6.75 (reales) | + | 8.5 + 6.75 | 15.25 (real) |
+| 8.5 y 6.75 (reales) | - | 8.5 - 6.75 | 1.75 (real) |
+| 8.5 y 6.75 (reales) | * | 8.5 * 6.75 | 57.375 (real) |
+| 8.5 y 6.75 (reales) | / | 8.5 / 6.75 | 1.259 (real) |
 
 Nótese que el operador `–` también se usa para preceder a los números negativos, como en el álgebra convencional.
+
+> [!warning] Cuidado
+> El **tipo del resultado** de cada operación **dependerá del tipo de los operandos**. Por ejemplo, si sumamos dos números enteros, el resultado será otro número entero. En cambio, si sumamos dos números reales, el resultado será un número real. Pero la regla de oro es esta: cuando los operandos son de distinto tipo, **el resultado será del tipo de mayor precisión**. 
+
+Veamos el siguiente ejemplo:
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		// Ambos operandos son int:
+		System.out.println(8 / 6);  // 1
+
+	    // Un operando es double y el otro int:
+		System.out.println(8.0 / 6); // 1.3333333333333333
+
+	    // Un operando es float y el otro int:
+		System.out.println(8f / 6);  // 1.3333334
+
+	    // Un operando es double y el otro int:
+		System.out.println(8.0 + 6); // 14.0
+
+	    // Un operando es long y el otro int:
+		System.out.println(8L + 6); // 14
+	}
+}
+```
+
+* La primera división de dos enteros de tipo `int` devuelve otro `int` ya que toma, de los dos operandos, el tipo de mayor precisión y... no hay otro que `int`. Por eso devuelve un valor entero, sin decimales.
+* La segunda tiene el operador `double` 8.0 (64 bits) y el `int` 6 (32 bits). El de mayor precisión es, obviamente, el `double`, que es el tipo de dato que adopta la división. Por eso devuelve decimales.
+* La tercera tiene el operador `float` 8.0 (32 bits) y el `int` 6 (32 bits). El de mayor precisión es el `float`. Y si aquí dudas, alegando que ambos tiene 32 bits, piensa esto: si te dan una nota de `4` y otra de `4.976`, ¿cuál es más precisa? Efectivamente, **aunque ambos tipos ocupen el mismo espacio en memoria**, los decimales aportan más detalle a la información.
+* La cuarta operación es una suma entre el operador `double` 8.0 (64 bits) y el `int` 6 (32 bits). El resultado es de tipo `double`, por lo explicado en los puntos anteriores. 
+* La quinta es una suma entre el operador `long` 8 (64 bits) y el `int` 6 (32 bits). El resultado es `long`, ya que Java debe asegurarse de que cabe en un espacio adecuado y la caja más grande no es el `int`, sino el `long`. 
+
+#### Explicación de casting con operadores aritméticos
+
+Llegados a esta punto podemos volver a explicar cómo funciona el casting con dos operadores aritméticos: la división `/` y el resto `%`. Observa el siguiente código:
+
+```java
+public class Main {
+	public static void main(String[] args) {
+	    int numInt = 260;
+	    byte numByte = (byte)numInt;  // 4
+	    int tamanoByte = 256;
+	    
+		System.out.println("Por casting:");
+		System.out.println("numInt = " + numInt);
+		System.out.println("número calculado por casting = " + numByte);
+
+		System.out.println("*************************************");
+		System.out.println("Calculando el resto:");
+		System.out.println("cociente = " + (numInt / tamanoByte));
+		System.out.println("número calculado por = " + (numInt % tamanoByte));
+	}
+}
+```
+
+En él vemos que `numByte` contiene un valor resultante del casting de 260.
+
+Como ya dijimos, si intento meter ese valor (de 32 bits) en un sitio más pequeño (un `byte`, de 8 bits) y dicho valor excede el máximo (127), seguimos contando desde el principio del rango (-128).
+
+Al usar la fórmula de la división...
+
+```
+Dividendo = divisor * cociente + resto
+```
+
+... en el código, extraemos el cociente (1) y el resto y, ¡oh! este es el mismo que el del casting:
+
+```
+260 = 256 * 1 + 4
+```
+
+Si provemos con el valor 516, el cociente es 2 y el resto es 4.
+
+¿Ves algún patrón?
+
+Para resumirlo en pocas palabras (y poco formales), podemos decir que el **cociente nos dice las vueltas** que se le han dado al rango de datos (los 256 valores de `byte`) y el resto es el lugar en el que ha parado al llegar a la cantidad de 516.
 
 #### Operadores de incremento y decremento
 
@@ -1828,7 +1940,6 @@ Existen otras funcionalidades como las siguientes, que se verán más adelante:
 > Para hacer entrada por teclado, por el momento las instrucciones son: copia, pega y adapta.
 
 
-
 ### Método 2: `console()`
 
 ```java
@@ -1886,7 +1997,7 @@ import java.io.*;
 ```
 
 
-## Referencias -  Material de refuerzo
+# Referencias - Material de refuerzo
 
 > [!info]  
 > Todos estos vídeos se han extraído de las playlists:
@@ -1895,169 +2006,58 @@ import java.io.*;
 
 ## Pseudocódigo
 
-### Introducción a la programación y los algoritmos
+* Aula en la nube. (2022, 19 septiembre). _Introducción a la programación y los algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dfEEG4A_Hoo?si=dDASsH8tZ9dVjM1v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022r, octubre 14). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI
 
-> Aula en la nube. (2022, 19 septiembre). _Introducción a la programación y los algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
+* Aula en la nube. (2022c, septiembre 20). _Introducción a la programación: **operadores relaciones** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM
 
+* Aula en la nube. (2022e, septiembre 21). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y
 
-### Operadores aritméticos
+* Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4NIgC5ArKTI?si=mvUtEpj_qCVqdCzS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022c, septiembre 20). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts
 
-> Aula en la nube. (2022r, octubre 14). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI
-
-### Operadores relaciones
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/98m39gc3YpM?si=oPVVqhCeFn-dVrA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022c, septiembre 20). _Introducción a la programación: **operadores relaciones** ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM
-
-
-### Operadores lógicos
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GwwRkMo012Y?si=EbZR34quq8eLg50a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022e, septiembre 21). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y
-
-### Representación de algoritmos
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b003s0CJ2KU?si=84d5FJf_tg_MMS2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
-
-### Variables y expresiones aritméticas
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pgF8U9WxPts?si=W0zNKfnayhMnN_W5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022c, septiembre 20). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts
-
-### Instrucciones en pseudocódigo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/taSJeALBVGk?si=EVrWK09qOIB05N-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (3 de octubre de 2021). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/taSJeALBVGk?si=TRiD-30p3-KXCVuw
+* Aula en la nube. (3 de octubre de 2021). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/taSJeALBVGk?si=TRiD-30p3-KXCVuw
 
 ## Java
 
-### Introducción a Java - Aula Informática
+* Aula Informática. (2022b, marzo 28). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1-fNqKf-8WE?si=a8fMPqa9W-C7wt1i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022f, octubre 2). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI
 
-> Aula Informática. (2022b, marzo 28). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE
+* Aula en la nube. (2022g, octubre 3). _JAVA: Preparando el entorno (JRE, JDK y VS Code)  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
 
-### Introducción a Java - Aula en la nube
+* Aula en la nube. (2022h, octubre 4). _Hola Mundo en JAVA  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8gkaitxt-CI?si=sglK5u6oTikZbPr7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022i, octubre 5). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY
 
-> Aula en la nube. (2022f, octubre 2). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI
+* Aula en la nube. (2022aa, octubre 20). _JAVA: Entrada de datos - Clase Scanner  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg
 
-### JAVA: Preparando el entorno - Aula en la nube
+* Aula en la nube. (2022j, octubre 6). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q_2j8aYnmYk?si=kmckEj_stMpRjGxt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula Informática. (2022d, marzo 28). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg
 
-> Aula en la nube. (2022g, octubre 3). _JAVA: Preparando el entorno (JRE, JDK y VS Code)  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
+* Aula en la nube. (2022k, octubre 7). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss
 
-### Hola Mundo en JAVA
+* Aula en la nube. (2022z, octubre 20). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AVEU8AEZ5YE?si=J2run7o9wFdqgzb9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022l, octubre 9). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo
 
-> Aula en la nube. (2022h, octubre 4). _Hola Mundo en JAVA  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
+* Aula en la nube. (2022m, octubre 10). _JAVA: Char y boolean + ASCII + UNICODE  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4
 
-### JAVA: Salida por pantalla - Aula en la nube
+* Aula en la nube. (2022n, octubre 11). _Strings en JAVA  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QRDePHN91UY?si=O5MoeG3IYPiAHUD7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022q, octubre 13). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y
 
-> Aula en la nube. (2022i, octubre 5). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY
+* Aula en la nube. (2022t, octubre 16). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0
 
-### JAVA: Entrada de datos - Aula en la nube
+* Aula en la nube. (2022v, octubre 17). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HSq3rRfBmDg?si=5j9kxGN4_4Zf5R_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* Aula en la nube. (2022t, octubre 15). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0
 
-> Aula en la nube. (2022aa, octubre 20). _JAVA: Entrada de datos - Clase Scanner  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg
+* Aula en la nube. (2022w, octubre 18). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw
 
-### JAVA: Tipos de variables - Aula en la nube
+* Aula en la nube. (2022x, octubre 19). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dy1qD-jwcIs?si=w_wCaXdJWge4VAhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022j, octubre 6). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs
-
-### Variables y Tipos - Aula Informática
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PpkIVxLtZdg?si=UWJ-cRNFFk7T9fnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula Informática. (2022d, marzo 28). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg
-
-### JAVA: Declarar variables numéricas - Aula en la nube
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9OpBxj5kYss?si=4sDCRgWZUFh2WwIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022k, octubre 7). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss
-
-### JAVA: Decimales y precisión
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/noQbTZdYYZo?si=jyxS8EWyJj6IBG9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022z, octubre 20). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo
-
-### JAVA: El sistema hexadecimal
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9P8M1V0XnVo?si=EoWDvIcUN4xCVTPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022l, octubre 9). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo
-
-### JAVA: Char y boolean + ASCII + UNICODE
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mAi5o9rsJS4?si=oQ-Aa68Qf6rhnSNa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022m, octubre 10). _JAVA: Char y boolean + ASCII + UNICODE  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4
-
-### Strings en JAVA
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EAEVn9JKP9Q?si=kBJ4YnHRpEFC01GV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022n, octubre 11). _Strings en JAVA  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q
-
-### JAVA: Secuencias de escape
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p7p9f7wKd9Y?si=pC3weXXicGtwYCMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022q, octubre 13). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y
-
-### JAVA: Operadores relaciones
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nJUURIe3Nc0?si=QURxzZEo730larfT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022t, octubre 16). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0
-
-### JAVA: Operadores lógicos
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z06XfYcrDN4?si=MKj85ZfTUWXO4lyG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022v, octubre 17). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4
-
-### JAVA: Asignaciones complejas
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DIbhR5cdtL0?si=EDDYjnHSTk52D5br" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022t, octubre 15). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0
-
-### JAVA: Precedencia de operadores
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_GJldn1wQvw?si=kxSZUHOOBnHJknUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022w, octubre 18). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw
-
-### JAVA: Clase Math
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4znSjME7tNU?si=caSIprEHAnD1mnms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022x, octubre 19). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU
-
-### JAVA: Funciones matemáticas
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jKs6kq6z1sI?si=neWhcLRZUrSt7gR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> Aula en la nube. (2022y, octubre 19). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI
-
+* Aula en la nube. (2022y, octubre 19). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI
