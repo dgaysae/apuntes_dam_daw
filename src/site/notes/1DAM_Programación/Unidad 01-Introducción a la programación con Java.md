@@ -1164,7 +1164,7 @@ En general, en estos casos se puede hablar de dos tipos de conversión de datos:
 > [!warning] Cuidado
 > Cuando hagas un _casting_ procura que el tipo de dato al que vas a pasar un dato no sea de menor tamaño que del tipo de dato original, como en el ejemplo anterior.
 
-Vamos a ve el porqué. Dale una vuelta a este código e intenta buscar un patrón de comportamiento para que `numByte` ofrezca ese resultado:
+Vamos a ve el porqué. Dale una vuelta a este código (cambia el 130 por 127, 128 o 129) e intenta buscar un patrón de comportamiento para que `numByte` ofrezca ese resultado:
 
 ```java
 public class Main {
