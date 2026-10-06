@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/plantillas/apartado-x/","tags":["kotlin/variables","kotlin/constantes"],"dg-note-properties":{"unidad":"[[2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin]]","descripcion":"Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java).","orden":1,"tags":["kotlin/variables","kotlin/constantes"]}}
+{"dg-publish":true,"permalink":"/plantillas/apartado-x/","tags":["tema"],"dg-note-properties":{"unidad":"[[Unidad <n> - <Título>]]","descripcion":"Resumen de una o dos frases.","orden":"<n>","tags":["tema"]}}
 ---
 
 
@@ -8,41 +8,24 @@
 
 ---
 
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-> [!info] Para que practiques desde el principio... 
-> Puedes ejecutar el código Kotlin que se muestran a continuación pulsando el botoncito de "Play" en la parte superior derecha de cada código.
-> 
-> También puedes editar y cambiar el código para hacer pruebas sin irte de aquí.
-> 
-> En cualquier caso, puedes ir al **[Playground de Kotlin](https://play.kotlinlang.org/)**, el editor de código de Kotlin en la web que te permitirá probar cada uno de los códigos que encontrarás en estas notas.
-
-</div></div>
-
-
 Kotlin permite declarar variables[^1] usando las siguientes palabras reservadas:
 
 ## Apartado 1
-
 Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. 
 
+### Subapartado 1
 Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. 
 
 
 ## Apartado 2
-
-**`val`**, o *value*, permite declarar **variables inmutables**. Lo que conocemos como **constantes**:
-
+Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun dolor est. 
 
 
 
 
 
-[enlace_repetitivo]: https://kotlinlang.org/docs/types-overview.html
-[kotlin_tipos][enlace_repetitivo]
+
+[enlace_repetitivo]: <url_enlace>
 
 
 
@@ -50,4 +33,4 @@ Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun. Lorem ipsun dolor est
 
 ---
 
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" data-href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" href="2DAM_PMDM/Unidades/Unidad 1 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 1 - Introducción a Kotlin</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" data-href="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" href="2DAM_PMDM/Unidad 01/2. Inferencia de tipos.md" class="internal-link" target="_blank" rel="noopener nofollow">2. Inferencia de tipos</a> ➡️</span></p>
+<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Unidad &lt;n&gt; - &lt;Título&gt;" data-href="Unidad &lt;n&gt; - &lt;Título&gt;" href="Unidad &lt;n&gt; - &lt;Título&gt;" class="internal-link" target="_blank" rel="noopener nofollow">Unidad &lt;n&gt; - &lt;Título&gt;</a></span></p>

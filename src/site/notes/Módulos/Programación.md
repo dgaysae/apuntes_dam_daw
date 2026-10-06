@@ -143,9 +143,9 @@ Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten a
 
 Este módulo se centra en el aprendizaje de los fundamentos de la programación y ahondando en la programación orientada a objetos, usando el lenguaje de programación Java. Se ven conceptos básicos sobre informática (codificación de información, sistemas de medida de lso datos, etc.).
 
-| File                                                                        | Descripción                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Apuntes/Programación (1º DAM, 1º DAW)\|Programación (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
+| File                                                                       | Descripción                                                                                                                                                                                                                 |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Libros/Programación (1º DAM, 1º DAW)\|Programación (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Programación. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
 
 { .block-language-dataview}
 

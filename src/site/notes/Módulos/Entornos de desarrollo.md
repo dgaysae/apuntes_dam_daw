@@ -152,9 +152,9 @@ Las líneas de actuación en el proceso de enseñanza-aprendizaje que permiten a
 
 Enfocado en los conceptos clave de la programación y las herramientas que ayudan en el trabajo del desarrollo de software: conocimiento de IDE, refactorización de código, control de versiones (Git), documentación, etc.
 
-| File                                                                                            | Descripción                                                                                                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Apuntes/Entornos de desarrollo (1º DAM, 1º DAW)\|Entornos de desarrollo (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Entornos de desarrollo. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
+| File                                                                                           | Descripción                                                                                                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Libros/Entornos de desarrollo (1º DAM, 1º DAW)\|Entornos de desarrollo (1º DAM, 1º DAW)]] | Material de referencia para el módulo de Entornos de desarrollo. Es una introducción a los conceptos básicos sobre informática, proceso de codificación y ejecución de programas e iniciación a la programación con el lenguaje Java. |
 
 { .block-language-dataview}
 

@@ -32,18 +32,19 @@ Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que cont
 
 ## Normativa vigente
 
+- [[Plantillas/normativa/Decreto 147-2025, de 17 de septiembre de 2025, por el que se establece la ordenación de las enseñanzas de los Grados D y E del Sistema de Formación Profesional en la Comunidad Autónoma de Andalucía.\|Decreto 147-2025, de 17 de septiembre de 2025, por el que se establece la ordenación de las enseñanzas de los Grados D y E del Sistema de Formación Profesional en la Comunidad Autónoma de Andalucía.]]
+- [[Plantillas/normativa/Ley Orgánica 2-2006, de 3 de mayo, de Educación.\|Ley Orgánica 2-2006, de 3 de mayo, de Educación.]]
+- [[Plantillas/normativa/Ley Orgánica 3-2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 22006, de 3 de mayo, de Educación.\|Ley Orgánica 3-2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 22006, de 3 de mayo, de Educación.]]
+- [[Plantillas/normativa/Orden de 16 de junio de 2011, por la que se desarrolla el currículo correspondiente al título de Técnico Superior en DAW.\|Orden de 16 de junio de 2011, por la que se desarrolla el currículo correspondiente al título de Técnico Superior en DAW.]]
+- [[Plantillas/normativa/Orden de 18 de septiembre de 2025-evaluación, certificación, acreditación y titulación de los grados D y E del Sistema de FP en la Comunidad Autónoma de Andalucía.\|Orden de 18 de septiembre de 2025-evaluación, certificación, acreditación y titulación de los grados D y E del Sistema de FP en la Comunidad Autónoma de Andalucía.]]
+- [[Plantillas/normativa/Orden de 26 de septiembre de 2025-formación en empresa u organismo equiparado de los grados D y E del Sistema de FP de la Comunidad Autónoma de Andalucía.\|Orden de 26 de septiembre de 2025-formación en empresa u organismo equiparado de los grados D y E del Sistema de FP de la Comunidad Autónoma de Andalucía.]]
+- [[Plantillas/normativa/Real Decreto 405-2023, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en DAM y Técnico Superior en DAW\|Real Decreto 405-2023, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en DAM y Técnico Superior en DAW]]
+- [[Plantillas/normativa/Real Decreto 500-2024, de 21 de mayo, por el que se modifican determinados reales decretos por los que se establecen títulos de Formación Profesional de grado superior y se fijan sus enseñanzas mínimas.\|Real Decreto 500-2024, de 21 de mayo, por el que se modifican determinados reales decretos por los que se establecen títulos de Formación Profesional de grado superior y se fijan sus enseñanzas mínimas.]]
+- [[Plantillas/normativa/Real Decreto 659-2023, de 18 de julio, por el que se desarrolla la ordenación del Sistema de Formación Profesional.\|Real Decreto 659-2023, de 18 de julio, por el que se desarrolla la ordenación del Sistema de Formación Profesional.]]
+- [[Plantillas/normativa/Real Decreto 686-2010, de 20 de mayo, por el que se establece el título de Técnico Superior en DAW y se fijan sus enseñanzas mínimas.\|Real Decreto 686-2010, de 20 de mayo, por el que se establece el título de Técnico Superior en DAW y se fijan sus enseñanzas mínimas.]]
+- [[Plantillas/normativa/Resolución de 7 de septiembre de 2026\|Resolución de 7 de septiembre de 2026]]
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-La normativa educativa vigente que regula las enseñanzas para estos ciclos es la **[Orden de 16 de junio de 2011](https://www.juntadeandalucia.es/boja/2011/149/23)**, por la que se desarrolla el currículo correspondiente al título de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma en la **Comunidad Autónoma Andaluza**.
-
-Esta Orden atiende a lo que se establece a nivel nacional en el **[Real Decreto 686/2010, de 20 de mayo](https://www.boe.es/eli/es/rd/2010/05/20/686)**, por el que se establece el título de **Técnico Superior en Desarrollo de Aplicaciones Web** y se fijan sus enseñanzas mínimas y modificado por el **[Real Decreto 405/2023, de 29 de mayo](https://www.boe.es/eli/es/rd/2023/05/29/405)**, por el que **se actualizan los títulos** de la formación profesional del sistema educativo de **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma** y **Técnico Superior en Desarrollo de Aplicaciones Web**.
-
-
-</div></div>
-
+{ .block-language-dataview}
 
 ## Cursos del ciclo
 
