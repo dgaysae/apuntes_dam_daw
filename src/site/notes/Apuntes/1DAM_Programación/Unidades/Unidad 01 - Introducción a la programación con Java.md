@@ -78,7 +78,7 @@ i) Se han introducido comentarios en el código.
 
 En el siguiente enlace puedes descargar la unidad completa en PDF, por si quieres estudiarla sin conexión o imprimirla:
 
-[Unidad 01-Introducción a la programación con Java.pdf](/img/user/adjuntos/1DAM_Programacion/Unidad_01/Unidad%2001-Introducci%C3%B3n%20a%20la%20programaci%C3%B3n%20con%20Java.pdf)
+[Unidad 01-Introducción a la programación con Java.pdf](https://codeberg.org/dgaysae/Programacion_1_DAM_DAW/src/branch/main/unidades/Unidad%2001-Introducci%C3%B3n%20a%20la%20programaci%C3%B3n%20con%20Java.pdf)
 
 ---
 
