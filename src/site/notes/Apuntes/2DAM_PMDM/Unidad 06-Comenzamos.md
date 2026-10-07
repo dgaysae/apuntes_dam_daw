@@ -4,24 +4,10 @@
 
 
 ```table-of-contents
+maxLevel: 3
 ```
 
 ---
-
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-> [!info] Para que practiques desde el principio... 
-> Puedes ejecutar el código Kotlin que se muestran a continuación pulsando el botoncito de "Play" en la parte superior derecha de cada código.
-> 
-> También puedes editar y cambiar el código para hacer pruebas sin irte de aquí.
-> 
-> En cualquier caso, puedes ir al **[Playground de Kotlin](https://play.kotlinlang.org/)**, el editor de código de Kotlin en la web que te permitirá probar cada uno de los códigos que encontrarás en estas notas.
-
-</div></div>
-
 
 # 1. Layouts
 
