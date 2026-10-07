@@ -78,7 +78,7 @@ i) Se han introducido comentarios en el código.
 
 En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-[[Unidad 02-Estructuras de control. Calidad del software\|Unidad 02-Estructuras de control. Calidad del software]]
+[[Apuntes/1DAM_Programación/Unidad 01-Introducción a la programación con Java\|Unidad 01-Introducción a la programación con Java]]
 
 ---
 
