@@ -76,9 +76,9 @@ i) Se han introducido comentarios en el código.
 
 ## Unidad completa
 
-En el siguiente enlace puedes descargar la unidad completa en PDF, por si quieres estudiarla sin conexión o imprimirla:
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-[Unidad 01-Introducción a la programación con Java.pdf](https://codeberg.org/dgaysae/Programacion_1_DAM_DAW/src/branch/main/unidades/Unidad%2001-Introducci%C3%B3n%20a%20la%20programaci%C3%B3n%20con%20Java.pdf)
+[[Unidad 02-Estructuras de control. Calidad del software\|Unidad 02-Estructuras de control. Calidad del software]]
 
 ---
 
