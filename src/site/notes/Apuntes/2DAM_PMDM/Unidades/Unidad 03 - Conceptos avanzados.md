@@ -54,12 +54,6 @@ En el siguiente enlace tienes la unidad completa en una sola página, por si qui
 
 [[Apuntes/2DAM_PMDM/Unidad 03-Conceptos avanzados\|Unidad 03-Conceptos avanzados]]
 
-## Ejercicios resueltos
-
-Puedes consultar los ejercicios resueltos por el alumnado en este [[Apuntes/2DAM_PMDM/Ejercicios - Introducción a Kotlin\|enlace]].
-
-
-
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Apuntes/2DAM_PMDM/Unidades/Unidad 02 - POO en Kotlin.md" data-href="Apuntes/2DAM_PMDM/Unidades/Unidad 02 - POO en Kotlin.md" href="Apuntes/2DAM_PMDM/Unidades/Unidad 02 - POO en Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - POO en Kotlin</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Libros/PMDM (2º DAM).md" data-href="Libros/PMDM (2º DAM).md" href="Libros/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Apuntes/2DAM_PMDM/Unidades/Unidad 04 - Estructura de un proyecto Android.md" data-href="Apuntes/2DAM_PMDM/Unidades/Unidad 04 - Estructura de un proyecto Android.md" href="Apuntes/2DAM_PMDM/Unidades/Unidad 04 - Estructura de un proyecto Android.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 04 - Estructura de un proyecto Android</a> ➡️</span></p>

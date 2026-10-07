@@ -52,11 +52,6 @@ En el siguiente enlace tienes la unidad completa en una sola página, por si qui
 
 [[Apuntes/2DAM_PMDM/Unidad 02-POO en Kotlin\|Unidad 02-POO en Kotlin]]
 
-## Ejercicios resueltos
-
-Puedes consultar los ejercicios resueltos por el alumnado en este [[Apuntes/2DAM_PMDM/Ejercicios - Introducción a Kotlin\|enlace]].
-
-
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Apuntes/2DAM_PMDM/Unidades/Unidad 01 - Introducción a Kotlin.md" data-href="Apuntes/2DAM_PMDM/Unidades/Unidad 01 - Introducción a Kotlin.md" href="Apuntes/2DAM_PMDM/Unidades/Unidad 01 - Introducción a Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 01 - Introducción a Kotlin</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Libros/PMDM (2º DAM).md" data-href="Libros/PMDM (2º DAM).md" href="Libros/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Apuntes/2DAM_PMDM/Unidades/Unidad 03 - Conceptos avanzados.md" data-href="Apuntes/2DAM_PMDM/Unidades/Unidad 03 - Conceptos avanzados.md" href="Apuntes/2DAM_PMDM/Unidades/Unidad 03 - Conceptos avanzados.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 03 - Conceptos avanzados</a> ➡️</span></p>
