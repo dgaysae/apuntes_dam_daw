@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/apuntes/1-dam-programacion/unidad-02/referencias/","dg-note-properties":{"unidad":"[[Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software]]","descripcion":"No es recomendable que quien escribe un código, luego lo pruebe para ver si funciona correctamente. Veamos algunas pautas para ello.","orden":9}}
+{"dg-publish":true,"permalink":"/apuntes/1-dam-programacion/unidad-02/referencias/","dg-note-properties":{"unidad":"[[Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software]]","descripcion":"No es recomendable que quien escribe un código, luego lo pruebe para ver si funciona correctamente. Veamos algunas pautas para ello.","orden":11}}
 ---
 
 
@@ -84,5 +84,5 @@
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Apuntes/1DAM_Programación/Unidad 02/8. Pruebas.md" data-href="Apuntes/1DAM_Programación/Unidad 02/8. Pruebas.md" href="Apuntes/1DAM_Programación/Unidad 02/8. Pruebas.md" class="internal-link" target="_blank" rel="noopener nofollow">8. Pruebas</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" data-href="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" href="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - Estructuras de control. Calidad del software</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Apuntes/1DAM_Programación/Unidad 02/10. Ejemplo integrador.md" data-href="Apuntes/1DAM_Programación/Unidad 02/10. Ejemplo integrador.md" href="Apuntes/1DAM_Programación/Unidad 02/10. Ejemplo integrador.md" class="internal-link" target="_blank" rel="noopener nofollow">10. Ejemplo integrador</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" data-href="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" href="Apuntes/1DAM_Programación/Unidades/Unidad 02 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - Estructuras de control. Calidad del software</a></span></p>
 
