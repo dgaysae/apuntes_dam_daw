@@ -11,16 +11,16 @@ Material de referencia para el módulo de Programación Multimedia y Dispositivo
 
 ## Unidades
 
-| File                                                                                                                           | Descripción                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 01 - Introducción a Kotlin\|Unidad 01 - Introducción a Kotlin]]                         | Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android.            |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 02 - POO en Kotlin\|Unidad 02 - POO en Kotlin]]                                         | Veamos cómo se declaran las clases y se usan los objetos en Kotlin.                                |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 03 - Conceptos avanzados\|Unidad 03 - Conceptos avanzados]]                             | Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.                          |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 04 - Estructura de un proyecto Android\|Unidad 04 - Estructura de un proyecto Android]] | Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.                          |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 05 - Componentes y ciclo de vida\|Unidad 05 - Componentes y ciclo de vida]]             | Fases por las que pasa una app Android desde que se abre. Componentes básicos de una app.          |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 06 - Comenzamos\|Unidad 06 - Comenzamos]]                                               | Empezamos a crear aplicaciones en Android con elementos básicos.                                   |
-| [[Apuntes/2DAM_PMDM/Unidades/Actividad - Consumir una API\|Actividad - Consumir una API]]                                   | Veamos cómo se ataca una API para recibir datos de ella.                                           |
-| [[Apuntes/2DAM_PMDM/Unidades/Unidad 08 - MVVM\|Unidad 08 - MVVM]]                                                           | Ya vimos en Programación el patrón MVC. En apps el más habitual es el Model-View-ViewModel (MVVM). |
+| File                                                                                                                                         | Descripción                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 01/Unidad 01 - Introducción a Kotlin\|Unidad 01 - Introducción a Kotlin]]                         | Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android.            |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 02/Unidad 02 - POO en Kotlin\|Unidad 02 - POO en Kotlin]]                                         | Veamos cómo se declaran las clases y se usan los objetos en Kotlin.                                |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 03/Unidad 03 - Conceptos avanzados\|Unidad 03 - Conceptos avanzados]]                             | Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.                          |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 04/Unidad 04 - Estructura de un proyecto Android\|Unidad 04 - Estructura de un proyecto Android]] | Veamos Kotlin en mayor profundidad. Funciones de extensión, lambdas, etc.                          |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 05/Unidad 05 - Componentes y ciclo de vida\|Unidad 05 - Componentes y ciclo de vida]]             | Fases por las que pasa una app Android desde que se abre. Componentes básicos de una app.          |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 06/Unidad 06 - Comenzamos\|Unidad 06 - Comenzamos]]                                               | Empezamos a crear aplicaciones en Android con elementos básicos.                                   |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 07/Actividad - Consumir una API\|Actividad - Consumir una API]]                                   | Veamos cómo se ataca una API para recibir datos de ella.                                           |
+| [[Asignaturas/2DAM_PMDM/Unidades/Unidad 08/Unidad 08 - MVVM\|Unidad 08 - MVVM]]                                                           | Ya vimos en Programación el patrón MVC. En apps el más habitual es el Model-View-ViewModel (MVVM). |
 
 { .block-language-dataview}
 
