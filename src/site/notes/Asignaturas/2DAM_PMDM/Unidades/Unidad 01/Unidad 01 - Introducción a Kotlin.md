@@ -1,0 +1,64 @@
+---
+{"dg-publish":true,"dg-permalink":"/apuntes/2-dam-pmdm/unidades/unidad-01-introduccion-a-kotlin/","permalink":"/apuntes/2-dam-pmdm/unidades/unidad-01-introduccion-a-kotlin/","tags":["kotlin"],"dg-note-properties":{"modulo":"[[Módulos/PMDM]]","libro":"[[Libros/PMDM (2º DAM)]]","descripcion":"Introducción a Kotlin, el lenguaje por excelencia para aplicaciones nativas en Android.","orden":1,"tags":["kotlin"]}}
+---
+
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!info]
+> **PMDP - Apuntes**  © 2024 by Diego G. S. is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+> ![by-nc-sa.png|150](https://upload.wikimedia.org/wikipedia/commons/4/4b/CC_BY-NC-SA.svg)
+> 
+> El contenido original ha sido redactado por estudiantes del curso de 2º DAM de [**IES Celia Viñas**](https://iescelia.org/) (curso 2024-25):
+> * [Develatter - Alejandro López Martínez](https://www.linkedin.com/in/develatter/) | [Github](https://github.com/develatter/) | [Instagram](https://www.instagram.com/develatter/)
+> * Juan González Cobo
+> * [Juan Diego Rondón Bedoya](https://www.linkedin.com/in/juandiegorondon/)
+> 
+>  y por el profesor &copy; **Diego Gay Sáez** y está bajo licencia Creative Commons **[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**, que permite su **libre distribución**, **comunicación pública** y **adaptación sin fines lucrativos**, siempre que se cite la autoría y se indique si se han realizado cambios.
+>  **No se permite el uso comercial**.
+
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+> [!warning] Aviso importante 
+> Para estudiar esta unidad sobre Kotlin, es conveniente tener nociones de programación.
+> Si no tienes conocimientos en programación, te recomendamos que empieces [[Libros/Programación (1º DAM, 1º DAW)\|aprendiendo Java]].
+
+</div></div>
+
+
+| File                                                                                                                                        | Descripción                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/1. Variables y constantes\|1. Variables y constantes]]                                         | Conceptos básicos para adaptarse a Kotlin desde el lenguaje estudiado en 1º (Java).                                                          |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/2. Inferencia de tipos\|2. Inferencia de tipos]]                                               | Kotlin puede adivinar el tipo de dato de una variable sin necesidad de indicarselo.                                                          |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/3. Tipos de datos\|3. Tipos de datos]]                                                         | Tipos de datos en Kotlin.                                                                                                                    |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/4. static en Kotlin\|4. static en Kotlin]]                                                     | Kotlin expresa elementos estáticos de forma distinta a Java.                                                                                 |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/5. object\|5. object]]                                                                         | Qué es y para que se usa la palabra reservada object.                                                                                        |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/6. Comparadores estructurales y referenciales\|6. Comparadores estructurales y referenciales]] | Kotlin puede comparar variables desde dos perspectivas.                                                                                      |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/7. Collections\|7. Collections]]                                                               | Las colecciones de Kotlin no resultarán extrañas, ya que el concepto es el mismo que en Java.                                                |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/8. Null Safety\|8. Null Safety]]                                                               | Cómo se tratan los nulos en Kotlin.                                                                                                          |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/9. lateinit\|9. lateinit]]                                                                     | Si queremos evitar nulos pero de partida no tenemos un valor que asignar a una variable, podemos decirque que se va a inicializar más tarde. |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos\|10. Rangos]]                                                                       | Ante listas intuitivas de datos, podemos usar los rangos.                                                                                    |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/11. Control de flujo\|11. Control de flujo]]                                                   | Bucles y sentencias condicionales en Kotlin.                                                                                                 |
+| [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/12. Funciones\|12. Funciones]]                                                                 | Oirás mucho la expresión de que en Kotlin las funciones son ciudadanos de primera clase. Aquí veremos el porqué.                             |
+
+{ .block-language-dataview}
+
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01-Introducción a Kotlin\|Unidad 01-Introducción a Kotlin]]
+
+---
+
+<p><span>🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Libros/PMDM (2º DAM).md" data-href="Libros/PMDM (2º DAM).md" href="Libros/PMDM (2º DAM).md" class="internal-link" target="_blank" rel="noopener nofollow">PMDM (2º DAM)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/2DAM_PMDM/Unidades/Unidad 02/Unidad 02 - POO en Kotlin.md" data-href="Asignaturas/2DAM_PMDM/Unidades/Unidad 02/Unidad 02 - POO en Kotlin.md" href="Asignaturas/2DAM_PMDM/Unidades/Unidad 02/Unidad 02 - POO en Kotlin.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - POO en Kotlin</a> ➡️</span></p>
