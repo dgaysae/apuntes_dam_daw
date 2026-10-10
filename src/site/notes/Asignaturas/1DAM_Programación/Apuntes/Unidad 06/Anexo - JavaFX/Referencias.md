@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/referencias/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/referencias/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Anexo - Swing]]","[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]"],"descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":19,"tags":["java/swing","proyecto"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/referencias/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/referencias/","tags":["java/swing","proyecto"],"dg-note-properties":{"unidad":["[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Anexo - Swing]]","[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]"],"descripcion":"Aquí tienes distintas fuentes y referencias documentales para consultar, ahondar y aprender más sobre los temas que hemos tratado en esta unidad","orden":13,"tags":["java/swing","proyecto"]}}
 ---
 
 

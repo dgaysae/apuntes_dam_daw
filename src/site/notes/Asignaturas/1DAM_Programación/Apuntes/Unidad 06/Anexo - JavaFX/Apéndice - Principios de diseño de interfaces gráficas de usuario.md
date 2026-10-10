@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","tags":["java/javafx"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]","descripcion":"Principios universales de diseño de interfaces gráficas, en forma de lo que se debe y no se debe hacer, para mejorar la usabilidad de nuestras aplicaciones.","orden":17,"criterios":["RA5.f"],"tags":["java/javafx"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-principios-de-diseno-de-interfaces-graficas-de-usuario/","tags":["java/javafx"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]","descripcion":"Principios universales de diseño de interfaces gráficas, en forma de lo que se debe y no se debe hacer, para mejorar la usabilidad de nuestras aplicaciones.","orden":11,"criterios":["RA5.f"],"tags":["java/javafx"]}}
 ---
 
 

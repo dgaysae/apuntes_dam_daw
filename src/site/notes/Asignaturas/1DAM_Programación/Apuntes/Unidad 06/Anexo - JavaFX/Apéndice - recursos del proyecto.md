@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-recursos-del-proyecto/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-recursos-del-proyecto/","tags":["java/javafx","proyecto"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]","descripcion":"Dónde guardar las imágenes, iconos y otros recursos de un proyecto Maven y cómo cargarlos desde el código, tanto en Swing como en JavaFX, para que funcionen también en el JAR final.","orden":18,"criterios":["RA5.f"],"tags":["java/javafx","proyecto"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-recursos-del-proyecto/","permalink":"/apuntes/1-dam-programacion/unidad-06-java-fx/apendice-recursos-del-proyecto/","tags":["java/javafx","proyecto"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 06/Unidad 06 - Entrada y salida de información]]","descripcion":"Dónde guardar las imágenes, iconos y otros recursos de un proyecto Maven y cómo cargarlos desde el código, tanto en Swing como en JavaFX, para que funcionen también en el JAR final.","orden":12,"criterios":["RA5.f"],"tags":["java/javafx","proyecto"]}}
 ---
 
 
