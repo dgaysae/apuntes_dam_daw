@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-02-estructuras-de-control-calidad-del-software/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-02-estructuras-de-control-calidad-del-software/","tags":["programación/poo","java/estructuras_de_control"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Existen 3 estructuras de control heredadas de la programación estructurada: secuencial, iterativa y selectiva (condicional). Con ellas se puede realizar cualquier programa. También veremos distintas formas de probar nuestro código (alguna de ellas automática).","orden":2,"tags":["programación/poo","java/estructuras_de_control"],"estado":"revisar"}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-02-estructuras-de-control-calidad-del-software/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-02-estructuras-de-control-calidad-del-software/","tags":["programación/estructuras_de_control","java/estructuras_de_control"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Existen 3 estructuras de control heredadas de la programación estructurada: secuencial, iterativa y selectiva (condicional). Con ellas se puede realizar cualquier programa. También veremos distintas formas de probar nuestro código (alguna de ellas automática).","orden":2,"ra":"RA3","tags":["programación/estructuras_de_control","java/estructuras_de_control"],"estado":"revisar"}}
 ---
 
 
@@ -29,16 +29,13 @@ La siguiente tabla muestra los contenidos básicos de la norma educativa que con
 
 ### Contenidos básicos
 
-Uso de estructuras de control:  
-- Estructuras de selección.  
-- Estructuras de repetición.  
-- Estructuras de salto.  
-- Control de excepciones.  
-- Depuración de programas.  
-- El depurador como herramienta de control de errores.  
-- Documentación de programas.  
-- Documentación interna, comentarios.  
-- Documentación externa, diagramas de clases, requisitos, guías, etc.
+Uso de estructuras de control:
+- Estructuras de selección.
+- Estructuras de repetición.
+- Estructuras de salto.
+- Control de excepciones.
+- Aserciones.
+- Prueba, depuración y documentación de la aplicación.
 
 ### RA asociado y criterios de evaluación
 
