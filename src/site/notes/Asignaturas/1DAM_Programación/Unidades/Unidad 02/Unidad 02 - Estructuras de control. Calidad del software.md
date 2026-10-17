@@ -76,7 +76,7 @@ i) Se han utilizado aserciones para la detección y corrección de errores duran
 
 En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-[[Unidad 02-Estructuras de control. Calidad del software\|Unidad 02-Estructuras de control. Calidad del software]]
+[[Asignaturas/1DAM_Programación/Apuntes/Unidad 02-Estructuras de control. Calidad del software\|Unidad 02-Estructuras de control. Calidad del software]]
 
 ---
 
