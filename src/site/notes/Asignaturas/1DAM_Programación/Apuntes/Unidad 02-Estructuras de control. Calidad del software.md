@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-02/1-la-programacion-estructurada/","permalink":"/apuntes/1-dam-programacion/unidad-02/1-la-programacion-estructurada/","dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software]]","modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]"}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidad-02-estructuras-de-control-calidad-del-software/","permalink":"/apuntes/1-dam-programacion/unidad-02-estructuras-de-control-calidad-del-software/","dg-note-properties":{"unidad":"[[Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software]]","modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]"}}
 ---
 
 
@@ -75,8 +75,6 @@ La programación orientada a objetos, como vimos en [[Asignaturas/1DAM_Programac
 
 [^2]: Böhm, C. y Jacopini, G. (1966). Flow diagrams, Turing machines and languages with only two formation rules. *Communications of the ACM, 9*(5), 366-371. https://doi.org/10.1145/355592.365646
 
-
-
 # 2. Estructura secuencial
 
 La estructura secuencial es aquélla en la que **una acción sigue a otra** (en secuencia). Esta es la estructura algorítmica básica, en la que las instrucciones se ejecutan una tras otra, en el mismo orden en el que fueron escritas.
@@ -91,7 +89,6 @@ La estructura secuencial, por lo tanto, es la más simple de las tres estructura
     acción N 
 }
 ```
-
 
 ![ud03_02_secuencial.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_02_secuencial.png)
 
@@ -122,7 +119,6 @@ Lo que hace este algoritmo es:
 1. Leer `a` y `b`
 2. Sumar ambos.
 3. Escribir por pantalla la suma resultante.
-
 
 # 3. Estructura selectiva (condicional)
 
@@ -177,7 +173,6 @@ Al introducir el número por teclado, la primera instrucción condicional `if (n
 
 De esta forma **el programa muestra uno y sólo uno de los tres mensajes** según sea el valor introducidos.
 
-
 ### Ejemplo 2
 Este código indica si una persona es mayor de edad:
 ```java
@@ -196,7 +191,6 @@ Este código indica si una persona es mayor de edad:
 }
 ```
 Al introducir la edad, la primera instrucción condicional `if (edad >= 18)` comprueba que si la edad es o supera los 18 años. Si es así, ejecuta su bloque de código (las instrucciones que hay entre las llaves `{` y `}`) que en este caso muestra el mensaje `Eres mayor de edad`. Justo después vemos otra condicional `if (edad <= 18)` que evalúa si es menor de edad, en cuyo caso se imprimirá en la pantalla el mensaje pertinente.
-
 
 ### Ejemplo 3
 El siguiente código calcula el área y el perímetro de un rectángulo usando un condicional simple:
@@ -240,7 +234,6 @@ else {
 
 En esta forma, la instrucción funciona del siguiente modo: si el resultado de la **`condición`** es **verdadero**, entonces se ejecutan las acciones de la primera parte, es decir, las **`acciones01`**. Si es **falso**, se ejecutan las acciones de la parte `else`, es decir, las **`acciones02`**. 
 
-
 ### Ejemplos  
 Podemos reescribir algunos de los programas anteriores usando una alternativa doble:
 
@@ -278,7 +271,6 @@ Podemos reescribir algunos de los programas anteriores usando una alternativa do
 ```
 
 Lo más interesante de estos algoritmos es compararlos con sus versiones anteriores, ya que **hacen exactamente lo mismo**. ¡Siempre hay varias maneras de resolver el mismo problema! Pero esta solución es un poco más sencilla, **al ahorrarse la segunda condición**, que va implícita en el **`else`**. 
-
 
 ## 3.3. Condicional múltiple
 
@@ -347,7 +339,6 @@ switch (dia) {
         System.out.println("El número no es correcto");
 }
 ```
-
 
 En este programa, la variable **`dia`**, una vez leída, se compara con los siete valores posibles. Si vale 1, se realizará la acción **`System.out.println("lunes");`** si vale 2, se realiza **`System.out.println("martes");`** y así sucesivamente. Por último, si no coincide con ninguno de los siete valores, se ejecuta la parte **`default`**.
 
@@ -501,7 +492,6 @@ En cualquier otro caso, indicará que el día no es correcto.
 > * [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF]]
 
 [^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
-
 
 # 4. Estructura repetitiva (bucles)
 
@@ -825,9 +815,7 @@ En esta ocasión, las repeticiones se controlan con la variable n, de modo que e
 
 Observa que, en esta ocasión, ha sido más sencillo resolver el problema con un bucle "do... while" y un centinela que con un bucle "while" y un conmutador, porque nos ha quedado una solución más corta.
 
-
 [^1]: Hay que evitar el operador "==" en las condiciones de salida de los bucles, sobre todo si estamos trabajando con números reales.
-
 
 # 5. Instrucciones de salto
 
@@ -864,7 +852,6 @@ El único uso racional de esta instrucción es dentro de un `switch`. Cada case 
 > }
 > ```
 > El bucle está planteado para recorrer desde el 1 al 10 (ambos incluidos) uno a uno y los muestra por pantalla (`System.out.println("Número: " + i);`). Pero dentro se indica que, si el número es 5, lo indica por consola y sale del bucle.
-
 
 El resultado será el siguiente:
 
@@ -938,8 +925,6 @@ Por esta razón, y ya desde el principio, debemos acostumbrarnos a **respetar ci
 
 > [!example] Material de apoyo 
 > * [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables\|Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables]]
-
-
 
 ## 6.1. Partes de un algoritmo
 
@@ -1613,9 +1598,7 @@ Este código se considera de mala calidad porque:
 
 Por tanto, recuerda: **las excepciones deben reservarse para casos excepcionales**. De ahí su nombre. Solo para errores excepcionales, por favor. La ejecución normal de un algoritmo jamás debería pasar por una excepción, o el diseño de algoritmos se convertirá en un infierno peor que el código espagueti de los tiempos prehistóricos.
 
-
 [^1]: El zurriagazo (derivado de zurriago, un tipo de látigo) es un golpe dado con un látigo o correa. En el lenguaje coloquial, también se utiliza de forma figurada para describir una desgracia imprevista o un desprecio profundo.
-
 
 # 8. Pruebas
 
@@ -1803,14 +1786,13 @@ public static void main(String[] args) {
 
 Es importante entender que hay que usar este código con precaución.
 
-- Si en la consola se imprime algo parecido a lo siguiente:  
+- Si en la consola se imprime algo parecido a lo siguiente, lo has configurado correctamente:
 
   ```
   Exception in thread "main" java.lang.AssertionError: Las aserciones están ACTIVADAS
-	at <paquete>.<nombre de la clase>.main(Cuenta.java:10)
-Command execution failed.
+      at <paquete>.<Clase>.main(<Clase>.java:<línea>)
+  Command execution failed.
   ```
-  lo has configurado correctamente.
 
 - Si se imprime _"Las aserciones están DESACTIVADAS"_, revisa los pasos anteriores porque el argumento `-ea` no se está aplicando.
 
@@ -1866,11 +1848,23 @@ public class ControlCalificaciones {
 
 ### 8.6.3. `assert` y tipos de pruebas
 
-Las aserciones nativas de Java (`assert`) se engloban principalmente dentro del **desarrollo defensivo**, la **depuración (debugging)** y las **pruebas unitarias de caja blanca** (que puedes ver en detalle en [[Asignaturas/1DAM_ED/Apuntes/Unidad 04/4. Pruebas de caja blanca - análisis estructural\|las notas del módulo de Entornos de desarrollo]]), aunque con matices muy importantes respecto a dónde _no_ deben usarse.
+Las aserciones nativas de Java (`assert`) se engloban principalmente dentro del **desarrollo defensivo**, la **depuración (debugging)** y las **pruebas unitarias de caja blanca** (que puedes ver en detalle en [[Asignaturas/1DAM_ED/Apuntes/Unidad 04/4. Pruebas de caja blanca - análisis estructural\|las notas del módulo de Entornos de desarrollo]]).
 
-Dónde situarlas:
+Cuando incluimos aserciones en nuestro código, **es totalmente recomendable dejarlas.** Esa es precisamente la filosofía del diseño de las aserciones en Java. Los motivos por los que es seguro y muy aconsejable dejar las aserciones en nuestro código son:
 
-#### En pruebas unitarias (caja blanca)
+- Para empezar, porque **no tienen impacto en producción**: Cuando la aplicación se ejecuta sin la opción `-ea` (que es el comportamiento por defecto en entornos de producción), la JVM ni siquiera evalúa las condiciones de los `assert`. El bytecode asociado apenas supone un coste de rendimiento.
+    
+- Sirve como **documentación** del desarrollo, eliminando comentarios innecesariamente extensos: Un `assert` actúa como una especificación ejecutable. Indica claramente a cualquier desarrollador qué condiciones o invariantes deben cumplirse obligatoriamente en un punto del código.
+    
+- Ayuda a **detectar bugs**: Mantenerlas nos permite activarlas fácilmente durante fases de desarrollo, pruebas locales, entornos de integración continua (CI/CD) o al depurar un fallo en un entorno de pruebas.
+
+Aunque son totalmente recomendables (y casi obligatorias), su uso debe hacerse teniendo en cuenta matices muy importantes respecto a **dónde _no_ deben usarse**.
+
+#### Dónde usarlas
+
+En pocas palabras, las aserciones sustituyen el rancio `System.out.println` que solemos usar cuando queremos evaluar qué está haciendo nuestro código. En otras palabras, **nos sirve a nosotros, no a la aplicación**, para saber si lo que queríamos que se ejecutara realmente se está haciendo bien.
+
+##### En pruebas unitarias (caja blanca)
 
 Las aserciones de Java se encuadran dentro de las **pruebas unitarias dinámicas de caja blanca**, ya que el propio programador escribe los `assert` dentro de sus métodos mientras desarrolla el código para asegurarse de que los componentes individuales (funciones, algoritmos de filtrado, etc.) se comportan exactamente como espera.
 
@@ -1879,9 +1873,63 @@ Las aserciones de Java se encuadran dentro de las **pruebas unitarias dinámicas
 > 
 > El `assert` de Java va **dentro** del código fuente principal de la aplicación, mientras que las aserciones de **JUnit** van en archivos separados dedicados exclusivamente a pruebas.
     
-#### Programación Defensiva (fase de desarrollo)
+##### Programación defensiva (fase de desarrollo)
 
 Más que en una fase de "testing" externa, las aserciones forman parte de la arquitectura del código. Se engloban en lo que se conoce como **programación defensiva** y sirven para comprobar **invariantes de código** (cosas que nunca deberían cambiar) y **postcondiciones** (por ejemplo, asegurarse de que tras procesar un JSON, el resultado no es incoherente). Aquí se usan masivamente durante la codificación y la **depuración**.
+
+Por ejemplo, una de esas invariantes es la conocida como **invariantes internas**, que sirve para **comprobar cosas que nunca deberían ocurrir dentro de un método o clase** si el código está bien escrito.
+
+```java
+int total = calcularTotal();
+assert total >= 0 : "El total no puede ser negativo";
+```
+
+O las **invariantes de flujo de control** En puntos del código que teóricamente son inalcanzables. Esto se ve mejor con un ejemplo:
+
+Imagina que procesamos los permisos de un sistema mediante un código numérico:
+
+1. Rol de invitado (guest).
+2. Rol de usuario registrado.
+3. Rol de administrador.
+
+Definimos cada uno de ellos en una constante:
+
+```java
+public class GestorPermisos {
+
+    // Constantes públicas que simulan los roles
+    public static final int ROL_INVITADO = 1;
+    public static final int ROL_USUARIO = 2;
+    public static final int ROL_ADMINISTRADOR = 3;
+
+    public int obtenerNivelAcceso(int codigoRol) {
+        switch (codigoRol) {
+            case ROL_INVITADO:
+                return 10;
+            case ROL_USUARIO:
+                return 50;
+            case ROL_ADMINISTRADOR:
+                return 100;
+            default:
+                // --- INVARIANTE DE FLUJO DE CONTROL ---
+                // Si el método 'obtenerNivelAcceso' solo debe llamarse con roles válidos,
+                // llegar aquí significa que hay un BUG en el código que llamó a este método.
+                assert false : "Invariante violada: codigoRol no contemplado -> " + codigoRol;
+
+                // Protección en producción si -ea está desactivado
+                throw new IllegalArgumentException("Código de rol desconocido: " + codigoRol);
+        }
+    }
+}
+```
+
+Si hemos cubierto todas las constantes válidas en un `if-else` o, como es el caso, un `switch`, la ejecución nunca debería llegar al bloque `default`.
+
+Por eso ponemos un `assert false`, para avisar de que hay **datos no contemplados en desarrollo**. Si se añade una nueva constante (por ejemplo, `ROL_SUPERADMIN = 4`) y olvidamos actualizar el `switch` (o el `if-else`, o la estructura que sea), el `assert` saltará inmediatamente, lanzando un `AssertionError`.
+
+De esta forma se impide que el método nos dé una sorpresa y devuelva un valor por defecto con el que no contábamos (como `0` o `null`) que pueda corromper más adelante un cálculo.
+
+Las **postcondiciones** sirven para comprobar que un un bloque de código (un método, por ejemplo) ha realizado su trabajo correctamente antes de devolver un resultado.
 
 #### Dónde no se usan
 
@@ -1893,7 +1941,9 @@ Los `assert` no se usan nunca en pruebas de integración o de sistema:
 |**Prueba de Integración**|**NO**|En integración probamos cómo se comunican varios módulos (ej. nuestra app con la base de datos). Si la base de datos falla o devuelve un nulo, eso es un error de entorno/comunicación que debe gestionarse con **Excepciones** (`try-catch`), no con un `assert` que rompa el programa.|
 |**Validación de Usuario / Sistema**|**NO**|Si el usuario introduce mal un JSON en producción, la máquina virtual de Java tendrá las aserciones desactivadas (`-ea` apagado) por rendimiento. El error pasaría de largo. Ahí se usan condicionales tradicionales.|
 
-En conclusión, los `assert` (aserciones nativas) permiten al programador indicar sin complicaciones qué condiciones quieren que su código cumpla. Lo hacen en su rincón de trabajo (fase unitaria) y sirve para que su propio código le avise si han metido la pata en la lógica, antes de juntar su pieza de código con el resto del sistema.
+En conclusión, los `assert` (aserciones nativas) nos permiten indicar qué condiciones queremos que cumpla nuestro código. Lo hacemos en nuestro "rincón de trabajo" (fase unitaria) y sirve para que nuestro propio código nos avise si hemos metido la pata en la lógica, antes de juntar nuestra pieza de código con el resto del sistema.
+
+#### Ejemplo - `assert` vs. exception
 
 Veamos otro ejemplo que muestra cuándo un error debe manejarse con una excepción (integración/sistema) y cuándo con una aserción (unitaria/lógica). Simula la lectura de un **documento JSON de una API externa** (lo que toca los criterios de evaluación de intercambio de datos). Muestra perfectamente la frontera: el fallo de comunicación se gestiona con **excepciones** (Integración/Entorno), mientras que el error de lógica propia se gestiona con **aserciones** (Unitaria/Interna).
 
@@ -1963,7 +2013,6 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 [^1]:  Certificación de Calidad de Software. (s/f). AENOR. Recuperado el 28 de agosto de 2025, de [https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software](https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software)
 
-
 # 9. Depuración de programas
 
 ## 9.1. ¿Qué es depurar?
@@ -2008,8 +2057,6 @@ Los puntos de ruptura solo tienen efecto si ejecutamos el programa **en modo dep
 
 > [!warning] Cuidado
 > Si lo ejecutamos de forma normal, se ignoran.
-
-
 
 ### 9.2.2. Avanzar paso a paso
 
@@ -2224,13 +2271,11 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 > [!WARNING]
 > La tabla deja al descubierto un comportamiento discutible: `0` y `101` se aceptan como intentos aunque estén fuera del rango. ¿Cómo lo modificarías para que no cuenten? Las pruebas sirven precisamente para descubrir estos casos.
 
-
 # Referencias - Material de refuerzo
 
 ## Representación de algoritmos
 
 > Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
-
 
 ## Condiciones en pseudocódigo SI - IF
 
@@ -2260,8 +2305,9 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 
 > Aula en la nube. (2022r, octubre 14). _JAVA: Recomendaciones al declarar variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=5EaHrvmoLEk
 
+## Aserciones, pruebas unitarias en JUnit y depuración
 
-
+> Javi López. (2023, 24 noviembre). _15 - Aserciones, pruebas unitarias en JUnit y depuración_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZKvlY7Zy1j0
 
 # Ejercicios resueltos
 

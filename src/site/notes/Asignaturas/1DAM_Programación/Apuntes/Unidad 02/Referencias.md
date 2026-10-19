@@ -43,7 +43,9 @@
 
 > Aula en la nube. (2022r, octubre 14). _JAVA: Recomendaciones al declarar variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=5EaHrvmoLEk
 
+## Aserciones, pruebas unitarias en JUnit y depuración
 
+> Javi López. (2023, 24 noviembre). _15 - Aserciones, pruebas unitarias en JUnit y depuración_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZKvlY7Zy1j0
 
 
 # Ejercicios resueltos

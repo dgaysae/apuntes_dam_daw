@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-04-poo-clases/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-04-poo-clases/","tags":["programación/poo","java/poo","java/poo/clases"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":4,"tags":["programación/poo","java/poo","java/poo/clases"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-04-poo-clases/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-04-poo-clases/","tags":["programación/poo","java/poo","java/poo/clases"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":4,"ra":"RA4","tags":["programación/poo","java/poo","java/poo/clases"]}}
 ---
 
 
