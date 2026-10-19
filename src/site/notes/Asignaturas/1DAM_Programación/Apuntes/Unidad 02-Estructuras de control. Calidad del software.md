@@ -9,7 +9,45 @@ maxLevel: 3
 
 ---
 
-[[Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software#Datos de la unidad\|Unidad 02 - Estructuras de control. Calidad del software#Datos de la unidad]]
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/apuntes/1-dam-programacion/unidades/unidad-02-estructuras-de-control-calidad-del-software/#datos-de-la-unidad" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+## Datos de la unidad
+
+La siguiente tabla muestra los contenidos básicos de la norma educativa que contempla esta unidad, al igual que el objetivo o RA que se quiere alcanzar y los criterios de evaluación que se seguirán para ello.
+
+### Contenidos básicos
+
+Uso de estructuras de control:
+- Estructuras de selección.
+- Estructuras de repetición.
+- Estructuras de salto.
+- Control de excepciones.
+- Aserciones.
+- Prueba, depuración y documentación de la aplicación.
+
+### RA asociado y criterios de evaluación
+
+**RA 3. Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje.**
+
+Criterios de evaluación para el RA:
+a) Se ha escrito y probado código que haga uso de estructuras de selección.
+b) Se han utilizado estructuras de repetición.
+c) Se han reconocido las posibilidades de las sentencias de salto.
+d) Se ha escrito código utilizando control de excepciones.
+e) Se han creado programas ejecutables utilizando diferentes estructuras de control.
+f) Se han probado y depurado los programas.
+g) Se ha comentado y documentado el código.
+h) Se han creado excepciones.
+i) Se han utilizado aserciones para la detección y corrección de errores durante la fase de desarrollo.
+
+---
+
+
+</div></div>
+
 
 ---
 
@@ -32,7 +70,6 @@ Por lo tanto, **los programas estructurados deben limitarse a usar tres estructu
 * **Repetitiva**
 
 La programación orientada a objetos, como vimos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/4. Estilos y Paradigmas\|la Unidad 01]], es una evolución de la programación estructurada clásica en la que los algoritmos y los datos se encapsulan en clases que más tarde se instancia en objetos que interactúan entre sí. Pero lo que hay dentro de esos algoritmos siguen siendo programas estructurados. Es decir, la POO es un superconjunto de la programación estructurada clásica, y por eso es pertinente que, en este punto estudiemos esas estructuras detenidamente.
-
 
 [^1]: Dijkstra, pese a ser físico, se convirtió en uno de los más importantes científicos de la computación hasta su muerte en 2002. Una de sus frases más famosas es: "la pregunta de si un computador puede pensar no es más interesante que la pregunta de si un submarino puede nadar"
 
@@ -85,6 +122,7 @@ Lo que hace este algoritmo es:
 1. Leer `a` y `b`
 2. Sumar ambos.
 3. Escribir por pantalla la suma resultante.
+
 
 # 3. Estructura selectiva (condicional)
 
@@ -462,7 +500,6 @@ En cualquier otro caso, indicará que el día no es correcto.
 > [!example] Material de apoyo 
 > * [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF]]
 
-
 [^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
 
 
@@ -787,6 +824,7 @@ A veces, el conmutador puede tomar más de dos valores. Entonces ya no se le deb
 En esta ocasión, las repeticiones se controlan con la variable n, de modo que el bucle termina cuando `n < 0`. Por lo tanto, n se utiliza para ir asignando valores al acumulador suma, y también para salir del bucle: es el valor **centinela**. 
 
 Observa que, en esta ocasión, ha sido más sencillo resolver el problema con un bucle "do... while" y un centinela que con un bucle "while" y un conmutador, porque nos ha quedado una solución más corta.
+
 
 [^1]: Hay que evitar el operador "==" en las condiciones de salida de los bucles, sobre todo si estamos trabajando con números reales.
 
@@ -1172,7 +1210,6 @@ Por último, señalar que Java **distingue entre mayúsculas y minúsculas**, es
 [^1]: La API (*Application Program Interface* = Interfaz de Programación de Aplicación) es el conjunto de métodos públicos que ofrece una biblioteca para ser usados por otro programa. Es decir, es una lista exhaustiva de todas las funciones de una biblioteca con sus nombres, parámetros, tipos devueltos y tareas que realizan. Es una documentación imprescindible para que otros programadores puedan hacer uso de esa biblioteca, como comprobarás en tu práctica profesional. Recuérdalo cuando tengas que pelearte, por ejemplo, con jQuery y recurras continuamente a la web oficial, donde está recogida la API completa de esta biblioteca JavaScript.
 
 [^2]: Santander, B. T. W. (2024, enero 8). 5 consejos de programación para escribir mejor código. Medium. <https://medium.com/be-tech-with-santander/5-consejos-de-programaci%C3%B3n-para-escribir-mejor-c%C3%B3digo-3ea7414fefc8>
-
 
 # 7. Excepciones
 
@@ -1734,22 +1771,46 @@ Aquí la configuración se aplica directamente por proyecto.
 
 - Hacemos clic en **OK** para guardar los cambios.
 
+![ud02_08_asserts_02.png](/img/user/adjuntos/1DAM_Programacion/Unidad_02/ud02_08_asserts_02.png)
+
+##### Para proyectos Maven
+
+La aplicación de la propiedad `-ea` en **Properties > Run > VM Options** en NetBeans no suele funcionar en muchas ocasiones cuando el proyecto es Maven. Para asegurarnos de que las aserciones funcionen al ejecutar tu proyecto Maven:
+
+1. Haz clic derecho sobre el proyecto Maven y selecciona **Properties**.
+    
+2. En el menú de la izquierda, selecciona la categoría **Actions**. En dicha ventana, ve a la lista de **Actions** y selecciona **Run file via main()** para ejecutar archivos individuales con **Run File** (Shift+F6).
+    
+3. En esa misma pantalla, más abajo, tenemos la lista de propiedades en **Set Properties**. Ahí verás la propiedad `exec.vmArgs=` sin valor asignado. Ponemos el siguiente:    
+    ```
+    exec.vmArgs=-ea
+    ```
+
+![ud02_08_asserts_01.png](/img/user/adjuntos/1DAM_Programacion/Unidad_02/ud02_08_asserts_01.png)
+
 #### ¿Cómo comprobar si funcionan?
 
 Para asegurarnos de que las aserciones están activas, añadimos este código rápido en un `main` y ejecutamos el programa:
 
 ```java
-try {
+public static void main(String[] args) {
+    // ...
     assert false : "Las aserciones están ACTIVADAS";
     System.out.println("Las aserciones están DESACTIVADAS");
-} catch (AssertionError e) {
-    System.out.println(e.getMessage());
+    // ...
 }
 ```
 
 Es importante entender que hay que usar este código con precaución.
 
-- Si en la consola se imprime _"Las aserciones están ACTIVADAS"_, lo has configurado correctamente.
+- Si en la consola se imprime algo parecido a lo siguiente:  
+
+  ```
+  Exception in thread "main" java.lang.AssertionError: Las aserciones están ACTIVADAS
+	at <paquete>.<nombre de la clase>.main(Cuenta.java:10)
+Command execution failed.
+  ```
+  lo has configurado correctamente.
 
 - Si se imprime _"Las aserciones están DESACTIVADAS"_, revisa los pasos anteriores porque el argumento `-ea` no se está aplicando.
 
@@ -2055,7 +2116,6 @@ Fíjate en que el segundo error estaba oculto por el primero: con `i < 10`, la m
 > - **Corregir un error cada vez** y volver a probar.
 > - Cuando lo corrijas, **añadir una prueba** o una aserción (ver [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/8. Pruebas#8.6. Pruebas en la práctica: Aserciones\|8.6. Aserciones]]) que detecte ese error si vuelve a aparecer.
 
-
 # 10. Ejemplo integrador
 
 Hasta ahora hemos visto cada estructura por separado. En la práctica, cualquier programa real las **combina**: un bucle dentro de otro, una condición dentro de un bucle, un `try-catch` alrededor de una lectura… En este apartado vamos a construir un programa completo paso a paso, como lo haríamos en un proyecto.
@@ -2165,9 +2225,7 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 > La tabla deja al descubierto un comportamiento discutible: `0` y `101` se aceptan como intentos aunque estén fuera del rango. ¿Cómo lo modificarías para que no cuenten? Las pruebas sirven precisamente para descubrir estos casos.
 
 
-
-
-# Referencias - Material de apoyo
+# Referencias - Material de refuerzo
 
 ## Representación de algoritmos
 
@@ -2218,8 +2276,3 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 ## PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II
 
 > Aula en la nube. (3 de octubre de 2021). _1.15 PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZzFF_aXLO5g
-
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - Estructuras de control. Calidad del software</a></span></p>
-
