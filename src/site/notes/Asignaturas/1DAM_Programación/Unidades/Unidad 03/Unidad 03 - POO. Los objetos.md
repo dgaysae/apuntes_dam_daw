@@ -97,7 +97,7 @@ Estás a punto de empezar en el mundo de la POO ¡Vamos a ello!
 
 En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-[[Unidad 03-POO. Los objetos\|Unidad 03-POO. Los objetos]]
+[[Asignaturas/1DAM_Programación/Apuntes/Unidad 03-POO. Los objetos\|Unidad 03-POO. Los objetos]]
 
 ---
 
