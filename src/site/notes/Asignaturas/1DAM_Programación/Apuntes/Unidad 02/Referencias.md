@@ -48,7 +48,7 @@
 > Javi López. (2023, 24 noviembre). _15 - Aserciones, pruebas unitarias en JUnit y depuración_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZKvlY7Zy1j0
 
 
-# Ejercicios resueltos
+# Pseudocódigo - Ejercicios resueltos
 
 ## Ejercicio bucle MIENTRAS pseudocódigo
 
@@ -61,6 +61,52 @@
 ## PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II
 
 > Aula en la nube. (3 de octubre de 2021). _1.15 PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZzFF_aXLO5g
+
+# Java
+
+## Estructuras de control condicionales
+
+### Estructuras de control - Sentencia IF
+
+> Aula Informática. (2022f, abril 6). _Programación Java - Estructuras de control - Sentencia IF_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=c0y_zy3L0cE
+
+### Estructuras de control - Sentencia SWITCH
+
+> Aula Informática. (2022g, abril 6). _Programación Java - Estructuras de control - Sentencia SWITCH_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=JomtxqjIVtQ
+
+## Estructuras de control iterativas - bucles
+
+### Estructuras de control - Sentencia FOR
+
+> Aula Informática. (2022j, abril 7). _Programación Java - Estructuras de control - Sentencia FOR_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=BH9GxRg9rWo
+
+### Estructuras de control - Sentencia WHILE y DO WHILE
+
+Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de control - Sentencias WHILE y DO WHILE_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=wDDiX-SDC10
+
+## Instrucciones de salto
+
+### Estructuras de control - Sentencias BREAK y CONTINUE
+Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de control - Sentencias BREAK y CONTINUE_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=TkdMO5neby4
+
+# Java - Ejercicios resueltos
+
+## Ejercicios - Condicionales
+
+> Aula Informática. (2022f, abril 6). _Programación Java - Ejercicios estructuras condicionales I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=IO6Z2zWfHP8
+
+> Aula Informática. (2022g, abril 6). _Programación Java - Ejercicios estructuras condicionales II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=lw_lNJp-_VM
+
+## Ejercicios - Bucles
+
+> Aula Informática. (2022j, abril 7). _Programación Java - Ejercicios estructuras repetitivas I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=6AhM01XRq4Q
+
+> Aula Informática. (2022n, abril 11). _Programación Java - Ejercicios estructuras repetitivas II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=OQ_az_Y6jwc
+
+> Aula Informática. (2022o, abril 11). _Programación Java - Ejercicios estructuras repetitivas III_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=IBFUqeixldk
+
+> Aula Informática. (2022p, abril 11). _Programación Java - Ejercicios estructuras repetitivas IV_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3PAwC0byYw0
+
 
 ---
 
