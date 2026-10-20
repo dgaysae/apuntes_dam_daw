@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-03-poo-los-objetos/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-03-poo-los-objetos/","tags":["programación/poo","java/poo"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":3,"tags":["programación/poo","java/poo"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-programacion/unidades/unidad-03-poo-los-objetos/","permalink":"/apuntes/1-dam-programacion/unidades/unidad-03-poo-los-objetos/","tags":["programación/poo","java/poo"],"dg-note-properties":{"modulo":"[[Módulos/Programación]]","libro":"[[Libros/Programación (1º DAM, 1º DAW)]]","descripcion":"Qué son las clases, cómo se definen (declarando su atributos y métodos) y cómo crear o instanciar objetos a partir de ellas.","orden":3,"ra":"RA2","tags":["programación/poo","java/poo"]}}
 ---
 
 
@@ -33,15 +33,11 @@ La siguiente tabla muestra los contenidos básicos de la norma educativa que con
 Utilización de objetos:  
 - Características de los objetos.  
 - Instanciación de objetos.  
-- Utilización de métodos.  
+- Utilización de métodos. Parámetros.  
 - Utilización de propiedades.  
 - Utilización de métodos estáticos.  
-- Librerías de objetos. Inclusión y uso.  
 - Constructores.  
-- Destrucción de objetos y liberación de memoria.  
-- Entornos de desarrollo para programación orientada a objetos.  
-- Entornos específicos.  
-- Plugins de integración en entornos genéricos.
+- Destrucción de objetos y liberación de memoria.
 
 ### RA asociado y criterios de evaluación
 

@@ -75,6 +75,8 @@ La programación orientada a objetos, como vimos en [[Asignaturas/1DAM_Programac
 
 [^2]: Böhm, C. y Jacopini, G. (1966). Flow diagrams, Turing machines and languages with only two formation rules. *Communications of the ACM, 9*(5), 366-371. https://doi.org/10.1145/355592.365646
 
+
+
 # 2. Estructura secuencial
 
 La estructura secuencial es aquélla en la que **una acción sigue a otra** (en secuencia). Esta es la estructura algorítmica básica, en la que las instrucciones se ejecutan una tras otra, en el mismo orden en el que fueron escritas.
@@ -89,6 +91,7 @@ La estructura secuencial, por lo tanto, es la más simple de las tres estructura
     acción N 
 }
 ```
+
 
 ![ud03_02_secuencial.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_02_secuencial.png)
 
@@ -147,25 +150,35 @@ if (condición) {
 
 La condición que aparece detrás de "if" es siempre una **expresión lógica**, es decir, una expresión cuyo resultado es "verdadero" o "falso". Si el resultado es verdadero, entonces se ejecutan las acciones situadas entre { y }. Si es falso, se saltan las acciones y se prosigue por la siguiente instrucción (lo que haya debajo de la llave de cierre)
 
+> [!NOTE] Lectura de datos con `Scanner`
+> En los ejemplos leemos los datos del teclado con un objeto `Scanner`, usando el método adecuado a cada tipo: `nextInt()` para enteros y `nextDouble()` para reales. Para poder usarlo, el programa debe incluir al principio `import java.util.Scanner;`.
+> Recuerda que esto lo vimos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola\|la unidad anterior]].
+
 ### Ejemplo 1
 Hagamos un código que indique si un **número es positivo**, **negativo** o **cero** usando instrucciones condicionales simples:
 ```java
-{   
-    int numero;   
-    System.out.println("Introduce un número:");
-    ednumeroad = Integer.parseInt(System.console.readLine());
+import java.util.Scanner;
 
-    if (numero > 0) {
-        System.out.println("El número es positivo");
-    }
+public class MainSigno{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int numero;
 
-    if (numero < 0) {
-        System.out.println("El número es negativo");
+        System.out.println("Introduce un número:");
+        numero = teclado.nextInt();
+
+        if (numero > 0) {
+            System.out.println("El número es positivo");
+        }
+
+        if (numero < 0) {
+            System.out.println("El número es negativo");
+        }
+
+        if (numero == 0) {
+            System.out.println("El número es cero");
+        }
     }
-    
-    if (numero == 0) {
-        System.out.println("El número es cero");
-    }    
 }
 ```
 
@@ -173,46 +186,66 @@ Al introducir el número por teclado, la primera instrucción condicional `if (n
 
 De esta forma **el programa muestra uno y sólo uno de los tres mensajes** según sea el valor introducidos.
 
+> [!warning] Fíjate bien...
+> Observa que cuando comprobamos que se cumple una de las condiciones (p.e. que es positivo `numero > 0`), aún así se comprueban el resto de condiciones. ¿Esto es realmente necesario? Obviamente no. Si ya sabemos que el número es positivo, está claro que ni es negativo ni es `0`.
+> En los siguientes apartados veremos cómo remediar esto.
+
 ### Ejemplo 2
 Este código indica si una persona es mayor de edad:
 ```java
-{   
-    int edad;   
-    System.out.println("Introduce tu edad:");
-    edad = Integer.parseInt(System.console.readLine());
+import java.util.Scanner;
 
-    if (edad >= 18) {
-        System.out.println("Eres mayor de edad");
+public class MainEdad{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int edad;
+        System.out.println("Introduce tu edad:");
+        edad = teclado.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad");
+        }
+
+        if (edad < 18) {
+            System.out.println("Eres menor de edad");
+        }
     }
-
-    if (edad < 18) {   
-        System.out.println("Eres menor de edad");   
-    }   
 }
 ```
-Al introducir la edad, la primera instrucción condicional `if (edad >= 18)` comprueba que si la edad es o supera los 18 años. Si es así, ejecuta su bloque de código (las instrucciones que hay entre las llaves `{` y `}`) que en este caso muestra el mensaje `Eres mayor de edad`. Justo después vemos otra condicional `if (edad <= 18)` que evalúa si es menor de edad, en cuyo caso se imprimirá en la pantalla el mensaje pertinente.
+Al introducir la edad, la primera instrucción condicional `if (edad >= 18)` comprueba que si la edad es o supera los 18 años. Si es así, ejecuta su bloque de código (las instrucciones que hay entre las llaves `{` y `}`) que en este caso muestra el mensaje `Eres mayor de edad`. Justo después vemos otra condicional `if (edad < 18)` que evalúa si es menor de edad, en cuyo caso se imprimirá en la pantalla el mensaje pertinente.
+
 
 ### Ejemplo 3
 El siguiente código calcula el área y el perímetro de un rectángulo usando un condicional simple:
 ```java
-{  
-    double base, altura, área, perimetro;
-    base = Integer.parseInt(System.console.readLine());
-    altura = Integer.parseInt(System.console.readLine());
-    if ((area > 0) && (altura > 0)) {
-        area = base * altura;
-        perimetro = 2 * base + 2 * altura;
-        System.out.println("Area = " + area);
-        System.out.println("Perimetro = " + perimetro);
-    }
+import java.util.Scanner;
 
-    if ((area <= 0) || (altura <= 0)) {
-        System.out.println("Los datos son incorrectos");
+public class MainRectangulo{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double base, altura, area, perimetro;
+
+        System.out.println("Introduce la base: ");
+        base = teclado.nextDouble();
+
+        System.out.println("Introduce la altura: ");
+        altura = teclado.nextDouble();
+
+        if (base > 0 && altura > 0) {
+            area = base * altura;
+            perimetro = 2 * base + 2 * altura;
+            System.out.println("Area = " + area);
+            System.out.println("Perimetro = " + perimetro);
+        }
+
+        if (base <= 0 || altura <= 0) {
+            System.out.println("Los datos son incorrectos");
+        }
     }
 }
 ```
 
-Observa que, en la primera instrucción condicional `if ((área > 0) && (altura > 0))` se comprueba que los dos datos sean positivos; en caso de serlo, se procede al cálculo del área y el perímetro mediante las acciones situadas entre { y }. Más abajo hay otra condicional `if ((área <= 0) || (altura <=0))` para el caso de que alguno de los datos sea negativo o cero: en esta ocasión, se imprime en la pantalla un mensaje de error.
+Observa que, en la primera instrucción condicional `if (base > 0 && altura > 0)` se comprueba que los dos datos sean positivos; en caso de serlo, se procede al cálculo del área y el perímetro mediante las acciones situadas entre { y }. Más abajo hay otra condicional `if (base <= 0 || altura <= 0)` para el caso de que alguno de los datos sea negativo o cero: en esta ocasión, se imprime en la pantalla un mensaje de error.
 
 ## 3.2. Condicional doble
 
@@ -234,43 +267,191 @@ else {
 
 En esta forma, la instrucción funciona del siguiente modo: si el resultado de la **`condición`** es **verdadero**, entonces se ejecutan las acciones de la primera parte, es decir, las **`acciones01`**. Si es **falso**, se ejecutan las acciones de la parte `else`, es decir, las **`acciones02`**. 
 
+
 ### Ejemplos  
 Podemos reescribir algunos de los programas anteriores usando una alternativa doble:
 
 ```java
-{
-    int edad;   
-    System.out.println("Introduce tu edad:");
-    edad = Integer.parseInt(System.console.readLine());
+import java.util.Scanner;
 
-    if (edad >= 18) {
-        System.out.println("Eres mayor de edad");
-    }
-    else {   
-        System.out.println("Eres menor de edad");   
+public class MainEdad2{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int edad;
+
+        System.out.println("Introduce tu edad:");
+        edad = teclado.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad");
+        }
+        else {
+            System.out.println("Eres menor de edad");
+        }
     }
 }
 ```
 
 ```java
-{
-    double base, altura, area, perimetro;  
-    base = Integer.parseInt(System.console.readLine());  
-    altura = Integer.parseInt(System.console.readLine());
+import java.util.Scanner;
 
-    if ((area > 0) && (altura > 0)) {  
-        area = base * altura;  
-        perimetro = 2 * base + 2 * altura;  
-        System.out.println("Area = " + area);  
-        System.out.println("Perimetro = " + perimetro);  
-    }  
-    else {  
-        System.out.println("Los datos son incorrectos");  
+public class MainRectangulo2{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double base, altura, area, perimetro;
+
+        System.out.println("Introduce la base:");
+        base = teclado.nextDouble();
+
+        System.out.println("Introduce la altura:");
+        altura = teclado.nextDouble();
+
+        if (base > 0 && altura > 0) {
+            area = base * altura;
+            perimetro = 2 * base + 2 * altura;
+            System.out.println("Area = " + area);
+            System.out.println("Perimetro = " + perimetro);
+        }
+        else {
+            System.out.println("Los datos son incorrectos");
+        }
     }
 }
 ```
 
 Lo más interesante de estos algoritmos es compararlos con sus versiones anteriores, ya que **hacen exactamente lo mismo**. ¡Siempre hay varias maneras de resolver el mismo problema! Pero esta solución es un poco más sencilla, **al ahorrarse la segunda condición**, que va implícita en el **`else`**. 
+
+### 3.2.1. Condicionales encadenadas (`else if`)
+
+La condicional doble solo distingue **dos** caminos: cuando ocurre algo o cuando no. Pero si hay **tres o más alternativas** que dependen de condiciones distintas, podemos **encadenar** varias condicionales colocando un nuevo `if` justo detrás de cada `else`:
+
+```java
+if (condición1) {
+    acciones01
+}
+else if (condición2) {
+    acciones02
+}
+else if (condición3) {
+    acciones03
+}
+else {
+    acciones_else
+}
+```
+
+En este `if` se evalúan las condiciones **en orden, de arriba abajo**. En cuanto una de las condiciones es **verdadera**, se ejecutan **sus** acciones y se **sale** de toda la estructura. Es decir, ejecuta las acciones de la condición y las condiciones siguientes **ya no se evalúan**.
+
+En caso de que **ninguna sea verdadera**, se ejecutan las acciones del `else` final. Este `else` es **opcional**: si no aparece y ninguna condición se cumple, no se ejecuta nada.
+
+Por tanto, **se ejecuta como mucho uno de los bloques**.
+
+> [!NOTE] `else if` no es una instrucción nueva
+> En Java no existe una palabra reservada `elseif`. Un `else if` es simplemente un `else` cuya única acción es otro `if`. Es decir, el código anterior equivale a **anidar** condicionales dobles:
+>
+> ```java
+> if (condición1) {
+>     acciones01
+> }
+> else {
+>     if (condición2) {
+>         acciones02
+>     }
+>     else {
+>         if (condición3) {
+>             acciones03
+>         }
+>         else {
+>             acciones_else
+>         }
+>     }
+> }
+> ```
+>
+> Ambas versiones hacen lo mismo, pero la forma encadenada evita que el código se desplace cada vez más a la derecha y resulta mucho más legible.
+
+#### Ejemplo: positivo, negativo o cero
+
+Recuperemos el [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02-Estructuras de control. Calidad del software#Ejemplo 1\|#Ejemplo 1]] de la condicional simple, que usaba tres `if` independientes:
+
+```java
+import java.util.Scanner;
+
+public class MainPositivoNegativo{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+    
+        System.out.println("Introduce un número:");
+        numero = teclado.nextInt();
+    
+        if (numero > 0) {
+            System.out.println("El número es positivo");
+        }
+        else if (numero < 0) {
+            System.out.println("El número es negativo");
+        }
+        else {
+            System.out.println("El número es cero");
+        }
+    }
+}
+```
+
+Ventajas frente a la versión con tres `if` simples:
+
+- Si el número es positivo, **no se comprueban** las demás condiciones: el programa hace menos trabajo.
+- La última condición (`numero == 0`) **desaparece**: si no es positivo ni negativo, solo puede ser cero, y eso queda recogido en el `else`.
+- Queda claro, solo con leer la estructura, que **las alternativas son excluyentes**.
+
+#### Ejemplo: calificación de una nota
+
+Este programa traduce una nota numérica a su calificación:
+
+```java
+import java.util.Scanner;
+
+public class MainCalificacion{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double nota;
+    
+        System.out.println("Introduce la nota (0-10):");
+        nota = teclado.nextDouble();
+    
+        if (nota < 0 || nota > 10) {
+            System.out.println("Nota incorrecta");
+        }
+        else if (nota < 5) {
+            System.out.println("Insuficiente");
+        }
+        else if (nota < 6) {
+            System.out.println("Suficiente");
+        }
+        else if (nota < 7) {
+            System.out.println("Bien");
+        }
+        else if (nota < 9) {
+            System.out.println("Notable");
+        }
+        else {
+            System.out.println("Sobresaliente");
+        }
+    }
+}
+```
+
+Fíjate en que la condición `nota < 6` **no necesita** comprobar también que `nota >= 5`: si el programa llega a evaluarla es porque la anterior (`nota < 5`) ha sido falsa. **Cada `else if` «hereda» que todas las condiciones anteriores han fallado**.
+
+> [!WARNING] El orden de las condiciones importa
+> Como se ejecuta solo el **primer** bloque cuya condición sea verdadera, un orden incorrecto da resultados erróneos. Si en el ejemplo anterior escribiéramos primero `else if (nota < 9)` y después `else if (nota < 6)`, una nota de `5.5` mostraría «Notable», porque `5.5 < 9` es verdadero y la segunda condición nunca llegaría a evaluarse.
+>
+> Ordena las condiciones de la **más restrictiva a la más general** (o, en rangos, de un extremo al otro) y comprueba primero los **casos de error**.
+
+> [!TIP] ¿`else if` o `switch`?
+> - Usa `else if` cuando las condiciones sean **rangos** (`nota < 5`) o **expresiones lógicas distintas** entre sí.
+> - Usa la condicional múltiple (`switch`, apartado siguiente) cuando compares **una misma expresión con valores concretos** (`dia == 1`, `dia == 2`…).
+
 
 ## 3.3. Condicional múltiple
 
@@ -282,17 +463,17 @@ La **estructura condicional múltiple** sirve, por tanto, para simplificar estos
 
 ```java
 switch (expresión) { 
-  valor1:
+  case valor1:
       acciones01;
       break;
-  valor2: 
+  case valor2: 
       acciones02;
       break;
-  valor3:
+  case valor3:
       acciones03;
       break;
   ...
-  valorN: accionesN; break; 
+  case valorN: accionesN; break; 
   default: acciones-default;
 }
 ```
@@ -312,66 +493,82 @@ Su funcionamiento es el siguiente: se evalúa **expresión**, que en esta ocasi�
 > [!example] Ejemplo 1
 > Construyamos un algoritmo que escriba los nombres de los días de la semana en función del valor de una variable entera llamada "día". Su valor se introducirá por teclado. Los valores posibles de la variable "día" serán del 1 al 7: cualquier otro valor debe producir un error.
 ```java
-int dia = 3;
-switch (dia) {
-    case 1:
-        System.out.println("lunes");
-        break;
-    case 2:
-        System.out.println("martes");
-        break;
-    case 3:
-        System.out.println("miércoles");
-        break;
-    case 4:
-        System.out.println("jueves");
-        break;
-    case 5:
-        System.out.println("viernes");
-        break;
-    case 6:
-        System.out.println("sábado");
-        break;
-    case 7:
-        System.out.println("domingo");
-        break;
-    default:
-        System.out.println("El número no es correcto");
+import java.util.Scanner;
+
+public class MainDiaSemana{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int dia;
+        
+        System.out.println("Introduce el día de la semana (1-7):");
+        dia = teclado.nextInt();
+        
+        switch (dia) {
+            case 1:
+                System.out.println("lunes");
+                break;
+            case 2:
+                System.out.println("martes");
+                break;
+            case 3:
+                System.out.println("miércoles");
+                break;
+            case 4:
+                System.out.println("jueves");
+                break;
+            case 5:
+                System.out.println("viernes");
+                break;
+            case 6:
+                System.out.println("sábado");
+                break;
+            case 7:
+                System.out.println("domingo");
+                break;
+            default:
+                System.out.println("El número no es correcto");
+        }
+    }
 }
 ```
 
+
 En este programa, la variable **`dia`**, una vez leída, se compara con los siete valores posibles. Si vale 1, se realizará la acción **`System.out.println("lunes");`** si vale 2, se realiza **`System.out.println("martes");`** y así sucesivamente. Por último, si no coincide con ninguno de los siete valores, se ejecuta la parte **`default`**.
 
-En esta caso, mostrará `miércoles`.
+Por ejemplo, si se introduce un `3`, mostrará `miércoles`.
 
-¿Y si por despiste olvidamos algún `break`? En tal caso, podemos tener una situación como la siguiente:
+¿Y si por despiste olvidamos algún `break`? En tal caso, podemos tener una situación como la siguiente (para centrarnos en el `switch`, damos a `dia` directamente el valor `3`):
 
 ```java
-int dia = 3;
-switch (dia) {
-    case 1:
-        System.out.println("lunes");
-        break;
-    case 2:
-        System.out.println("martes");
-        break;
-    case 3:
-        System.out.println("miércoles");
-        // break; // Supongamos que lo hemos olvidado.
-    case 4:
-        System.out.println("jueves");
-        // break; // Supongamos que lo hemos olvidado.
-    case 5:
-        System.out.println("viernes");
-        break;
-    case 6:
-        System.out.println("sábado");
-        break;
-    case 7:
-        System.out.println("domingo");
-        break;
-    default:
-        System.out.println("El número no es correcto");
+public class MainDiaSemana2{
+    public static void main(String[] args){
+        int dia = 3;
+        switch (dia) {
+            case 1:
+                System.out.println("lunes");
+                break;
+            case 2:
+                System.out.println("martes");
+                break;
+            case 3:
+                System.out.println("miércoles");
+                // break; // Supongamos que lo hemos olvidado.
+            case 4:
+                System.out.println("jueves");
+                // break; // Supongamos que lo hemos olvidado.
+            case 5:
+                System.out.println("viernes");
+                break;
+            case 6:
+                System.out.println("sábado");
+                break;
+            case 7:
+                System.out.println("domingo");
+                break;
+            default:
+                System.out.println("El número no es correcto");
+        }
+    }
 }
 ```
 
@@ -389,17 +586,17 @@ Por eso plantearon otra forma de escribir el `switch` y evitar así estos proble
 
 ```java
 switch (expresión) { 
-  valor1 -> {
+  case valor1 -> {
       acciones01;
   }
-  valor2 -> {
+  case valor2 -> {
       acciones02;
   }
-  valor3 -> {
+  case valor3 -> {
       acciones03;
   }
   ...
-  valorN -> {
+  case valorN -> {
       accionesN;
   }
   default -> {
@@ -419,10 +616,15 @@ switch (expresión) {
 `switch` admite la ejecución de un mismo bloque de código para distintos valores. Por ejemplo, si para el ejemplo anterior quisiéramos saber si el día es laborable (de lunes a viernes) :
 
 ```java
-{
-    {
+import java.util.Scanner;
+
+public class MainSwitch{
+    public static void main(String[] args){
         int dia;
-        dia = Integer.parseInt(System.console.readLine());
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduce el día de la semana (1-7):");
+        dia = teclado.nextInt();
         
         switch(dia) {
             case 1, 2, 3, 4, 5:
@@ -441,10 +643,15 @@ switch (expresión) {
 O su equivalente:
 
 ```java
-{
-    {
+import java.util.Scanner;
+
+public class MainSwitch2{
+    public static void main(String[] args){
         int dia;
-        dia = Integer.parseInt(System.console.readLine());
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduce el día de la semana (1-7):");
+        dia = teclado.nextInt();
         
         switch(dia) {
             case 1:
@@ -468,10 +675,15 @@ O su equivalente:
 Aunque el más correcto (y elegante) sería:
 
 ```java
-{
-    {
+import java.util.Scanner;
+
+public class MainSwitch3{
+    public static void main(String[] args){
         int dia;
-        dia = Integer.parseInt(System.console.readLine());
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduce el día de la semana (1-7):");
+        dia = teclado.nextInt();
         
         switch(dia) {
             case 1, 2, 3, 4, 5 -> System.out.println("Es laborable");
@@ -482,16 +694,18 @@ Aunque el más correcto (y elegante) sería:
 }
 ```
 
-Como podemos ver en el código anterior, el `dia` se evalúa en una sola línea (`case 1, 2, 3, 4, 5:`) para comprobar si es uno de esos valores (de lunes a viernes). Si coincide con alguno, indicará que "_Es laborable_".
+Como podemos ver en el código anterior, el `dia` se evalúa en una sola línea (`case 1, 2, 3, 4, 5 ->`) para comprobar si es uno de esos valores (de lunes a viernes). Si coincide con alguno, indicará que "_Es laborable_".
 
-En el siguiente caso ocurre lo mismo para los días del fin de semana (`case 6, 7:`). Si fuera uno de ellos, mostrará por consola que"_Fin de semana! No es laborable_".
+En el siguiente caso ocurre lo mismo para los días del fin de semana (`case 6, 7 ->`). Si fuera uno de ellos, mostrará por consola "_Fin de semana! No es laborable_".
 
 En cualquier otro caso, indicará que el día no es correcto.
 
 > [!example] Material de apoyo 
-> * [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF]]
+> Consulta en las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias\|Referencias]] de esta unidad el apartado de   [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Condiciones en pseudocódigo SI - IF]] para pseudocódigo.
+> Para Java, puedes consultar el apartado [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Estructuras de control condicionales\|Java]]
 
 [^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
+
 
 # 4. Estructura repetitiva (bucles)
 
@@ -815,7 +1029,12 @@ En esta ocasión, las repeticiones se controlan con la variable n, de modo que e
 
 Observa que, en esta ocasión, ha sido más sencillo resolver el problema con un bucle "do... while" y un centinela que con un bucle "while" y un conmutador, porque nos ha quedado una solución más corta.
 
+> [!example] Material de apoyo 
+> En las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias\|Referencias]] puedes ver el funcionamiento en pseudocódigo los bucles apartado de [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)\|MIENTRAS (WHILE)]], [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Bucle DO - WHILE pseudocódigo\|DO - WHILE]] y [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Bucle PARA pseudocódigo (FOR)\|PARA (FOR)]] para pseudocódigo.
+> Para Java, puedes consultar el apartado [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Estructuras de control iterativas - bucles\|bucles]].
+
 [^1]: Hay que evitar el operador "==" en las condiciones de salida de los bucles, sobre todo si estamos trabajando con números reales.
+
 
 # 5. Instrucciones de salto
 
@@ -852,6 +1071,7 @@ El único uso racional de esta instrucción es dentro de un `switch`. Cada case 
 > }
 > ```
 > El bucle está planteado para recorrer desde el 1 al 10 (ambos incluidos) uno a uno y los muestra por pantalla (`System.out.println("Número: " + i);`). Pero dentro se indica que, si el número es 5, lo indica por consola y sale del bucle.
+
 
 El resultado será el siguiente:
 
@@ -912,6 +1132,7 @@ Teóricamente, `return` debería ser la última instrucción de un método que d
 
 Esta instrucción de salto se verá más adelante con más detalle, ya que es la que permite finalizar la ejecución de una **función**, que aún no hemos visto. 
 
+
 # 6. Reglas de estilo
 
 La escritura de un algoritmo debe ser siempre lo más clara posible, ya se esté escribiendo en Java, en ensamblador o en C. La razón es evidente: los programas pueden llegar a ser muy complejos, y, si a su complejidad le añadimos una escritura sucia y desordenada, se volverán ininteligibles.
@@ -925,6 +1146,8 @@ Por esta razón, y ya desde el principio, debemos acostumbrarnos a **respetar ci
 
 > [!example] Material de apoyo 
 > * [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables\|Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#JAVA Recomendaciones al declarar variables]]
+
+
 
 ## 6.1. Partes de un algoritmo
 
@@ -1195,6 +1418,7 @@ Por último, señalar que Java **distingue entre mayúsculas y minúsculas**, es
 [^1]: La API (*Application Program Interface* = Interfaz de Programación de Aplicación) es el conjunto de métodos públicos que ofrece una biblioteca para ser usados por otro programa. Es decir, es una lista exhaustiva de todas las funciones de una biblioteca con sus nombres, parámetros, tipos devueltos y tareas que realizan. Es una documentación imprescindible para que otros programadores puedan hacer uso de esa biblioteca, como comprobarás en tu práctica profesional. Recuérdalo cuando tengas que pelearte, por ejemplo, con jQuery y recurras continuamente a la web oficial, donde está recogida la API completa de esta biblioteca JavaScript.
 
 [^2]: Santander, B. T. W. (2024, enero 8). 5 consejos de programación para escribir mejor código. Medium. <https://medium.com/be-tech-with-santander/5-consejos-de-programaci%C3%B3n-para-escribir-mejor-c%C3%B3digo-3ea7414fefc8>
+
 
 # 7. Excepciones
 
@@ -1598,7 +1822,9 @@ Este código se considera de mala calidad porque:
 
 Por tanto, recuerda: **las excepciones deben reservarse para casos excepcionales**. De ahí su nombre. Solo para errores excepcionales, por favor. La ejecución normal de un algoritmo jamás debería pasar por una excepción, o el diseño de algoritmos se convertirá en un infierno peor que el código espagueti de los tiempos prehistóricos.
 
+
 [^1]: El zurriagazo (derivado de zurriago, un tipo de látigo) es un golpe dado con un látigo o correa. En el lenguaje coloquial, también se utiliza de forma figurada para describir una desgracia imprevista o un desprecio profundo.
+
 
 # 8. Pruebas
 
@@ -1884,6 +2110,8 @@ int total = calcularTotal();
 assert total >= 0 : "El total no puede ser negativo";
 ```
 
+
+
 O las **invariantes de flujo de control** En puntos del código que teóricamente son inalcanzables. Esto se ve mejor con un ejemplo:
 
 Imagina que procesamos los permisos de un sistema mediante un código numérico:
@@ -1928,6 +2156,7 @@ Si hemos cubierto todas las constantes válidas en un `if-else` o, como es el ca
 Por eso ponemos un `assert false`, para avisar de que hay **datos no contemplados en desarrollo**. Si se añade una nueva constante (por ejemplo, `ROL_SUPERADMIN = 4`) y olvidamos actualizar el `switch` (o el `if-else`, o la estructura que sea), el `assert` saltará inmediatamente, lanzando un `AssertionError`.
 
 De esta forma se impide que el método nos dé una sorpresa y devuelva un valor por defecto con el que no contábamos (como `0` o `null`) que pueda corromper más adelante un cálculo.
+
 
 Las **postcondiciones** sirven para comprobar que un un bloque de código (un método, por ejemplo) ha realizado su trabajo correctamente antes de devolver un resultado.
 
@@ -2011,7 +2240,9 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 3. **El `assert` con `-ea` (prueba unitaria de caja blanca):** al activar `-ea`, el programa estallará inmediatamente en la línea del `assert` lanzando un `AssertionError`. **Aquí el programa sí debe romperse**, porque el desarrollador ha descubierto, en su fase de pruebas unitarias, que su algoritmo matemático está mal diseñado. No es culpa de la red, es culpa de su código.
 
+
 [^1]:  Certificación de Calidad de Software. (s/f). AENOR. Recuperado el 28 de agosto de 2025, de [https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software](https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software)
+
 
 # 9. Depuración de programas
 
@@ -2057,6 +2288,8 @@ Los puntos de ruptura solo tienen efecto si ejecutamos el programa **en modo dep
 
 > [!warning] Cuidado
 > Si lo ejecutamos de forma normal, se ignoran.
+
+
 
 ### 9.2.2. Avanzar paso a paso
 
@@ -2277,6 +2510,7 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 
 > Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
 
+
 ## Condiciones en pseudocódigo SI - IF
 
 > Aula en la nube. (3 de octubre de 2021). _1.7 Condiciones en pseudocódigo SI - IF_ [Vídeo]. YouTube. https://youtu.be/tldDbZ9MSoA?si=NYICjUm8hSUW0Vcx
@@ -2309,7 +2543,8 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 
 > Javi López. (2023, 24 noviembre). _15 - Aserciones, pruebas unitarias en JUnit y depuración_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZKvlY7Zy1j0
 
-# Ejercicios resueltos
+
+# Pseudocódigo - Ejercicios resueltos
 
 ## Ejercicio bucle MIENTRAS pseudocódigo
 
@@ -2322,3 +2557,48 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 ## PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II
 
 > Aula en la nube. (3 de octubre de 2021). _1.15 PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZzFF_aXLO5g
+
+# Java
+
+## Estructuras de control condicionales
+
+### Estructuras de control - Sentencia IF
+
+> Aula Informática. (2022f, abril 6). _Programación Java - Estructuras de control - Sentencia IF_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=c0y_zy3L0cE
+
+### Estructuras de control - Sentencia SWITCH
+
+> Aula Informática. (2022g, abril 6). _Programación Java - Estructuras de control - Sentencia SWITCH_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=JomtxqjIVtQ
+
+## Estructuras de control iterativas - bucles
+
+### Estructuras de control - Sentencia FOR
+
+> Aula Informática. (2022j, abril 7). _Programación Java - Estructuras de control - Sentencia FOR_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=BH9GxRg9rWo
+
+### Estructuras de control - Sentencia WHILE y DO WHILE
+
+Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de control - Sentencias WHILE y DO WHILE_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=wDDiX-SDC10
+
+## Instrucciones de salto
+
+### Estructuras de control - Sentencias BREAK y CONTINUE
+Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de control - Sentencias BREAK y CONTINUE_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=TkdMO5neby4
+
+# Java - Ejercicios resueltos
+
+## Ejercicios - Condicionales
+
+> Aula Informática. (2022f, abril 6). _Programación Java - Ejercicios estructuras condicionales I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=IO6Z2zWfHP8
+
+> Aula Informática. (2022g, abril 6). _Programación Java - Ejercicios estructuras condicionales II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=lw_lNJp-_VM
+
+## Ejercicios - Bucles
+
+> Aula Informática. (2022j, abril 7). _Programación Java - Ejercicios estructuras repetitivas I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=6AhM01XRq4Q
+
+> Aula Informática. (2022n, abril 11). _Programación Java - Ejercicios estructuras repetitivas II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=OQ_az_Y6jwc
+
+> Aula Informática. (2022o, abril 11). _Programación Java - Ejercicios estructuras repetitivas III_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=IBFUqeixldk
+
+> Aula Informática. (2022p, abril 11). _Programación Java - Ejercicios estructuras repetitivas IV_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3PAwC0byYw0
