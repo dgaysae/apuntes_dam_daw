@@ -29,7 +29,7 @@ Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que cont
 
 > [!info] Ciclo de FP
 > Se refiere al periodo de **dos años de estudio** en cualquiera de las familias de FP que otorgan el título de técnico.
-> Existen los <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr> (como <abbr title="Sistemas Microinformáticos y Redes">SMR</abbr>) con el que se obtiene el título ***Técnico*** y los <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como son los de **<abbr title="Desarrollo de Aplicaciones Multiplataforma">DAM</abbr>**, **<abbr title="Desarrollo de Aplicaciones Web">DAW</abbr>** o **<abbr title="Administración de Sistemas Informáticos en Red">ASIR</abbr>**, que ofrecen el el título de **_Técnico Superior_**.
+> Existen los <abbr title="Ciclos Formativos de Grado Medio">CFGM</abbr> (como <abbr title="Sistemas Microinformáticos y Redes">SMR</abbr>) con el que se obtiene el título de ***Técnico*** y los <abbr title="Ciclos Formativos de Grado Superior">CFGS</abbr> como son los de **<abbr title="Desarrollo de Aplicaciones Multiplataforma">DAM</abbr>**, **<abbr title="Desarrollo de Aplicaciones Web">DAW</abbr>** o **<abbr title="Administración de Sistemas Informáticos en Red">ASIR</abbr>**, que ofrecen el título de **_Técnico Superior_**.
 
 ## Normativa vigente
 
