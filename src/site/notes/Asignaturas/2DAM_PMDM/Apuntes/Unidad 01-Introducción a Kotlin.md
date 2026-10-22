@@ -41,8 +41,6 @@ Kotlin permite declarar variables[^1] usando las siguientes palabras reservadas:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/zbUjmHiRG" width="560" height="250"></iframe>
-
 Acostumbrados a Java, hay algo que chirría, ¿no? En ninguno de los casos anteriores se indica el **tipo de dato** de cada variable. Esto no quiere decir que no tengan tipo. Es más, Kotlin tiene **tipado estático**, es decir, que cada variable tiene un **tipo de dato asociado que no cambia**:
 
 > [!abstract]- Código 
