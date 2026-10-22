@@ -31,7 +31,7 @@ Kotlin permite declarar variables[^1] usando las siguientes palabras reservadas:
 
 **`var`**, o *variable*, declara las variables tal y como las conocemos. Es decir, son **variables mutables**, a las que se les pueden reasignar valores a lo largo del código. En otras palabras, las variables de toda la vida:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"
@@ -43,7 +43,7 @@ Kotlin permite declarar variables[^1] usando las siguientes palabras reservadas:
 
 Acostumbrados a Java, hay algo que chirría, ¿no? En ninguno de los casos anteriores se indica el **tipo de dato** de cada variable. Esto no quiere decir que no tengan tipo. Es más, Kotlin tiene **tipado estático**, es decir, que cada variable tiene un **tipo de dato asociado que no cambia**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"	// String
@@ -54,8 +54,6 @@ Acostumbrados a Java, hay algo que chirría, ¿no? En ninguno de los casos anter
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/OuO_FjpTr" width="560" height="250"></iframe>
-
 > [!info] Para más información... 
 > Puedes consultar los **tipos de datos que maneja Kotlin** en la [documentación oficial][kotlin_tipos], aunque los veremos en el apartado [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/3. Tipos de datos\|3. Tipos de datos]].
 
@@ -64,7 +62,7 @@ Acostumbrados a Java, hay algo que chirría, ¿no? En ninguno de los casos anter
 
 **`val`**, o *value*, permite declarar **variables inmutables**. Lo que conocemos como **constantes**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombre = "Pepe"
@@ -73,8 +71,6 @@ Acostumbrados a Java, hay algo que chirría, ¿no? En ninguno de los casos anter
 >     numero = 5	     // Error, porque numero es inmutable.
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/KBoUBiMkh" width="560" height="250"></iframe>
 
 Que sean constantes en **tiempo de ejecución** significa que **toman el valor cuando se ejecuta la aplicación**. Dicho de otra forma, admiten **valores constantes** (como los del ejemplo), o el **resultado de una expresión** (ya sea una fórmula o el resultado de una función, que se obtendrá al ejecutar el código).
 
@@ -100,7 +96,7 @@ Lo habitual es declararlas **dentro del `companion object`** o **en un archivo `
 
 La diferencia entre una constante en tiempo de ejecución (`val`) y otra en tiempo de compilación (`const val`) es que en la primera el valor se calcula o se asigna **en el momento exacto en que el código se ejecuta**. En cambio, el valor de una constante en tiempo de compilación debe conocerse **antes de la ejecución**. Por tanto, a una constante `val` podemos asignarle un **valor constante o una expresión**, pero a una constante `const val` solo se le puede asignar un **valor constante**.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > import java.time.LocalTime
 > 
@@ -132,9 +128,6 @@ La diferencia entre una constante en tiempo de ejecución (`val`) y otra en tiem
 >     println("ID único de esta sesión: $idDeSesionUnico")
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/kfK4qYgUy" width="560" height="620"></iframe>
-
 
 > [!warning] Recuerda 
 > Hay que ser coherente al añadir como propiedad de una clase una constante en tiempo de compilación.
@@ -210,7 +203,7 @@ Las cadenas en Kotlin se representan con el tipo **`String`** y son **inmutables
 
 Se expresan entre comillas dobles (`"`)
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"		// String
@@ -218,11 +211,9 @@ Se expresan entre comillas dobles (`"`)
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/-sWYmo3zO" width="560" height="200"></iframe>
-
 Un `String` sigue siendo una secuencia de caracteres, al igual que en Java, por lo que Kotlin permite recorrerla carácter a carácter de forma sencilla:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"
@@ -232,13 +223,11 @@ Un `String` sigue siendo una secuencia de caracteres, al igual que en Java, por 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/IXV1Y8vGn" width="560" height="220"></iframe>
-
 Que sea inmutable significa al asignarle un valor, **no se pueden cambiar**. Si se reasigna otra cadena a una variable String, la cadena anterior se **desreferencia** y el ***garbage collector*** se encargará de eliminarla.
 
 Esto también implica que cualquier método que ejecute, no cambiará el valor de la cadena. En su lugar creará otra cadena en memoria con el resultado de dicho método:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"
@@ -248,11 +237,9 @@ Esto también implica que cualquier método que ejecute, no cambiará el valor d
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/_KFV5WmM7" width="560" height="220"></iframe>
-
 Puedes concatenar cadenas usando el operador **`+`**, pero es preferible usar plantillas de cadenas o cadenas multilínea. Para hacer cadenas mutables, al igual que en Java, podemos usar la clase [**StringBuilder**][kotlin_StringBuilder].
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"
@@ -262,14 +249,12 @@ Puedes concatenar cadenas usando el operador **`+`**, pero es preferible usar pl
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/v3KGXhXV_" width="560" height="220"></iframe>
-
 * Cuando usamos el operador **`+`** con cadenas de texto hablamos de “**concatenación”**.
 * Cuando usamos plantillas para referenciar a una variable, hablamos de “**expansión de variables”**. Las plantillas, también llamadas [***String Templates***][kotlin_StringTemplates], son muy útiles, ya que no solo nos permiten llamar al valor de una variable sino que también es posible usarlas para **evaluar expresiones.** 
 
 **Para evaluar** una expresión con una plantilla debemos rodearla entre llaves (**${expresión}**).
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val uno = 1
@@ -279,15 +264,13 @@ Puedes concatenar cadenas usando el operador **`+`**, pero es preferible usar pl
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/NLkeEpy64" width="560" height="160"></iframe>
-
 ### Literales de Cadenas
 
 Kotlin tiene [**cadenas de escape**][kotlin_EscapedString] (es decir, "comandos" o caracteres que hacen algo en el texto) y [**cadenas multilínea**][kotlin_cadenasMultilinea] (delimitadas por triple comillas).
 
 * Cadenas ***de escape***: contienen caracteres especiales que implican una acción: retorno de carro, tabulador, etc.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val saludo = "Hola, Pepe!\nCómo ha ido el día?"
@@ -296,11 +279,9 @@ Kotlin tiene [**cadenas de escape**][kotlin_EscapedString] (es decir, "comandos"
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/zq-KIgScH" width="560" height="180"></iframe>
-
 * Cadenas **multilínea**: permite escribir un texto sin necesidad de usar caracteres *escapados*. Para ello, dicha cadena se delimita por triples comillas dobles.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val saludo = """Hola, Pepe!
@@ -310,11 +291,9 @@ Kotlin tiene [**cadenas de escape**][kotlin_EscapedString] (es decir, "comandos"
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/n0196Hyk-" width="560" height="180"></iframe>
-
   Un método muy útil para evitar problemas de formato con las cadenas multilínea es **`.trimIndent()`**, que permite eliminar todos los espacios en blanco al principio de cada línea del `String`. De esta forma se puede escribir el literal de forma más legible sin que eso afecte a lo que se muestra por pantalla.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val saludo = """
@@ -325,8 +304,6 @@ Kotlin tiene [**cadenas de escape**][kotlin_EscapedString] (es decir, "comandos"
 >     println(saludo)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/ocvq4CrgT" width="560" height="180"></iframe>
 
 ### Operaciones básicas de String
 
@@ -397,7 +374,7 @@ fun main() {
 }
 ```
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombre = "Anselmo"
@@ -462,8 +439,6 @@ fun main() {
 >     println("---${cadenaConEspacios.trim()}---") // ---Hola, mundo!---
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/oUuZrfB8R" width="560" height="1250"></iframe>
 
 Kotlin plantea, en cambio, otras operaciones de forma **más sencilla**.
 
@@ -547,7 +522,7 @@ También puedes usar la sintaxis **`argument_index$`** para referenciar el mismo
 
 Ejemplos:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     /*
@@ -579,9 +554,6 @@ Ejemplos:
 >      println(negativeNumberInParentheses)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/fzwcNuEd9" width="560" height="680"></iframe>
-
 
 ## 3.2. Números
 
@@ -638,7 +610,7 @@ val eFloat = 2.7182818284f  // Float, valor real: 2.7182817
 
 En Kotlin, **no hay conversiones automáticas** entre tipos numéricos más pequeños y más grandes. Por ejemplo, si una función admite como parámetro un `Double`, no podremos invocarla con argumentos de tipo `Int` o `Double`:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     fun printDouble(d: Double) {
@@ -655,8 +627,6 @@ En Kotlin, **no hay conversiones automáticas** entre tipos numéricos más pequ
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/Jq46ZaBRY" width="560" height="320"></iframe>
-
 Todos los tipos numéricos soportan conversiones a otros tipos mediante funciones como
 
 * `toByte()`: `Byte`
@@ -670,7 +640,7 @@ Todos los tipos numéricos soportan conversiones a otros tipos mediante funcione
 
 Kotlin soporta las operaciones aritméticas estándar: `+`, `-`, `*`, `/`, `%`. Estas operaciones están **sobrecargadas** para realizar automáticamente las conversiones necesarias:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     println(1 + 2)
@@ -680,23 +650,18 @@ Kotlin soporta las operaciones aritméticas estándar: `+`, `-`, `*`, `/`, `%`. 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/KtbtErfG2" width="560" height="250"></iframe>
-
 > [!info]  
 > La segunda línea del ejemplo anterior usa `_` intercalados con el número. No te preocupes, solo son separadores de miles. Puedes verlo en el apartado [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/3. Tipos de datos#Uso de guiones bajos para mejorar la legibilidad\|Uso de guiones bajos para mejorar la legibilidad]] más adelante.
 
 Para obtener divisiones precisas entre enteros, convierte explícitamente uno de los operandos a un tipo decimal:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val x = 5 / 2.toDouble()
 >     println(x == 2.5)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/YT4qq3J-H" width="560" height="250"></iframe>
-
 
 ### Constantes literales en números
 
@@ -820,7 +785,7 @@ Son estáticas porque no pueden/deben cambiar su tamaño durante la ejecución d
 Podemos crear un array de varias formas.
 
 * Con la function **`arrayOf()`**:
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var arrayCorto = arrayOf(1, 2, 3)
@@ -840,11 +805,9 @@ Podemos crear un array de varias formas.
 > }
 > ```
   
-  <iframe src="https://pl.kotl.in/85X2ums9_" width="560" height="400"></iframe>
-
 * A partir de un [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos\|rango]]:  
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val arrayNotasExamen = arrayOf(1..6)
@@ -853,12 +816,10 @@ Podemos crear un array de varias formas.
 > }
 > ```
   
-  <iframe src="https://pl.kotl.in/pLrzhdgmX" width="560" height="200"></iframe>
-
 * Con el constructor **`Array`**, indicando el **tipo de los datos** que guarda (entre `< >` del genérico), el **tamaño inicial** (entre paréntesis) y **un valor inicial** (entre llaves) para todos los elementos:
 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val arrayNotasExamen = Array<Int>(6){10}
@@ -866,12 +827,10 @@ Podemos crear un array de varias formas.
 > }
 > ```
   
-  <iframe src="https://pl.kotl.in/boGVIqEDT" width="560" height="200"></iframe>
-
 * Con el constructor **`Array`**, indicando el **tamaño inicial** (entre paréntesis) y **una función** que genera cada elemento del array indicando su índice:
 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val arrayNumeros = Array(10, { i -> i + 10 })
@@ -884,8 +843,6 @@ Podemos crear un array de varias formas.
 > }
 > ```
   
-  <iframe src="https://pl.kotl.in/KPxkKs-50" width="560" height="320"></iframe>
-
 Internamente, Kotlin usa clases para abstraer arrays de distintos tipos de datos para evitar el ***boxing-unboxing***[^2] de sus elementos y convertirlos en datos primitivos, que son los que finalmente usará la JVM. Estas clases son: [ByteArray][kotlin_ByteArray], [CharArray][kotlin_CharArray], [ShortArray][kotlin_ShortArray], [IntArray][kotlin_IntArray], [LongArray][kotlin_LongArray], [BooleanArray][kotlin_BooleanArray], [FloatArray][kotlin_FloatArray] y [DoubleArray][kotlin_DoubleArray].
 
 > [!info] Recomendación 
@@ -899,7 +856,7 @@ Internamente, Kotlin usa clases para abstraer arrays de distintos tipos de datos
 
 Leer o modificar los elementos de un array se hace de forma similar a Java:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val arrayNumeros = Array(10, { i -> i + 10 })
@@ -911,11 +868,10 @@ Leer o modificar los elementos de un array se hace de forma similar a Java:
 > }
 > ```
 > 
-<iframe src="https://pl.kotl.in/TFI9HDiQe" width="560" height="320"></iframe>
 
 Aunque lo veremos en los [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos\|rangos]], se puede usar el operador **`in`** para comprobar si un elemento está incluido en un array:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var arrayCorto = arrayOf(1, 24, 3)
@@ -923,11 +879,9 @@ Aunque lo veremos en los [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos\|r
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/r0AsZ5VSj" width="560" height="250"></iframe>
-
 Podemos recorrer un array de distintas formas:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val arrayNumeros = Array(10, { i -> i + 10 })
@@ -951,8 +905,6 @@ Podemos recorrer un array de distintas formas:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/WVa7aLIUx" width="560" height="250"></iframe>
-
 ## 3.6. Matrices
 
 Como ya vimos en Java, **una matriz es un array de arrays**. Es decir, un array que en cada una de sus posiciones almacena otro array[^3]. Aunque para verlo de forma más intuitiva lo resumimos diciendo que se representa como una tabla de datos.
@@ -961,7 +913,7 @@ Podemos crear una matriz de diferentes formas:
 
 * Mediante el uso del **`arrayOf()`**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     //Creación de matriz a partir de arrayOf()
@@ -996,11 +948,9 @@ Podemos crear una matriz de diferentes formas:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/RecBrRnbB" width="560" height="690"></iframe>
-
 * Podemos utilizar **`Array()`** de forma genérica para facilitar la construcción de matrices. Si creamos una función auxiliar facilitaremos bastante la creación de matrices de distintos tipos:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val matrizStrings = crearMatriz(3, 3, "*")
@@ -1024,11 +974,9 @@ Podemos crear una matriz de diferentes formas:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/moMBGShXp" width="680" height="380"></iframe>
-
 ¡Ojo! Con el bucle de arriba recorreremos los elementos de la matriz usando `for-each` de Kotlin, pero… ¿Y si queremos acceder a los índices para modificar el valor de los elementos, igual que hacíamos en Java? Para ello podemos acceder a la propiedad **`indices`**, presente en las colecciones:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val matrizStrings = crearMatriz(3, 3, "*")
@@ -1051,13 +999,11 @@ Podemos crear una matriz de diferentes formas:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/lI4GeSwBx" width="680" height="480"></iframe>
-
 Observa que aunque hemos declarado la matriz como inmutable con un **`val`**, podemos modificar su contenido. Esto es porque la **referencia en memoria no cambia**, ya que **NO reasignamos** en ningún momento la variable.
 
 * En muchas ocasiones es necesario hacer una **matriz que sea irregular**, para ello, lo más sencillo sería hacer lo siguiente 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     //Creación de matriz irregular
@@ -1073,11 +1019,9 @@ Observa que aunque hemos declarado la matriz como inmutable con un **`val`**, po
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/MnTSXOUx3" width="600" height="250"></iframe>
-
 * Es importante también mencionar que podremos hacer **matrices de más de dos dimensiones o multidimensionales**. Este es un ejemplo de una matriz de tres dimensiones.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     //Creación de matriz 3 dimensiones, inicializada a 0
@@ -1089,8 +1033,6 @@ Observa que aunque hemos declarado la matriz como inmutable con un **`val`**, po
 >     }
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/ZEyi7fIyW" width="600" height="250"></iframe>
 
 > [!question] ¿Sabías que ...? 
 > Para poder visualizar una matriz en consola, es recomendable usar el método **`contentToString()`**. Pero **con más de 2 dimensiones** sólo mostrarán las direcciones de memoria en cada caso. Para estos últimos, el método **`contentDeepToString()`** que permite ver la matriz en su totalidad:
@@ -1108,7 +1050,7 @@ Para comparar los elementos que contienen dos arrays (en el mismo orden) usaremo
 
 Permite comprobar si dos arrays son **estructuralmente iguales**, esto es, que tengan tanto el **mismo tamaño**, como que sus elementos aparezcan en la **misma posición** y que **sean iguales**. Obviamente devuelve un valor lógico.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val array = arrayOf("manzanas", "naranjas", "limon")
@@ -1127,13 +1069,11 @@ Permite comprobar si dos arrays son **estructuralmente iguales**, esto es, que t
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/ZWrtZg2p9" width="560" height="350"></iframe>
-
 #### `contentDeepEquals()`
 
 Para comparar si son estructuralmente iguales de forma profunda, esto es, que tengan el **mismo tamaño** y que los arrays que contienen en cada posición son iguales (ver [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/3. Tipos de datos#`contentEquals()`\|3. Tipos de datos#`contentEquals()`]]. Como puede deducirse, también devuelve `true` o `false`.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val primerArray = arrayOf(intArrayOf(1, 0),
@@ -1150,8 +1090,6 @@ Para comparar si son estructuralmente iguales de forma profunda, esto es, que te
 >     // true
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/O6mvA93Nz" width="560" height="350"></iframe>
 
 > [!waning] Importante 
 > En el caso de los arrays, los operadores de comparación **\=\=** y **!=** comprueban si ambas variables hacen referencia al mismo array (a la misma posición de memoria). Es decir, el contenido de dos arrays **no debe compararse con estos operadores**.
@@ -1219,7 +1157,7 @@ En Kotlin, el término **`static` no existe**. Pero el concepto sí y se expresa
 
 Los miembros dentro del bloque del `companion object` se comportan como miembros estáticos de Java:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > class MiClase {
 >     companion object {
@@ -1236,9 +1174,6 @@ Los miembros dentro del bloque del `companion object` se comportan como miembros
 >     MiClase.saludar()
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/gICSPrDVO" width="560" height="450"></iframe>
-
 
 # 5. object
 
@@ -1336,7 +1271,7 @@ Comprueban si dos variables apuntan o no al **mismo objeto** en la memoria RAM.
 
 Así, la **igualdad referencial** (\=\=\=) indicará si dos objetos son literalmente el mismo mientras que la **desigualdad referencial** (!\=\=) indica lo contrario.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val p1 = Persona("Ana")
@@ -1355,8 +1290,6 @@ Así, la **igualdad referencial** (\=\=\=) indicará si dos objetos son literalm
 >     println(p1 !== p3) // false -> Es falso, porque son el mismo objeto
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/2EfDbqy6I" width="560" height="250"></iframe>
 
 # 7. Collections
 
@@ -1420,7 +1353,7 @@ Muy sencillo: para evitar el `null`.
 
 Observa el siguiente ejemplo: 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombreABuscar = "Telmo"
@@ -1449,8 +1382,6 @@ Observa el siguiente ejemplo:
 > }
 > 
 > ```
-
-<iframe src="https://pl.kotl.in/5JfLBrHpf" width="600" height="650"></iframe>
 
 El método `buscarUsuariosPorNombre` devuelve siempre una lista. Incluso cuando no hay elementos que devolver, devuelve una **lista vacía**. Esta lista vacía es una lista estática, por lo que no se crea un puntero por cada lista vacía que se genere. **Todas las listas vacías apuntan al mismo sitio**. Esto supone un ahorro de memoria considerable.
 
@@ -1655,7 +1586,7 @@ Amplía esta información con la documentación oficial o artículos de interés
 
 ## Ejemplo
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > data class Alumno(val nombre: String, val edad: Int)
 > fun main() {
@@ -1709,9 +1640,6 @@ Amplía esta información con la documentación oficial o artículos de interés
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/NcmcRYU-A" width="560" height="950"></iframe>
-
-
 
 
 [kotlin_collections]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/
@@ -1761,7 +1689,7 @@ Si el código no atrapa esta excepción, el programa detiene su ejecución de fo
 
 Kotlin, por defecto, **no admite valores nulos**. No podemos declarar una variable sin inicializar e intentar usarla, ya que el compilador lanzaría un error. Es decir, **Kotlin comprueba los nulos en tiempo de compilación**. No da la opción a ejecutarlo.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre = "Pepe"
@@ -1769,13 +1697,11 @@ Kotlin, por defecto, **no admite valores nulos**. No podemos declarar una variab
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/Zs1fv3NlQ" width="560" height="250"></iframe>
-
 Para empezar, ninguna variable admite el valor `null`, tal y como se hacía en Java. En este ejemplo, se está intentando asignar `null` a una variable de tipo `String`. Kotlin por tanto espera una cadena de texto, no un nulo.
 
 Si se quiere indicar que una variable **podría ser nula** (*nulleable*) hay que expresarlo en su tipo con el operador **`?`**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var nombre: String? = "Pepe"
@@ -1785,8 +1711,6 @@ Si se quiere indicar que una variable **podría ser nula** (*nulleable*) hay que
 >     println(nombre)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/HkaNhlE0x" width="560" height="250"></iframe>
 
 En el ejemplo anterior estamos diciendo que `nombre` es *nullable*, es decir, que puede contener un `String` o un `null`.
 
@@ -1806,7 +1730,7 @@ Esto ocurre cuando aún no tenemos el valor que vamos a asignar a dicha variable
 
 Kotlin usa el **operador seguro `?.`** en variables *nulleables* para permitir acceder a sus miembros (propiedades y métodos) de forma segura. Si el valor es nulo, la expresión completa se evalúa a **`null`**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val cadena: String? = null
@@ -1816,15 +1740,13 @@ Kotlin usa el **operador seguro `?.`** en variables *nulleables* para permitir a
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/cEW1nRrB9" width="560" height="200"></iframe>
-
 En este caso inicializamos `cadena` a `null`. Esto obliga a que `longitud` sea también *nullable*, ya que se forma a partir de un *nullable*. Aquí podemos ver que `?.` devuelve el valor entero con la longitud de la cadena o `null`.
 
 Los *nullable* son, en realidad, un **tipo de dato especial en Kotlin**: admite valores de tipo de datos indicado (`String`, `Int`, `Boolean`, etc.) además de `null`. 
 
 Así, las **colecciones** pueden admitir en su genérico correspondiente un *nullable*:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     /*
@@ -1863,8 +1785,6 @@ Así, las **colecciones** pueden admitir en su genérico correspondiente un *nul
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/S9UhStT1z" width="560" height="640"></iframe>
-
 Tal y como se indica en el código, la línea:
 
 ```kotlin
@@ -1886,7 +1806,7 @@ fallará porque `listaCompletaNula` es nulo, y si sustituimos la variable por `n
 
 El **operador Elvis `?:`** proporciona un valor por defecto en caso de que el valor a la izquierda sea nulo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombre = "Pepe"
@@ -1899,13 +1819,11 @@ El **operador Elvis `?:`** proporciona un valor por defecto en caso de que el va
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/hj2d-T7S9" width="560" height="230"></iframe>
-
 En nuestro ejemplo, en la función `concatenar`, si el argumento `apellido` entra con el valor `null`, el operador Elvis garantiza que se usará por defecto el apellido "Expósito".
 
 Veamos otro ejemplo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var cadena: String? = null
@@ -1936,11 +1854,9 @@ Veamos otro ejemplo:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/YUnoEIat7" width="560" height="590"></iframe>
-
 El uso es intuitivo para las colecciones:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     /*
@@ -1987,14 +1903,11 @@ El uso es intuitivo para las colecciones:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/qAnOHGhak" width="700" height="790"></iframe>
-
-
 ## 8.3. Operador de no nulidad (\!\!)
 
 El **operador de no nulidad \!\!** indica que la variable a la que acompaña **no es nula**. En otra palabras, que no es *nullable*:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     // Assigns a nullable string to a variable
@@ -2005,11 +1918,9 @@ El **operador de no nulidad \!\!** indica que la variable a la que acompaña **n
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/GlwgYHBeE" width="560" height="230"></iframe>
-
 Visto así, este operador no tiene mucho sentido. Estamos viendo claramente que `b` no es nulo (contiene la cadena "Kotlin"). Además, si en lugar de inicializarlo con este texto, lo inicializo a `null`:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     // Assigns null to a nullable variable
@@ -2020,15 +1931,13 @@ Visto así, este operador no tiene mucho sentido. Estamos viendo claramente que 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/l99-hJD77" width="560" height="250"></iframe>
-
 Entonces ¿para qué sirve este operador? Para que en aquellos casos donde tengamos claro que una variable no sea nula podamos operar con ella sin tener en cuenta `null`. Es decir, ningún operador más del *null safety*, ninguna validación... 
 
 ## 8.4. Función `let`
 
 La función `let` se usa con *nullables* para garantizar la ejecución de un bloque de código sólo si dicho *nullables* no es nulo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > /**
 >  * Si el camión tiene mercancías cargadas, irá cargado.
@@ -2042,8 +1951,6 @@ La función `let` se usa con *nullables* para garantizar la ejecución de un blo
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/c0tFRzn_Y" width="560" height="250"></iframe>
-
 Si en el código anterior pones a `null` la variable `camion`, ¿qué ocurriría? Que `let` no ejecutaría el bloque de código donde indica que el camión está cargado.
 
 > [!todo] El `let` es un `if (variable != null)` 
@@ -2051,7 +1958,7 @@ Si en el código anterior pones a `null` la variable `camion`, ¿qué ocurriría
 
 ¿Existe entonces un `else` para `let`? Sí, el `run` junto con el operador Elvis:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > /**
 >  * Si el camión tiene mercancías cargadas, irá cargado.
@@ -2072,9 +1979,6 @@ Si en el código anterior pones a `null` la variable `camion`, ¿qué ocurriría
 >     println(contenedor)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/KJ4nSFu96" width="560" height="400"></iframe>
-
 
 [^5]: Kotlin. (s. f.). *Null safety* | Kotlin Help. https://kotlinlang.org/docs/null-safety.html
 
@@ -2196,7 +2100,7 @@ Se puede definir un rango estableciendo ambos valores y separándolos con el **o
 { #840e9f}
 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val numeros = 3..7
@@ -2210,14 +2114,12 @@ Se puede definir un rango estableciendo ambos valores y separándolos con el **o
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/Xq-S3DNs_" width="560" height="350"></iframe>
-
 > [!info]  
 > Se puede definir un intervalo con cualquier tipo que sea **comparable** (números, letras, etc.).
 
 Hagámoslo ahora con letras:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val abecedarioMinusculas = "a".."z"
@@ -2229,8 +2131,6 @@ Hagámoslo ahora con letras:
 >     println(abecedarioMinusculas::class.simpleName)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/CuzAZq-VF" width="560" height="250"></iframe>
 
 Aunque efectivamente las letras son comparables, estrictamente hablando, **no hemos hecho un rango de letras**, sino de cadenas donde hemos dicho que hay una serie de cadenas que empiezan por `"a"` y terminan por `"z"`. Pero no son caracteres (`Char`), por lo que no sabemos si después de la `"a"` va una cadena  `"b"` o la  `"aa"`. Dicho de otra forma, aunque las cadenas son comparables, no hay una secuencia clara de cadenas que sigan un orden natural.
 
@@ -2256,7 +2156,7 @@ Como se indicaba al principio de este apartado, el rango abierto por la derecha 
 
 Se puede crear mediante el operador **`..<`** o las funciones **`until`** y **`rangeUntil`**. Veámoslo creando el mismo rango de distintas formas en el siguiente ejemplo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var numero = 7
@@ -2297,9 +2197,6 @@ Se puede crear mediante el operador **`..<`** o las funciones **`until`** y **`r
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/U7puDmPAC" width="560" height="650"></iframe>
-
-
 ## 10.2. Operador `in`
 
 Se trata de un operador binario (admite dos operandos, uno a cada lado, como los operadores aritméticos) que indica si el `valor` está en el `rango`. Puede usarse de esta forma:
@@ -2318,7 +2215,7 @@ rango.contains(valor)     // valor está DENTRO de rango
 
 Para comprobarlo, juega con el siguiente ejemplo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val num = 6
@@ -2340,10 +2237,7 @@ Para comprobarlo, juega con el siguiente ejemplo:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/ynamo-AvU" width="560" height="450"></iframe>
-
-
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val numeros = 3..7
@@ -2364,8 +2258,6 @@ Para comprobarlo, juega con el siguiente ejemplo:
 >     println("El número $buscar3 ${if (buscar3 !in numeros) "NO está" else "está" } en el rango")
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/MBYfw6n50" width="560" height="350"></iframe>
 
 ## 10.3. Rangos descendentes
 
@@ -2400,7 +2292,7 @@ Así, el salto establecido por defecto se `step = 1`, pero con el método `step`
 
 En el siguiente ejemplo indicamos que vamos a recorrer el rango de dos en dos. Así, el método `step` se puede usar de dos formas:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     println("Forma 1: indicándolo en el propio bucle:")
@@ -2417,11 +2309,9 @@ En el siguiente ejemplo indicamos que vamos a recorrer el rango de dos en dos. A
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/C8nGK_bXO" width="560" height="350"></iframe>
-
 Este método, y prácticamente todos ellos, se pueden combinar con los anteriores:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     for (i in 8 downTo 0 step 2) print(i)
@@ -2434,8 +2324,6 @@ Este método, y prácticamente todos ellos, se pueden combinar con los anteriore
 >     // 86420
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/E-bALvEmN" width="560" height="250"></iframe>
 
 ## 10.5. Buenas prácticas
 
@@ -2467,7 +2355,7 @@ fun main() {
 
 El uso más habitual es para gestionar listas de elementos (arrays, listas, sets, etc.).
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val frutas = listOf("Manzana", "Pera", "Plátano")
@@ -2488,8 +2376,6 @@ El uso más habitual es para gestionar listas de elementos (arrays, listas, sets
 >     }
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/7xXdeAl_7" width="560" height="350"></iframe>
 
 Resumiendo, estas son algunas de las formas con las que podríamos iterar un rango:
 
@@ -2523,7 +2409,7 @@ Como ya sabemos de otros lenguajes de programación (como Java), podemos control
 
 El clásico **`if`** funciona en Kotlin como en otros lenguajes, pero puede ampliarse su uso de varias formas:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val a = 3
@@ -2554,8 +2440,6 @@ El clásico **`if`** funciona en Kotlin como en otros lenguajes, pero puede ampl
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/CfaYA5h7G" width="560" height="550"></iframe>
-
 La primera es la más conocida. La hemos usado mucho en Java.
 
 La segunda y la tercera funcionan como una expresión. Según el resultado de la condición, se asigna un valor u otro a la variable `valorMaximo`.
@@ -2574,7 +2458,7 @@ La segunda y la tercera funcionan como una expresión. Según el resultado de la
 
 `when`[^8] equivale al `switch` de Java. Por tanto, permite mostrar de forma más sencilla la evaluación de varias condiciones, en lugar de usar una cascada de sentencias “if - else if - else”:  
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val posicion = 3
@@ -2590,11 +2474,9 @@ La segunda y la tercera funcionan como una expresión. Según el resultado de la
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/eErL-b8Fq" width="560" height="300"></iframe>
-
 Permite usar expresiones en las ramas de condiciones:  
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val posicion = 3
@@ -2611,11 +2493,9 @@ Permite usar expresiones en las ramas de condiciones:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/yyG5GFgjP" width="560" height="300"></iframe>
-
 Como indicamos al principio, `when` también puede tratarse como una expresión. En el siguiente ejemplo vemos cómo el resultado de un `when` se asigna a la variable `medalla`:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val posicion = 3
@@ -2631,14 +2511,12 @@ Como indicamos al principio, `when` también puede tratarse como una expresión.
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/ipcJCYwYv" width="560" height="300"></iframe>
-
 > [!warning] Cuidado 
 > Con el `when` ocurre lo mismo que con el **`if` [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/11. Control de flujo#^7e7e7e\|cuando se usa como una expresión]]**: debe incluir **obligatoriamente** el `else` para que la expresión siempre devuelva un valor.
 
 Por supuesto, `when` admite la combinación de varios valores en una misma rama de condición. En el siguiente ejemplo vemos cómo se evalúan los valores 1, 2 y 3 en una sola rama:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val posicion = 33
@@ -2650,11 +2528,9 @@ Por supuesto, `when` admite la combinación de varios valores en una misma rama 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/Zn6un7R1p" width="560" height="250"></iframe>
-
 Podemos usar **rangos**:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val delUnoAlDiez = 1..10
@@ -2676,11 +2552,9 @@ Podemos usar **rangos**:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/IE-PyX2i0" width="560" height="450"></iframe>
-
 También se puede utilizar el operador **`is`** para ejecutar determinadas acciones según el tipo de dato:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombre1 = "Pepe"
@@ -2702,8 +2576,6 @@ También se puede utilizar el operador **`is`** para ejecutar determinadas accio
 >     else -> false
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/d0IAl6ZVq" width="560" height="430"></iframe>
 
 ¿Nos hemos pasado un poco con este último ejemplo? ¿La función `hasPrefix` se escribe de forma muy rara? No te agobies, cuando veamos las funciones la entenderás perfectamente.
 
@@ -2728,7 +2600,7 @@ El bucle `for`[^9] se utiliza cuando se conoce de antemano el número de iteraci
 
 Lo habitual es hacerlo [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos#Listas de elementos\|con rangos]], como hemos visto en apartados anteriores.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     println("Recorrer un rango numérico:")
@@ -2762,11 +2634,9 @@ Lo habitual es hacerlo [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/10. Rangos#List
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/WZQrEIaFU" width="560" height="750"></iframe>
-
 Para recorrer un array, por ejemplo, de la forma clásica (por sus índices):
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val array = arrayOf("a", "b", "c")
@@ -2777,11 +2647,9 @@ Para recorrer un array, por ejemplo, de la forma clásica (por sus índices):
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/vgpXrz312" width="560" height="220"></iframe>
-
 O usando una tupla (índice, valor):
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val array = arrayOf("a", "b", "c")
@@ -2792,8 +2660,6 @@ O usando una tupla (índice, valor):
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/HXy0k3chi" width="560" height="250"></iframe>
-
 > [!info]  
 > Investiga cómo funciona `withIndex()` para entender mejor el ejemplo anterior.
 
@@ -2801,7 +2667,7 @@ O usando una tupla (índice, valor):
 
 El `while`[^10] y el `do-while` se ejecutan mientras la condición que evalúan sea verdadera. La diferencia (recuerda) es que el `do-while` se ejecutaba al menos una vez, pero el `while` podría no ejecutarse ninguna si la condición no se cumple:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var x = 7
@@ -2813,9 +2679,7 @@ El `while`[^10] y el `do-while` se ejecutan mientras la condición que evalúan 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/nG6FERQwa" width="560" height="250"></iframe>
-
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var x: Int = 0
@@ -2827,11 +2691,9 @@ El `while`[^10] y el `do-while` se ejecutan mientras la condición que evalúan 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/lypOJ7d1T" width="560" height="250"></iframe>
-
 Los ejemplos de la web oficial son más bonicos:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var carsInGarage = 0
@@ -2849,9 +2711,7 @@ Los ejemplos de la web oficial son más bonicos:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/jEZZTU0Wa" width="560" height="300"></iframe>
-
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     var roll: Int
@@ -2867,8 +2727,6 @@ Los ejemplos de la web oficial son más bonicos:
 >     // Got a 6! Game over.
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/jEZZTU0Wa" width="560" height="300"></iframe>
 
 [^8]:  MoureDev by Brais Moure. (2019b, agosto 8). KOTLIN: ***Curso ANDROID desde CERO \- SENTENCIA WHEN \- Lección 4 \[2020\] | Español*** | MoureDev \[Vídeo\]. YouTube. [https://www.youtube.com/watch?v=ufsrPf7vao4](https://www.youtube.com/watch?v=ufsrPf7vao4)
 
@@ -2971,7 +2829,7 @@ fun areaRectangulo(
 
 En ocasiones enviamos a algunas funciones el mismo valor con mucha frecuencia. Por ejemplo, para calcular calcular el precio total (incluyendo el IVA, que en la actualidad suele ser el **21%**):
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun calcularPrecioFinal(
 >     precioBase: Double,
@@ -2994,13 +2852,11 @@ En ocasiones enviamos a algunas funciones el mismo valor con mucha frecuencia. P
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/vIMqQlEDV" width="560" height="410"></iframe>
-
 > [!warning] Recuerda 
 > Los parámetros **sin valor por defecto** son **OBLIGATORIOS**.
 > Los parámetros **con valor por defecto** son **OPCIONALES**.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun saludo(
 >     nombre: String,
@@ -3022,8 +2878,6 @@ En ocasiones enviamos a algunas funciones el mismo valor con mucha frecuencia. P
 >      saludo(mensaje = "Hello!")  // ❌ Error! Falta el parámetro nombre
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/iIwnPaGx9" width="600" height="400"></iframe>
 
 Hay que tener **cuidado con el orden en que se ponen los parametros** si hay algunos con valores por defecto. Si hay parámetros con valores por defecto antes que sin ellos, ¿cómo haces para obviar el valor por defecto?
 
@@ -3057,7 +2911,7 @@ fun main() {
 
 De esta forma incluso se pueden enviar los parámetros en distintos orden:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun saludo(
 >     mensaje: String = "Hola",
@@ -3088,8 +2942,6 @@ De esta forma incluso se pueden enviar los parámetros en distintos orden:
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/po_9VeeFe" width="560" height="550"></iframe>
-
 ### vararg
 
 Si queremos hacer una función pero no conocemos de antemano el número de parámetros, o éste es cambiante, podemos usar parámetros `vararg`, que es equivalente a las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 05/2. Arrays unidimensionales (vectores)#2.3.1. Funciones variádicas\|funciones variádicas]] en Java.
@@ -3104,7 +2956,7 @@ fun <T> listOf(vararg elements: T): List<T>
 
 La palabra clave `vararg` (**var**iable **arg**uments) indica que el parámetro acepta un **número indeterminado** de valores separados por comas. Se explica mejor con un ejemplo:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun media(vararg numeros: Int): Double {
 >     if (numeros.isEmpty()) return 0.0
@@ -3123,8 +2975,6 @@ La palabra clave `vararg` (**var**iable **arg**uments) indica que el parámetro 
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/KiQfiy2DM" width="560" height="330"></iframe>
-
 En el código anterior queremos calcular la media de los números que nos pasen, que no sabemos cuántos serán. A priori podríamos sobrecargar la función para distintos números de parámetros: `media(a, b)`,  `media(a, b, c)`, etc., pero ¿cuántas funciones tendríamos para hacer la misma tarea? Con `vararg` evitamos todo esto. 
 
 Al igual que en Java, el parámetro `vararg` se comporta como un **[Array][kotlin_array]**. Por eso en el ejemplo anterior podemos usar funciones como `.isEmpty()`, `.sum()` y `.size`.
@@ -3135,7 +2985,7 @@ Si queremos **pasar directamente un array**, hay dos diferencias con respecto a 
    Si intentamos introducir un array creado con `arrayOf`, como veremos en el siguiente ejemplo, dará un error.
 2. **Es necesario usar el operador `*`** para descomponer el array en elementos individuales.
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun media(vararg numeros: Int): Double {
 >     if (numeros.isEmpty()) return 0.0
@@ -3153,8 +3003,6 @@ Si queremos **pasar directamente un array**, hay dos diferencias con respecto a 
 >     println("Media 2: $media2")
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/ZeZO4CB5A" width="560" height="330"></iframe>
 
 Al ejecutar el código anterior debe dar el siguiente error:
 
@@ -3197,7 +3045,7 @@ fun <T> imprimir(valor: T) { println(valor) }
 ```
 
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun <T> imprimir(valor: T) { println(valor) } 
 > 
@@ -3207,8 +3055,6 @@ fun <T> imprimir(valor: T) { println(valor) }
 >     imprimir(true)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/l2OBvVqb_" width="560" height="250"></iframe>
 
 # Referencias
 

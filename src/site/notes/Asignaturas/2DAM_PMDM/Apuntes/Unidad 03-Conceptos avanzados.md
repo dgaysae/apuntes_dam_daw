@@ -498,7 +498,7 @@ recorrerArray(arrayNumeros){ numero ->
 
 Retomando el [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/7. Collections#List inmutables\|ejemplo]] que usamos para explicar la función `emptyList()`, podemos rehacerlo con expresiones lambda de la forma siguiente:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > fun main() {
 >     val nombreABuscar = "Telmo"
@@ -521,8 +521,6 @@ Retomando el [[Asignaturas/2DAM_PMDM/Apuntes/Unidad 01/7. Collections#List inmut
 > }
 > 
 > ```
-
-<iframe src="https://pl.kotl.in/X-61y2pSV" width="560" height="650"></iframe>
 
 
 ## Referencias

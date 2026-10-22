@@ -221,7 +221,7 @@ El bloque de inicialización **`init` contiene la lógica del constructor princi
 
 Si te fijas, el bloque `init` se ejecuta una sola vez y en el momento de instanciar un objeto. Aquí tenemos un problema. La propiedad `edad` se valida al ejecutar el constructor principal (al instanciar un objeto), pero... ¿y si luego le asigno un valor negativo?
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > class Persona(val nombre: String, var edad: Int) {
 >     init {
@@ -235,8 +235,6 @@ Si te fijas, el bloque `init` se ejecuta una sola vez y en el momento de instanc
 >     println(p.edad)       // Imprime: -33
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/NyaW1S5yO" width="560" height="450"></iframe>
 
 Pues vaya... parece que el `init` solo sirve para arrancar.  Pero no te agobies, que esto tiene solución.
 
@@ -295,7 +293,7 @@ Si queremos hacer las cosas bien, en ambos casos es obligatorio el uso de `field
 
 Y ahora viene algo más extraño: **¿cómo se ejecutan?** De forma intuitiva...
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > class Persona(nombreInicial: String) {
 >     var nombre: String = ""
@@ -315,8 +313,6 @@ Y ahora viene algo más extraño: **¿cómo se ejecutan?** De forma intuitiva...
 >     println(p.nombre)       // Imprime: ANSELMO
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/LvI227Wks" width="560" height="450"></iframe>
 
 En el ejemplo anterior no vemos ningún `p.nombre.get()`. En su lugar, simplemente llamamos a la propiedad `nombre` del objeto `p`:
 ```kotlin
@@ -363,7 +359,7 @@ Así que, en caso de establecer *setters* (y/o *getters*), esas propiedades debe
 
 Así, para el ejemplo del apartado anterior, la solución podría ser la siguiente:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > class Persona(val nombre: String, edad: Int) {
 >     var edad: Int = 0
@@ -383,10 +379,6 @@ Así, para el ejemplo del apartado anterior, la solución podría ser la siguien
 > }
 > ```
 
-<iframe src="https://pl.kotl.in/-ySUZxQ2a" width="560" height="450"></iframe>
-
-
-
 
 
 
@@ -403,7 +395,7 @@ En Java se puede declarar una variable indicando como tipo de dato una de las in
 
 Kotlin ve esto de forma intuitiva (repetimos mucho esta palabra, si). Para indicar qué interfaz implementa una clase se hace de forma similar a como se hace con los tipos de datos:
 
-> [!abstract]- Código 
+> [!abstract] Código 
 > ```kotlin
 > open class Persona(var nombre:String,
 >                    var dni:String,
@@ -421,8 +413,6 @@ Kotlin ve esto de forma intuitiva (repetimos mucho esta palabra, si). Para indic
 >     println(empleado1.nombre)
 > }
 > ```
-
-<iframe src="https://pl.kotl.in/ayxSOhEyN" width="560" height="450"></iframe>
 
 ## Permitir herencia y sobreescritura - `open`
 
@@ -858,8 +848,6 @@ val clon = heroe1.copy(nombre = "Thranduil")
 > [!warning] Muy importante 
 > Podemos excluir propiedades de este tipos de clases, haciendo uso del compilador, que usará sólo aquellos **atributos que se encuentren en el constructor principal** para crear todos estos métodos (`copy`, `equals`, `hashCode`, `toString`, etc.).
 
-<iframe src="https://pl.kotl.in/fboZK7wiH" width="560" height="320"></iframe>
-
 Como puede verse en el código anterior, el color de pelo no afectará a la igualdad entre los dos objetos, porque no se tiene en cuenta.
 
 #### Desestructuradores con `componentN()`
@@ -899,8 +887,6 @@ println("$nombre es un $clase") // Imprime: Legolas es un Arquero
 ```
 
 Vamos a cuajar todo esto en el siguiente ejemplo:
-
-<iframe src="https://pl.kotl.in/BAUoJ0l4G" width="560" height="550"></iframe>
 
 ## Buenas prácticas
 
