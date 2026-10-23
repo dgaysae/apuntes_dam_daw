@@ -25,7 +25,7 @@ La API pública sobre la que haremos este ejemplo es: https://dog.ceo/dog-api/
 
 En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+[[Asignaturas/2DAM_PMDM/Apuntes/Unidad 07-Consumir una API\|Unidad 07-Consumir una API]]
 
 ---
 
