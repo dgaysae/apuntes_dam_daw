@@ -30,16 +30,13 @@ La siguiente tabla muestra los contenidos básicos de la norma educativa que con
 ### Contenidos básicos
 
 Aplicación de las estructuras de almacenamiento:  
-- Estructuras. Definición y uso.  
-- Concepto de Array. Tipos. Creación de arrays. Recorrido y búsquedas en un array.  
-- Arrays multidimensionales.  
-- Cadenas de caracteres. Uso de las cadenas. Recorrido y manipulación.  
-- Uso de expresiones regulares en cadenas de texto.  
-- Concepto de Lista. Tipos. Operaciones.  
-- Aplicación del estándar XML.  
-- Concepto de XML Estructura de un documento XML.  
-- Especificación de documentos. DTD y XSD.  
-- Clases para la creación y manipulación de documentos XML.
+- Estructuras estáticas y dinámicas.
+- Creación de matrices (arrays).
+- Matrices (arrays) multidimensionales.
+- Genericidad.
+- Cadenas de caracteres. Expresiones regulares.
+- Colecciones: Listas, Conjuntos y Diccionarios.
+- Operaciones agregadas: filtrado, reducción y recolección.
 
 ### RA asociado y criterios de evaluación
 
