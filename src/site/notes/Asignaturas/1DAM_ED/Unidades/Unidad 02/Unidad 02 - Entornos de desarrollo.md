@@ -3,27 +3,16 @@
 ---
 
 
-Hasta ahora los entornos de desarrollo se centraban en gran medida en la contexto más inmediato para el desarrollador: el **<abbr title="Integrated Development Environment">IDE</abbr>**. Este software se compone de un conjunto de herramientas qule hace más productivo y fiable el proceso escribir código. En general, todos incluyen:
+En la [[Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software\|Unidad 01]] vimos el camino que recorre un programa desde el código fuente hasta su ejecución, y lo hicimos a mano, con un editor de texto y el terminal. En el día a día, ese camino se recorre con un **<abbr title="Integrated Development Environment">IDE</abbr>** (entorno de desarrollo integrado): un programa que reúne en una sola ventana el editor, el compilador o intérprete, el depurador y muchas otras herramientas, para que escribir código sea más rápido y fiable.
 
-* Editor de código de programación.
+Hoy, además, el IDE es el centro de un ecosistema más amplio: herramientas de construcción como Maven, control de versiones, pruebas automáticas, integración continua o entornos en la nube, que se conectan con él mediante extensiones.
 
-* Compilador.
+En esta unidad vamos a **evaluar** entornos de desarrollo, es decir, a conocerlos y usarlos para poder elegir el adecuado:
 
-* Intérprete.
-
-* Depurador.
-
-* Editor de interfaces gráficos.
-
-En la actualidad, el IDE no es más que una pieza más de una biosfera mucho más amplia, aunque muchas pueden encajarse en dicho IDE. Hablamos de gestores de control de versiones de código, testing, despliegue, etc.
-
-Veamos de qué va todo esto.
-
-Los primeros entornos de desarrollo integrados nacieron a principios de los años 70, y se popularizaron en la década de los 90. Tienen el objetivo de ganar fiabilidad y tiempo en los proyectos de software. Proporcionan al programador una serie de componentes con la misma interfaz gráfica, con la consiguiente comodidad, aumento de eficiencia y reducción de tiempo de codificación.
-
-Normalmente, un IDE está dedicado a un determinado lenguaje de programación. No obstante, las últimas versiones de los IDE tienden a ser compatibles con varios lenguajes (por ejemplo: Eclipse, NetBeans, Microsoft Visual Studio, etc.) mediante la instalación de plugins adicionales.
-
-En este tema, nuestro interés se centra en conocer los entornos de desarrollo, los tipos, en función de su licencia y del lenguaje de programación hacia el cual están enfocados.
+* **Conocer** qué es un IDE, cómo se organiza y qué tienen en común y en qué se diferencian los más usados.
+* **Instalarlos**, libres y propietarios, y mantenerlos al día configurando sus actualizaciones.
+* **Personalizarlos y ampliarlos** con módulos y extensiones, y **automatizar** tareas con herramientas de construcción.
+* **Generar ejecutables** de varios lenguajes con un mismo entorno, y de un mismo código con varios entornos.
 
 ## Datos de la unidad
 
@@ -57,15 +46,15 @@ Instalación y uso de entornos de desarrollo:
 
 | File                                                                                                                                                                                          | Descripción                                                                                                                                                         | Criterios                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/1. El IDE\|1. El IDE]]                                                                                                                             | ...                                                                                                                                                                 | <ul><li>RA2.g</li></ul>                                                         |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/2. Estructura de un IDE\|2. Estructura de un IDE]]                                                                                                 | ...                                                                                                                                                                 | <ul><li>RA2.g</li></ul>                                                         |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/3. Configuración y personalización de entornos de desarrollo\|3. Configuración y personalización de entornos de desarrollo]]                       | ...                                                                                                                                                                 | <ul><li>RA2.c</li></ul>                                                         |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/4. Módulos, plugins y extensiones\|4. Módulos, plugins y extensiones]]                                                                             | ...                                                                                                                                                                 | <ul><li>RA2.b</li></ul>                                                         |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/5. Herramientas de construcción (Build Tools) y gestión de dependencias\|5. Herramientas de construcción (Build Tools) y gestión de dependencias]] | ...                                                                                                                                                                 | <ul><li>RA2.c</li><li>RA2.e</li></ul>                                           |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/6. Otras herramientas\|6. Otras herramientas]]                                                                                                     | ...                                                                                                                                                                 | <ul><li>RA2.c</li><li>RA2.g</li></ul>                                           |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/1. El IDE\|1. El IDE]]                                                                                                                             | Qué es un IDE, cómo han evolucionado los entornos de desarrollo y qué características tienen los más usados.                                                        | <ul><li>RA2.g</li></ul>                                                         |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/2. Estructura de un IDE\|2. Estructura de un IDE]]                                                                                                 | Los menús y paneles típicos de un IDE y para qué sirve cada uno.                                                                                                    | <ul><li>RA2.g</li></ul>                                                         |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/3. Configuración y personalización de entornos de desarrollo\|3. Configuración y personalización de entornos de desarrollo]]                       | Opciones de configuración de un proyecto y personalización del entorno de desarrollo.                                                                               | <ul><li>RA2.c</li></ul>                                                         |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/4. Módulos, plugins y extensiones\|4. Módulos, plugins y extensiones]]                                                                             | Qué son los módulos, plugins y extensiones de un IDE y qué tipos de funcionalidades añaden.                                                                         | <ul><li>RA2.b</li></ul>                                                         |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/5. Herramientas de construcción (Build Tools) y gestión de dependencias\|5. Herramientas de construcción (Build Tools) y gestión de dependencias]] | Herramientas de construcción como Maven o npm: gestión de dependencias, automatización de tareas y generación de artefactos.                                        | <ul><li>RA2.c</li><li>RA2.e</li></ul>                                           |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/6. Otras herramientas\|6. Otras herramientas]]                                                                                                     | El terminal y las herramientas CLI, la integración y entrega continua (CI/CD) y los IDE en la nube y entornos en contenedores.                                      | <ul><li>RA2.c</li><li>RA2.g</li></ul>                                           |
 | [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/7. Entornos de desarrollo en la práctica\|7. Entornos de desarrollo en la práctica]]                                                               | Guía práctica para instalar IDE libres y propietarios, configurar sus actualizaciones, añadir y quitar extensiones y generar ejecutables con uno o varios entornos. | <ul><li>RA2.a</li><li>RA2.b</li><li>RA2.d</li><li>RA2.e</li><li>RA2.f</li></ul> |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/8. Referencias\|8. Referencias]]                                                                                                                   | ...                                                                                                                                                                 | \-                                                                              |
-| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/9. Anexos\|9. Anexos]]                                                                                                                             | ...                                                                                                                                                                 | <ul><li>RA2.c</li></ul>                                                         |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/8. Referencias\|8. Referencias]]                                                                                                                   | Fuentes y recursos de la unidad.                                                                                                                                    | \-                                                                              |
+| [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/9. Anexos\|9. Anexos]]                                                                                                                             | Ejemplos de un pipeline de GitHub Actions y de un fichero devcontainer.json.                                                                                        | <ul><li>RA2.c</li></ul>                                                         |
 
 { .block-language-dataview}
 

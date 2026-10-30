@@ -1,43 +1,93 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","tags":["junit","pruebas","test"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Pruebas, optimización y documentación]]","descripcion":"...","orden":13,"tags":["junit","pruebas","test"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-05/anexos/","permalink":"/apuntes/1-dam-ed/unidad-05/anexos/","dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Optimización, control de versiones e integración continua]]","descripcion":"Ejemplo de fichero .gitignore para un proyecto Maven.","orden":8,"criterios":["RA4.f"]}}
 ---
 
 
+Índice:
 ```table-of-contents
 ```
 
 ---
 
-## Anexo i. Algoritmo adivinador de número
 
-Código Java del algoritmo de [[Asignaturas/1DAM_ED/Apuntes/Unidad 04/4. Pruebas de caja blanca - análisis estructural#4.4. Caminos imposibles\|camino imposible]]:
+## Anexo i - Ejemplos de `.gitignore` en proyecto Maven
 
-```java
-public static void main(String[] args) {
-   Scanner leerDeTeclado = new Scanner(System.in);
-   int numeroSecreto = (new Random()).nextInt(1, 101);
-   int intentos = 0;
-   int numeroTentativa = 0;
-   do {
-       System.out.println("Introduzca un número: ");
-       numeroTentativa = leerDeTeclado.nextInt();
+Este fichero .gitignore debe estar en la carpeta raíz del proyecto, donde está el fichero pom.xml. Se ha creado para trabajar con él desde Eclipse, Netbeans y VSCode.
 
-       if (numeroTentativa < numeroSecreto) {
-           System.out.println("Debe ser mayor.");
-       }
-       else if (numeroTentativa > numeroSecreto) {
-           System.out.println("Debe ser menor.");
-       }
-       intentos++;
-   } while (numeroTentativa != numeroSecreto);
+```bash
+# ==========================================
+# GITIGNORE PARA PROYECTO MAVEN (DAM)
+# Compatible con Eclipse y NetBeans
+# ==========================================
 
-   System.out.println("Enhorabuena! Has acertado en " + intentos + " intentos.");
-   leerDeTeclado.close();
-}
+### --- MAVEN ---
+# Ignora la carpeta donde se guarda el código compilado y los .jar/.war
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Evita subir el "wrapper" de maven si no es necesario
+.mvn/wrapper/maven-wrapper.jar
+
+### --- ECLIPSE ---
+# Ficheros de metadatos y configuración del proyecto en Eclipse
+.metadata/
+.project
+.classpath
+.settings/
+*.launch
+bin/
+.externalToolBuilders/
+
+# Específico de plugins de Eclipse (como el de Maven)
+.m2e/
+.factorypath
+
+### --- NETBEANS ---
+# Carpeta donde NetBeans guarda la configuración local del usuario
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+# Si usas el sistema de compilación propio de NetBeans (no Maven)
+build/
+
+### --- VISUAL STUDIO CODE ---
+# Configuraciones del espacio de trabajo
+.vscode/
+# Historial local de VS Code (evita basura innecesaria)
+.history/
+# Ficheros de extensiones y workspace
+*.code-workspace
+# Diccionario de usuario para el corrector
+.vscode/spellright.dict
+
+### --- SISTEMA OPERATIVO ---
+# Ficheros temporales de Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ficheros temporales de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### --- LOGS Y TEMPORALES ---
+*.log
+temp/
+tmp/
 ```
+
 
 
 
 ---
 
-<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias documentales.md" data-href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias documentales.md" href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias documentales.md" class="internal-link" target="_blank" rel="noopener nofollow">Referencias documentales</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Pruebas, optimización y documentación.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Pruebas, optimización y documentación.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Pruebas, optimización y documentación.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 04 - Pruebas, optimización y documentación</a></span></p>
+<p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Apuntes/Unidad 04/7. Integración continua.md" data-href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/7. Integración continua.md" href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/7. Integración continua.md" class="internal-link" target="_blank" rel="noopener nofollow">7. Integración continua</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Optimización, control de versiones e integración continua.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Optimización, control de versiones e integración continua.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Optimización, control de versiones e integración continua.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 04 - Optimización, control de versiones e integración continua</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias.md" data-href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias.md" href="Asignaturas/1DAM_ED/Apuntes/Unidad 04/Referencias.md" class="internal-link" target="_blank" rel="noopener nofollow">Referencias</a> ➡️</span></p>
