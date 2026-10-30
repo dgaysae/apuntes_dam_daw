@@ -879,7 +879,7 @@ A partir del **2018** Oracle decide replantear el ciclo de lanzamientos. Hasta e
 > [!info] Para saber más... 
 > Antes el JRE y el JDK se distribuían por separado. Desde Java 11, todo está incluido en un solo paqute: el JDK.
 > 
-> Si quieres saber más, consulta [[Asignaturas/1DAM_ED/Apuntes/Unidad 02/Unidad 02/4. Codificación#4.7.1. Funcionamiento del entorno de ejecución\|las notas del módulo de Entornos de Desarrollo]].
+> Si quieres saber más, consulta [[4. Codificación#4.7.1. Funcionamiento del entorno de ejecución\|las notas del módulo de Entornos de Desarrollo]].
 
 ## 7.2. Características principales de Java
 
