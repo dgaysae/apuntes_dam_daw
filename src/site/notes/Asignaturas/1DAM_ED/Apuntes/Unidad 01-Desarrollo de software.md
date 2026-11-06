@@ -1745,7 +1745,6 @@ Así, el código de una clase es **reutilizable** en ese mismo programa o en otr
 
 [^6]:  A la hora de diseñar la clase para un tipo de objeto, debemos preguntarnos **qué hace** y **cómo lo hace**. Para ello se utilizan herramientas como el **lenguaje de modelado <abbr title="Unified Modeling Language">UML</abbr>**, que se estudiará más adelante en este módulo.
 
-
 # 6. Ciclo de vida del software
 
 Entendemos por **desarrollo del software** a todo el proceso desde que se concibe una idea hasta que un programa está implementado en el ordenador y funcionando.
@@ -2400,6 +2399,7 @@ Distinguimos tres grandes documentos en el desarrollo de software:
 | **¿A quién va dirigido?**  | Al **personal técnico** en informática (analistas y programadores). | A los **usuarios** que van a usar la aplicación (clientes). | Al **personal informático** responsable de la instalación, en colaboración con los usuarios que van a usar la aplicación (clientes). |
 | **¿Cuál es su objetivo?**  | **Facilitar** un correcto desarrollo, realizar correcciones en los programas y permitir un mantenimiento futuro. | Dar a los **usuarios** finales toda la **información** necesaria para utilizar la aplicación. | Dar toda la **información** necesaria para garantizar que la **implantación de la aplicación** se realice de forma segura, conﬁable y precisa. |
 
+
 # 13. Explotación
 
 Después de las fases anteriores y una vez que las pruebas indican que el software es plenamente funcional y ﬁable (no se detectan errores) y se han documentado todas las fases, el siguiente paso es la explotación. 
@@ -2539,7 +2539,7 @@ jobs:
       - run: mvn --batch-mode package   # compila y ejecuta las pruebas
 ```
 
-Las pruebas se estudian en la unidad de pruebas, y la integración continua, en la de optimización y control de versiones.
+Las pruebas se estudian en la [[Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración\|Unidad 03 - Pruebas y depuración]], y la integración continua, en la [[Asignaturas/1DAM_ED/Unidades/Unidad 04/Unidad 04 - Optimización, control de versiones e integración continua\|Unidad 04 - Optimización, control de versiones e integración continua]].
 
 ### 15.1.5. Asistentes de inteligencia artificial
 
@@ -2669,3 +2669,7 @@ Para elegir una herramienta no basta con que sea popular. Estos criterios ayudan
 ## Requisitos funcionales / no funcionales
 
 * Tech, M. (2025, 11 mayo). ***Requerimientos Funcionales y No Funcionales: qué son, en qué se diferencian y por qué son clave en el diseño de software***. Mentores Tech. [https://www.mentorestech.com/resource-blog-content/requerimientos-funcionales-y-no-funcionales-que-son-en-que-se-diferencian-y-por-que-son-clave-en-el-diseno-de-software](https://www.mentorestech.com/resource-blog-content/requerimientos-funcionales-y-no-funcionales-que-son-en-que-se-diferencian-y-por-que-son-clave-en-el-diseno-de-software)
+
+---
+
+<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 01 - Desarrollo de software</a></span></p>
