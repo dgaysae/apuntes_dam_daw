@@ -47,8 +47,8 @@ A continuación se enumeran los ciclos en los que se han hecho aportaciones, tan
 
 | File                   | Ciclo             | Descripción                                                                                                                     |
 | ---------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [[Ciclos/DAW\|DAW]] | [[CFGS\|CFGS]] | Este ciclo de grado superior está enfocado al desarrollo de software en distintas plataformas (escritorio, móvil o incluso web) |
 | [[Ciclos/DAM\|DAM]] | [[CFGS\|CFGS]] | Este ciclo de grado superior está enfocado al desarrollo de software en distintas plataformas (escritorio, móvil o incluso web) |
+| [[Ciclos/DAW\|DAW]] | [[CFGS\|CFGS]] | Este ciclo de grado superior está enfocado al desarrollo de software en distintas plataformas (escritorio, móvil o incluso web) |
 
 { .block-language-dataview}
 
