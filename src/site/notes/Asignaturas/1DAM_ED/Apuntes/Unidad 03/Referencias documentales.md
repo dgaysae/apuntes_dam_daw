@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-04/referencias-documentales/","permalink":"/apuntes/1-dam-ed/unidad-04/referencias-documentales/","tags":["junit","pruebas","test"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración]]","descripcion":"...","orden":14,"tags":["junit","pruebas","test"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-04/referencias-documentales/","permalink":"/apuntes/1-dam-ed/unidad-04/referencias-documentales/","tags":["junit","pruebas","test"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración]]","descripcion":"Fuentes y recursos de la unidad (documentación, libros y vídeos) sobre pruebas de software, JUnit, Maven, Mockito y gestión de incidencias.","orden":14,"tags":["junit","pruebas","test"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","tags":["junit","pruebas","test"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración]]","descripcion":"...","orden":15,"criterios":["RA3.b"],"tags":["junit","pruebas","test"]}}
+{"dg-publish":true,"dg-permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","permalink":"/apuntes/1-dam-ed/unidad-04/anexos/","tags":["junit","pruebas","test"],"dg-note-properties":{"unidad":"[[Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración]]","descripcion":"Material complementario de la unidad: el algoritmo del adivinador de números, usado en los ejemplos de pruebas de caja blanca.","orden":15,"criterios":["RA3.b"],"tags":["junit","pruebas","test"]}}
 ---
 
 
