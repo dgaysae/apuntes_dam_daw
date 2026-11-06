@@ -2670,6 +2670,3 @@ Para elegir una herramienta no basta con que sea popular. Estos criterios ayudan
 
 * Tech, M. (2025, 11 mayo). ***Requerimientos Funcionales y No Funcionales: qué son, en qué se diferencian y por qué son clave en el diseño de software***. Mentores Tech. [https://www.mentorestech.com/resource-blog-content/requerimientos-funcionales-y-no-funcionales-que-son-en-que-se-diferencian-y-por-que-son-clave-en-el-diseno-de-software](https://www.mentorestech.com/resource-blog-content/requerimientos-funcionales-y-no-funcionales-que-son-en-que-se-diferencian-y-por-que-son-clave-en-el-diseno-de-software)
 
----
-
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 01/Unidad 01 - Desarrollo de software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 01 - Desarrollo de software</a></span></p>
