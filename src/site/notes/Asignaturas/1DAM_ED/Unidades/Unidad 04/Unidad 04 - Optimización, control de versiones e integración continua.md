@@ -66,6 +66,12 @@ Optimización y documentación:
 { .block-language-dataview}
 
 
+## Unidad completa
+
+En el siguiente enlace tienes la unidad completa en una sola página, por si quieres imprimirla o pasarla a PDF:
+
+[[Asignaturas/1DAM_ED/Apuntes/Unidad 04-Optimización, control de versiones e integración continua\|Unidad 04-Optimización, control de versiones e integración continua]]
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 03/Unidad 03 - Pruebas y depuración.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 03 - Pruebas y depuración</a> | 🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Libros/Entornos de desarrollo (1º DAM, 1º DAW).md" data-href="Libros/Entornos de desarrollo (1º DAM, 1º DAW).md" href="Libros/Entornos de desarrollo (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Entornos de desarrollo (1º DAM, 1º DAW)</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_ED/Unidades/Unidad 05/Unidad 05 - Diagramas de clases.md" data-href="Asignaturas/1DAM_ED/Unidades/Unidad 05/Unidad 05 - Diagramas de clases.md" href="Asignaturas/1DAM_ED/Unidades/Unidad 05/Unidad 05 - Diagramas de clases.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 05 - Diagramas de clases</a> ➡️</span></p>
