@@ -5,7 +5,7 @@
 
 En la [[Asignaturas/1DAM_ED/Unidades/Unidad 02/Unidad 02 - Entornos de desarrollo\|Unidad 02]] aprendimos a escribir y a construir programas con un IDE. Pero que un programa compile no significa que funcione: puede dar resultados incorrectos, fallar con ciertos datos o dejar de funcionar cuando cambiamos otra parte del código. Para comprobarlo, el código se somete a **pruebas**, y cuando algo falla, se busca la causa con el **depurador**.
 
-Probar no es «ejecutar el programa a ver qué pasa»: es una tarea que se **planifica**, con casos de prueba diseñados para encontrar errores, y que hoy se **automatiza** para repetirla cada vez que el código cambia. Así, los errores se detectan pronto, cuando corregirlos es más barato.
+Probar no es «ejecutar el programa a ver qué pasa». Tampoco es inundar el código de `System.out.pringln` mostrando resultados por todas partes. Es una tarea que se **planifica**, con casos de prueba diseñados para encontrar errores, y que hoy se **automatiza** para repetirla cada vez que el código cambia. Así, los errores se detectan pronto, cuando corregirlos es más barato.
 
 En esta unidad vamos a **verificar** el funcionamiento de programas diseñando y realizando pruebas:
 

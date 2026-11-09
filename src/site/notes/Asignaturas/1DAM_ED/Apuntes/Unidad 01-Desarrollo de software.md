@@ -1229,12 +1229,13 @@ En cualquier otro caso, indicará que el día no es correcto.
 > Consulta en las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias\|Referencias]] de esta unidad el apartado de   [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Condiciones en pseudocódigo SI - IF]] para pseudocódigo.
 > Para Java, puedes consultar el apartado [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Estructuras de control condicionales\|Java]]
 
+[^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/2. Estructura secuencial.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/2. Estructura secuencial.md" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/2. Estructura secuencial.md" class="internal-link" target="_blank" rel="noopener nofollow">2. Estructura secuencial</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - Estructuras de control. Calidad del software</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/4. Estructura repetitiva (bucles).md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/4. Estructura repetitiva (bucles).md" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/4. Estructura repetitiva (bucles).md" class="internal-link" target="_blank" rel="noopener nofollow">4. Estructura repetitiva (bucles)</a> ➡️</span></p>
 
 
-[^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
 
 </div></div>
 
@@ -1682,11 +1683,13 @@ Observa que, en esta ocasión, ha sido más sencillo resolver el problema con un
 > En las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias\|Referencias]] puedes ver el funcionamiento en pseudocódigo los bucles apartado de [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)\|MIENTRAS (WHILE)]], [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Bucle DO - WHILE pseudocódigo\|DO - WHILE]] y [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Bucle PARA pseudocódigo (FOR)\|PARA (FOR)]] para pseudocódigo.
 > Para Java, puedes consultar el apartado [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Estructuras de control iterativas - bucles\|bucles]].
 
+
+[^1]: Hay que evitar el operador "==" en las condiciones de salida de los bucles, sobre todo si estamos trabajando con números reales.
+
 ---
 
 <p><span>⬅️ <strong>Anterior:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/3. Estructura selectiva (condicional).md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/3. Estructura selectiva (condicional).md" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/3. Estructura selectiva (condicional).md" class="internal-link" target="_blank" rel="noopener nofollow">3. Estructura selectiva (condicional)</a> | 🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" href="Asignaturas/1DAM_Programación/Unidades/Unidad 02/Unidad 02 - Estructuras de control. Calidad del software.md" class="internal-link" target="_blank" rel="noopener nofollow">Unidad 02 - Estructuras de control. Calidad del software</a> | <strong>Siguiente:</strong> <a data-tooltip-position="top" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/5. Instrucciones de salto.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/5. Instrucciones de salto.md" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 02/5. Instrucciones de salto.md" class="internal-link" target="_blank" rel="noopener nofollow">5. Instrucciones de salto</a> ➡️</span></p>
 
-[^1]: Hay que evitar el operador "==" en las condiciones de salida de los bucles, sobre todo si estamos trabajando con números reales.
 
 </div></div>
 

@@ -71,10 +71,10 @@ Por lo tanto, **los programas estructurados deben limitarse a usar tres estructu
 
 La programación orientada a objetos, como vimos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/4. Estilos y Paradigmas\|la Unidad 01]], es una evolución de la programación estructurada clásica en la que los algoritmos y los datos se encapsulan en clases que más tarde se instancia en objetos que interactúan entre sí. Pero lo que hay dentro de esos algoritmos siguen siendo programas estructurados. Es decir, la POO es un superconjunto de la programación estructurada clásica, y por eso es pertinente que, en este punto estudiemos esas estructuras detenidamente.
 
+
 [^1]: Dijkstra, pese a ser físico, se convirtió en uno de los más importantes científicos de la computación hasta su muerte en 2002. Una de sus frases más famosas es: "la pregunta de si un computador puede pensar no es más interesante que la pregunta de si un submarino puede nadar"
 
 [^2]: Böhm, C. y Jacopini, G. (1966). Flow diagrams, Turing machines and languages with only two formation rules. *Communications of the ACM, 9*(5), 366-371. https://doi.org/10.1145/355592.365646
-
 
 # 2. Estructura secuencial
 
@@ -743,7 +743,6 @@ En cualquier otro caso, indicará que el día no es correcto.
 > Consulta en las [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias\|Referencias]] de esta unidad el apartado de   [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Condiciones en pseudocódigo SI - IF\|Condiciones en pseudocódigo SI - IF]] para pseudocódigo.
 > Para Java, puedes consultar el apartado [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/Referencias#Estructuras de control condicionales\|Java]]
 
-
 [^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
 
 
@@ -1183,7 +1182,6 @@ Observa que, en esta ocasión, ha sido más sencillo resolver el problema con un
 
 # 5. Instrucciones de salto
 
-
 ¡Aviso! ¡No haga esto en sus casas sin ayuda de un profesional\! El uso inadecuado de estas técnicas puede acarrear el malfuncionamiento del sistema y la pérdida de miles de euros. 
 
 No es broma. Las instrucciones de salto están prohibidas. Todo aquel que las use injustificadamente será suspendido. 
@@ -1273,11 +1271,101 @@ El programa mostrará lo siguiente:
 
 Teóricamente, `return` debería ser la última instrucción de un método que devuelve algún valor. LA ÚLTIMA. Por tanto, es recomendable usar `return` con cuidado. Si te tienta ponerlo en mitad del código, varias veces y con distintos valores según determinadas condiciones, puedes hacerlo pero con mucho cuidado. Generalmente se solía asumir que cada algoritmo debería tener un único punto de entrada y un único punto de salida.
 
-> [!note] Nota 
-> En la actualidad se utiliza mucho en **cláusulas guardián** (como veremos más adelante), para validar determinadas condiciones al principio de un bloque de código y, de no cumplirlas, se hace un `return` y el bloque de código finaliza.
+Esta instrucción de salto se verá más adelante con más detalle, ya que es la que permite finalizar la ejecución de una **función** (o **método**), que aún no hemos visto. De momento, nos basta con saber que nuestro `main` también es un método y que, por tanto, `return` también funciona dentro de él.
 
-Esta instrucción de salto se verá más adelante con más detalle, ya que es la que permite finalizar la ejecución de una **función**, que aún no hemos visto. 
+### 5.3.1. `return` en un método `void`
 
+Un método `void` es aquel que **no devuelve ningún valor**: hace su trabajo (mostrar algo por pantalla, modificar datos…) y termina. Como `public static void main(String[] args)`.
+
+En estos métodos, `return` se puede escribir **solo, sin ningún valor detrás**:
+
+```java
+return;
+```
+
+Su efecto es **terminar inmediatamente la ejecución del método**. Las instrucciones que haya a continuación no se ejecutan y el programa continúa por donde se llamó al método (si es el `main`, el programa termina).
+
+> [!example] Ejemplo 3 - return en un método void
+> ```java
+> import java.util.Scanner;
+>
+> public class EjemploReturn {
+>     public static void main(String[] args) {
+>         Scanner sc = new Scanner(System.in);
+>         System.out.print("Introduce tu edad: ");
+>         int edad = sc.nextInt();
+>
+>         if (edad < 0) {
+>             System.out.println("La edad no puede ser negativa.");
+>             return; // Termina el main: no se ejecuta nada más
+>         }
+>
+>         System.out.println("Dentro de 10 años tendrás " + (edad + 10) + " años.");
+>     }
+> }
+> ```
+> Si el usuario introduce `-3`, el programa muestra el mensaje de error y termina, sin llegar al cálculo final. Si introduce un valor válido, el `if` no se cumple y el programa sigue con normalidad.
+
+> [!warning] Cuidado
+> - En un método `void`, `return` **no puede llevar valor**: `return 5;` provoca un error de compilación.
+> - Cualquier instrucción escrita justo después de un `return` en el mismo bloque es **código inalcanzable** (*unreachable code*), y Java tampoco lo compila.
+> - Poner `return;` como última línea de un método `void` es innecesario: el método termina igualmente al llegar a su `}`.
+
+### 5.3.2. Cláusulas guardián
+
+Una **cláusula guardián** (*guard clause*) es una comprobación que se coloca **al principio** de un método (o bloque de código) para descartar los casos no válidos o especiales y **salir en cuanto se detectan**, normalmente con `return` (más adelante veremos que también se puede salir lanzando una excepción).
+
+El ejemplo anterior ya usa una: `if (edad < 0) { …; return; }` «vigila la puerta» del método y solo deja pasar los datos correctos.
+
+#### ¿Por qué se usan?
+
+Comparemos dos versiones del mismo programa, que calcula el precio de una entrada a partir de la edad:
+
+> [!example] Ejemplo 4 - Sin cláusulas guardián (ifs anidados)
+> ```java
+> if (edad >= 0) {
+>     if (edad <= 120) {
+>         if (edad < 12) {
+>             System.out.println("Precio: 5 €");
+>         } else {
+>             System.out.println("Precio: 9 €");
+>         }
+>     } else {
+>         System.out.println("Edad demasiado alta.");
+>     }
+> } else {
+>     System.out.println("La edad no puede ser negativa.");
+> }
+> ```
+
+> [!example] Ejemplo 5 - Con cláusulas guardián
+> ```java
+> // Cláusulas guardián: descartamos primero los casos no válidos
+> if (edad < 0) {
+>     System.out.println("La edad no puede ser negativa.");
+>     return;
+> }
+> if (edad > 120) {
+>     System.out.println("Edad demasiado alta.");
+>     return;
+> }
+>
+> // A partir de aquí, sabemos que la edad es válida
+> if (edad < 12) {
+>     System.out.println("Precio: 5 €");
+> } else {
+>     System.out.println("Precio: 9 €");
+> }
+> ```
+
+Ambas versiones hacen lo mismo, pero la segunda **evita el anidamiento** de `if`, dejando un código «plano», que no va desplazándose a la derecha (lo que a veces se llama *código flecha* o *arrow code*). También **separa la validación de la lógica principal**, cerciorándose de descartar los errores al principio y, si pasan las cláusulas guardián, se llega al código de la lógica de la función sin `else` lejanos. Además **cada error se trata junto a su condición**, en lugar de quedar al final, lejos del `if` que lo provoca.
+
+En otras palabras, las cláusulas guardián se recomiendan para **validar los datos de entrada** (parámetros, valores leídos por teclado…) antes de trabajar con ellos, para tratar **casos especiales o triviales** que se resuelven de inmediato (una lista vacía, un divisor igual a 0…) y **siempre al principio** del método, antes de la lógica principal.
+
+> [!tip] Buenas prácticas
+> - Escribe la condición en positivo respecto al error: «si el dato es incorrecto, salgo», no «si el dato es correcto, sigo». De esta forma, al leerla, no genera confusión y deja claro cuándo se sale.
+> - Procura que cada cláusula sea **lo más corta posible**: una comprobación, un mensaje (o una acción) y `return`.
+> - **No** repartas `return` por la mitad del algoritmo: fuera de las cláusulas guardián iniciales, sigue valiendo la regla de un único punto de salida.
 
 # 6. Reglas de estilo
 
@@ -1430,7 +1518,7 @@ flowchart TD
 ```
 
 > [!TIP] Diagramas de clases
-> Los diagramas de clases los veremos al estudiar la programación orientada a objetos (Unidades 03 y 04). La elaboración de requisitos, diagramas y manuales se trata en detalle en [[Libros/Entornos de desarrollo (1º DAM, 1º DAW)\|Entornos de desarrollo (1º DAM, 1º DAW)]].
+> Los diagramas de clases los veremos al estudiar la programación orientada a objetos en unidades posteriores. La elaboración de requisitos, diagramas y manuales se trata en detalle en el módulo de [[Libros/Entornos de desarrollo (1º DAM, 1º DAW)\|Entornos de desarrollo (1º DAM, 1º DAW)]].
 
 ## 6.3. Estilo de escritura
 
@@ -1565,7 +1653,6 @@ Por último, señalar que Java **distingue entre mayúsculas y minúsculas**, es
 
 [^2]: Santander, B. T. W. (2024, enero 8). 5 consejos de programación para escribir mejor código. Medium. <https://medium.com/be-tech-with-santander/5-consejos-de-programaci%C3%B3n-para-escribir-mejor-c%C3%B3digo-3ea7414fefc8>
 
-
 # 7. Excepciones
 
 La mejor forma de entender qué es una excepción es que una nos explote en la cara. Intenta ejecutar el siguiente código:
@@ -1659,18 +1746,19 @@ class Test {
     public static void main(String[] args) {  
         int dividendo = 4;
 	    int divisor = 0;
-	    boolean error = false;
+	    int cociente = 0;
+	    boolean hayErrores = false;
         try {  
-	        int cociente = dividendo / divisor;
+	        cociente = dividendo / divisor;
 	    
     		System.out.println(dividendo + " / " + divisor + " = " + cociente);  
         }  
         catch (ArithmeticExcepcion e) {  
             System.out.println("Se ha producido un error al hacer la división");  
-            error = true;
+            hayErrores = true;
         }
         finally {
-            if (error) {
+            if (hayErrores) {
                 System.out.println("No hay cociente para esta operación");
             }
             else {
@@ -1691,33 +1779,44 @@ Pero, ¿y si la excepción no es la `ArithmeticException`? ¿Qué ocurre entonce
 Otra regla, más intuitiva, es que la secuencia de `catch` debe hacerse empezando por las excepciones más específicas y acabando por las más genéricas. Así, para el ejemplo anterior, podríamos decir que primero capturamos una `ArithmeticExcepcion` y, si ocurre otra distinta que ahora mismo desconocemos, capturamos cualquier excepción (sea la que sea) indicando que será la genérica `Exception`:
 
 ```java
-class Test {  
-    public static void main(String[] args) {  
-        int dividendo = 4;
-	    int divisor = 0;
-	    boolean error = false;
-        try {  
-	        int cociente = dividendo / divisor;
-	    
-    		System.out.println(dividendo + " / " + divisor + " = " + cociente);  
-        }  
-        catch (ArithmeticExcepcion e) {  
-            System.out.println("Se ha producido un error al hacer la división"); 
-            error = true;
-        }
-        catch (Excepcion e) {  
-            System.out.println("Se ha producido un error inesperado");  
-            error = true;
-        }
-        finally {
-            if (error) {
-                System.out.println("La operación no se ha realizado.");
+public class Excepciones {
+
+    public static void main(String[] args) {
+
+        Scanner entradaTeclado = new Scanner(System.in);
+        int numero1,
+                numero2;
+        double division = 0;
+        boolean hayErrores = true;
+
+        try {
+            System.out.println("Introduce un número: ");
+            numero1 = entradaTeclado.nextInt();
+
+            System.out.println("Introduce otro número: ");
+            numero2 = entradaTeclado.nextInt();
+            division = numero1 / numero2;
+            hayErrores = false;
+        } catch (ArithmeticException e) {
+            System.out.println("ERROR! No se ha realizado la operación.");
+            System.out.println("Motivo: " + e.getMessage());
+            //e.printStackTrace();
+        } catch (InputMismatchException e) {
+            System.out.println("ERROR! Debe introducir números enteros.");
+            System.out.println("El error es: " + e.getMessage());
+            //e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("Error genérico!!!!!!!!!!");
+        } finally {
+            if (!hayErrores) {
+                System.out.println("División = " + division);
             }
             else {
-                System.out.println("Cociente de la división: " + cociente);  
+                System.out.println("Operación abortada!");
             }
-         }
-    }  
+        }
+        entradaTeclado.close();
+    }
 }
 ```
 
@@ -1774,7 +1873,7 @@ Podemos personalizar excepciones de dos formas:
 1. Usando una excepción existente y dándole nuestro mensaje personalizado.
 2. Crear una excepción, en una clase propia.
 
-Es posible que este apartado resulte algo confuso, pero se irán aclarando con el paso del tiempo.
+Es posible que este apartado resulte algo confuso, pero se irá aclarando con el paso del tiempo.
 
 ### 7.2.1. Personalizar mensajes de excepciones existentes
 
@@ -2066,7 +2165,7 @@ Antes de publicar un programa, es habitual distribuir versiones de prueba:
 
 ## 8.5. Recomendaciones para las pruebas
 
-* Lo ideal es que las pruebas las haga **alguien distinto** de quien ha escrito el código: el autor tiende a probar solo lo que sabe que funciona.
+* Lo ideal es que las pruebas de nuestro código **no las hagamos nosotros mismos ni nadie que haya tocado el código**. Es imprescindible que las haga **alguien que no sepa cómo está hecho**, ya que quien lo programa tiende a probar solo lo que sabe que funciona.
 * **Diseña y apunta los casos de prueba** antes de ejecutarlos, con el resultado que esperas.
 * Donde aparece un error, suele haber más: revisa con especial cuidado esa parte del código.
 * Si las pruebas no encuentran ningún error, desconfía: probablemente las pruebas no son buenas.
@@ -2541,6 +2640,7 @@ Fíjate en que el segundo error estaba oculto por el primero: con `i < 10`, la m
 > - **Corregir un error cada vez** y volver a probar.
 > - Cuando lo corrijas, **añadir una prueba** o una aserción (ver [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02/8. Pruebas#8.6. Pruebas en la práctica: Aserciones\|8.6. Aserciones]]) que detecte ese error si vuelve a aparecer.
 
+
 # 10. Ejemplo integrador
 
 Hasta ahora hemos visto cada estructura por separado. En la práctica, cualquier programa real las **combina**: un bucle dentro de otro, una condición dentro de un bucle, un `try-catch` alrededor de una lectura… En este apartado vamos a construir un programa completo paso a paso, como lo haríamos en un proyecto.
@@ -2649,7 +2749,62 @@ Como el número es aleatorio, para probar con comodidad puedes fijarlo temporalm
 > [!WARNING]
 > La tabla deja al descubierto un comportamiento discutible: `0` y `101` se aceptan como intentos aunque estén fuera del rango. ¿Cómo lo modificarías para que no cuenten? Las pruebas sirven precisamente para descubrir estos casos.
 
+
 # Referencias - Material de refuerzo
+
+## Representación de algoritmos
+
+> Aula en la nube. (2022b, septiembre 19). _Representación de algoritmos  ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU
+
+
+## Condiciones en pseudocódigo SI - IF
+
+> Aula en la nube. (3 de octubre de 2021). _1.7 Condiciones en pseudocódigo SI - IF_ [Vídeo]. YouTube. https://youtu.be/tldDbZ9MSoA?si=NYICjUm8hSUW0Vcx
+
+## Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)
+
+> Aula en la nube. (3 de octubre de 2021). _1.8 Tipos de bucles en pseudocódigo (MIENTRAS - WHILE)_ [Vídeo]. YouTube. https://youtu.be/gWYWRs9d_ZI?si=0LrZKFKynyP-o0Er
+
+## Bucle DO - WHILE pseudocódigo
+
+> Aula en la nube. (3 de octubre de 2021). _1.10 Bucle DO - WHILE pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/bRwz1J9hxEg?si=2GHjLB4XMAt-tXc4
+
+## Bucle PARA pseudocódigo (FOR)
+
+> Aula en la nube. (3 de octubre de 2021). _1.11 Bucle PARA pseudocódigo (FOR)_ [Vídeo]. YouTube. https://youtu.be/ijz6rAu5Trw?si=4D86M9L6lcAvYOOf
+
+## Seguimiento de algoritmos
+
+> Aula en la nube. (3 de octubre de 2021). _1.13 Seguimiento de algoritmos_ [Vídeo]. YouTube. https://youtu.be/rH60985e4PM?si=cfBrCKsSnKGRZv2w
+
+## Seguimiento de algoritmos con bucles aninados pseudocódigo
+
+> Aula en la nube. (3 de octubre de 2021). _1.14 Seguimiento de algoritmos con bucles aninados pseudocódigo_ [Vídeo]. YouTube. https://youtu.be/V-WDyYJqPnY?si=Yh2SnDCsBCHbJ1Wo
+
+## JAVA: Recomendaciones al declarar variables
+
+> Aula en la nube. (2022r, octubre 14). _JAVA: Recomendaciones al declarar variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=5EaHrvmoLEk
+
+## Aserciones, pruebas unitarias en JUnit y depuración
+
+> Javi López. (2023, 24 noviembre). _15 - Aserciones, pruebas unitarias en JUnit y depuración_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZKvlY7Zy1j0
+
+
+# Pseudocódigo - Ejercicios resueltos
+
+## Ejercicio bucle MIENTRAS pseudocódigo
+
+> Aula en la nube. (24 de septiembre de 2022). _1.9 Ejercicio bucle MIENTRAS pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=P73Sa4dzvoc
+
+## Ejercicio resueltos pseudocódigo
+
+> Aula en la nube. (26 de septiembre de 2022). _1.12 Ejercicios resueltos pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=3FIomL6wFFM
+
+## PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II
+
+> Aula en la nube. (3 de octubre de 2021). _1.15 PSEUDOCÓDIGO: Ejercicios resueltos pseudocódigo II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=ZzFF_aXLO5g
+
+# Java
 
 ## Estructuras de control condicionales
 
@@ -2676,15 +2831,15 @@ Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de contr
 ### Estructuras de control - Sentencias BREAK y CONTINUE
 Aula Informática. (2022k, abril 7). _Programación Java - Estructuras de control - Sentencias BREAK y CONTINUE_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=TkdMO5neby4
 
-## Ejercicios
+# Java - Ejercicios resueltos
 
-### Condicionales
+## Ejercicios - Condicionales
 
 > Aula Informática. (2022f, abril 6). _Programación Java - Ejercicios estructuras condicionales I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=IO6Z2zWfHP8
 
 > Aula Informática. (2022g, abril 6). _Programación Java - Ejercicios estructuras condicionales II_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=lw_lNJp-_VM
 
-### Bucles
+## Ejercicios - Bucles
 
 > Aula Informática. (2022j, abril 7). _Programación Java - Ejercicios estructuras repetitivas I_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=6AhM01XRq4Q
 
