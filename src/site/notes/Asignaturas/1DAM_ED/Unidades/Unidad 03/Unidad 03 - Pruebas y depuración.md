@@ -3,6 +3,18 @@
 ---
 
 
+En la [[Asignaturas/1DAM_ED/Unidades/Unidad 02/Unidad 02 - Entornos de desarrollo\|Unidad 02]] aprendimos a escribir y a construir programas con un IDE. Pero que un programa compile no significa que funcione: puede dar resultados incorrectos, fallar con ciertos datos o dejar de funcionar cuando cambiamos otra parte del código. Para comprobarlo, el código se somete a **pruebas**, y cuando algo falla, se busca la causa con el **depurador**.
+
+Probar no es «ejecutar el programa a ver qué pasa»: es una tarea que se **planifica**, con casos de prueba diseñados para encontrar errores, y que hoy se **automatiza** para repetirla cada vez que el código cambia. Así, los errores se detectan pronto, cuando corregirlos es más barato.
+
+En esta unidad vamos a **verificar** el funcionamiento de programas diseñando y realizando pruebas:
+
+* **Conocer** los tipos de pruebas (funcionales, estructurales, de regresión…) y cuándo se usa cada uno.
+* **Diseñar casos de prueba** con técnicas como las clases de equivalencia, los valores límite o la cobertura del código.
+* **Depurar** con el IDE: puntos de ruptura, ejecución paso a paso y consulta y modificación de variables en tiempo de ejecución.
+* **Automatizar** pruebas unitarias con JUnit y **aislar** los componentes con dobles de prueba.
+* **Documentar** las incidencias detectadas para poder corregirlas.
+
 ## Datos de la unidad
 
 ### RA asociado y criterios de evaluación
