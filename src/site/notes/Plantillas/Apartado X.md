@@ -33,4 +33,4 @@ Lorem ipsun dolor est. Lorem ipsun dolor est. Lorem ipsun. Lorem ipsun dolor est
 
 ---
 
-<p><span>🏠 <strong>Unidad:</strong> <a data-tooltip-position="top" aria-label="Unidad &lt;n&gt; - &lt;Título&gt;" data-href="Unidad &lt;n&gt; - &lt;Título&gt;" href="Unidad &lt;n&gt; - &lt;Título&gt;" class="internal-link" target="_blank" rel="noopener nofollow">Unidad &lt;n&gt; - &lt;Título&gt;</a></span></p>
+<p><span>🏠 <strong>Unidad:</strong> <a class="internal-link" href="Unidad &lt;n&gt; - &lt;Título&gt;" data-href="Unidad &lt;n&gt; - &lt;Título&gt;" aria-label="Unidad &lt;n&gt; - &lt;Título&gt;" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Unidad &lt;n&gt; - &lt;Título&gt;</a></span></p>
