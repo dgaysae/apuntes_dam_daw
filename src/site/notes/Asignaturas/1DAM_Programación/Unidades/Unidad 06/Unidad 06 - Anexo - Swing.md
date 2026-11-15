@@ -56,4 +56,4 @@ Aprenderás cómo construir ventanas, organizar elementos en pantalla, responder
 
 ---
 
-<p><span>🏠 <strong>Libro:</strong> <a data-tooltip-position="top" aria-label="Libros/Programación (1º DAM, 1º DAW).md" data-href="Libros/Programación (1º DAM, 1º DAW).md" href="Libros/Programación (1º DAM, 1º DAW).md" class="internal-link" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a></span></p>
+<p><span>🏠 <strong>Libro:</strong> <a class="internal-link" href="Libros/Programación (1º DAM, 1º DAW).md" data-href="Libros/Programación (1º DAM, 1º DAW).md" aria-label="Libros/Programación (1º DAM, 1º DAW).md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Programación (1º DAM, 1º DAW)</a></span></p>
