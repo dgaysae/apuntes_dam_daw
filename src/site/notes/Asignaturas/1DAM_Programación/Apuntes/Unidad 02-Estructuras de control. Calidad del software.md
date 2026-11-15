@@ -2072,7 +2072,7 @@ Por tanto, recuerda: **las excepciones deben reservarse para casos excepcionales
 
 # 8. Pruebas
 
-Escribir un programa es solo la primera parte de un largo proceso. **¡Jamás confíes en que el código que has escrito va a funcionar como crees!** Debes comprobar que funciona como debe. Y para eso hay que realizar las pruebas necesarias que verifiquen que el programa:
+Escribir un programa es solo la primera parte de un largo proceso. **¡Jamás confíes en que el código que has escrito va a funcionar como crees!** Es más, si funciona a la primera, ¡desconfía! Algo va mal... En cualqueir caso, debes comprobar que funciona como debe realizando las pruebas necesarias que verifiquen que el programa:
 
 * **No tiene errores de ejecución**.
 * **Hace lo que se espera de él**.
@@ -2086,11 +2086,13 @@ Escribir un programa es solo la primera parte de un largo proceso. **¡Jamás co
 Las pruebas persiguen dos objetivos complementarios:
 
 * **Verificación**: comprobar que el programa funciona y no produce errores de ejecución. *¿Estamos construyendo bien el producto?*
-* **Validación**: comprobar que el programa hace lo que pide el cliente (sus requisitos). *¿Estamos construyendo el producto correcto?*
+* **Validación**: comprobar que el programa hace lo que pide el cliente (sus requisitos). *¿El producto hace lo que nos han pedido que haga?*
 
-Las pruebas no se dejan para el final: se hacen **a lo largo de todo el desarrollo**, y sus resultados sirven para corregir el programa sobre la marcha.
+Por eso las pruebas se hacen **a lo largo de todo el desarrollo** (no se dejan para el final) y sus resultados sirven para corregir el programa durante el proceso de desarrollo.
 
 ## 8.2. Tipos de pruebas según el momento
+
+Para esto se usan distintos tipos de pruebas.
 
 | Tipo | Qué se prueba | Cuándo |
 |---|---|---|
@@ -2107,14 +2109,37 @@ En esta unidad haremos sobre todo **pruebas unitarias**: probaremos cada program
 
 ## 8.3. Pruebas de caja negra y de caja blanca
 
-Según cómo se diseñen, las pruebas pueden ser:
+Antes de ver los tipos de pruebas, veamos un caso práctico. Supongamos que nos encargan hacer un método (función) que admita tres números enteros como parámetros de entrada y devuelva el valor máximo de todos ellos.
 
-* De **caja negra**: se prueba un componente a través de sus entradas y salidas, sin mirar cómo funciona por dentro.
-* De **caja blanca**: se prueba un componente estudiando su código, para recorrer todos sus caminos.
+El código podría ser, en un principio, algo así:
+
+```java
+public static int maximo(int a, int b, int c) {
+    if (a > b && a > c) {
+        return a;
+    } else if (b > a && b > c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+```
+
+A primera vista podría parecer correcto, pero vamos a probarlo para certificarlo. Así que lanzamos pruebas con `(1, 2, 3)`, `(3, 2, 1)`,  `(2, 3, 1)` y `(3, 1, 3)` y comprobamos que **en todos los casos devuelve 3**. ¡Funciona! Pero otro miembro del equipo, más experimentado, decide probar tu método con los valores  `maximo(5, 5, 1)` y, ¡oh, sopresa!, **devuelve 1**. Cuando `a` y `b` son iguales, ninguna de las dos primeras condiciones se cumple y el método devuelve `c`.
+
+> [!TIP] La idea clave
+> Tres pruebas que salen bien no demuestran que el programa funciona. **El hecho de que una salga mal demuestra que el algoritmo no funciona.** Por eso hay que saber elegir **qué** probar, para encontrar los errores antes que el usuario.
+
+Y por eso se propusieron estos dos tipos de pruebas:
+
+* De **caja negra**: se prueba un componente a través de sus entradas y salidas, sin mirar cómo funciona por dentro. No vemos el código, no sabemos cómo lo han hecho... simplemente metemos datos y observamos los resultados que devuelve para corroborar que son los esperados.
+* De **caja blanca**: se prueba un componente estudiando su código, para **recorrer todos sus caminos** (cada `if`, cada `else`, cada bucle...). En otras palabras, hacer pruebas de toda o la mayor **cobertura** posible.
 
 ### 8.3.1. Pruebas de caja negra
 
-Se le dan al componente distintos juegos de datos y se comprueba si responde correctamente, **sin mirar el código**. Como no se pueden probar todos los valores posibles, se agrupan en **clases de equivalencia**: conjuntos de datos que el programa debería tratar igual. Basta con probar **un valor de cada clase**.
+Piensa en una **máquina expendedora**: metes monedas, pulsas un botón y compruebas si sale la lata correcta y el cambio justo. No abres la máquina; solo comparas **entradas → salidas** con lo que dice su **especificación**.
+
+Igual que con la máquina, se le dan al componente distintos juegos de datos y se comprueba si responde correctamente, **sin mirar el código**. Como no se pueden probar todos los valores posibles, se agrupan en **clases de equivalencia**: conjuntos de datos que el programa debería tratar igual. Basta con probar **un valor de cada clase de equivalencia**, pero hay que cerciorarse de que las clases de equivalencia están bien definidas.
 
 Por ejemplo, supón que probamos un método que calcula la edad de una persona a partir de su fecha de nacimiento:
 
@@ -2137,11 +2162,70 @@ Además, conviene añadir casos para:
 * **Valores imposibles**, como texto donde se espera un número.
 
 > [!WARNING] Las clases de equivalencia no lo detectan todo
-> La fecha 30/02/2008 pertenece a las clases válidas de las tres columnas, pero no existe. Diseñar buenas clases de equivalencia exige pensar bien en el problema.
+> La fecha 30/02/2008 pertenece a las clases válidas de las tres columnas, pero no existe. **Diseñar buenas clases de equivalencia exige pensar bien en el problema**.
+
+#### Ejemplo: la tarifa de un aparcamiento
+
+Tenemos que probar este método, del que **solo conocemos la especificación**:
+
+> `double tarifaParking(int minutos)`
+> - Los primeros 15 minutos son gratis.
+> - De 16 a 60 minutos: 2 €.
+> - A partir de ahí, 1,50 € por cada hora o fracción extra.
+> - Tope diario: 15 €.
+> - Minutos negativos o más de 1440 (un día): `IllegalArgumentException`.
+
+**Paso 1. Clases de equivalencia.**
+
+| Clase | Rango | ¿Válida? |
+|---|---|---|
+| C1 | `minutos < 0` | No |
+| C2 | 0 – 15 | Sí → 0 € |
+| C3 | 16 – 60 | Sí → 2 € |
+| C4 | 61 – 540 | Sí → 2 € + 1,50 € por hora o fracción |
+| C5 | 541 – 1440 | Sí → tope de 15 € |
+| C6 | `minutos > 1440` | No |
+
+> [!QUESTION] ¿De dónde sale el 540?
+> Nadie ha hablado de 540 minutos en ninguna parte. Entonces ¿de dónde diantre sale ese número? Hay que deducirlo.
+> Si analizamos el problema en detalle veremos que con 8 horas extra se pagan 2€ + 1,5€/h · 8h = 14 €; con 9 serían 15,50 €, que el tope deja en 15 €. Diseñar las clases **obliga a entender el problema**.
+
+**Paso 2. Casos de prueba con valores límite.** Para cada clase probamos sus bordes:
+
+| N.º | Entrada | Esperado | Clase / motivo |
+|---|---|---|---|
+| 1 | -1 | `IllegalArgumentException` | C1, límite |
+| 2 | 0 | 0,00 € | C2, límite inferior |
+| 3 | 15 | 0,00 € | C2, límite superior |
+| 4 | 16 | 2,00 € | C3, límite inferior |
+| 5 | 60 | 2,00 € | C3, límite superior |
+| 6 | 61 | 3,50 € | C4, la «fracción» de 1 minuto |
+| 7 | 120 | 3,50 € | C4, hora exacta |
+| 8 | 121 | 5,00 € | C4, otra fracción |
+| 9 | 540 | 14,00 € | C4, límite superior |
+| 10 | 541 | 15,00 € | C5, empieza el tope |
+| 11 | 1440 | 15,00 € | C5, límite superior |
+| 12 | 1441 | `IllegalArgumentException` | C6, límite |
+
+De infinitos valores posibles hemos pasado a **12 pruebas con sentido**. Los casos 6 y 8 son los que suelen romper los cálculos de «hora o fracción».
+
+Ya podemos lanzar las pruebas con esos datos de entrada y comprobar que, efectivamente, los datos de la columna `Esperado` son los devueltos por ese método. Y, repetimos, todo esto sin saber nada del código.
+
+> [!EXAMPLE] Practica: calificaciones
+> Diseña las clases de equivalencia y al menos 12 casos de prueba para este método:
+>
+> `String calificacion(double nota)`
+> - [0, 5) → `"Insuficiente"` · [5, 6) → `"Suficiente"` · [6, 7) → `"Bien"` · [7, 9) → `"Notable"` · [9, 10] → `"Sobresaliente"`
+> - Fuera de [0, 10] → `IllegalArgumentException`
+>
+> Pistas: la nota es un `double`, así que no basta con probar enteros (¿qué pasa con 4,99?). Y fíjate en qué extremos de cada intervalo están incluidos.
+
+> [!EXAMPLE] Practica: contraseñas
+> Una contraseña válida tiene entre 8 y 16 caracteres. ¿Qué longitudes probarías? No olvides un error típico: la cadena vacía.
 
 ### 8.3.2. Pruebas de caja blanca
 
-Se estudia el código y se diseñan casos de prueba que hagan que **cada camino se ejecute al menos una vez**. Por ejemplo, en este fragmento:
+Ahora somos el mecánico que **abre el capó**: se estudia el código y se diseñan casos de prueba que hagan que **cada camino se ejecute al menos una vez**. Por ejemplo, en este fragmento:
 
 ![ud03_09_cajaBlanca.png\|Pruebas de caja blanca](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_09_cajaBlanca.png)
 > Pruebas de caja blanca - Algoritmo a probar
@@ -2154,12 +2238,82 @@ Al diseñar pruebas de caja blanca hay que fijarse en:
 * Los **bucles**: hay que probarlos cuando se ejecutan 0 veces, 1 vez y varias veces.
 * Las **llamadas** a otros bloques de código.
 
+#### Ejemplo: caminos y condiciones en `maximo`
+
+Volvamos al método `maximo` del principio de [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02-Estructuras de control. Calidad del software#8.3. Pruebas de caja negra y de caja blanca\|8.3]]. Tiene **3 caminos**: `return a`, `return b` y `return c`.
+
+- Las pruebas `(3, 2, 1)`, `(2, 3, 1)` y `(1, 2, 3)` **recorren los tres caminos**: tenemos una cobertura de caminos del 100 %. Y aun así, el método está mal.
+- Si miramos las **condiciones**, en `a > b` el borde es `a == b`. Probar bien una condición incluye su caso límite: `(5, 5, 1)`, y ahí aparece el error.
+
+La versión corregida:
+
+```java
+public static int maximo(int a, int b, int c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+```
+
+> [!NOTE] Caja negra y caja blanca se complementan
+> Recorrer todos los caminos no basta si no se prueban los **bordes** de cada condición, que es justo lo que aportan los valores límite de la caja negra.
+
+#### Ejemplo: bucles en `sumaDigitos`
+
+```java
+public static int sumaDigitos(int n) {
+    int suma = 0;
+    while (n > 0) {
+        suma += n % 10;
+        n /= 10;
+    }
+    return suma;
+}
+```
+
+Diseñamos un caso para cada número de vueltas del bucle:
+
+| Vueltas | Entrada | Esperado | Obtenido |
+|---|---|---|---|
+| 0 | `0` | 0 | 0 ✅ |
+| 1 | `7` | 7 | 7 ✅ |
+| Varias | `1234` | 10 | 10 ✅ |
+| 0 (¡otra vez!) | `-123` | 6 | **0** ❌ |
+
+Pensar en **qué datos hacen que el bucle dé 0 vueltas** es lo que descubre el error: con un número negativo ni siquiera se entra en el `while`. Se soluciona trabajando con `Math.abs(n)` al principio del método.
+
+#### Ejemplo: condiciones múltiples en `puedeAlquilar`
+
+Para alquilar un coche hay que tener al menos 21 años y 2 años de carné:
+
+```java
+public static boolean puedeAlquilar(int edad, int anyosCarnet) {
+    return edad >= 21 && anyosCarnet >= 2;
+}
+```
+
+Diseñamos los casos para que **cada condición simple sea verdadera y falsa** en alguno:
+
+| Caso | `edad >= 21` | `anyosCarnet >= 2` | Resultado |
+|---|---|---|---|
+| `(25, 5)` | V | V | `true` |
+| `(19, 5)` | F | (no se evalúa) | `false` |
+| `(25, 1)` | V | F | `false` |
+| `(21, 2)` | V (límite) | V (límite) | `true` |
+
+> [!TIP] Cortocircuito
+> Con `&&`, si la primera condición es falsa, Java **no evalúa la segunda**. Por eso el caso `(25, 1)` es imprescindible: es el único que demuestra que la segunda condición funciona.
+
 ## 8.4. Versiones de prueba
 
 Antes de publicar un programa, es habitual distribuir versiones de prueba:
 
 * **Alfa**: completa pero inestable; la prueba un grupo reducido de usuarios.
-* **Beta**: más estable, pero no del todo probada; se ofrece a muchos usuarios (a veces, a cualquiera) para que comuniquen los errores que encuentren.
+* **Beta**: algo más estable, pero sin probar en profundidad; se ofrece a muchos usuarios (a veces, a cualquiera) para que comuniquen los errores que encuentren. En otras palabras: no se regala, los usuarios hacen el trabajo de un equipo de testing.
 * **Release candidate (RC)**: terminada y probada, a falta de correcciones de última hora.
 * **Versión final** (o estable): la que se publica.
 
@@ -2173,11 +2327,9 @@ Antes de publicar un programa, es habitual distribuir versiones de prueba:
 
 ## 8.6. Pruebas en la práctica: Aserciones
 
-Hasta ahora, para probar nuestro código y ver si hace lo que queremos, hemos estado usando los mensajes de consola con `System.out.println`.
+Hasta ahora, para probar nuestro código y ver si hace lo que queremos, hemos estado usando los mensajes de consola con `System.out.println`. Pero **eso es una línea de código más** (que no aporta nada a nuestro programa) y, por tanto, puede ayudar a confundirnos más que a ayudarnos a detectar errores. Para eso están las **aserciones**.
 
-Pero eso es una línea de código más y, por tanto, puede ayudar a confundirnos más que a ayudarnos a detectar errores. Para eso están las **aserciones**.
-
-Una aserción afirma algo que el programador afirma que SIEMPRE debe suceder en un punto exacto del programa. Si resulta ser falso, el programa se detiene inmediatamente porque significa que hay un error de lógica grave en el diseño.
+Una aserción afirma algo que el programador **afirma que SIEMPRE debe suceder** en un punto exacto del programa. Si resulta ser falso, el programa se detiene inmediatamente porque significa que hay un error de lógica grave en el diseño.
 
 Antes de usarlas es necesario activarlas en nuestro IDE. Para ello hay que añadir el argumento `-ea` (*enable assertions*) a la máquina virtual de Java (VM) en la configuración de ejecución de nuestro proyecto. Veámoslo para **NetBeans** e **IntelliJ IDEA**.
 
@@ -2243,7 +2395,7 @@ La aplicación de la propiedad `-ea` en **Properties > Run > VM Options** en Net
 
 #### ¿Cómo comprobar si funcionan?
 
-Para asegurarnos de que las aserciones están activas, añadimos este código rápido en un `main` y ejecutamos el programa:
+Las aserciones saltan como una excepción cuando no se cumple la condición que evalúan. Por eso, para asegurarnos de que las aserciones están activas, añadimos este código rápido en un `main` y ejecutamos el programa:
 
 ```java
 public static void main(String[] args) {
@@ -2291,30 +2443,39 @@ public static void main(String[] args) {
 }
 ```
 
-Aquí podríamos preguntarnos _"¿Por qué no seguimos usando el `if`?"_. El **`if-else` es para un flujo normal**, para la lógica de nuestro algoritmo. Como hemos dicho antes, usarlo para imprimir trazas o logs puede añadir más problemas y errores. Es cambio, el **`assert` es para dejar claro lo que, como programadores, queremos que ocurra sin lugar a errores**. No añadimos lógica, solo expresamos lo que queremos que ocurra y, de no ser así, nuestro programa explotará y habremos encontrado un *bug*.
+Aquí podríamos preguntarnos _"¿Por qué no seguimos usando el `if`?"_. El **`if-else` es para un flujo normal**, para la lógica de nuestro algoritmo. **Forma parte de nuestro programa**.
+
+Como hemos dicho antes, usarlo para imprimir trazas o logs puede añadir más problemas y errores. Es cambio, el **`assert` es para dejar claro lo que, como programadores, queremos que ocurra sin lugar a errores**. No añadimos lógica, solo expresamos lo que queremos que ocurra y, de no ser así, nuestro programa explotará y habremos encontrado un *bug*.
 
 Como siempre, un código vale más que mil palabras:
 
 ```java
 public class ControlCalificaciones {
     public static void main(String[] args) {
-        // Hay un -2 por error en el array
-        int[] notas = {5, 8, -2, 10};
-        int suma = 0;
+        // Notas ya validadas: las tres están entre 0 y 10
+        double nota1 = 6;
+        double nota2 = 8;
+        double nota3 = 7;
 
-        for (int nota : notas) {
-            // Aserción: asegura que cada nota está entre 0 y 10
-            // Si alguna nota no lo cumple, el programa para y muestra el mensaje
-            assert nota >= 0 && nota <= 10 : "Nota inválida detectada en el array: " + nota;
-            
-            suma += nota;
-        }
+        // Error de lógica: faltan los paréntesis, así que solo se divide nota3
+        double media = nota1 + nota2 + nota3 / 3;
 
-        System.out.println("La suma de las notas válidas es: " + suma);
+        // Aserción: la media de tres notas entre 0 y 10 también está entre 0 y 10
+        // Si no lo cumple, el programa para y muestra el mensaje
+        assert media >= 0 && media <= 10 : "Media imposible: " + media;
+
+        System.out.println("La nota media es: " + media);
     }
 }
+```
+
+Sin `-ea`, el programa imprime tan tranquilo `La nota media es: 16.333…` y el error pasa desapercibido. Con `-ea`, la aserción lo detecta en el momento:
 
 ```
+Exception in thread "main" java.lang.AssertionError: Media imposible: 16.333333333333332
+```
+
+La solución es poner los paréntesis: `(nota1 + nota2 + nota3) / 3`, que da 7.0.
 
 ### 8.6.3. `assert` y tipos de pruebas
 
@@ -2332,7 +2493,7 @@ Aunque son totalmente recomendables (y casi obligatorias), su uso debe hacerse t
 
 #### Dónde usarlas
 
-En pocas palabras, las aserciones sustituyen el rancio `System.out.println` que solemos usar cuando queremos evaluar qué está haciendo nuestro código. En otras palabras, **nos sirve a nosotros, no a la aplicación**, para saber si lo que queríamos que se ejecutara realmente se está haciendo bien.
+Las aserciones sustituyen el rancio `System.out.println` que solemos usar cuando queremos evaluar qué está haciendo nuestro código. En otras palabras, **nos sirve a nosotros, no a nuestra aplicación**, para saber si lo que queríamos que se ejecutara realmente se está haciendo bien.
 
 ##### En pruebas unitarias (caja blanca)
 
@@ -2383,13 +2544,19 @@ public class GestorPermisos {
             case ROL_ADMINISTRADOR:
                 return 100;
             default:
-                // --- INVARIANTE DE FLUJO DE CONTROL ---
-                // Si el método 'obtenerNivelAcceso' solo debe llamarse con roles válidos,
-                // llegar aquí significa que hay un BUG en el código que llamó a este método.
-                assert false : "Invariante violada: codigoRol no contemplado -> " + codigoRol;
+                /*
+                --- INVARIANTE DE FLUJO DE CONTROL ---
+                Si el método 'obtenerNivelAcceso' solo debe llamarse
+                con roles válidos, llegar aquí significa que hay un
+                BUG en el código que llamó a este método.
+                */
+                assert false
+	                : "Invariante violada: codigoRol no contemplado -> "
+		                + codigoRol;
 
                 // Protección en producción si -ea está desactivado
-                throw new IllegalArgumentException("Código de rol desconocido: " + codigoRol);
+                throw new IllegalArgumentException("Código de rol desconocido:"
+	                + codigoRol);
         }
     }
 }
@@ -2401,8 +2568,64 @@ Por eso ponemos un `assert false`, para avisar de que hay **datos no contemplado
 
 De esta forma se impide que el método nos dé una sorpresa y devuelva un valor por defecto con el que no contábamos (como `0` o `null`) que pueda corromper más adelante un cálculo.
 
+Si te fijas, después se lanza la `IllegalArgumentException`. Es decir, el `assert` nos sirve durante el desarrollo para comprobar este error, pero solo salta en desarrollo. Si queremos que nuestra aplicación avise del error cuando esté publicada, deberá escalar la excepción adecuada.
 
-Las **postcondiciones** sirven para comprobar que un un bloque de código (un método, por ejemplo) ha realizado su trabajo correctamente antes de devolver un resultado.
+---
+
+
+Las **postcondiciones** sirven para comprobar que un bloque de código (un método, por ejemplo) ha realizado su trabajo correctamente antes de devolver un resultado.
+
+Por ejemplo, añadamos una postcondición a la versión **con error** de `maximo` (ver [[Asignaturas/1DAM_Programación/Apuntes/Unidad 02-Estructuras de control. Calidad del software#8.3. Pruebas de caja negra y de caja blanca\|8.3]]). Para poder comprobar el resultado, primero lo guardamos en una variable:
+
+```java
+public static int maximo(int a, int b, int c) {
+    int resultado;
+    if (a > b && a > c) {
+        resultado = a;
+    } else if (b > a && b > c) {
+        resultado = b;
+    } else {
+        resultado = c;
+    }
+    assert resultado >= a && resultado >= b && resultado >= c
+            : "maximo(" + a + ", " + b + ", " + c + ") ha devuelto " + resultado;
+    return resultado;
+}
+```
+
+Al ejecutar `maximo(5, 5, 1)` con `-ea`, la aserción nos avisa del error:
+
+```
+Exception in thread "main" java.lang.AssertionError: maximo(5, 5, 1) ha devuelto 1
+```
+
+Fíjate en que la aserción no dice *cómo* calcular el máximo, sino *qué tiene que cumplir* el resultado: es una **especificación ejecutable**.
+
+#### Cuidado: un `assert` nunca modifica nada
+
+¿Qué imprime este código?
+
+```java
+final int MAX_INTENTOS = 3;
+int intentos = 0;
+assert ++intentos <= MAX_INTENTOS : "Demasiados intentos";
+System.out.println("Intentos: " + intentos);
+```
+
+Depende:
+
+- Con `-ea` → `Intentos: 1`
+- Sin `-ea` → `Intentos: 0` 😱
+
+Sin `-ea`, la condición del `assert` **no se evalúa**, así que el `++` desaparece y el programa se comporta de forma distinta en desarrollo y en producción. La forma correcta es modificar fuera y solo comprobar dentro:
+
+```java
+intentos++;
+assert intentos <= MAX_INTENTOS : "Demasiados intentos: " + intentos;
+```
+
+> [!WARNING] Regla
+> Un `assert` solo **comprueba**; nunca **modifica** variables ni llama a métodos que cambien algo (como `assert lista.remove(x);`).
 
 #### Dónde no se usan
 
@@ -2413,6 +2636,15 @@ Los `assert` no se usan nunca en pruebas de integración o de sistema:
 |**Prueba Unitaria**|**SÍ**|Verifica la lógica interna del algoritmo que acaba de escribir el programador.|
 |**Prueba de Integración**|**NO**|En integración probamos cómo se comunican varios módulos (ej. nuestra app con la base de datos). Si la base de datos falla o devuelve un nulo, eso es un error de entorno/comunicación que debe gestionarse con **Excepciones** (`try-catch`), no con un `assert` que rompa el programa.|
 |**Validación de Usuario / Sistema**|**NO**|Si el usuario introduce mal un JSON en producción, la máquina virtual de Java tendrá las aserciones desactivadas (`-ea` apagado) por rendimiento. El error pasaría de largo. Ahí se usan condicionales tradicionales.|
+
+> [!EXAMPLE] ¿`assert` o control de errores?
+> | Situación | Respuesta | Por qué |
+> |---|---|---|
+> | El usuario escribe el mes 13. | Control de errores | Dato externo: con `-ea` apagado, el `assert` no lo vería |
+> | Tras intercambiar `a` y `b` con una variable auxiliar, `a` debe tener el valor original de `b`. | `assert` | Lógica interna: si falla, es culpa del programador |
+> | Se cae la conexión Wi-Fi mientras se descarga un fichero. | Excepción | Fallo del entorno, no de nuestro código |
+> | La suma de los porcentajes de un reparto que he calculado debe ser 100. | `assert` | Postcondición de mi algoritmo |
+> | Un fichero CSV trae una línea vacía. | Control de errores | Dato externo |
 
 En conclusión, los `assert` (aserciones nativas) nos permiten indicar qué condiciones queremos que cumpla nuestro código. Lo hacemos en nuestro "rincón de trabajo" (fase unitaria) y sirve para que nuestro propio código nos avise si hemos metido la pata en la lógica, antes de juntar nuestra pieza de código con el resto del sistema.
 
@@ -2486,6 +2718,7 @@ Ejecuta el código **dos veces**: una sin el parámetro `-ea` y otra con él act
 
 
 [^1]:  Certificación de Calidad de Software. (s/f). AENOR. Recuperado el 28 de agosto de 2025, de [https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software](https://www.aenor.com/certificacion/empresas/tecnologias-de-la-informacion/producto-software)
+
 
 
 # 9. Depuración de programas
