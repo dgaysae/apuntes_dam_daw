@@ -12,7 +12,12 @@
 
 ## String
 
-### JAVA: Clase String
+### Clase String - Aula Informática
+
+1. Aula Informática. (2022f, abril 5). _Programación Java - Introducción a la clase String_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1P5MzFLgd7Q
+2. 
+
+### JAVA: Clase String - Aula en la nube
 
 > Aula en la nube. (2022o, octubre 12). _JAVA: Clase String ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=443VORsWj2M
 
@@ -20,9 +25,14 @@
 
 ## String
 
-### JAVA: Ejercicio String y funciones
+### Ejercicios estructuras secuenciales IV - String - Aula Informática
+
+> Aula Informática. (2022f, abril 5). _Programación Java - Ejercicios estructuras secuenciales IV - String_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=UQlHEikWuiM
+
+### JAVA: Ejercicio String y funciones - Aula en la nube
 
 > Aula en la nube. (2022p, octubre 13). _JAVA: Ejercicio String y funciones ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=FNjyxclZmDQ
+
 
 ---
 
