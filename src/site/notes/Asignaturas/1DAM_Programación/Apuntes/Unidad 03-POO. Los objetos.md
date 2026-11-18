@@ -61,7 +61,7 @@ System.out.println("La longitud de la cadena es: " + mi_cadena.length());
 La salida por pantalla será:
 
 ```
-La longitud de la cadena es 32
+La longitud de la cadena es: 32
 ```
 
 Intuitivamente, a este objeto cadena se le está pidiendo que diga la longitud que tiene (y, como es una cadena de caracteres, nos responde con la cantidad total de letras de que consta). Técnicamente, lo que hemos hecho se llama "invocar el método `length()` del objeto mi_cadena". 
@@ -72,15 +72,18 @@ Otros objetos pueden hacer una interpretación un poco diferente de length. La d
 String mi_cadena = "Esto es una cadena de caracteres";   
 String[] mi_array = {mi_cadena, "Otra cadena"};   
 System.out.println("La longitud de la cadena es: " + mi_cadena.length());
-System.out.println("La longitud del array es: " + mi_array.length());
+System.out.println("La longitud del array es: " + mi_array.length);
 ```
 
 La salida por pantalla será:
 
 ```
-La longitud de la cadena es 32   
-La longitud del array es 2
+La longitud de la cadena es: 32
+La longitud del array es: 2
 ```
+
+> [!note] `length()` y `length`
+> Fíjate en que a la cadena le pedimos su longitud con el **método** `length()`, con paréntesis, y al array con su **atributo** `length`, sin paréntesis. Si escribes `mi_array.length()`, el programa no compila. Veremos los arrays en la Unidad 05.
 
 Lo que indicamos con length puede variar dependiendo del objeto con el que nos comunicamos. En el primer caso, le pedimos a mi_cadena su longitud. Como se trata de una cadena de caracteres, solo hay una respuesta posible. En el segundo caso, se lo pedimos a mi_array. Podríamos pensar que el método length pudiera contar todos los caracteres en total almacenados en el objeto (43 en total). Pero lo más plausible es que nos devuelva 2, que es el número de elementos del array. 
 
@@ -95,6 +98,8 @@ Cuando un objeto recibe un mensaje que no conoce, se produce un error. Por lo ta
 Los atributos de un objeto definen las características del mismo. Por ejemplo, un atributo del cuentakilómetros es el contador del número de kilómetros, o un atributo de un String debe de ser el número de caracteres de que consta la cadena.
 
 Al programador que usa un objeto deberían importarle un bledo los atributos del mismo. Él (o ella) se encargará de usar el objeto a través de sus métodos, y éstos operarán con los atributos, si ello es necesario, de forma totalmente transparente al programador. Es decir, los atributos raramente son accesibles desde el exterior del objeto, salvo que, por razones de diseño, el programador del objeto haya decidido lo contrario.
+
+
 
 [^1]:   El polimorfismo es una característica muy interesante de los <abbr title="Object Oriented Language">OOL</abbr> que, lamentablemente, Java no explota en toda sus posibilidades, cosa que si hacen lenguajes posteriores como Ruby.
 
@@ -157,7 +162,9 @@ El concepto de encapsulamiento ya estaba presente en la programación modular, d
 Es posible diseñar nuevas clases basándose en clases ya existentes. Esto se llama *herencia*. Cuando una clase hereda de otra, toma todos los atributos y todos los métodos de su clase “madre”, y puede añadir los suyos propios. A veces, algunos de los métodos o datos heredados no son útiles, por lo que pueden ser enmascarados, redefinidos o simplemente eliminados en la nueva clase. 
 
 > [!question] Para saber más...
-> El tema de la herancia lo veremos más adelante, en la </strong>, en el apartado de **[[Asignaturas/1DAM_Programación/Apuntes/Unidad 04/8. Herencia\|herencia]]**.
+> El tema de la herancia lo veremos **[[Asignaturas/1DAM_Programación/Apuntes/Unidad 04/8. Herencia\|más adelante]]**.
+
+
 
 ### 2.7.4. Polimorfismo
 
@@ -203,180 +210,6 @@ Esos miembros (métodos y propiedades) públicos son las [[Asignaturas/1DAM_Prog
 
 Veamos otra clase de la API de Java que llevamos usando desde el principio y que puede ofrecernos muchas funcionalidades útiles para nuestro trabajo: las **cadenas de texto con la clase `String`**. 
 
-> [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/apuntes/1-dam-programacion/unidad-01/referencias/#java-clase-math" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
-
-```table-of-contents
-```
-
----
-
-> [!info]  
-> Todos estos vídeos se han extraído de las playlists:
-> * [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
-> * [**Programación Java**](https://www.youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO) de [**Aula informática**](https://www.youtube.com/@aulainformatica2118).
-
-## Vídeos destacados
-
-### Introducción a la programación y los algoritmos
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/dfEEG4A_Hoo" title="Introducción a la programación y los algoritmos" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 19 de septiembre). _Introducción a la programación y los algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
-
-### Preparando el entorno (JRE, JDK y VS Code)
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/Q_2j8aYnmYk" title="JAVA: Preparando el entorno (JRE, JDK y VS Code)" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 3 de octubre). _JAVA: Preparando el entorno (JRE, JDK y VS Code) ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
-
-### Hola Mundo en Java
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/AVEU8AEZ5YE" title="Hola Mundo en JAVA" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 4 de octubre). _Hola Mundo en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
-
-## Pseudocódigo
-
-| Tema | Vídeo |
-|---|---|
-| Operadores aritméticos | Aula en la nube. (2022, 14 de octubre). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI |
-| Operadores relacionales | Aula en la nube. (2022, 20 de septiembre). _Introducción a la programación: operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM |
-| Operadores lógicos | Aula en la nube. (2022, 21 de septiembre). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y |
-| Representación de algoritmos | Aula en la nube. (2022, 19 de septiembre). _Representación de algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU |
-| Variables y expresiones aritméticas | Aula en la nube. (2022, 20 de septiembre). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts |
-| Instrucciones en pseudocódigo | Aula en la nube. (2021, 3 de octubre). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=taSJeALBVGk |
-
-## Java
-
-| Tema | Vídeo |
-|---|---|
-| Introducción a Java | Aula Informática. (2022, 28 de marzo). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE |
-| Introducción a Java | Aula en la nube. (2022, 2 de octubre). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI |
-| Salida por pantalla | Aula en la nube. (2022, 5 de octubre). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY |
-| Entrada de datos | Aula en la nube. (2022, 20 de octubre). _JAVA: Entrada de datos - Clase Scanner ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg |
-| Tipos de variables | Aula en la nube. (2022, 6 de octubre). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs |
-| Variables y tipos | Aula Informática. (2022, 28 de marzo). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg |
-| Variables numéricas | Aula en la nube. (2022, 7 de octubre). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss |
-| Decimales y precisión | Aula en la nube. (2022, 20 de octubre). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo |
-| Sistema hexadecimal | Aula en la nube. (2022, 9 de octubre). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo |
-| `char` y `boolean` | Aula en la nube. (2022, 10 de octubre). _JAVA: Char y boolean + ASCII + UNICODE ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4 |
-| Strings | Aula en la nube. (2022, 11 de octubre). _Strings en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q |
-| Secuencias de escape | Aula en la nube. (2022, 13 de octubre). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y |
-| Operadores relacionales | Aula en la nube. (2022, 16 de octubre). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0 |
-| Operadores lógicos | Aula en la nube. (2022, 17 de octubre). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4 |
-| Asignaciones complejas | Aula en la nube. (2022, 15 de octubre). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0 |
-| Precedencia de operadores | Aula en la nube. (2022, 18 de octubre). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw |
-| Clase `Math` | Aula en la nube. (2022, 19 de octubre). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU |
-| Funciones matemáticas | Aula en la nube. (2022, 19 de octubre). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI |
-
-# Documentación
-
-- Apache Software Foundation. (s. f.). *Introduction to the standard directory layout*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-- Apache Software Foundation. (s. f.). *Introduction to the POM*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
-- Apache Software Foundation. (s. f.). *Apache NetBeans documentation*. Apache NetBeans. https://netbeans.apache.org/front/main/help/
-
-
----
-
-<p><span>⬅️ <strong>Anterior:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">10. Apéndice. Entrada y salida por consola</a> | 🏠 <strong>Unidad:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Unidad 01 - Introducción a la programación con Java</a></span></p>
-
-
-</div></div>
-
-
-> [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/apuntes/1-dam-programacion/unidad-01/referencias/#java-funciones-matematicas" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
-
-```table-of-contents
-```
-
----
-
-> [!info]  
-> Todos estos vídeos se han extraído de las playlists:
-> * [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
-> * [**Programación Java**](https://www.youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO) de [**Aula informática**](https://www.youtube.com/@aulainformatica2118).
-
-## Vídeos destacados
-
-### Introducción a la programación y los algoritmos
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/dfEEG4A_Hoo" title="Introducción a la programación y los algoritmos" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 19 de septiembre). _Introducción a la programación y los algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
-
-### Preparando el entorno (JRE, JDK y VS Code)
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/Q_2j8aYnmYk" title="JAVA: Preparando el entorno (JRE, JDK y VS Code)" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 3 de octubre). _JAVA: Preparando el entorno (JRE, JDK y VS Code) ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
-
-### Hola Mundo en Java
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/AVEU8AEZ5YE" title="Hola Mundo en JAVA" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 4 de octubre). _Hola Mundo en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
-
-## Pseudocódigo
-
-| Tema | Vídeo |
-|---|---|
-| Operadores aritméticos | Aula en la nube. (2022, 14 de octubre). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI |
-| Operadores relacionales | Aula en la nube. (2022, 20 de septiembre). _Introducción a la programación: operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM |
-| Operadores lógicos | Aula en la nube. (2022, 21 de septiembre). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y |
-| Representación de algoritmos | Aula en la nube. (2022, 19 de septiembre). _Representación de algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU |
-| Variables y expresiones aritméticas | Aula en la nube. (2022, 20 de septiembre). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts |
-| Instrucciones en pseudocódigo | Aula en la nube. (2021, 3 de octubre). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=taSJeALBVGk |
-
-## Java
-
-| Tema | Vídeo |
-|---|---|
-| Introducción a Java | Aula Informática. (2022, 28 de marzo). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE |
-| Introducción a Java | Aula en la nube. (2022, 2 de octubre). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI |
-| Salida por pantalla | Aula en la nube. (2022, 5 de octubre). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY |
-| Entrada de datos | Aula en la nube. (2022, 20 de octubre). _JAVA: Entrada de datos - Clase Scanner ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg |
-| Tipos de variables | Aula en la nube. (2022, 6 de octubre). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs |
-| Variables y tipos | Aula Informática. (2022, 28 de marzo). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg |
-| Variables numéricas | Aula en la nube. (2022, 7 de octubre). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss |
-| Decimales y precisión | Aula en la nube. (2022, 20 de octubre). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo |
-| Sistema hexadecimal | Aula en la nube. (2022, 9 de octubre). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo |
-| `char` y `boolean` | Aula en la nube. (2022, 10 de octubre). _JAVA: Char y boolean + ASCII + UNICODE ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4 |
-| Strings | Aula en la nube. (2022, 11 de octubre). _Strings en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q |
-| Secuencias de escape | Aula en la nube. (2022, 13 de octubre). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y |
-| Operadores relacionales | Aula en la nube. (2022, 16 de octubre). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0 |
-| Operadores lógicos | Aula en la nube. (2022, 17 de octubre). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4 |
-| Asignaciones complejas | Aula en la nube. (2022, 15 de octubre). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0 |
-| Precedencia de operadores | Aula en la nube. (2022, 18 de octubre). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw |
-| Clase `Math` | Aula en la nube. (2022, 19 de octubre). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU |
-| Funciones matemáticas | Aula en la nube. (2022, 19 de octubre). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI |
-
-# Documentación
-
-- Apache Software Foundation. (s. f.). *Introduction to the standard directory layout*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-- Apache Software Foundation. (s. f.). *Introduction to the POM*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
-- Apache Software Foundation. (s. f.). *Apache NetBeans documentation*. Apache NetBeans. https://netbeans.apache.org/front/main/help/
-
-
----
-
-<p><span>⬅️ <strong>Anterior:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">10. Apéndice. Entrada y salida por consola</a> | 🏠 <strong>Unidad:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Unidad 01 - Introducción a la programación con Java</a></span></p>
-
-
-</div></div>
-
-
 ## 3.1. La clase `String`
 
 La clase `String` en Java representa una cadena de caracteres **inmutable** (no puede modificarse una vez creada).
@@ -405,6 +238,7 @@ String despedida2 = new String(despedida);
 > [!note] Nota
 > En este caso, al ejecutar `new` **estamos forzando a que se cree otro objeto** de tipo `String` en memoria, aunque previamente haya otra cadena igual.
 
+
 Y si queremos declarar un texto de varias línes podemos hacerlo usando las triples comillas `"""`:
 
 ```java
@@ -416,10 +250,11 @@ Y si queremos declarar un texto de varias línes podemos hacerlo usando las trip
                 """;
 ```
 
+
 ### 3.1.2. Métodos más utilizados de `String`
 Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/2. Definiciones formales#2.7.2. Encapsulamiento\|encapsula]]** un conjunto de **propiedades y métodos útiles** para ahorrarnos trabajo a la hora de tratar con textos. Ahí van unos cuantos:
 
-* **`length()`**: muestra la longitud de la cadena, sin contar el nulo. Es decir, el número de caracteres útiles reales.
+* **`length()`**: devuelve la longitud de la cadena, es decir, su número de caracteres (incluidos los espacios).
   
   ```java
   String saludo = "Hola, gente!";
@@ -440,6 +275,7 @@ Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apunte
 
 * **`compareTo(String s)`**: compara una cadena con otra. Devuelve un número entero con el número de diferencias alfabéticas encontradas. Si este número es 0, significa que las cadenas son idénticas.
   Esto lo estudiaremos con más detenimiento en unidades posteriores.
+
 
 * **`equals()`**: este es un viejo conocido. Devolverá `true` si las cadenas contienen el mismo texto y `false` en caso contrario.
   
@@ -509,7 +345,7 @@ Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apunte
   // OIGA USTED!  
   ```
 
-  No. No se me ha escapado el último saludo ni lo he repetido por despiste. Esto sirve para indicar qué significa eso de **inmutabilidad** de los textos `String`. Al ejecutar el método `.toLowerCase()` **no estoy almacenando el resultado en la variable `saludo`** porque es inmutable. Simplemente estoy devolviendo el valor de otra cadena `String` con el texto de la primera cadena en mayúsculas. Es decir, que mantengo la cadena original y genero otra nueva.
+  No. No se me ha escapado el último saludo ni lo he repetido por despiste. Esto sirve para indicar qué significa eso de **inmutabilidad** de los textos `String`. Al ejecutar el método `.toLowerCase()` **no estoy almacenando el resultado en la variable `saludo`** porque es inmutable. Simplemente estoy devolviendo el valor de otra cadena `String` con el texto de la primera cadena en minúsculas. Es decir, que mantengo la cadena original y genero otra nueva.
 
 * **`toUpperCase()`**: convierte a mayúscula.
   
@@ -530,7 +366,7 @@ Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apunte
   // trasgo, ¡recuerda que String es inmutable!
   ```
 
-* **`substring(int i, int f)`**: devuelve un nuevo `String` que será la subcadena que comienza en el carácter número `i` y termina en el `f` de la cadena original.
+* **`substring(int i, int f)`**: devuelve un nuevo `String` que será la subcadena que comienza en el carácter número `i` y termina **justo antes** del `f` de la cadena original: el carácter de la posición `f` no se incluye.
   
   ```java
   String texto = "trasgo";
@@ -539,13 +375,13 @@ Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apunte
   // trasgo
   
   System.out.println(texto.substring(0, 4));
-  // tras
+  // tras (posiciones 0, 1, 2 y 3; la 4, 'g', no se incluye)
   
   System.out.println(texto);
   // trasgo, ¡recuerda que String es inmutable!
   ```
 
-* **`charAt(int i)`**: devuelve un `String` con el carácter que ocupa la posición `i` de la cadena.
+* **`charAt(int i)`**: devuelve el carácter (de tipo `char`, no `String`) que ocupa la posición `i` de la cadena.
   
   ```java
   String texto = "trasgo";
@@ -578,6 +414,133 @@ Al igual que la clase `Math`, `String` **[[Asignaturas/1DAM_Programación/Apunte
   // 0, ¡ojo! Devuelve la primera posición en la que encuentra 'c'
   ```
 
+* **`lastIndexOf(char c)`**: como `indexOf()`, pero devuelve la posición en la que se encuentra el carácter **por última vez**. Si no está, devuelve -1. Tanto `indexOf()` como `lastIndexOf()` admiten también una cadena en lugar de un carácter.
+  
+  ```java
+  String texto = "carcasa";
+  
+  System.out.println(texto.lastIndexOf('c'));
+  // 3
+  
+  System.out.println(texto.indexOf("sa"));
+  // 5
+  ```
+
+* **`isEmpty()`**: devuelve `true` si la cadena está **vacía**, es decir, si su longitud es 0. Es lo mismo que comprobar si `length()` devuelve 0, pero más fácil de leer.
+  
+  ```java
+  String vacia = "";
+  String espacios = "   ";
+  
+  System.out.println(vacia.isEmpty());
+  // true
+  
+  System.out.println(espacios.isEmpty());
+  // false, ¡los espacios también son caracteres!
+  ```
+
+* **`isBlank()`**: devuelve `true` si la cadena está vacía **o solo contiene espacios en blanco** (espacios, tabuladores, saltos de línea…). Es muy útil para comprobar si el usuario ha dejado un campo sin rellenar, aunque haya pulsado la barra espaciadora.
+  
+  ```java
+  Scanner teclado = new Scanner(System.in);
+  
+  System.out.print("Nombre: ");
+  String nombre = teclado.nextLine();
+  
+  if (nombre.isBlank()) {
+      System.out.println("No has escrito ningún nombre");
+  } else {
+      System.out.println("Hola, " + nombre.trim());
+  }
+  ```
+
+  > [!tip] `isEmpty()` o `isBlank()`
+  > Para validar lo que escribe el usuario, casi siempre interesa `isBlank()`: un nombre formado solo por espacios no es un nombre.
+
+* **`strip()`**: como `trim()`, elimina los espacios en blanco del principio y del final, pero reconoce también otros espacios especiales de Unicode (como el espacio de no separación que a veces aparece al copiar texto de una web). Si solo quieres quitarlos de un lado, tienes **`stripLeading()`** (principio) y **`stripTrailing()`** (final).
+  
+  ```java
+  String texto = "   Telmo   ";
+  
+  System.out.println("[" + texto.strip() + "]");
+  // [Telmo]
+  
+  System.out.println("[" + texto.stripLeading() + "]");
+  // [Telmo   ]
+  
+  System.out.println("[" + texto.stripTrailing() + "]");
+  // [   Telmo]
+  ```
+
+* **`repeat(int n)`**: devuelve una cadena con el texto original repetido `n` veces. Nos ahorra escribir un bucle para cosas como dibujar líneas o figuras con caracteres.
+  
+  ```java
+  System.out.println("-".repeat(20));
+  // --------------------
+  
+  System.out.println("ja".repeat(3));
+  // jajaja
+  
+  for (int i = 1; i <= 4; i++) {
+      System.out.println("*".repeat(i));
+  }
+  // *
+  // **
+  // ***
+  // ****
+  ```
+
+* **`equalsIgnoreCase(String s)`**: como `equals()`, pero **sin distinguir mayúsculas de minúsculas**. Es muy útil para comparar lo que escribe el usuario, que puede contestar «SI», «Si» o «si».
+  
+  ```java
+  String respuesta = "SI";
+  
+  System.out.println(respuesta.equals("si"));
+  // false
+  
+  System.out.println(respuesta.equalsIgnoreCase("si"));
+  // true
+  ```
+
+* **`contains(String s)`**: devuelve `true` si la cadena **contiene** el texto `s` en cualquier posición.
+  
+  ```java
+  String correo = "alumno@iesejemplo.es";
+  
+  System.out.println(correo.contains("@"));
+  // true
+  
+  System.out.println(correo.contains("gmail"));
+  // false
+  ```
+
+* **`startsWith(String s)`** y **`endsWith(String s)`**: devuelven `true` si la cadena **empieza** o **termina**, respectivamente, por el texto `s`.
+  
+  ```java
+  String fichero = "Persona.java";
+  
+  System.out.println(fichero.endsWith(".java"));
+  // true
+  
+  System.out.println(fichero.startsWith("Per"));
+  // true
+  
+  System.out.println(fichero.startsWith("per"));
+  // false, distingue mayúsculas de minúsculas
+  ```
+
+> [!example] Combinando métodos
+> Como muchos de estos métodos devuelven otra cadena, se pueden **encadenar**. Por ejemplo, para comprobar si un usuario ha contestado que sí, admitiendo espacios y cualquier combinación de mayúsculas y minúsculas:
+> 
+> ```java
+> String respuesta = "   Sí ";
+> 
+> if (respuesta.strip().equalsIgnoreCase("sí")) {
+>     System.out.println("Has contestado que sí");
+> }
+> // Has contestado que sí
+> ```
+
 * **`valueOf(int i)`**: convierte el número `int` en un `String`. También funciona con `long`, `float` y `double`. Esto es solo una muestra. Hay muchos más métodos que encontrarás en: [Java SE 8 API Docs](http://docs.oracle.com/javase/8/docs/api/index.html)
 
 Vemos a continuación un pequeño ejemplo de uso de algunos de estos métodos:
@@ -586,7 +549,7 @@ Vemos a continuación un pequeño ejemplo de uso de algunos de estos métodos:
 String cad1 = "Hola";  
 String cad2 = new String("Mundo");  
 String cad3 = new String(cad2);  
-System.out.println("¿Son cad2 y cad3 iguales?" + cad2.compareTo(cad3));  
+System.out.println("¿Son cad2 y cad3 iguales? " + cad2.compareTo(cad3));  
 System.out.println("Longitud de cad1 = " + cad1.length());  
 System.out.println(cad1.concat(cad2));
 
@@ -599,18 +562,21 @@ System.out.println(cad4.substring(0,3));
 La salida por pantalla de este programa será la siguiente:  
 
 ```
-¿Son cad2 y cad3 iguales? true   
-Longitud de cad1 = 4   
-HolaMundo   
-Hola, Mundo   
-HOLA, MUNDO   
-Hola
+¿Son cad2 y cad3 iguales? 0
+Longitud de cad1 = 4
+HolaMundo
+Hola, Mundo
+HOLA, MUNDO
+Hol
 ```
+
+Fíjate en la primera línea: `compareTo()` no devuelve `true` o `false`, sino un número, y 0 significa que las cadenas son iguales.
 
 > [!note] Nota 
 > Existen otros métodos extremadamente útiles, como es el caso de `split()`, que veremos en la [[Unidad 5\|Unidad 5]], en el apartado de [[Asignaturas/1DAM_Programación/Apuntes/Unidad 05/4. Cadenas o strings\|4. Cadenas o strings]].
 > 
 > En cualquier caso, **te animo a que te pases por la documentación de la API de la clase [`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)** y juegues con algunos de los métodos que allí se explican. Te va a resultar de gran interés.
+
 
 ## 3.2. La clase `Math`
 
@@ -624,7 +590,7 @@ Dicho de otra forma:
 
 ```java
 int numeroNegativo = -20;
-int numeroPositivo = Math.abs(numeroNegativo) // 20
+int numeroPositivo = Math.abs(numeroNegativo); // 20
 ```
 
 En este ejemplo, indico que "de la clase `Math`, quiero usar el método `abs` (valor absoluto) para el número guardado en `numeroNegativo`". Este método me devolverá el valor positivo del valor introducido.
@@ -653,178 +619,7 @@ Y aquí tienes algunos ejemplos de aplicación de estas funciones sobre datos re
 | `Math.sqrt(64)` | 8 |
 
 > [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/apuntes/1-dam-programacion/unidad-01/referencias/#java-clase-math" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
-
-```table-of-contents
-```
-
----
-
-> [!info]  
-> Todos estos vídeos se han extraído de las playlists:
-> * [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
-> * [**Programación Java**](https://www.youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO) de [**Aula informática**](https://www.youtube.com/@aulainformatica2118).
-
-## Vídeos destacados
-
-### Introducción a la programación y los algoritmos
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/dfEEG4A_Hoo" title="Introducción a la programación y los algoritmos" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 19 de septiembre). _Introducción a la programación y los algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
-
-### Preparando el entorno (JRE, JDK y VS Code)
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/Q_2j8aYnmYk" title="JAVA: Preparando el entorno (JRE, JDK y VS Code)" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 3 de octubre). _JAVA: Preparando el entorno (JRE, JDK y VS Code) ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
-
-### Hola Mundo en Java
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/AVEU8AEZ5YE" title="Hola Mundo en JAVA" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 4 de octubre). _Hola Mundo en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
-
-## Pseudocódigo
-
-| Tema | Vídeo |
-|---|---|
-| Operadores aritméticos | Aula en la nube. (2022, 14 de octubre). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI |
-| Operadores relacionales | Aula en la nube. (2022, 20 de septiembre). _Introducción a la programación: operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM |
-| Operadores lógicos | Aula en la nube. (2022, 21 de septiembre). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y |
-| Representación de algoritmos | Aula en la nube. (2022, 19 de septiembre). _Representación de algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU |
-| Variables y expresiones aritméticas | Aula en la nube. (2022, 20 de septiembre). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts |
-| Instrucciones en pseudocódigo | Aula en la nube. (2021, 3 de octubre). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=taSJeALBVGk |
-
-## Java
-
-| Tema | Vídeo |
-|---|---|
-| Introducción a Java | Aula Informática. (2022, 28 de marzo). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE |
-| Introducción a Java | Aula en la nube. (2022, 2 de octubre). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI |
-| Salida por pantalla | Aula en la nube. (2022, 5 de octubre). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY |
-| Entrada de datos | Aula en la nube. (2022, 20 de octubre). _JAVA: Entrada de datos - Clase Scanner ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg |
-| Tipos de variables | Aula en la nube. (2022, 6 de octubre). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs |
-| Variables y tipos | Aula Informática. (2022, 28 de marzo). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg |
-| Variables numéricas | Aula en la nube. (2022, 7 de octubre). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss |
-| Decimales y precisión | Aula en la nube. (2022, 20 de octubre). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo |
-| Sistema hexadecimal | Aula en la nube. (2022, 9 de octubre). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo |
-| `char` y `boolean` | Aula en la nube. (2022, 10 de octubre). _JAVA: Char y boolean + ASCII + UNICODE ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4 |
-| Strings | Aula en la nube. (2022, 11 de octubre). _Strings en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q |
-| Secuencias de escape | Aula en la nube. (2022, 13 de octubre). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y |
-| Operadores relacionales | Aula en la nube. (2022, 16 de octubre). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0 |
-| Operadores lógicos | Aula en la nube. (2022, 17 de octubre). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4 |
-| Asignaciones complejas | Aula en la nube. (2022, 15 de octubre). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0 |
-| Precedencia de operadores | Aula en la nube. (2022, 18 de octubre). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw |
-| Clase `Math` | Aula en la nube. (2022, 19 de octubre). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU |
-| Funciones matemáticas | Aula en la nube. (2022, 19 de octubre). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI |
-
-# Documentación
-
-- Apache Software Foundation. (s. f.). *Introduction to the standard directory layout*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-- Apache Software Foundation. (s. f.). *Introduction to the POM*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
-- Apache Software Foundation. (s. f.). *Apache NetBeans documentation*. Apache NetBeans. https://netbeans.apache.org/front/main/help/
-
-
----
-
-<p><span>⬅️ <strong>Anterior:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">10. Apéndice. Entrada y salida por consola</a> | 🏠 <strong>Unidad:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Unidad 01 - Introducción a la programación con Java</a></span></p>
-
-
-</div></div>
-
-
-> [!example] Material de apoyo 
-> 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/apuntes/1-dam-programacion/unidad-01/referencias/#java-funciones-matematicas" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
-
-```table-of-contents
-```
-
----
-
-> [!info]  
-> Todos estos vídeos se han extraído de las playlists:
-> * [**MEGA Curso JAVA desde 0 [ DAM - DAW ]**](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu) de [**Aula en la nube**](https://www.youtube.com/@aulaenlanube).
-> * [**Programación Java**](https://www.youtube.com/playlist?list=PLP5w4RviLcV2xUnpafRiDJQvkSlkATClO) de [**Aula informática**](https://www.youtube.com/@aulainformatica2118).
-
-## Vídeos destacados
-
-### Introducción a la programación y los algoritmos
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/dfEEG4A_Hoo" title="Introducción a la programación y los algoritmos" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 19 de septiembre). _Introducción a la programación y los algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dfEEG4A_Hoo
-
-### Preparando el entorno (JRE, JDK y VS Code)
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/Q_2j8aYnmYk" title="JAVA: Preparando el entorno (JRE, JDK y VS Code)" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 3 de octubre). _JAVA: Preparando el entorno (JRE, JDK y VS Code) ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Q_2j8aYnmYk
-
-### Hola Mundo en Java
-
-<iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/AVEU8AEZ5YE" title="Hola Mundo en JAVA" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-
-> Aula en la nube. (2022, 4 de octubre). _Hola Mundo en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=AVEU8AEZ5YE
-
-## Pseudocódigo
-
-| Tema | Vídeo |
-|---|---|
-| Operadores aritméticos | Aula en la nube. (2022, 14 de octubre). _JAVA: Operadores matemáticos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4NIgC5ArKTI |
-| Operadores relacionales | Aula en la nube. (2022, 20 de septiembre). _Introducción a la programación: operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=98m39gc3YpM |
-| Operadores lógicos | Aula en la nube. (2022, 21 de septiembre). _Introducción a la programación: operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=GwwRkMo012Y |
-| Representación de algoritmos | Aula en la nube. (2022, 19 de septiembre). _Representación de algoritmos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=b003s0CJ2KU |
-| Variables y expresiones aritméticas | Aula en la nube. (2022, 20 de septiembre). _Variables y expresiones aritméticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=pgF8U9WxPts |
-| Instrucciones en pseudocódigo | Aula en la nube. (2021, 3 de octubre). _1.6 Instrucciones en pseudocódigo_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=taSJeALBVGk |
-
-## Java
-
-| Tema | Vídeo |
-|---|---|
-| Introducción a Java | Aula Informática. (2022, 28 de marzo). _Programación Java - Introducción_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1-fNqKf-8WE |
-| Introducción a Java | Aula en la nube. (2022, 2 de octubre). _Introducción a JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=8gkaitxt-CI |
-| Salida por pantalla | Aula en la nube. (2022, 5 de octubre). _JAVA: Salida por pantalla ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=QRDePHN91UY |
-| Entrada de datos | Aula en la nube. (2022, 20 de octubre). _JAVA: Entrada de datos - Clase Scanner ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=HSq3rRfBmDg |
-| Tipos de variables | Aula en la nube. (2022, 6 de octubre). _JAVA: Tipos de variables ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=dy1qD-jwcIs |
-| Variables y tipos | Aula Informática. (2022, 28 de marzo). _Programación Java - Variables y Tipos_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=PpkIVxLtZdg |
-| Variables numéricas | Aula en la nube. (2022, 7 de octubre). _JAVA: Declarar variables numéricas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9OpBxj5kYss |
-| Decimales y precisión | Aula en la nube. (2022, 20 de octubre). _JAVA: Decimales y precisión ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=noQbTZdYYZo |
-| Sistema hexadecimal | Aula en la nube. (2022, 9 de octubre). _JAVA: El sistema hexadecimal ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=9P8M1V0XnVo |
-| `char` y `boolean` | Aula en la nube. (2022, 10 de octubre). _JAVA: Char y boolean + ASCII + UNICODE ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=mAi5o9rsJS4 |
-| Strings | Aula en la nube. (2022, 11 de octubre). _Strings en JAVA ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=EAEVn9JKP9Q |
-| Secuencias de escape | Aula en la nube. (2022, 13 de octubre). _JAVA: Secuencias de escape ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=p7p9f7wKd9Y |
-| Operadores relacionales | Aula en la nube. (2022, 16 de octubre). _JAVA: Operadores relacionales ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=nJUURIe3Nc0 |
-| Operadores lógicos | Aula en la nube. (2022, 17 de octubre). _JAVA: Operadores lógicos ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=Z06XfYcrDN4 |
-| Asignaciones complejas | Aula en la nube. (2022, 15 de octubre). _JAVA: Asignaciones complejas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=DIbhR5cdtL0 |
-| Precedencia de operadores | Aula en la nube. (2022, 18 de octubre). _JAVA: Precedencia de operadores ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=_GJldn1wQvw |
-| Clase `Math` | Aula en la nube. (2022, 19 de octubre). _JAVA: Clase Math ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=4znSjME7tNU |
-| Funciones matemáticas | Aula en la nube. (2022, 19 de octubre). _JAVA: Funciones matemáticas ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=jKs6kq6z1sI |
-
-# Documentación
-
-- Apache Software Foundation. (s. f.). *Introduction to the standard directory layout*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-- Apache Software Foundation. (s. f.). *Introduction to the POM*. Apache Maven. https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
-- Apache Software Foundation. (s. f.). *Apache NetBeans documentation*. Apache NetBeans. https://netbeans.apache.org/front/main/help/
-
-
----
-
-<p><span>⬅️ <strong>Anterior:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-href="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" aria-label="Asignaturas/1DAM_Programación/Apuntes/Unidad 01/10. Apéndice. Entrada y salida por consola.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">10. Apéndice. Entrada y salida por consola</a> | 🏠 <strong>Unidad:</strong> <a class="internal-link" href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-href="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" aria-label="Asignaturas/1DAM_Programación/Unidades/Unidad 01/Unidad 01 - Introducción a la programación con Java.md" data-tooltip-position="top" target="_blank" rel="noopener nofollow">Unidad 01 - Introducción a la programación con Java</a></span></p>
-
-
-</div></div>
-
+> En las referencias de la unidad 1 tienes la sección dedicada a [[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/Referencias#Java\|Java]], donde encontrarás vídeos sobre la clase `Math`.
 
 # 4. Declaración de clases e instanciación de objetos en Java
 
@@ -837,6 +632,7 @@ Para crear un objeto y empezar a usarlo, es necesario que antes exista una clase
 > 
 > Se diferencian así de los identificadores de las variables, cuya primera letra debe ser minúscula.
 > Esto forma parte de la convención de nombres indicada en la [[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/9. Tipos de datos simples#9.4.1. Identificadores\|unidad 1]].
+
 
 ![ud02_01_clase_vs_objeto.png\|Clase vs. Objeto](/img/user/adjuntos/1DAM_Programacion/Unidad_02/ud02_01_clase_vs_objeto.png)
 
@@ -856,7 +652,7 @@ class MiClase {
         System.out.println("Esta es la ejecución del método mensaje()");  
     }
 
-    public int resto(int a, b) {  
+    public int resto(int a, int b) {  
         int r;  
         r = a % b;  
         return r;  
@@ -888,9 +684,10 @@ miObjeto.miAtributo2 = 7; // ❌ Error! miAtributo2 es private
 
 miObjeto.mensaje(); // puede ejecutar mensaje(), ya que es público
 
-resto = miObjeto.resto(7, 3); // puede ejecutar resto(a,b), ya que es público
+int resto = miObjeto.resto(7, 3); // puede ejecutar resto(a,b), ya que es público
 System.out.println("El resto es: " + resto);  
 ```
+
 
 ## 4.1 Un ejemplo más realista
 
@@ -932,10 +729,8 @@ class Persona {
     public String getSexo() {  
         String s;  
         if (sexo == 'H' || sexo == 'h') s = "Hombre";  
-        if (sexo == 'M' || sexo == 'm') s = "Mujer";  
-        
-        if ((sexo != 'H') && (sexo != 'h')
-            && (sexo != 'M') && (sexo != 'm')) s = "Desconocido";
+        else if (sexo == 'M' || sexo == 'm') s = "Mujer";  
+        else s = "Desconocido";
 
         return s;  
     }
@@ -951,7 +746,7 @@ Observa como los atributos son privados, y hemos definido un método público pa
 Este es un ejemplo de cómo podríamos usar esta clase para crear una persona llamada _Miguel Pérez_, de 23 años de edad y sexo masculino:
 
 ```java
-class probarPersona {   
+class ProbarPersona {   
     public static void main(String[] args)   
     {   
         Persona a = new Persona();   
@@ -961,25 +756,25 @@ class probarPersona {
         a.setSexo('H');   
         // Ahora vamos a mostrar por pantalla la información del objeto
         // para asegurarnos que todo se ha almacenado correctamente
-        System.out.println("Nombre: " + a.geNombre() + " " + a.getApellido());  
+        System.out.println("Nombre: " + a.getNombre() + " " + a.getApellido());  
         System.out.println("Edad: " + a.getEdad());   
         System.out.println("Sexo: " + a.getSexo());   
     }  
 }
 ```
 
-Si compilamos y ejecutamos el programa `probarPersona`, la salida por pantalla debería ser esta:
+Si compilamos y ejecutamos el programa `ProbarPersona`, la salida por pantalla debería ser esta:
 
 ```
 Nombre: Miguel Pérez   
 Edad: 23   
-Sexo: Masculino 
+Sexo: Hombre
 ```
 
-Si te fijas, aunque en el interior del objeto el sexo se almacena como un carácter `H`, al recuperarlo con `getsexo()` se nos devuelve el string "Masculino". Ese es el comportamiento del objeto y, como usuarios del mismo, no nos importa cuál es el procedimiento interno por el que se ha obtenido ese resultado. Lo usamos y punto. 
+Si te fijas, aunque en el interior del objeto el sexo se almacena como un carácter `H`, al recuperarlo con `getSexo()` se nos devuelve el string "Hombre". Ese es el comportamiento del objeto y, como usuarios del mismo, no nos importa cuál es el procedimiento interno por el que se ha obtenido ese resultado. Lo usamos y punto. 
 
 > [!note] Por cierto...
-> Si la clase `Persona` y la clase `probarPersona` están en el mismo paquete de nuestro proyecto, **NO es necesario hacer `import Persona`** ni nada parecido. El `import` se usa solo cuando se encuentran en paquetes distintos. 
+> Si la clase `Persona` y la clase `ProbarPersona` están en el mismo paquete de nuestro proyecto, **NO es necesario hacer `import Persona`** ni nada parecido. El `import` se usa solo cuando se encuentran en paquetes distintos. 
 
 ### 4.1.1 Setters con sentido
 
@@ -1018,7 +813,9 @@ class Persona {
      * automáticamente el texto "Expósito".
      */
     public void setApellido(String txt) {  
-        apellido = (txt == null) ? "Expósito" : txt;  
+        apellido = (txt == null || txt.isEmpty())
+	        ? "Expósito"
+	        : txt;  
     }
 
     public int getEdad() {  
@@ -1032,23 +829,67 @@ class Persona {
     public void setEdad(int n) {  
         edad = (n < 0) ? 0 : n;  
     }
-
-    public String getSexo() {  
-        String s;  
-        if (sexo == 'H' || sexo == 'h') s = "Hombre";  
-        if (sexo == 'M' || sexo == 'm') s = "Mujer";  
-        
-        if ((sexo != 'H') && (sexo != 'h')
-            && (sexo != 'M') && (sexo != 'm')) s = "Desconocido";
-
-        return s;  
-    }
-
+	
     public void setSexo(char s) {  
         sexo = s;  
-    }  
+    }
+	
+    public String getSexo() {  
+        String s;
+        if (sexo == 'H' || sexo == 'h') s = "Hombre";  
+        else if (sexo == 'M' || sexo == 'm') s = "Mujer";  
+        else s = "Desconocido";
+		
+        return s;  
+    }
 }
 ```
+
+Sobre el código anterior hemos de recalcar varias cosas:
+
+**Solo los objetos pueden ser `null`**
+
+ Los tipos de datos primitivos nunca será `null`, pero los objetos si. Cuando declaras una variable cuyo tipo de dato es `int`, `byte`, `boolean`... y no se inicializa, generalmente el compilador te invita a que le des un valor inicial, pero si no, se le asignará uno por defecto (el 0 para los `int`, por ejemplo).
+  Pero si declaramos un objeto de tipo `Persona` y no lo inicializamos, ese objeto no se instancia, no se crea y, por tanto, no apunta a ninguna dirección de memoria. Ese objeto es `null`.
+
+**El orden de las validaciones de objetos es importante**
+
+En métodos como `setApellido`, donde se valida que un objeto `txt` no sea nulo ni una cadena vacía, hay que tener en cuenta que **el orden aquí es muy importante**. Si se validase primero si es cadena vacía...
+
+```java
+apellido = (txt.isEmpty() || txt == null)
+	? "Expósito"
+	: txt;
+```
+
+cuando se introduzca un `null` el código intentería hacer lo siguiente:
+
+```java
+apellido = (null.isEmpty() || null == null)
+	? "Expósito"
+	: null;  
+```
+
+  `null` no tiene ningún método `.isEmpty()`. Realmente **no tiene nada porque no es nada**. Por tanto, si intento ejecutar el método `.isEmpty()` de `null`, saltaría una excepción `NullPointerException`.
+
+**El `setter` es el guardián de la frontera**
+
+Los `setter`, que actúan como interfaz o punto de entrada de datos al objeto, **deben velar para que los datos sean válidos**.
+
+> [!example] Cambia el código 
+> 1. Si los `setter` deben ser los guardianes de la entrada de datos, el `setSexo` debe cambiar.
+>   Refactoriza ese método para que:
+>    - Si se introduce una **h** mayúscula o minúscula, se guarde la `'h'` en el atributo `sexo`.
+>    - Si es una **m** mayúscula o minúscula, se guarde una `'m'`.
+>    - Si es cualquier otra letra, se guarde una `'x'`.
+> 
+>   Obviamente también habrá que modificar el método `getSexo`.
+> 
+> 1. Haz lo mismo con `setEdad`. Cámbialo para que sólo admita edades positivas y que no superen los 120 años, de forma que si sobrepasan uno de esos límites, se queden el él. Por ejemplo:
+>    - Si la edad es negativa, que se quede en 0.
+>    - Si supera los 120, que se quede en 120.
+>   De esa forma, forzamos a que el objeto admita solo las edades que son válidas para nuestro programa.
+
 
 # 5. Más sobre métodos
 
@@ -1058,12 +899,13 @@ Los métodos pueden recibir una serie de valores denominados parámetros. En la 
 
 Por lo tanto, los parámetros son imprescindibles para que el objeto reciba los mensajes correctamente. Si no, ¿cómo le indicaríamos al objeto de tipo `Persona` cuál es la edad que tiene que almacenar?
 
+
 Un método puede tener una lista larguísima de parámetros, o ninguno. Lo más habitual es que tenga entre cero y unos pocos.
 
 > [!warning] Consejo
 > Cuando declares métodos, procura que no tengan un número excesivo de parámetros. Eso los hace difíciles de usar y mantener y da pie a errores.
 
-En la declaración del método **hay que indicar el tipo de cada parámetro**, por ejemplo así:
+En la declaración del método **hay que indicar el tipo de cada parámetro**, como se muestra en este ejemplo:
 
 ```java
 public void setDatos(String nombre, String apellido, int edad, char sexo)
@@ -1078,7 +920,7 @@ p.setDatos("Miguel", "Pérez", 23, 'H');
 
 ## 5.2 Valores devueltos
 
-Probablemente habrás observado que algunos métodos terminan con la sentencia return y otros nos. Los que sí lo hacen devuelven un resultado al código que los llamó. Ese resultado puede ser de cualquier tipo y también hay que indicarlo en la declaración del método.  
+Probablemente habrás observado que algunos métodos terminan con un `return` y otros no. Los que sí lo hacen **devuelven un resultado al código que los llamó**. Ese resultado puede ser de cualquier tipo y también hay que indicarlo en la declaración del método.  
 
 El método `setDatos()` anterior no devuelve nada, por lo que, en la declaración, se usa la palabra **`void`** (vacío). Pero el método `getEdad()`, por ejemplo, devuelve un valor entero (la edad de la persona), y por eso se indica `int` en la declaración:
 
@@ -1090,9 +932,12 @@ public int getEdad() {
 
 ## 5.3 Métodos y atributos estáticos
 
-Algunos métodos, como algunos atributos, pueden estar precedidos de la palabra static.
+Algunos métodos, como algunos atributos, pueden estar precedidos de la palabra `static`.
 
-Esto quiere decir que, para esa clase, se creará solo una instancia de ese método o atributo. No importa si se crean 800 objetos de tipo `Persona`: el atributo o el método static sólo se creará una vez, y todos los 800 objetos de esa clase lo compartirán.
+Esto quiere decir que **pertenecen a la clase, no a cada objeto**:
+
+- Un **atributo `static`** existe una sola vez. No importa si se crean 800 objetos de tipo `Persona`: el atributo `static` solo se creará una vez, y los 800 objetos lo compartirán.
+- Un **método `static`** se llama con el nombre de la clase delante y **no necesita ningún objeto**. Es lo que hacemos con `Math.sqrt(64)`: no creamos ningún objeto `Math`.
 
 Esto no solo permite ahorrar recursos en términos de memoria, sino que a veces resulta muy útil (si no, ¡no lo habrían inventado!). Por ejemplo, podemos usar un atributo static para llevar la cuenta del número de personas que se han creado:  
 
@@ -1103,13 +948,27 @@ class Persona {
 
     static void nuevaPersona()
     {
-        numPersonas++; **// Se incrementa cada vez que se crea una persona**
+        numPersonas++; // Se incrementa cada vez que se crea una persona
+    }
+
+    static int getNumPersonas() {
+        return numPersonas;
     }
     // El resto de la clase sería igual que antes
 }
 ```
 
-Si cada vez que creamos un objeto de la clase persona llamamos al método nuevaPersona(), el atributo numPersonas se incrementará en una unidad y contendrá el número total de objetos de esa clase que existen. En cambio, si no fuera un atributo static, cada objeto `Persona` tendría su propio atributo puesto a 0 en el momento de su creación, y la llamada a nuevaPersona() establecería su valor a 1.
+Si cada vez que creamos un objeto de la clase persona llamamos al método `nuevaPersona()`, el atributo `numPersonas` se incrementará en una unidad y contendrá el número total de objetos de esa clase que existen. En cambio, si no fuera un atributo `static`, cada objeto `Persona` tendría su propio atributo puesto a 0 en el momento de su creación, y la llamada a `nuevaPersona()` establecería su valor a 1.
+
+Para consultar el contador desde otra clase, llamamos al método `static` `getNumPersonas()` **con el nombre de la clase**, igual que hacemos con `Math`:
+
+```java
+System.out.println("Personas creadas: " + Persona.getNumPersonas());
+System.out.println("Raíz de 64: " + Math.sqrt(64));
+```
+
+> [!warning] Un método `static` no conoce los objetos
+> Como un método `static` no pertenece a ningún objeto, **no puede usar los atributos ni los métodos que no son `static`**. Si en `getNumPersonas()` intentáramos devolver `nombre`, el compilador daría el error `non-static variable nombre cannot be referenced from a static context`: ¿el nombre de qué persona, si no hay ninguna?
 
 ## 5.4 Métodos constructores: una primera visión
 
@@ -1134,10 +993,11 @@ class Persona {
 
 Observa varias cosas importantes:
 
-* El nombre del constructor debe coincidir con el de la clase.
+* El nombre del constructor **debe coincidir con el de la clase**.
 * El constructor se ha usado para inicializar con valores vacíos todos los atributos de la clase.
 * También se ha aprovechado para invocar el método `nuevaPersona()`, que contabiliza todos los objetos `Persona` creados por el programa. Así, esa contabilización se automatiza, porque `nuevaPersona()` será invocado siempre que se cree un objeto `Persona`.
-* El constructor no devuelve nada ni se indica su visibilidad (por definición, tiene que ser `public`)
+* El constructor no devuelve nada, y por eso no se indica ningún tipo de retorno (ni siquiera `void`).
+* Como cualquier método, puede llevar un modificador de visibilidad. Si no lleva ninguno, como aquí, solo pueden usarlo las clases del mismo paquete. Lo habitual es declararlo `public`, para poder crear objetos desde cualquier sitio.
 * Los constructores pueden parametrizarse y, de hecho, sobrecargarse. Observa como en la siguiente variación de la clase `Persona` hay dos constructores, uno con parámetros y otro sin ellos:
 
 ```java
@@ -1162,7 +1022,54 @@ class Persona {
 }
 ```
 
-Esto es una excelente idea, porque ahora podemos crear personas por dos vías con el mismo resultado:
+Aunque hay algo que no gusta mucho en este código... **se repite la misma tarea en ambos constructores**. ¿Cómo puedo optimizarlo? Así:
+
+```java
+class Persona {
+    Persona() {
+        this("", "", 0, 'X');
+    }
+
+    Persona(String n, String a, int e, char s)
+    {
+        nombre = n;
+        apellido = a;
+        edad = e;
+        sexo = s;
+        nuevaPersona();
+    }
+    // El resto de la clase quedaría igual
+}
+```
+
+¿Qué hemos hecho en el primer constructor? Llamar al segundo usando `this(...)`. Con `this(...)`, **un constructor llama a otro constructor de la misma clase**: el objeto se está creando en ese momento, y es el segundo constructor, `Persona(String n, String a, int e, char s)`, el que le da su estado inicial con los valores que le pasamos.
+
+Con esto conseguimos ahorrar código: el constructor `Persona()` llama al otro pasándole los valores iniciales. Y tras actualizar el estado, se ejecutará `nuevaPersona();`.
+
+Fíjate, además, en que `nuevaPersona()` solo se llama una vez, en el segundo constructor. Si `Persona()` también la llamara después de `this(...)`, cada persona creada sin parámetros **se contaría dos veces**. Repetir código no solo es más largo: también facilita este tipo de errores.
+
+> [!warning] `this(...)` va siempre primero
+> En Java 21, la versión que usamos en el curso, la llamada a `this(...)` tiene que ser la **primera instrucción** del constructor: si escribimos algo antes, el programa no compila. Desde Java 25 se admiten algunas instrucciones antes, siempre que no usen el objeto que se está creando, pero lo más claro sigue siendo ponerla al principio.
+
+### 5.4.1 `this` para referirse al propio objeto
+
+`this` tiene otro uso, aún más frecuente: **dentro de un método o un constructor, `this` es el propio objeto**. Sirve, sobre todo, para distinguir un atributo de un parámetro que se llama igual:
+
+```java
+Persona(String nombre, String apellido, int edad, char sexo) {
+    this.nombre = nombre;     // atributo nombre = parámetro nombre
+    this.apellido = apellido;
+    this.edad = edad;
+    this.sexo = sexo;
+    nuevaPersona();
+}
+```
+
+Sin `this`, la línea `nombre = nombre;` asignaría el parámetro a sí mismo y el atributo se quedaría sin valor. Es la forma en que NetBeans genera los constructores y los *setters* con `Alt + Insert` (lo veremos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/7. Proyectos con varias clases en NetBeans#7.1.3. Que el IDE escriba por nosotros\|7.1.3]]), así que la verás constantemente.
+
+### 5.4.2 Dos formas de crear un objeto
+
+Tener dos constructores es una excelente idea, porque ahora podemos crear personas por dos vías con el mismo resultado:
 
 ```java
 // Creamos una persona con el constructor sin parámetros
@@ -1177,7 +1084,7 @@ p1.setSexo('H');
 Persona p2 = new Persona("Luisa", "Martínez", 21, 'M');
 ```
 
-Presentamos por último la versión "todo junto" de la clase `Persona`, con todos los elementos que hemos ido añadiendo (método static y constructor polimórfico)
+Presentamos por último la versión "todo junto" de la clase `Persona`, con todos los elementos que hemos ido añadiendo (métodos `static` y constructor sobrecargado):
 
 ```java
 // Versión definitiva de la clase Persona
@@ -1190,27 +1097,28 @@ class Persona {
     // Al crear la primera persona esta variable se pondrá a 0
     private static int numPersonas = 0;
 
-    // Constructor sin parámetros
+    // Constructor sin parámetros: llama al otro con valores vacíos
     Persona() {
-        nombre = "";
-        apellido = "";
-        edad = 0;
-        sexo = 'X';
-        nuevaPersona();
+        this("", "", 0, 'X');
     }
 
     // Constructor con parámetros
-    Persona(String n, String a, int e, char s) {
-        nombre = n;
-        apellido = a;
-        edad = e;
-        sexo = s;
+    Persona(String nombre, String apellido, int edad, char sexo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.sexo = sexo;
         nuevaPersona();
     }
 
-    // Método estático para contar en número de personas creadas
+    // Método estático para contar el número de personas creadas
     static void nuevaPersona() {
         numPersonas++; // Se incrementa cada vez que se crea una persona
+    }
+
+    // Método estático para consultar el contador: Persona.getNumPersonas()
+    static int getNumPersonas() {
+        return numPersonas;
     }
 
     public String getNombre() {
@@ -1329,22 +1237,37 @@ El uso de paquetes permite agrupar las clases relacionadas en un solo lugar y, a
 Para usar un paquete se utiliza la sentencia **`import`**. En este ejemplo puedes ver su uso:
 
 ```java
-import java.lang.System;  // Importa la clase System del paquete java.lang
-import java.lang.*;       // Importa todas las clases del paquete java.lang
+import java.util.Scanner;  // Importa la clase Scanner del paquete java.util
+import java.util.*;        // Importa todas las clases del paquete java.util
 ```
 
-Una vez importado un paquete, podemos usar los métodos del mismo sin indicar el nombre completo del paquete. Por ejemplo, en lugar de hacer esto:
+Una vez importada una clase, podemos usarla sin indicar el nombre completo de su paquete. Por ejemplo, sin `import` tendríamos que escribir esto:
 
 ```java
-System.out.println("Hola, mundo");
+java.util.Scanner teclado = new java.util.Scanner(System.in);
 ```
 
-Podemos hacer esto:
+Y con `import java.util.Scanner;` al principio del fichero, basta con esto:
 
 ```java
-import java.lang.System;  
-println("Hola, mundo");
+Scanner teclado = new Scanner(System.in);
 ```
+
+> [!note] ¿Y `String`, `Math` o `System`?
+> Son clases del paquete **`java.lang`**, que Java **importa siempre de forma automática**. Por eso las hemos usado desde el principio sin escribir ningún `import`.
+
+Existe también el **`import static`**, que permite usar los miembros `static` de una clase (sus métodos y atributos estáticos) sin escribir el nombre de la clase delante:
+
+```java
+import static java.lang.Math.sqrt;
+import static java.lang.Math.PI;
+
+double raiz = sqrt(81);   // en lugar de Math.sqrt(81)
+double area = PI * 2 * 2; // en lugar de Math.PI * 2 * 2
+```
+
+> [!warning] Úsalo con moderación
+> Con `import static`, al leer `sqrt(81)` no se ve a qué clase pertenece el método. Por eso, salvo casos muy claros, es preferible escribir `Math.sqrt(81)`.
 
 Para acceder correctamente a los paquetes, el compilador de Java necesita saber dónde están los archivos de la biblioteca de clases, es decir, tienes que configurar adecuadamente la variable de entorno `CLASSPATH`.
 
@@ -1361,13 +1284,349 @@ $ javac -cp /ruta/a/mis/clases nombre.java
 
 ![ud02_02_jerarquia_clases_java.png\|Jerarquía de clases en Java](/img/user/adjuntos/1DAM_Programacion/Unidad_02/ud02_02_jerarquia_clases_java.png)
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J1PmA7J3aUA?si=dOiuuwCU8-mIBH2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# 7. Proyectos con varias clases en NetBeans
+
+En la Unidad 01 vimos qué es un proyecto Maven y cómo se crea en NetBeans ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/6. Herramientas para desarrollar con Java#6.4.4. Crear un proyecto en NetBeans\|6.4.4. Crear un proyecto en NetBeans]]). Entonces nuestros programas tenían una sola clase. Ahora que escribimos nuestras propias clases (como `Persona` en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/4. Declaración de clases e instanciación de objetos en Java\|4. Declaración de clases e instanciación de objetos en Java]]) y las organizamos en paquetes ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/6. Paquetes\|6. Paquetes]]), un programa pasa a estar formado por **varios ficheros**. En este apartado veremos cómo trabajar con ellos en el IDE.
+
+## 7.1. Un proyecto con varias clases
+
+Como ejemplo, vamos a crear un proyecto `Agenda` con dos clases en paquetes distintos:
+
+- `Contacto`, en el paquete `es.dam.agenda.modelo`: la clase que describe los objetos.
+- `Main`, en el paquete `es.dam.agenda.app`: la clase con el método `main`, que crea y usa los objetos.
+
+Separar así las clases es una práctica habitual: las que representan los datos del problema (el **modelo**) van en un paquete, y las que ponen en marcha la aplicación, en otro.
+
+### 7.1.1. Crear el proyecto
+
+Podemos crear un nuevo proyecto desde varios sitios:
+
+- El icono *New Project* de la **barra de herramientas**:
+  ![ud03_20_netbeans_new_project_01.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_20_netbeans_new_project_01.png)
+
+- En el **menú File** ->  *New Project*:
+  ![ud03_20_netbeans_new_project_02.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_20_netbeans_new_project_02.png)
+
+- En la pantalla de bienvenida:
+  ![ud03_20_netbeans_new_project_03.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_20_netbeans_new_project_03.png)
+
+Crea un proyecto **Java with Maven → Java Application** llamado `Agenda`, con `Group Id` **`es.dam`**.
+
+![ud03_20_netbeans_new_project_04.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_20_netbeans_new_project_04.png)
+
+NetBeans propone el paquete `es.dam.agenda` y crea en él una clase `Agenda` con su `main`. Como no la vamos a usar, puedes borrarla (botón derecho → **Delete**).
+
+### 7.1.2. Crear paquetes y clases
+
+En la ventana **Projects**, haz clic con el botón derecho sobre **Source Packages**:
+
+1. **New → Java Package…** y escribe `es.dam.agenda.modelo`. Repite para `es.dam.agenda.app`.
+2. Botón derecho sobre el paquete `es.dam.agenda.modelo` → **New → Java Class…**, con el nombre `Contacto`.
+3. Botón derecho sobre `es.dam.agenda.app` → **New → Java Main Class…**, con el nombre `Main`. Es una clase normal, pero NetBeans le añade ya el método `main`.
+
+> [!info] Si no ves la opción **Java Main Class…** 
+> Pulsa sobre la opción **Other...**. Se abrirá una ventana en la que tendrás categorías y, para cada una de ellas, una serie de elementos. Eligiendo la categoría **Java** podrás ver **Java Main Class…** en su lista de *File Types*:
+> ![ud03_20_netbeans_new_project_05.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_20_netbeans_new_project_05.png)
+
+
+
+> [!NOTE] Paquetes y carpetas
+> Cada paquete es una carpeta del disco. Si abres la ventana **Files**, verás que `Contacto.java` está en `src/main/java/es/dam/agenda/modelo/`. Por eso NetBeans escribe solo la primera línea de cada clase, `package es.dam.agenda.modelo;`: **debe coincidir con la carpeta** en la que está el fichero.
+
+La estructura del proyecto queda así:
+
+```
+Agenda/
+├── pom.xml
+└── src/main/java/es/dam/agenda/
+    ├── app/
+    │   └── Main.java
+    └── modelo/
+        └── Contacto.java
+```
+
+### 7.1.3. Que el IDE escriba por nosotros
+
+Escribe en `Contacto` solo sus atributos:
+
+```java
+package es.dam.agenda.modelo;
+
+public class Contacto {
+
+    private String nombre;
+    private String telefono;
+    private int edad;
+}
+```
+
+El constructor, los *getters* y los *setters* son código repetitivo, y el IDE puede generarlo. Coloca el cursor dentro de la clase y pulsa **`Alt + Insert`** (o botón derecho → **Insert Code…**):
+
+- **Constructor…**: marca los atributos que debe recibir como parámetros.
+- **Getter and Setter…**: marca los atributos para los que quieres métodos de acceso.
+- **toString()…**: genera un método que devuelve el objeto como texto.
+
+El resultado es el mismo que si lo escribieras a mano:
+
+```java
+public Contacto(String nombre, String telefono, int edad) {
+    this.nombre = nombre;
+    this.telefono = telefono;
+    this.edad = edad;
+}
+
+public String getNombre() {
+    return nombre;
+}
+// ...
+```
+
+> [!WARNING] Generar no es pensar
+> El IDE genera *setters* que aceptan cualquier valor. Recuerda que deben **decidir qué datos se permiten** ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/4. Declaración de clases e instanciación de objetos en Java#4.1.1 Setters con sentido\|4.1.1. Setters con sentido]]): revisa siempre el código generado y añade las comprobaciones que falten.
+
+Otras ayudas del editor que usarás continuamente:
+
+| Ayuda | Atajo |
+|---|---|
+| Autocompletar (atributos, métodos, clases) | `Ctrl + Espacio` |
+| Generar código (constructores, *getters*…) | `Alt + Insert` |
+| Ver y aplicar las soluciones que propone el IDE | `Alt + Enter` |
+| Añadir los `import` que faltan y quitar los que sobran | `Ctrl + Shift + I` |
+| Dar formato al código (sangrías, espacios) | `Alt + Shift + F` |
+
+> [!TIP] La documentación, a mano
+> Al autocompletar con `Ctrl + Espacio`, NetBeans muestra el **Javadoc** del método elegido: qué hace, qué parámetros recibe y qué devuelve. Es la forma más rápida de consultar la API de clases como `String` o `Math` ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/3. Ejemplos de la API - Math y String\|3. Ejemplos de la API - Math y String]]).
+
+### 7.1.4. Usar una clase de otro paquete
+
+Escribe el `main` de `Main`:
+
+```java
+package es.dam.agenda.app;
+
+import es.dam.agenda.modelo.Contacto;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Contacto c1 = new Contacto("Ana", "600111222", 19);
+        Contacto c2 = new Contacto("Luis", "600333444", 21);
+
+        System.out.println(c1.getNombre() + ": " + c1.getTelefono());
+        System.out.println(c2.getNombre() + ": " + c2.getTelefono());
+    }
+}
+```
+
+Como `Contacto` está en otro paquete, hace falta el `import`. No hace falta escribirlo: al teclear `Contacto` y autocompletar con `Ctrl + Espacio`, NetBeans lo añade solo. Si se te ha olvidado, pulsa `Ctrl + Shift + I`.
+
+> [!NOTE] Para que se pueda usar desde otro paquete
+> La clase `Contacto`, su constructor y sus *getters* son `public`. Si no lo fueran, `Main` no podría usarlos, porque está en otro paquete.
+
+## 7.2. Compilar y ejecutar
+
+### 7.2.1. Ejecutar el proyecto o un fichero
+
+Ya conoces las órdenes del menú **Run** ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/6. Herramientas para desarrollar con Java#6.4.4. Crear un proyecto en NetBeans\|6.4.4]]). Con varias clases conviene distinguir dos:
+
+- **Run File** (`Shift + F6`) ejecuta **la clase que tienes abierta**, que debe tener `main`. Es lo más cómodo cuando un proyecto tiene varios programas, como los de los ejercicios de clase.
+- **Run Project** (`F6`) ejecuta **la clase principal del proyecto**, la que se indica en **botón derecho sobre el proyecto → Properties → Run → Main Class**. Si la has borrado (como la clase `Agenda` del ejemplo), NetBeans te pedirá que elijas otra.
+
+En ambos casos, NetBeans primero **compila** lo que haya cambiado y después ejecuta. La salida del programa aparece en la ventana **Output**, que es también donde se escribe lo que se lee por teclado con `Scanner`.
+
+```
+Ana: 600111222
+Luis: 600333444
+```
+
+### 7.2.2. Qué hace el IDE por debajo
+
+Cuando ejecutas, NetBeans le pide a **Maven** que compile todas las clases del proyecto. Los `.class` se guardan en `target/classes`, cada uno en la carpeta de su paquete, y después se ejecuta la clase con `main`. Es lo mismo que hacías a mano con `javac` y `java` ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 01/8. Primeros pasos en Java#8.3. El compilador javac, a fondo\|8.3. El compilador javac, a fondo]]). Desde la carpeta del proyecto, ya compilado, podrías ejecutarlo en la consola así:
+
+```bash
+$ java -cp target/classes es.dam.agenda.app.Main
+```
+
+- `-cp target/classes` indica dónde están las clases (el *classpath* que vimos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/6. Paquetes\|6. Paquetes]]).
+- La clase se escribe con su **nombre completo**, con el paquete delante.
+
+**Clean and Build** (`Shift + F11`) borra `target`, lo compila todo de nuevo y empaqueta el programa en un fichero `.jar` (`target/Agenda-1.0-SNAPSHOT.jar`). Se puede ejecutar igual, indicando el `.jar` como *classpath*:
+
+```bash
+$ java -cp target/Agenda-1.0-SNAPSHOT.jar es.dam.agenda.app.Main
+```
+
+> [!TIP] Cuando algo raro pasa
+> Si NetBeans ejecuta una versión antigua de tu código o muestra errores que ya has corregido, haz **Clean and Build**: elimina los `.class` viejos y compila todo desde cero.
+
+## 7.3. Errores de compilación
+
+### 7.3.1. Cómo los muestra el IDE
+
+NetBeans analiza el código **mientras escribes**, sin esperar a compilar:
+
+- La línea con el error se **subraya en rojo** y aparece un icono rojo en el margen izquierdo. Si pasas el ratón por encima, se muestra el mensaje del compilador.
+  ![ud03_21_netbeans_error_sintaxis_01.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_21_netbeans_error_sintaxis_01.png)
+- Si el icono tiene una **bombilla**, el IDE propone soluciones: pulsa `Alt + Enter` para verlas.
+- En la ventana **Projects**, las clases y paquetes con errores llevan una **marca roja**, así que puedes localizar los errores de un proyecto con muchas clases sin abrirlas todas.
+  ![ud03_21_netbeans_error_sintaxis_02.png](/img/user/adjuntos/1DAM_Programacion/Unidad_03/ud03_21_netbeans_error_sintaxis_02.png)
+
+Si intentas ejecutar un proyecto con errores, la compilación falla y la ventana **Output** muestra `BUILD FAILURE`, con el fichero, la línea y el mensaje de cada error. Haciendo clic en el error, el editor salta a esa línea.
+
+> [!WARNING] Los avisos amarillos
+> Un subrayado o un icono **amarillo** es un **aviso** (*warning*), no un error: el programa compila, pero el IDE sospecha que algo no es correcto (una variable que no se usa, un `import` que sobra…). No los ignores sin leerlos.
+
+### 7.3.2. Errores frecuentes al trabajar con clases
+
+Los mensajes del compilador están en inglés y al principio cuesta entenderlos. Pero es vital conocerlos y aprender qué nos están intentando decir para resolver cualquier problema con facilidad y sin tanto estrés. Estos son los más habituales con lo que vemos en esta unidad:
+
+| Mensaje | Qué significa | Ejemplo |
+|---|---|---|
+| `cannot find symbol` | El compilador no conoce ese nombre: está mal escrito o falta el `import`. | `Contacto c = ...` sin `import es.dam.agenda.modelo.Contacto;` |
+| `constructor Contacto in class Contacto cannot be applied to given types` | La llamada al constructor no coincide con ninguno: número, tipo u orden de los parámetros. | `new Contacto("Ana", 19)` si el constructor recibe tres parámetros |
+| `method getEdad in class Contacto cannot be applied to given types` | Lo mismo, con un método. | `c1.getEdad(5)` cuando `getEdad()` no recibe parámetros |
+| `incompatible types: String cannot be converted to int` | Se pasa o se asigna un valor de un tipo que no corresponde. | `new Contacto("Ana", "600111222", "19")` |
+| `nombre has private access in Contacto` | Se usa un atributo o método `private` desde fuera de su clase. | `c1.nombre` en lugar de `c1.getNombre()` |
+| `non-static method getNombre() cannot be referenced from a static context` | Se llama a un método de objeto como si fuera estático ([[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/5. Más sobre métodos#5.3 Métodos y atributos estáticos\|5.3. Métodos y atributos estáticos]]). | `Contacto.getNombre()` |
+| `missing return statement` | Un método que debe devolver un valor no tiene `return` en todos los caminos. | Un *getter* sin `return` |
+
+> [!EXAMPLE] Pruébalo
+> Provoca a propósito cada uno de los errores de la tabla en el proyecto `Agenda`, lee el mensaje que muestra NetBeans y comprueba qué propone con `Alt + Enter`. Aprender a leer los mensajes del compilador ahorra mucho tiempo.
+
+# 8. Atributos que son objetos
+
+Hasta ahora, los atributos de nuestras clases eran números, booleanos o textos. Pero un atributo es, en el fondo, **una variable que pertenece al objeto**, y una variable puede ser **de cualquier tipo**. En este apartado veremos que un objeto puede guardar dentro otros objetos, y daremos una primera idea de la **composición**.
+
+> [!NOTE] Se verá con más profundidad más adelante
+> Aquí solo presentamos la idea para que puedas usarla en los ejercicios. La composición, y cuándo conviene usarla en lugar de la herencia, se estudian a fondo en la parte de POO avanzada del módulo.
+
+## 8.1. Un atributo puede ser de cualquier tipo
+
+Al declarar un atributo se indica su **tipo** y su **nombre**, igual que con cualquier variable. Ese tipo puede ser:
+
+| Tipo del atributo | Ejemplo | Valor por defecto |
+|---|---|---|
+| Primitivo | `private int paginas;` | `0`, `0.0`, `false`… |
+| Una clase de la API | `private String titulo;` | `null` |
+| Una clase escrita por nosotros | `private Punto centro;` | `null` |
+
+Las dos últimas filas funcionan igual: `String` es una clase como cualquier otra, solo que ya viene hecha en Java. Si podemos tener un atributo `String`, podemos tener uno de tipo `Punto`, `Neumatico` o `Libro`.
+
+> [!WARNING] Un atributo de tipo clase guarda una referencia
+> Como vimos en [[Asignaturas/1DAM_Programación/Apuntes/Unidad 03/5. Más sobre métodos#5.5.1 Variables y objetos las referencias\|5.5.1 Variables y objetos: las referencias]], una variable de tipo clase no contiene el objeto, sino una **referencia** a él. Mientras no le asignemos un objeto con `new`, vale `null`, y llamar a uno de sus métodos provoca un `NullPointerException`. Por eso, lo normal es **crear esos objetos en el constructor**.
+
+### 8.1.1. Un ejemplo: un círculo con su centro
+
+Un punto del plano tiene dos coordenadas:
+
+```java
+public class Punto {
+
+    private double x;
+    private double y;
+
+    public Punto(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public double distanciaA(Punto otro) {
+        double dx = x - otro.x;
+        double dy = y - otro.y;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
+}
+```
+
+Un círculo tiene un **centro**, que es un punto, y un radio. En lugar de guardar dos `double` para el centro, guardamos un objeto `Punto`:
+
+```java
+public class Circulo {
+
+    private Punto centro;   // atributo de tipo Punto
+    private double radio;
+
+    public Circulo(double x, double y, double radio) {
+        this.centro = new Punto(x, y);   // el círculo crea su propio centro
+        this.radio = radio;
+    }
+
+    public double area() {
+        return Math.PI * Math.pow(radio, 2);
+    }
+
+    /** Un punto está dentro si su distancia al centro no supera el radio. */
+    public boolean contiene(Punto p) {
+        return centro.distanciaA(p) <= radio;   // el círculo le pide el cálculo a su centro
+    }
+
+    @Override
+    public String toString() {
+        return "Círculo de centro " + centro + " y radio " + radio;
+    }
+}
+```
+
+Fíjate en dos cosas:
+
+- `contiene()` no calcula la distancia: **le pide al punto** que lo haga. Cada clase se ocupa de lo suyo. A esto se le llama **delegar**.
+- En `toString()`, al concatenar `centro` con un texto, Java llama automáticamente a `centro.toString()`.
+
+```java
+Circulo c = new Circulo(0, 0, 5);
+System.out.println(c);                              // Círculo de centro (0.0, 0.0) y radio 5.0
+System.out.println(c.contiene(new Punto(3, 4)));    // true (distancia 5)
+System.out.println(c.contiene(new Punto(4, 4)));    // false
+```
+
+## 8.2. La composición: un objeto formado por otros
+
+Cuando un objeto está **formado por** otros objetos, decimos que hay una relación de **composición**. Se reconoce porque se puede describir con la frase «**tiene un**» (o «tiene varios»):
+
+- Un círculo **tiene un** centro.
+- Un coche **tiene** cuatro neumáticos.
+- Un silo **tiene un** cuerpo cilíndrico y **un** techo cónico.
+
+En un diagrama de clases UML, la composición se dibuja con un rombo relleno en el lado del objeto que contiene a los demás:
+
+```mermaid
+classDiagram
+    direction LR
+    class Circulo {
+        -Punto centro
+        -double radio
+        +area() double
+        +contiene(Punto p) boolean
+    }
+    class Punto {
+        -double x
+        -double y
+        +distanciaA(Punto otro) double
+    }
+    Circulo *-- "1" Punto : centro
+```
+
+> [!TIP] Por qué es útil
+> Dividir un problema en clases pequeñas, cada una con su responsabilidad, hace el código más fácil de entender, de probar y de reutilizar: `Punto` sirve también para un rectángulo, un triángulo o una ruta de GPS.
 
 # Referencias - Material de apoyo
 
 ## String
 
-### JAVA: Clase String
+### Clase String - Aula Informática
+
+1. Aula Informática. (2022f, abril 5). _Programación Java - Introducción a la clase String_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=1P5MzFLgd7Q
+2. 
+
+### JAVA: Clase String - Aula en la nube
 
 > Aula en la nube. (2022o, octubre 12). _JAVA: Clase String ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=443VORsWj2M
 
@@ -1375,6 +1634,11 @@ $ javac -cp /ruta/a/mis/clases nombre.java
 
 ## String
 
-### JAVA: Ejercicio String y funciones
+### Ejercicios estructuras secuenciales IV - String - Aula Informática
+
+> Aula Informática. (2022f, abril 5). _Programación Java - Ejercicios estructuras secuenciales IV - String_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=UQlHEikWuiM
+
+### JAVA: Ejercicio String y funciones - Aula en la nube
 
 > Aula en la nube. (2022p, octubre 13). _JAVA: Ejercicio String y funciones ☕ DAM - DAW_ [Vídeo]. YouTube. https://www.youtube.com/watch?v=FNjyxclZmDQ
+
