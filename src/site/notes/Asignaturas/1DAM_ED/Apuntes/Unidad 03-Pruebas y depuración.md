@@ -348,7 +348,7 @@ Si aplicamos las fórmulas veremos que la complejidad ciclomática es 4, es deci
 
 ![ud04_ed_07_caminos_imposibles_03.png](/img/user/adjuntos/1DAM_ED/Unidad_04/ud04_ed_07_caminos_imposibles_03.png)
 
-**Por ejemplo**, uno de los caminos que podríamos obtener de este grafo es: **I, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, F**. Si este camino pasa **del nodo 6 al 8** es porque la condición ***intento > nPensado*** se evalúa como cierta. Puesto que el valor de las variables **intento** y **nPensado** no se alteran en los nodos 8 y 9, cuando llegamos al nodo 10, la condición ***intento = nPensado*** se tiene que evaluar como **falsa**. Por tanto, desde el nodo **10** debe pasar al nodo **3** y no al nodo **11**. 
+**Por ejemplo**, uno de los caminos que podríamos obtener de este grafo es: **I, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, F**. Si este camino pasa **del nodo 6 al 8** es porque la condición ***numUsuario > numSecreto*** se evalúa como cierta. Puesto que el valor de las variables **numUsuario** y **numSecreto** no se alteran en los nodos 8 y 9, cuando llegamos al nodo 10, la condición ***numUsuario = numSecreto*** se tiene que evaluar como **falsa**. Por tanto, desde el nodo **10** debe pasar al nodo **3** y no al nodo **11**. 
 
 Es decir, **el camino propuesto es imposible, la única forma de llegar a 11 es desde el camino que va directo desde 6 a 9, 10**.
 
@@ -370,7 +370,7 @@ Una vez obtenido un grafo en el que todos los caminos son posibles, ya podemos d
 
 [^3]:  En los anexos se incluye un código Java de este algoritmo. Prueba con él para hacer este ejercicio.
 
-# 5. Pruebas funcionales (caja negra
+# 5. Pruebas funcionales o de caja negra
 
 Las pruebas funcionales siguen el enfoque de las pruebas de **caja negra**. A diferencia de las pruebas de caja blanca, aquí no nos importa el código fuente y las bifurcaciones que haya en él. Nos centramos en que, para una entrada dada, la salida sea la esperada según los requisitos del cliente. Es decir, nos interesa que el software realice las funciones que se esperan de él.
 
@@ -1941,7 +1941,7 @@ En el programa real recibirá, por ejemplo, un `RepositorioMySQL` y un `Servicio
 
 ### 13.3.2. Paso 2: decidir qué queremos comprobar
 
-Antes de escribir código, pensamos en los **casos de prueba** del método `reservar()`, como hicimos en [[Asignaturas/1DAM_ED/Apuntes/Unidad 03/5. Pruebas funcionales (caja negra\|5. Pruebas funcionales (caja negra]]. El método tiene dos caminos:
+Antes de escribir código, pensamos en los **casos de prueba** del método `reservar()`, como hicimos en [[Asignaturas/1DAM_ED/Apuntes/Unidad 03/5. Pruebas funcionales o de caja negra\|5. Pruebas funcionales o de caja negra]]. El método tiene dos caminos:
 
 | Caso | Situación de partida | Resultado esperado |
 |---|---|---|
@@ -2229,7 +2229,7 @@ Ninguna de las dos pruebas necesita una base de datos ni envía correos: se ejec
 - **Completa con pruebas de integración**: los dobles no comprueban que la base de datos real funcione. Eso lo hacen las pruebas de integración (ver [[Asignaturas/1DAM_ED/Apuntes/Unidad 03/2. Tipos de pruebas\|2. Tipos de pruebas]]).
 
 > [!EXAMPLE] Para practicar
-> Añade al servicio una regla nueva: no se puede reservar en fin de semana. Escribe primero la prueba (como en [[Asignaturas/1DAM_ED/Apuntes/Unidad 03/5. Pruebas funcionales (caja negra#5.3. Pruebas unitarias y TDD\|TDD]]) y comprueba con `verify(…, never())` que, en ese caso, no se guarda nada.
+> Añade al servicio una regla nueva: no se puede reservar en fin de semana. Escribe primero la prueba (como en [[Asignaturas/1DAM_ED/Apuntes/Unidad 03/5. Pruebas funcionales o de caja negra#5.3. Pruebas unitarias y TDD\|TDD]]) y comprueba con `verify(…, never())` que, en ese caso, no se guarda nada.
 
 # Anexos
 
