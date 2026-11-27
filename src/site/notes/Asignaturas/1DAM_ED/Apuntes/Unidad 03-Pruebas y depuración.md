@@ -362,10 +362,11 @@ Una vez obtenido un grafo en el que todos los caminos son posibles, ya podemos d
 
 | Caso de prueba | Valores de entrada | Resultado esperado |
 | ----- | ----- | :---: |
-| El usuario acierta el nº al primer intento. Camino 1. | nPensado = 34 <br>intento = 34 | “Enhorabuena. Acertaste en 1” |
-| El usuario introduce un nº mayor y después el nº correcto. Camino 2. | nPensado = 52 <br>intento = 75 y 52 | "Debe ser menor" "Enhorabuena. Acertaste en 2" |
-| El usuario introduce un nº menor y después el nº correcto. Camino 3. | nPensado = 17 <br>intento = 5 y 17 | "Debe ser mayor" "Enhorabuena. Acertaste en 2" |
-
+| El usuario acierta el nº al primer intento. **Camino 1**. | numSecreto = 34 <br>numUsuario = 34 | “Enhorabuena. Acertaste en 1” |
+| El usuario introduce un nº mayor y después el nº correcto. **Camino 2**. | numSecreto = 52 <br>numUsuario = 75 | "Debe ser menor" "Enhorabuena. Acertaste en 2" |
+| El usuario introduce un nº mayor y después el nº correcto. **Camino 2**. | numSecreto = 52 <br>numUsuario = 52 | "Debe ser menor" "Enhorabuena. Acertaste en 2" |
+| El usuario introduce un nº menor y después el nº correcto. **Camino 3**. | numSecreto = 17 <br>numUsuario = 5 | "Debe ser mayor" "Enhorabuena. Acertaste en 2" |
+| El usuario introduce un nº menor y después el nº correcto. **Camino 3**. | numSecreto = 17 <br>numUsuario = 17 | "Debe ser mayor" "Enhorabuena. Acertaste en 2" |
 
 
 [^3]:  En los anexos se incluye un código Java de este algoritmo. Prueba con él para hacer este ejercicio.
